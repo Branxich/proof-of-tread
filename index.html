@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proof of NADO</title>
+  <meta name="description" content="See who has helped @NadoHQ grow on X. Community leaderboard tracking mentions, views, and engagement since Nov 18, 2025." />
+  <meta property="og:title" content="Proof of NADO" />
+  <meta property="og:description" content="Community tracker for @NadoHQ on X — who's posting, who's growing the storm." />
+  <meta property="og:image" content="https://og-image.vercel.app/Proof%20of%20NADO.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #080808;
+      --surface: #111111;
+      --surface2: #1a1a1a;
+      --border: #222222;
+      --border2: #333333;
+      --text: #f0f0f0;
+      --muted: #666666;
+      --muted2: #888888;
+      --accent: #ffffff;
+      --accent-dim: rgba(255,255,255,0.07);
+      --accent-dim2: rgba(255,255,255,0.12);
+      --mono: 'Space Mono', monospace;
+      --serif: 'DM Serif Display', serif;
+      --sans: 'Inter', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Grain overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.5;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; font-family: inherit; }
+
+    /* ── HEADER ── */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 18px 0;
+      position: sticky;
+      top: 0;
+      background: rgba(8,8,8,0.92);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+    .header-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-family: var(--serif);
+      font-size: 20px;
+      letter-spacing: -0.02em;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-mark {
+      width: 30px;
+      height: 30px;
+      border: 1.5px solid var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+    .header-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .header-links a {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted2);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      transition: color 0.2s;
+    }
+    .header-links a:hover { color: var(--accent); }
+
+    /* ── HERO ── */
+    .hero {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 72px 24px 60px;
+      text-align: center;
+      position: relative;
+    }
+    .hero-eyebrow {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted2);
+      margin-bottom: 20px;
+    }
+    .hero-title {
+      font-family: var(--serif);
+      font-size: clamp(48px, 8vw, 88px);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      color: var(--accent);
+      margin-bottom: 24px;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--muted2);
+    }
+    .hero-sub {
+      font-size: 16px;
+      color: var(--muted2);
+      max-width: 480px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+
+    /* ── SEARCH ── */
+    .search-wrap {
+      max-width: 440px;
+      margin: 0 auto;
+    }
+    .search-box {
+      display: flex;
+      border: 1px solid var(--border2);
+      background: var(--surface);
+      border-radius: 4px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .search-box:focus-within { border-color: var(--accent); }
+    .search-at {
+      padding: 14px 12px 14px 16px;
+      font-family: var(--mono);
+      font-size: 14px;
+      color: var(--muted);
+      background: transparent;
+      border: none;
+      pointer-events: none;
+      user-select: none;
+    }
+    .search-input {
+      flex: 1;
+      padding: 14px 0;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-family: var(--mono);
+      font-size: 14px;
+      color: var(--text);
+    }
+    .search-input::placeholder { color: var(--muted); }
+    .search-btn {
+      padding: 14px 20px;
+      background: var(--accent);
+      color: #000;
+      border: none;
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      transition: background 0.2s, opacity 0.2s;
+    }
+    .search-btn:hover { background: #d0d0d0; }
+    .search-hint {
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--muted);
+      font-family: var(--mono);
+    }
+
+    /* ── GLOBAL STATS ── */
+    .global-stats {
+      max-width: 960px;
+      margin: 60px auto 0;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .stat-card {
+      background: var(--surface);
+      padding: 28px 24px;
+    }
+    .stat-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .stat-value {
+      font-family: var(--serif);
+      font-size: 32px;
+      letter-spacing: -0.02em;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .stat-value.loading {
+      font-family: var(--mono);
+      font-size: 18px;
+      color: var(--muted);
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    /* ── PROFILE CARD ── */
+    .profile-section {
+      max-width: 960px;
+      margin: 60px auto 0;
+      padding: 0 24px;
+      display: none;
+    }
+    .profile-section.visible { display: block; }
+    .section-heading {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .back-btn {
+      background: none;
+      border: none;
+      color: var(--muted2);
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    .back-btn:hover { color: var(--accent); }
+
+    .profile-card {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .profile-top {
+      padding: 32px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+    }
+    .profile-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 1px solid var(--border2);
+      overflow: hidden;
+      flex-shrink: 0;
+      background: var(--surface2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--mono);
+      font-size: 22px;
+      color: var(--muted);
+    }
+    .profile-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .profile-info { flex: 1; }
+    .profile-name {
+      font-family: var(--serif);
+      font-size: 26px;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+      margin-bottom: 2px;
+    }
+    .profile-handle {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--muted2);
+      margin-bottom: 8px;
+    }
+    .profile-followers {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .profile-actions {
+      display: flex;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .btn-ghost {
+      padding: 9px 16px;
+      border: 1px solid var(--border2);
+      background: transparent;
+      color: var(--muted2);
+      font-family: var(--mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      transition: all 0.2s;
+      border-radius: 2px;
+    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-solid {
+      padding: 9px 16px;
+      background: var(--accent);
+      color: #000;
+      border: none;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      transition: opacity 0.2s;
+      border-radius: 2px;
+    }
+    .btn-solid:hover { opacity: 0.8; }
+
+    .profile-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .metric-cell {
+      background: var(--surface);
+      padding: 24px;
+      text-align: center;
+    }
+    .metric-icon { font-size: 18px; margin-bottom: 8px; }
+    .metric-val {
+      font-family: var(--serif);
+      font-size: 36px;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .metric-lab {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .metric-rank {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .profile-breakdown {
+      padding: 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+    .breakdown-title {
+      font-family: var(--mono);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    .breakdown-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .breakdown-row:last-child { border-bottom: none; }
+    .breakdown-label {
+      font-size: 13px;
+      color: var(--muted2);
+    }
+    .breakdown-val {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--text);
+    }
+
+    .top-posts-section {
+      padding: 0 32px 32px;
+      border-top: 1px solid var(--border);
+    }
+    .top-posts-title {
+      font-family: var(--mono);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      padding: 24px 0 16px;
+    }
+    .post-item {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .post-item:last-child { border-bottom: none; }
+    .post-meta {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+    .post-stat {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted2);
+    }
+    .post-text {
+      font-size: 13px;
+      color: var(--muted2);
+      line-height: 1.5;
+    }
+    .post-link {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-top: 6px;
+      display: inline-block;
+      transition: color 0.2s;
+    }
+    .post-link:hover { color: var(--accent); }
+    .share-row {
+      padding: 24px 32px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    /* ── LEADERBOARD ── */
+    .leaderboard-section {
+      max-width: 960px;
+      margin: 60px auto 0;
+      padding: 0 24px;
+    }
+    .lb-controls {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+    .lb-sort-btn {
+      padding: 5px 12px;
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-radius: 2px;
+      transition: all 0.2s;
+    }
+    .lb-sort-btn.active { background: var(--accent); color: #000; border-color: var(--accent); }
+    .lb-sort-btn:hover:not(.active) { border-color: var(--border2); color: var(--muted2); }
+
+    .lb-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    .lb-table thead {
+      background: var(--surface2);
+    }
+    .lb-table th {
+      padding: 12px 16px;
+      text-align: left;
+      font-family: var(--mono);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      font-weight: 400;
+    }
+    .lb-table th:not(:first-child) { text-align: right; }
+    .lb-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+    .lb-table tr:last-child td { border-bottom: none; }
+    .lb-table tbody tr {
+      background: var(--surface);
+      transition: background 0.15s;
+      cursor: pointer;
+    }
+    .lb-table tbody tr:hover { background: var(--accent-dim); }
+    .lb-table td:not(:first-child):not(:nth-child(2)) { text-align: right; font-family: var(--mono); }
+
+    .rank-num {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+      width: 40px;
+      display: inline-block;
+    }
+    .rank-num.gold { color: #c8b400; }
+    .rank-num.silver { color: #909090; }
+    .rank-num.bronze { color: #8b5a2b; }
+
+    .user-cell {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .user-ava {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .user-ava img { width: 100%; height: 100%; object-fit: cover; }
+    .user-handle {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted2);
+    }
+    .user-name { font-size: 13px; color: var(--text); }
+
+    .num-views { color: var(--muted2); }
+    .num-likes { color: var(--muted2); }
+    .num-posts { color: var(--muted2); }
+
+    .lb-empty {
+      padding: 64px 24px;
+      text-align: center;
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .lb-loading {
+      padding: 64px 24px;
+      text-align: center;
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    /* ── INFO SECTIONS ── */
+    .info-grid {
+      max-width: 960px;
+      margin: 60px auto 0;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .info-block {
+      background: var(--surface);
+      padding: 32px;
+    }
+    .info-icon {
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+    .info-title {
+      font-family: var(--serif);
+      font-size: 20px;
+      color: var(--accent);
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+    .info-desc {
+      font-size: 13px;
+      color: var(--muted2);
+      line-height: 1.7;
+    }
+
+    .what-counted {
+      max-width: 960px;
+      margin: 24px auto 0;
+      padding: 0 24px;
+    }
+    .counted-box {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      border-radius: 4px;
+      padding: 24px 28px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .counted-icon {
+      font-size: 18px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .counted-text {
+      font-size: 13px;
+      color: var(--muted2);
+      line-height: 1.7;
+    }
+    .counted-text strong { color: var(--muted2); font-weight: 600; }
+
+    /* ── REFERRAL ── */
+    .referral-section {
+      max-width: 960px;
+      margin: 60px auto 0;
+      padding: 0 24px;
+    }
+    .referral-card {
+      border: 1px solid var(--border2);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .referral-top {
+      background: var(--surface);
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .referral-title {
+      font-family: var(--serif);
+      font-size: 22px;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+    .referral-desc {
+      font-size: 13px;
+      color: var(--muted2);
+      line-height: 1.6;
+    }
+    .referral-cta {
+      flex-shrink: 0;
+    }
+    .ref-link {
+      display: inline-block;
+      padding: 12px 24px;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      transition: all 0.2s;
+      border-radius: 2px;
+    }
+    .ref-link:hover { background: var(--accent); color: #000; }
+    .referral-bottom {
+      background: var(--surface2);
+      padding: 14px 32px;
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      max-width: 960px;
+      margin: 60px auto 0;
+      padding: 32px 24px 48px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+    .footer-brand {
+      font-family: var(--serif);
+      font-size: 16px;
+      color: var(--muted);
+    }
+    .footer-links {
+      display: flex;
+      gap: 16px;
+    }
+    .footer-links a {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--muted2); }
+    .footer-disc {
+      font-size: 11px;
+      color: var(--muted);
+      max-width: 400px;
+      line-height: 1.6;
+    }
+
+    /* ── NOTIFY BANNER ── */
+    .notify {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--surface);
+      border: 1px solid var(--border2);
+      padding: 12px 24px;
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--text);
+      border-radius: 4px;
+      transition: transform 0.3s ease;
+      z-index: 200;
+      white-space: nowrap;
+    }
+    .notify.show { transform: translateX(-50%) translateY(0); }
+
+    /* ── CONFIG MODAL ── */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.8);
+      z-index: 300;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: var(--surface);
+      border: 1px solid var(--border2);
+      border-radius: 4px;
+      padding: 40px;
+      max-width: 560px;
+      width: 100%;
+    }
+    .modal-title {
+      font-family: var(--serif);
+      font-size: 26px;
+      color: var(--accent);
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    .modal-sub {
+      font-size: 13px;
+      color: var(--muted2);
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+    .modal label {
+      display: block;
+      font-family: var(--mono);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .modal input {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--border2);
+      padding: 12px 16px;
+      color: var(--text);
+      font-family: var(--mono);
+      font-size: 13px;
+      border-radius: 2px;
+      outline: none;
+      margin-bottom: 20px;
+      transition: border-color 0.2s;
+    }
+    .modal input:focus { border-color: var(--accent); }
+    .modal-note {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .modal-actions { display: flex; gap: 12px; }
+    .modal-cancel {
+      flex: 1;
+      padding: 12px;
+      background: none;
+      border: 1px solid var(--border2);
+      color: var(--muted2);
+      font-family: var(--mono);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-radius: 2px;
+      transition: all 0.2s;
+    }
+    .modal-cancel:hover { border-color: var(--border2); color: var(--text); }
+    .modal-save {
+      flex: 2;
+      padding: 12px;
+      background: var(--accent);
+      border: none;
+      color: #000;
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-radius: 2px;
+      transition: opacity 0.2s;
+    }
+    .modal-save:hover { opacity: 0.8; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .global-stats { grid-template-columns: repeat(2, 1fr); }
+      .profile-breakdown { grid-template-columns: 1fr; }
+      .info-grid { grid-template-columns: 1fr; }
+      .profile-metrics { grid-template-columns: repeat(3, 1fr); }
+      .referral-top { flex-direction: column; }
+      footer { flex-direction: column; text-align: center; }
+      .profile-top { flex-direction: column; }
+      .profile-actions { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-mark">⚡</div>
+      Proof of NADO
+    </div>
+    <div class="header-links">
+      <a href="#leaderboard">Leaderboard</a>
+      <a href="#about">About</a>
+      <a href="https://x.com/nadoHQ" target="_blank">@NadoHQ ↗</a>
+      <button class="btn-solid" onclick="document.getElementById('configModal').classList.add('open')" style="border-radius:2px;padding:7px 14px;">⚙ Setup API</button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+  <p class="hero-eyebrow">Community Tracker · @NadoHQ · Since Nov 18, 2025</p>
+  <h1 class="hero-title">Proof of<br><em>NADO</em></h1>
+  <p class="hero-sub">See who has helped <a href="https://x.com/nadoHQ" target="_blank" style="color:var(--muted2);text-decoration:underline;text-underline-offset:3px">@NadoHQ</a> grow on X. Index any account, open its profile, and share the card.</p>
+
+  <div class="search-wrap">
+    <div class="search-box">
+      <span class="search-at">@</span>
+      <input class="search-input" type="text" id="searchInput" placeholder="handle" autocomplete="off" autocorrect="off" autocapitalize="off" />
+      <button class="search-btn" onclick="scanHandle()">Scan</button>
+    </div>
+    <p class="search-hint">Type any X handle and hit Scan — or click the leaderboard</p>
+  </div>
+</div>
+
+<!-- Global Stats -->
+<div class="global-stats">
+  <div class="stat-card">
+    <div class="stat-label">Total Views</div>
+    <div class="stat-value loading" id="gViews">—</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Total Likes</div>
+    <div class="stat-value loading" id="gLikes">—</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Total Posts</div>
+    <div class="stat-value loading" id="gPosts">—</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Indexed Users</div>
+    <div class="stat-value loading" id="gUsers">—</div>
+  </div>
+</div>
+
+<!-- Profile Section -->
+<div class="profile-section" id="profileSection">
+  <div class="section-heading">
+    <span>Profile</span>
+    <button class="back-btn" onclick="closeProfile()">← Back to leaderboard</button>
+  </div>
+  <div class="profile-card">
+    <div class="profile-top">
+      <div class="profile-avatar" id="profAva">?</div>
+      <div class="profile-info">
+        <div class="profile-name" id="profName">—</div>
+        <div class="profile-handle" id="profHandle">@—</div>
+        <div class="profile-followers" id="profFollowers">0 followers</div>
+      </div>
+      <div class="profile-actions">
+        <button class="btn-ghost" onclick="downloadCard()">⬇ PNG</button>
+        <button class="btn-ghost" onclick="shareX()">𝕏 Share</button>
+        <a id="profXLink" href="#" target="_blank" class="btn-solid">View on 𝕏 ↗</a>
+      </div>
+    </div>
+    <div class="profile-metrics">
+      <div class="metric-cell">
+        <div class="metric-icon">👁</div>
+        <div class="metric-val" id="profViews">0</div>
+        <div class="metric-lab">Views</div>
+        <div class="metric-rank" id="profViewRank">Rank #—</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-icon">❤</div>
+        <div class="metric-val" id="profLikes">0</div>
+        <div class="metric-lab">Likes</div>
+        <div class="metric-rank" id="profLikeRank">Rank #—</div>
+      </div>
+      <div class="metric-cell">
+        <div class="metric-icon">📝</div>
+        <div class="metric-val" id="profPosts">0</div>
+        <div class="metric-lab">Posts</div>
+        <div class="metric-rank" id="profPostRank">Rank #—</div>
+      </div>
+    </div>
+    <div class="profile-breakdown">
+      <div>
+        <div class="breakdown-title">Mention breakdown</div>
+        <div class="breakdown-row">
+          <span class="breakdown-label">🔗 @nadoHQ mentions</span>
+          <span class="breakdown-val" id="bdMentions">0</span>
+        </div>
+        <div class="breakdown-row">
+          <span class="breakdown-label">📝 keyword "nado"</span>
+          <span class="breakdown-val" id="bdKeyword">0</span>
+        </div>
+        <div class="breakdown-row">
+          <span class="breakdown-label">💵 $NADO / $INK tag</span>
+          <span class="breakdown-val" id="bdCashtag">0</span>
+        </div>
+        <div class="breakdown-row">
+          <span class="breakdown-label">💬 substantive replies</span>
+          <span class="breakdown-val" id="bdReplies">0</span>
+        </div>
+      </div>
+      <div>
+        <div class="breakdown-title">First post</div>
+        <div class="breakdown-row">
+          <span class="breakdown-label">First indexed post</span>
+          <span class="breakdown-val" id="bdFirst">—</span>
+        </div>
+        <div class="breakdown-row">
+          <span class="breakdown-label">Most recent post</span>
+          <span class="breakdown-val" id="bdLast">—</span>
+        </div>
+        <div class="breakdown-row">
+          <span class="breakdown-label">Avg views / post</span>
+          <span class="breakdown-val" id="bdAvgViews">—</span>
+        </div>
+        <div class="breakdown-row">
+          <span class="breakdown-label">Engagement rate</span>
+          <span class="breakdown-val" id="bdEngRate">—</span>
+        </div>
+      </div>
+    </div>
+    <div class="top-posts-section">
+      <div class="top-posts-title">Top Posts</div>
+      <div id="topPostsList"></div>
+    </div>
+    <div class="share-row">
+      <button class="btn-ghost" onclick="shareX()">𝕏 Share this profile</button>
+      <button class="btn-ghost" onclick="downloadCard()">⬇ Download PNG</button>
+    </div>
+  </div>
+</div>
+
+<!-- Leaderboard -->
+<div class="leaderboard-section" id="leaderboard">
+  <div class="section-heading">
+    <span>Leaderboard</span>
+    <div class="lb-controls">
+      <span style="font-size:10px;color:var(--muted);margin-right:8px;">Rank by</span>
+      <button class="lb-sort-btn active" id="sortViews" onclick="setSort('views')">👁 Views</button>
+      <button class="lb-sort-btn" id="sortLikes" onclick="setSort('likes')">❤ Likes</button>
+      <button class="lb-sort-btn" id="sortPosts" onclick="setSort('posts')">📝 Posts</button>
+    </div>
+  </div>
+
+  <table class="lb-table">
+    <thead>
+      <tr>
+        <th style="width:48px">#</th>
+        <th>User</th>
+        <th>Views</th>
+        <th>Likes</th>
+        <th>Posts</th>
+      </tr>
+    </thead>
+    <tbody id="lbBody">
+      <tr>
+        <td colspan="5" class="lb-loading">Loading data…</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- What gets counted -->
+<div class="what-counted">
+  <div class="counted-box">
+    <div class="counted-icon">📊</div>
+    <div class="counted-text">
+      <strong>What gets counted:</strong> Original posts, quote tweets, and replies with commentary that contain a mention of <strong>@nadoHQ</strong>, the keyword <strong>"nado"</strong>, or the <strong>$NADO / $INK</strong> cashtag. Plain retweets and empty replies are excluded. Data collected via X API v2 starting <strong>Nov 18, 2025</strong>. Refreshes every 24 hours.
+    </div>
+  </div>
+</div>
+
+<!-- About Nado -->
+<div class="info-grid" id="about">
+  <div class="info-block">
+    <div class="info-icon">⚡</div>
+    <div class="info-title">CEX speed. DEX rails.</div>
+    <div class="info-desc">Nado delivers a centralized exchange experience — 5–15ms latency, pro tooling, unified margin — fully on-chain via Ink Network (Kraken's L2 on OP Stack).</div>
+  </div>
+  <div class="info-block">
+    <div class="info-icon">📖</div>
+    <div class="info-title">CLOB, not AMM</div>
+    <div class="info-desc">Peer-to-peer Central Limit Order Book model with up to 50x leverage, zero trading fees, and loss-refund mechanisms that flow value back to traders.</div>
+  </div>
+  <div class="info-block">
+    <div class="info-icon">🔒</div>
+    <div class="info-title">Settled on-chain</div>
+    <div class="info-desc">All trades clear and settle on Arbitrum / Ink in isolated escrow smart contracts. Non-custodial. $200B+ volume processed since launch.</div>
+  </div>
+  <div class="info-block">
+    <div class="info-icon">🌊</div>
+    <div class="info-title">Templars of the Storm</div>
+    <div class="info-desc">Official 1,200-piece NFT collection. Holders receive points multipliers, automatic fee tiers, and access to long-term ecosystem lore throughout Season 1.</div>
+  </div>
+</div>
+
+<!-- Referral -->
+<div class="referral-section">
+  <div class="referral-card">
+    <div class="referral-top">
+      <div>
+        <div class="referral-title">About Nado</div>
+        <div class="referral-desc">Proof of NADO is an independent community tracker. It is not affiliated with Nado or X. Trade on Nado at <strong>app.nadohq.com</strong> — the DEX built by the team behind Kraken.</div>
+      </div>
+      <div class="referral-cta">
+        <a class="ref-link" href="https://app.nadohq.com" target="_blank">Trade on Nado ↗</a>
+      </div>
+    </div>
+    <div class="referral-bottom">Proof of NADO does not handle funds and is not financial advice. This is a community project.</div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-brand">Proof of NADO</div>
+  <div class="footer-links">
+    <a href="https://x.com/nadoHQ" target="_blank">@NadoHQ</a>
+    <a href="https://app.nadohq.com" target="_blank">Nado App</a>
+    <a href="#leaderboard">Leaderboard</a>
+  </div>
+  <div class="footer-disc">Community project. Not affiliated with Nado or X Corp.</div>
+</footer>
+
+<!-- Notify -->
+<div class="notify" id="notify"></div>
+
+<!-- Config Modal -->
+<div class="modal-overlay" id="configModal">
+  <div class="modal">
+    <div class="modal-title">API Configuration</div>
+    <div class="modal-sub">Connect your X API Bearer Token to fetch live data. The token is stored only in your browser (localStorage) and never sent anywhere except api.twitter.com.</div>
+
+    <label>X API Bearer Token (v2)</label>
+    <input type="password" id="bearerInput" placeholder="AAAA…your bearer token…" />
+
+    <label>Additional search keywords (comma-separated)</label>
+    <input type="text" id="keywordsInput" placeholder="nado, nadoHQ, $INK, $NADO" value="nado, nadoHQ, $INK, $NADO" />
+
+    <label>Start date</label>
+    <input type="date" id="startDateInput" value="2025-11-18" />
+
+    <div class="modal-note">
+      ⚠️ X API v2 Basic tier allows ~10 queries/month. Pro tier (~$100/mo) is needed for full historical data. If you use GitHub Actions for daily fetching, set <code>BEARER_TOKEN</code> as a repo secret and update <code>data/leaderboard.json</code> automatically. See <a href="#" style="color:var(--muted2)">README.md</a> for the GitHub Actions workflow.
+    </div>
+
+    <div class="modal-actions">
+      <button class="modal-cancel" onclick="document.getElementById('configModal').classList.remove('open')">Cancel</button>
+      <button class="modal-save" onclick="saveConfig()">Save & Refresh</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── STATE ──────────────────────────────────────────────────────────
+let currentSort = 'views';
+let leaderboardData = [];
+let profileData = null;
+
+// ── CONFIG ─────────────────────────────────────────────────────────
+function getConfig() {
+  return {
+    bearer: localStorage.getItem('nado_bearer') || '',
+    keywords: localStorage.getItem('nado_keywords') || 'nado, nadoHQ, $INK, $NADO',
+    startDate: localStorage.getItem('nado_start') || '2025-11-18'
+  };
+}
+
+function saveConfig() {
+  const bearer = document.getElementById('bearerInput').value.trim();
+  const kw = document.getElementById('keywordsInput').value.trim();
+  const sd = document.getElementById('startDateInput').value;
+  if (bearer) localStorage.setItem('nado_bearer', bearer);
+  localStorage.setItem('nado_keywords', kw);
+  localStorage.setItem('nado_start', sd);
+  document.getElementById('configModal').classList.remove('open');
+  notify('Config saved. Loading data…');
+  loadData();
+}
+
+// Pre-fill modal from config
+(function() {
+  const cfg = getConfig();
+  if (cfg.bearer) document.getElementById('bearerInput').value = cfg.bearer;
+  document.getElementById('keywordsInput').value = cfg.keywords;
+  document.getElementById('startDateInput').value = cfg.startDate;
+})();
+
+// ── DATA ────────────────────────────────────────────────────────────
+// Try to load from data/leaderboard.json (GitHub repo) or X API
+async function loadData() {
+  // First, try static JSON file (committed by GitHub Actions)
+  try {
+    const r = await fetch('data/leaderboard.json?t=' + Date.now());
+    if (r.ok) {
+      const d = await r.json();
+      leaderboardData = d.users || [];
+      updateGlobalStats(d.totals || {});
+      renderLeaderboard();
+      return;
+    }
+  } catch(e) {}
+
+  // Fallback: X API v2 recent search (requires bearer)
+  const cfg = getConfig();
+  if (!cfg.bearer) {
+    renderEmpty('No data yet. Set up your X API key via ⚙ Setup API, or commit data/leaderboard.json via GitHub Actions.');
+    updateGlobalStats({});
+    return;
+  }
+
+  await fetchFromXAPI(cfg);
+}
+
+async function fetchFromXAPI(cfg) {
+  const query = encodeURIComponent(`(${cfg.keywords.split(',').map(k=>k.trim()).join(' OR ')}) lang:en -is:retweet`);
+  const start = new Date(cfg.startDate).toISOString();
+  const url = `https://api.twitter.com/2/tweets/search/recent?query=${query}&start_time=${start}&tweet.fields=public_metrics,author_id,created_at,referenced_tweets&expansions=author_id&user.fields=name,username,public_metrics,profile_image_url&max_results=100`;
+
+  try {
+    const r = await fetch(url, {
+      headers: { 'Authorization': `Bearer ${cfg.bearer}` }
+    });
+    if (!r.ok) {
+      const e = await r.json();
+      renderEmpty('X API error: ' + (e.title || r.status) + '. Check your Bearer Token.');
+      return;
+    }
+    const d = await r.json();
+    processXResponse(d);
+  } catch(e) {
+    renderEmpty('Network error fetching X API. CORS may block browser requests — use GitHub Actions for server-side fetching. ' + e.message);
+  }
+}
+
+function processXResponse(data) {
+  const users = {};
+  const usersMap = {};
+  (data.includes?.users || []).forEach(u => { usersMap[u.id] = u; });
+
+  (data.data || []).forEach(tweet => {
+    const uid = tweet.author_id;
+    const user = usersMap[uid];
+    if (!user) return;
+    if (!users[uid]) {
+      users[uid] = {
+        id: uid,
+        name: user.name,
+        handle: user.username,
+        followers: user.public_metrics?.followers_count || 0,
+        avatar: user.profile_image_url || '',
+        views: 0, likes: 0, posts: 0,
+        mentions: 0, keyword: 0, cashtag: 0, replies: 0,
+        firstPost: tweet.created_at, lastPost: tweet.created_at,
+        topPosts: []
+      };
+    }
+    const u = users[uid];
+    const m = tweet.public_metrics || {};
+    u.views += m.impression_count || 0;
+    u.likes += m.like_count || 0;
+    u.posts += 1;
+    const txt = (tweet.text || '').toLowerCase();
+    if (txt.includes('@nadohq')) u.mentions++;
+    if (txt.includes('nado')) u.keyword++;
+    if (txt.includes('$nado') || txt.includes('$ink')) u.cashtag++;
+    if (tweet.referenced_tweets?.some(r => r.type === 'replied_to')) u.replies++;
+    if (tweet.created_at < u.firstPost) u.firstPost = tweet.created_at;
+    if (tweet.created_at > u.lastPost) u.lastPost = tweet.created_at;
+    if (u.topPosts.length < 3) u.topPosts.push({ text: tweet.text, views: m.impression_count || 0, likes: m.like_count || 0, id: tweet.id });
+  });
+
+  leaderboardData = Object.values(users).sort((a,b) => b.views - a.views);
+  const totals = leaderboardData.reduce((t,u) => ({ views: t.views+u.views, likes: t.likes+u.likes, posts: t.posts+u.posts }), {views:0,likes:0,posts:0});
+  updateGlobalStats({ ...totals, users: leaderboardData.length });
+  renderLeaderboard();
+}
+
+function renderEmpty(msg) {
+  document.getElementById('lbBody').innerHTML = `<tr><td colspan="5" class="lb-empty">${msg}</td></tr>`;
+}
+
+// ── GLOBAL STATS ────────────────────────────────────────────────────
+function updateGlobalStats(t) {
+  const set = (id, val) => {
+    const el = document.getElementById(id);
+    el.textContent = val !== undefined && val !== null ? formatNum(val) : '—';
+    el.classList.remove('loading');
+  };
+  set('gViews', t.views);
+  set('gLikes', t.likes);
+  set('gPosts', t.posts);
+  set('gUsers', t.users);
+}
+
+// ── LEADERBOARD ─────────────────────────────────────────────────────
+function setSort(s) {
+  currentSort = s;
+  ['views','likes','posts'].forEach(x => {
+    document.getElementById('sort' + x.charAt(0).toUpperCase() + x.slice(1))
+      .classList.toggle('active', x === s);
+  });
+  renderLeaderboard();
+}
+
+function renderLeaderboard() {
+  const sorted = [...leaderboardData].sort((a,b) => b[currentSort] - a[currentSort]);
+  if (!sorted.length) { renderEmpty('No data. Add your X API key via ⚙ Setup API or commit data/leaderboard.json.'); return; }
+
+  const rows = sorted.map((u, i) => {
+    const rankClass = i === 0 ? 'gold' : i === 1 ? 'silver' : i === 2 ? 'bronze' : '';
+    const avatarHtml = u.avatar
+      ? `<img src="${u.avatar}" alt="" />`
+      : `<span style="font-size:12px">${u.handle.charAt(0).toUpperCase()}</span>`;
+    return `<tr onclick="openProfile('${u.handle}')">
+      <td><span class="rank-num ${rankClass}">#${i+1}</span></td>
+      <td>
+        <div class="user-cell">
+          <div class="user-ava">${avatarHtml}</div>
+          <div>
+            <div class="user-name">${escHtml(u.name)}</div>
+            <div class="user-handle">@${escHtml(u.handle)}</div>
+          </div>
+        </div>
+      </td>
+      <td class="num-views">${formatNum(u.views)}</td>
+      <td class="num-likes">${formatNum(u.likes)}</td>
+      <td class="num-posts">${formatNum(u.posts)}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('lbBody').innerHTML = rows;
+}
+
+// ── PROFILE ─────────────────────────────────────────────────────────
+function openProfile(handle) {
+  const user = leaderboardData.find(u => u.handle.toLowerCase() === handle.toLowerCase());
+  if (!user) { scanHandle(handle); return; }
+
+  const sorted = [...leaderboardData].sort((a,b) => b.views - a.views);
+  const vRank = sorted.findIndex(u => u.handle === user.handle) + 1;
+  const lSorted = [...leaderboardData].sort((a,b) => b.likes - a.likes);
+  const lRank = lSorted.findIndex(u => u.handle === user.handle) + 1;
+  const pSorted = [...leaderboardData].sort((a,b) => b.posts - a.posts);
+  const pRank = pSorted.findIndex(u => u.handle === user.handle) + 1;
+
+  const ava = document.getElementById('profAva');
+  if (user.avatar) {
+    ava.innerHTML = `<img src="${user.avatar}" alt="" />`;
+  } else {
+    ava.textContent = user.handle.charAt(0).toUpperCase();
+  }
+
+  document.getElementById('profName').textContent = user.name;
+  document.getElementById('profHandle').textContent = '@' + user.handle;
+  document.getElementById('profFollowers').textContent = formatNum(user.followers) + ' followers';
+  document.getElementById('profXLink').href = `https://x.com/${user.handle}`;
+  document.getElementById('profViews').textContent = formatNum(user.views);
+  document.getElementById('profLikes').textContent = formatNum(user.likes);
+  document.getElementById('profPosts').textContent = formatNum(user.posts);
+  document.getElementById('profViewRank').textContent = `Rank #${vRank}`;
+  document.getElementById('profLikeRank').textContent = `Rank #${lRank}`;
+  document.getElementById('profPostRank').textContent = `Rank #${pRank}`;
+  document.getElementById('bdMentions').textContent = formatNum(user.mentions || 0);
+  document.getElementById('bdKeyword').textContent = formatNum(user.keyword || 0);
+  document.getElementById('bdCashtag').textContent = formatNum(user.cashtag || 0);
+  document.getElementById('bdReplies').textContent = formatNum(user.replies || 0);
+  document.getElementById('bdFirst').textContent = user.firstPost ? fmtDate(user.firstPost) : '—';
+  document.getElementById('bdLast').textContent = user.lastPost ? fmtDate(user.lastPost) : '—';
+  document.getElementById('bdAvgViews').textContent = user.posts ? formatNum(Math.round(user.views / user.posts)) : '—';
+  const er = user.views ? ((user.likes / user.views) * 100).toFixed(2) + '%' : '—';
+  document.getElementById('bdEngRate').textContent = er;
+
+  const postsHtml = (user.topPosts || []).map(p =>
+    `<div class="post-item">
+      <div class="post-meta">
+        <span class="post-stat">👁 ${formatNum(p.views)}</span>
+        <span class="post-stat">❤ ${formatNum(p.likes)}</span>
+      </div>
+      <div class="post-text">${escHtml(p.text?.slice(0,200) || '—')}${(p.text?.length||0)>200?'…':''}</div>
+      ${p.id ? `<a class="post-link" href="https://x.com/${user.handle}/status/${p.id}" target="_blank">View on 𝕏 ↗</a>` : ''}
+    </div>`
+  ).join('');
+  document.getElementById('topPostsList').innerHTML = postsHtml || '<div class="post-item"><div class="post-text" style="color:var(--muted)">No posts indexed yet.</div></div>';
+
+  profileData = user;
+  document.getElementById('profileSection').classList.add('visible');
+  document.getElementById('profileSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function closeProfile() {
+  document.getElementById('profileSection').classList.remove('visible');
+  profileData = null;
+}
+
+// ── SEARCH / SCAN ────────────────────────────────────────────────────
+function scanHandle(forceHandle) {
+  const handle = (forceHandle || document.getElementById('searchInput').value.trim().replace(/^@/, ''));
+  if (!handle) return;
+
+  const found = leaderboardData.find(u => u.handle.toLowerCase() === handle.toLowerCase());
+  if (found) { openProfile(found.handle); return; }
+
+  const cfg = getConfig();
+  if (!cfg.bearer) {
+    notify('Set your X API Bearer Token via ⚙ Setup API first.');
+    document.getElementById('configModal').classList.add('open');
+    return;
+  }
+  notify('Scanning @' + handle + '…');
+  fetchUserFromAPI(handle, cfg);
+}
+
+async function fetchUserFromAPI(handle, cfg) {
+  const query = encodeURIComponent(`from:${handle} (${cfg.keywords.split(',').map(k=>k.trim()).join(' OR ')}) -is:retweet`);
+  const start = new Date(cfg.startDate).toISOString();
+  const url = `https://api.twitter.com/2/tweets/search/recent?query=${query}&start_time=${start}&tweet.fields=public_metrics,created_at,referenced_tweets&expansions=author_id&user.fields=name,username,public_metrics,profile_image_url&max_results=100`;
+
+  try {
+    const r = await fetch(url, { headers: { 'Authorization': `Bearer ${cfg.bearer}` }});
+    if (!r.ok) { notify('API error: ' + r.status); return; }
+    const d = await r.json();
+    const userInfo = d.includes?.users?.[0];
+    if (!userInfo) { notify('@' + handle + ' not found or no matching posts.'); return; }
+
+    const u = {
+      id: userInfo.id,
+      name: userInfo.name,
+      handle: userInfo.username,
+      followers: userInfo.public_metrics?.followers_count || 0,
+      avatar: userInfo.profile_image_url || '',
+      views: 0, likes: 0, posts: 0,
+      mentions: 0, keyword: 0, cashtag: 0, replies: 0,
+      firstPost: null, lastPost: null,
+      topPosts: []
+    };
+    (d.data || []).forEach(tweet => {
+      const m = tweet.public_metrics || {};
+      u.views += m.impression_count || 0;
+      u.likes += m.like_count || 0;
+      u.posts++;
+      const txt = (tweet.text || '').toLowerCase();
+      if (txt.includes('@nadohq')) u.mentions++;
+      if (txt.includes('nado')) u.keyword++;
+      if (txt.includes('$nado') || txt.includes('$ink')) u.cashtag++;
+      if (tweet.referenced_tweets?.some(r => r.type === 'replied_to')) u.replies++;
+      if (!u.firstPost || tweet.created_at < u.firstPost) u.firstPost = tweet.created_at;
+      if (!u.lastPost || tweet.created_at > u.lastPost) u.lastPost = tweet.created_at;
+      if (u.topPosts.length < 3) u.topPosts.push({ text: tweet.text, views: m.impression_count||0, likes: m.like_count||0, id: tweet.id });
+    });
+
+    if (!leaderboardData.find(x => x.handle === u.handle)) leaderboardData.push(u);
+    renderLeaderboard();
+    openProfile(u.handle);
+  } catch(e) {
+    notify('Error: ' + e.message);
+  }
+}
+
+document.getElementById('searchInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') scanHandle();
+});
+
+// ── SHARE / DOWNLOAD ─────────────────────────────────────────────────
+function shareX() {
+  if (!profileData) return;
+  const text = encodeURIComponent(`@${profileData.handle} has ${formatNum(profileData.views)} views on Nado-related content since Nov 2025 👁⚡\n\nProof of NADO — community tracker for @NadoHQ\n${window.location.href}`);
+  window.open(`https://x.com/intent/tweet?text=${text}`, '_blank');
+}
+
+function downloadCard() {
+  notify('Download: take a screenshot of the profile card above.');
+}
+
+// ── UTILS ─────────────────────────────────────────────────────────────
+function formatNum(n) {
+  if (n === undefined || n === null) return '—';
+  if (n >= 1e9) return (n/1e9).toFixed(1) + 'B';
+  if (n >= 1e6) return (n/1e6).toFixed(1) + 'M';
+  if (n >= 1e3) return (n/1e3).toFixed(1) + 'K';
+  return n.toString();
+}
+
+function fmtDate(iso) {
+  if (!iso) return '—';
+  return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+function escHtml(s) {
+  return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function notify(msg) {
+  const el = document.getElementById('notify');
+  el.textContent = msg;
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 3000);
+}
+
+// ── INIT ──────────────────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>
