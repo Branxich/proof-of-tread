@@ -1203,7 +1203,7 @@ async function loadData() {
 async function fetchFromXAPI(cfg) {
   const query = encodeURIComponent(`(${cfg.keywords.split(',').map(k=>k.trim()).join(' OR ')}) lang:en -is:retweet`);
   const start = new Date(cfg.startDate).toISOString();
-  const url = `nado-proxy.runov-vlad37.workers.dev/2/tweets/search/recent?query=${query}&start_time=${start}&tweet.fields=public_metrics,author_id,created_at,referenced_tweets&expansions=author_id&user.fields=name,username,public_metrics,profile_image_url&max_results=100`;
+  const url = `https://api.x.com/2/tweets/search/recent?query=${query}&start_time=${start}&tweet.fields=public_metrics,author_id,created_at,referenced_tweets&expansions=author_id&user.fields=name,username,public_metrics,profile_image_url&max_results=100`;
 
   try {
     const r = await fetch(url, {
@@ -1402,7 +1402,7 @@ function scanHandle(forceHandle) {
 async function fetchUserFromAPI(handle, cfg) {
   const query = encodeURIComponent(`from:${handle} (${cfg.keywords.split(',').map(k=>k.trim()).join(' OR ')}) -is:retweet`);
   const start = new Date(cfg.startDate).toISOString();
-  const url = `nado-proxy.runov-vlad37.workers.dev/2/tweets/search/recent?query=${query}&start_time=${start}&tweet.fields=public_metrics,created_at,referenced_tweets&expansions=author_id&user.fields=name,username,public_metrics,profile_image_url&max_results=100`;
+  const url = `https://api.x.com/2/tweets/search/recent?query=${query}&start_time=${start}&tweet.fields=public_metrics,created_at,referenced_tweets&expansions=author_id&user.fields=name,username,public_metrics,profile_image_url&max_results=100`;
 
   try {
     const r = await fetch(url, { headers: { 'Authorization': `Bearer ${cfg.bearer}` }});
