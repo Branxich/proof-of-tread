@@ -7,8 +7,7 @@ const BASE = 'https://api.twitterapi.io';
 // Unix timestamp для Nov 18, 2025 00:00 UTC
 const SINCE_TIME = 1747267200; // May 15, 2026 00:00 UTC
 const UNTIL_TIME = 1748044800; // May 22, 2026 00:00 UTC
-const QUERY = `(@nadoHQ OR "$NADO" OR "nado perps" OR "nado dex" OR "nado exchange" OR "nado trading" OR "trade on nado" OR "nado app") -is:retweet since_time:${SINCE_TIME} until_time:${UNTIL_TIME}`;
-
+const QUERY = `(@nadoHQ OR "$NADO" OR "nado dex" OR "nado perps" OR "nado exchange" OR "nado trading" OR "trade on nado" OR "nado app") -is:retweet lang:en since_time:${SINCE_TIME} until_time:${UNTIL_TIME}`;
 async function searchPage(cursor = '') {
   const params = new URLSearchParams({
     query: QUERY,
@@ -51,6 +50,9 @@ async function main() {
       if (tweet.text?.startsWith('RT @')) return;
       if (tweet.retweeted_tweet) return;
 
+      // Пропускаем не-английские твиты
+if (tweet.lang && tweet.lang !== 'en') return;
+      
       // Пропускаем пустые реплаи (только упоминание, никакого текста)
       if (tweet.isReply) {
         const textWithoutMentions = (tweet.text || '')
