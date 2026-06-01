@@ -2,67 +2,119 @@ import fetch from 'node-fetch';
 import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'fs';
 
 const API_KEY = process.env.TWITTERAPI_KEY;
-const BASE = 'https://api.twitterapi.io';
+const BASE = 'https://api.twitterapi.io/twitter/tweet/advanced_search';
 
 // June 1, 2025 00:00 UTC
-const SINCE_TIME = 1748736000;
-const UNTIL_TIME = Math.floor(Date.now() / 1000);
-const QUERY = `(@tread_fi OR "$TREAD" OR "treadfi" OR "tread.fi") -is:retweet lang:en since_time:${SINCE_TIME} until_time:${UNTIL_TIME}`;
+const START_TS = 1748736000;
+const END_TS   = Math.floor(Date.now() / 1000);
 
-async function searchPage(cursor = '') {
-  const params = new URLSearchParams({
-    query: QUERY,
-    queryType: 'Latest',
-    ...(cursor ? { cursor } : {})
-  });
+// Только точные совпадения — никакого голого tread
+const QUERY_BASE = `(@tread_fi OR "$TREAD" OR "tread.fi" OR "treadfi") -filter:retweets -filter:replies lang:en`;
 
-  const r = await fetch(`${BASE}/twitter/tweet/advanced_search?${params}`, {
-    headers: { 'X-API-Key': API_KEY }
-  });
+function parseTwitterTime(s) {
+  return Math.floor(new Date(s).getTime() / 1000);
+}
 
-  if (!r.ok) throw new Error(`API error ${r.status}: ${await r.text()}`);
-  return r.json();
+async function fetchWindow(sinceTs, untilTs) {
+  const tweets = [];
+  let currentUntil = untilTs;
+  let calls = 0;
+  const MAX_CALLS = 200;
+
+  while (currentUntil > sinceTs && calls < MAX_CALLS) {
+    const query = `${QUERY_BASE} since_time:${sinceTs} until_time:${currentUntil}`;
+    const params = new URLSearchParams({ query, queryType: 'Latest' });
+
+    const r = await fetch(`${BASE}?${params}`, {
+      headers: { 'X-API-Key': API_KEY }
+    });
+
+    if (!r.ok) {
+      console.error(`API error ${r.status}: ${await r.text()}`);
+      break;
+    }
+
+    const data = await r.json();
+    const batch = data.tweets || [];
+    calls++;
+
+    if (!batch.length) break;
+
+    tweets.push(...batch);
+
+    // Сдвигаем окно до самого раннего твита
+    const earliest = Math.min(...batch.map(t => parseTwitterTime(t.createdAt)));
+    if (earliest < currentUntil) {
+      currentUntil = earliest - 1;
+    } else {
+      break;
+    }
+
+    // Меньше 20 — окно исчерпано
+    if (batch.length < 20) break;
+
+    await new Promise(r => setTimeout(r, 300));
+  }
+
+  return tweets;
+}
+
+function isRelevant(tweet) {
+  // Двойная проверка ретвитов (API флаг ненадёжен)
+  if (tweet.isRetweet) return false;
+  if (tweet.text?.startsWith('RT @')) return false;
+  if (tweet.retweeted_tweet) return false;
+
+  // Только английский
+  if (tweet.lang && tweet.lang !== 'en') return false;
+
+  // Твит ОБЯЗАН содержать одно из точных совпадений
+  const txt = (tweet.text || '').toLowerCase();
+  return (
+    txt.includes('@tread_fi') ||
+    txt.includes('$tread') ||
+    txt.includes('tread.fi')
+  );
 }
 
 async function main() {
+  // Загружаем старые данные
   let existing = {};
+  const seenIds = new Set();
+
   if (existsSync('data/leaderboard.json')) {
     try {
       const old = JSON.parse(readFileSync('data/leaderboard.json', 'utf8'));
-      (old.users || []).forEach(u => { existing[u.handle.toLowerCase()] = u; });
+      (old.users || []).forEach(u => {
+        existing[u.handle.toLowerCase()] = u;
+        (u.topPosts || []).forEach(p => p.id && seenIds.add(p.id));
+      });
       console.log(`Loaded ${Object.keys(existing).length} existing users`);
     } catch(e) { console.log('Starting fresh'); }
   }
 
+  // Разбиваем на дневные окна
+  const ONE_DAY = 86400;
+  const days = [];
+  for (let ts = START_TS; ts < END_TS; ts += ONE_DAY) {
+    days.push({ since: ts, until: Math.min(ts + ONE_DAY, END_TS) });
+  }
+
+  console.log(`Processing ${days.length} day windows...`);
+
   const fresh = {};
-  let cursor = '';
-  let page = 0;
 
-  do {
-    const data = await searchPage(cursor);
-    const tweets = data.tweets || [];
-    console.log(`Page ${page + 1}: ${tweets.length} tweets`);
+  for (const { since, until } of days) {
+    const date = new Date(since * 1000).toISOString().slice(0, 10);
+    const tweets = await fetchWindow(since, until);
+    const relevant = tweets.filter(isRelevant);
 
-    tweets.forEach(tweet => {
-      // Пропускаем ретвиты
-      if (tweet.text?.startsWith('RT @')) return;
-      if (tweet.retweeted_tweet) return;
+    console.log(`[${date}] ${tweets.length} raw → ${relevant.length} relevant`);
 
-      // Пропускаем не-английские
-      if (tweet.lang && tweet.lang !== 'en') return;
-
-      // Дополнительная проверка релевантности
-      const txt = (tweet.text || '').toLowerCase();
-      const isRelevant = txt.includes('@tread_fi') ||
-                         txt.includes('treadfi') ||
-                         txt.includes('tread.fi');
-      if (!isRelevant) return;
-
-      // Пропускаем пустые реплаи
-      if (tweet.isReply) {
-        const textWithoutMentions = txt.replace(/@\w+/g, '').replace(/\s+/g, ' ').trim();
-        if (textWithoutMentions.length < 5) return;
-      }
+    relevant.forEach(tweet => {
+      // Дедупликация
+      if (seenIds.has(tweet.id)) return;
+      seenIds.add(tweet.id);
 
       const author = tweet.author;
       if (!author) return;
@@ -76,7 +128,7 @@ async function main() {
           followers: author.followers || 0,
           avatar: author.profilePicture || '',
           views: 0, likes: 0, posts: 0,
-          mentions: 0, keyword: 0, cashtag: 0, replies: 0,
+          mentions: 0, cashtag: 0, keyword: 0, replies: 0,
           firstPost: tweet.createdAt,
           lastPost: tweet.createdAt,
           topPosts: []
@@ -84,14 +136,16 @@ async function main() {
       }
 
       const u = fresh[key];
-      u.views += tweet.viewCount || 0;
-      u.likes += tweet.likeCount || 0;
+      const txt = (tweet.text || '').toLowerCase();
+
+      u.views += tweet.viewCount  || 0;
+      u.likes += tweet.likeCount  || 0;
       u.posts += 1;
 
-      if (txt.includes('@tread_fi'))                        u.mentions++;
-      if (txt.includes('treadfi') || txt.includes('tread.fi')) u.keyword++;
-      if (txt.includes('$tread'))                           u.cashtag++;
-      if (tweet.isReply)                                    u.replies++;
+      if (txt.includes('@tread_fi')) u.mentions++;
+      if (txt.includes('$tread'))    u.cashtag++;
+      if (txt.includes('tread.fi'))  u.keyword++;
+      if (tweet.isReply)             u.replies++;
 
       if (tweet.createdAt < u.firstPost) u.firstPost = tweet.createdAt;
       if (tweet.createdAt > u.lastPost)  u.lastPost  = tweet.createdAt;
@@ -105,15 +159,9 @@ async function main() {
       });
     });
 
-    cursor = data.next_cursor || '';
-    page++;
-
-    if (data.has_next_page) {
-      await new Promise(r => setTimeout(r, 500));
-    } else {
-      break;
-    }
-  } while (true);
+    // Пауза между днями
+    await new Promise(r => setTimeout(r, 200));
+  }
 
   // Топ-3 поста по просмотрам
   Object.values(fresh).forEach(u => {
@@ -127,26 +175,25 @@ async function main() {
       const old = merged[key];
       merged[key] = {
         ...old,
-        name:      u.name,
-        followers: u.followers,
-        avatar:    u.avatar,
+        name: u.name, followers: u.followers, avatar: u.avatar,
         views:    old.views    + u.views,
         likes:    old.likes    + u.likes,
         posts:    old.posts    + u.posts,
         mentions: old.mentions + u.mentions,
-        keyword:  old.keyword  + u.keyword,
         cashtag:  old.cashtag  + u.cashtag,
+        keyword:  old.keyword  + u.keyword,
         replies:  old.replies  + u.replies,
         firstPost: old.firstPost < u.firstPost ? old.firstPost : u.firstPost,
         lastPost:  old.lastPost  > u.lastPost  ? old.lastPost  : u.lastPost,
-        topPosts:  [...old.topPosts, ...u.topPosts].sort((a,b) => b.views - a.views).slice(0, 3)
+        topPosts: [...old.topPosts, ...u.topPosts]
+          .sort((a,b) => b.views - a.views).slice(0, 3)
       };
     } else {
       merged[key] = u;
     }
   });
 
-  const userList = Object.values(merged).sort((a, b) => b.views - a.views);
+  const userList = Object.values(merged).sort((a,b) => b.views - a.views);
   const totals = userList.reduce(
     (t, u) => ({ views: t.views+u.views, likes: t.likes+u.likes, posts: t.posts+u.posts }),
     { views: 0, likes: 0, posts: 0 }
