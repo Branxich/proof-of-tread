@@ -952,7 +952,6 @@ function hlClick(nameId) {
 }
 
 function renderLeaderboard() {
-  renderPodium();
   const sorted = [...leaderboardData].sort((a,b) => b[currentSort] - a[currentSort]);
   if (!sorted.length) { renderEmpty('No data yet. Check back soon.'); return; }
 
