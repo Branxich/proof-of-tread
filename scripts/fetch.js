@@ -39,7 +39,7 @@ async function main() {
   const fresh = {};
   let cursor = '';
   let page = 0;
-  const MAX_PAGES = 50; // ~1000 твитов за запуск
+  const MAX_PAGES = 9999; // без лимита
 
   do {
     const data = await searchPage(cursor);
@@ -48,8 +48,17 @@ async function main() {
 
     tweets.forEach(tweet => {
       // Пропускаем чистые ретвиты
-      if (tweet.retweeted_tweet && !tweet.text?.startsWith('RT @') === false) return;
       if (tweet.text?.startsWith('RT @')) return;
+      if (tweet.retweeted_tweet) return;
+
+      // Пропускаем пустые реплаи (только упоминание, никакого текста)
+      if (tweet.isReply) {
+        const textWithoutMentions = (tweet.text || '')
+          .replace(/@\w+/g, '')
+          .replace(/\s+/g, ' ')
+          .trim();
+        if (textWithoutMentions.length < 5) return;
+      }
 
       const author = tweet.author;
       if (!author) return;
