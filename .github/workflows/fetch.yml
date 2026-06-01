@@ -24,7 +24,7 @@ jobs:
       - name: Run fetch script
         run: node scripts/fetch.js
         env:
-          BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
+          TWITTERAPI_KEY: ${{ secrets.TWITTERAPI_KEY }}
 
       - name: Commit updated leaderboard
         run: |
