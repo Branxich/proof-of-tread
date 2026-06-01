@@ -5,8 +5,8 @@ const API_KEY = process.env.TWITTERAPI_KEY;
 const BASE = 'https://api.twitterapi.io/twitter/tweet/advanced_search';
 
 // May 20 - May 30, 2026
-const START_TS = 1747699200;
-const END_TS   = 1748563200;
+const START_TS = 1735689600; // Jan 1, 2026 00:00 UTC
+const END_TS   = 1738368000; // Feb 1, 2026 00:00 UTC
 
 const QUERY_BASE = `(@tread_fi OR "treadfi") -filter:replies`;
 
