@@ -5,8 +5,8 @@ const API_KEY = process.env.TWITTERAPI_KEY;
 const BASE = 'https://api.twitterapi.io';
 
 // Unix timestamp для Nov 18, 2025 00:00 UTC
-const SINCE_TIME = 1731888000; // Nov 18, 2025
-const UNTIL_TIME = Math.floor(Date.now() / 1000); // сейчас
+const SINCE_TIME = 1747267200; // May 15, 2026 00:00 UTC
+const UNTIL_TIME = 1748044800; // May 22, 2026 00:00 UTC
 const QUERY = `(@nadoHQ OR "$NADO" OR "nado perps" OR "nado dex" OR "nado exchange" OR "nado trading" OR "trade on nado" OR "nado app") -is:retweet since_time:${SINCE_TIME} until_time:${UNTIL_TIME}`;
 
 async function searchPage(cursor = '') {
