@@ -1022,110 +1022,34 @@
 
 
 <script>
-// ── STATE ──────────────────────────────────────────────────────────
 let currentSort = 'views';
 let leaderboardData = [];
 let profileData = null;
+let isLoading = true;
 
-// ── CONFIG ─────────────────────────────────────────────────────────
-const CONFIG = {
-  keywords: 'nado, nadoHQ, $INK, $NADO',
-};
-
-function getConfig() {
-  return CONFIG;
-}
-
-// ── DATA ────────────────────────────────────────────────────────────
-// Try to load from data/leaderboard.json (GitHub repo) or X API
+// ── LOAD DATA (только из leaderboard.json) ──────────────────────────
 async function loadData() {
-  // First, try static JSON file (committed by GitHub Actions)
+  isLoading = true;
   try {
     const r = await fetch('data/leaderboard.json?t=' + Date.now());
-    if (r.ok) {
-      const d = await r.json();
-      leaderboardData = d.users || [];
-      updateGlobalStats(d.totals || {});
-      renderLeaderboard();
-      return;
-    }
-  } catch(e) {}
-
-  // Fallback: fetch live from proxy
-  const cfg = getConfig();
-  await fetchFromXAPI(cfg);
-}
-
-async function fetchFromXAPI(cfg) {
-  const query = encodeURIComponent(`(${cfg.keywords.split(',').map(k=>k.trim()).join(' OR ')}) lang:en -is:retweet`);
-  const url = `https://nado-proxy.runov-vlad37.workers.dev/2/tweets/search/recent?query=${query}&tweet.fields=public_metrics,author_id,created_at,referenced_tweets&expansions=author_id&user.fields=name,username,public_metrics,profile_image_url&max_results=100`;
-
-  try {
-    const r = await fetch(url);
-    if (!r.ok) {
-      const e = await r.json();
-      renderEmpty('Error loading data: ' + (e.title || r.status));
-      return;
-    }
+    if (!r.ok) throw new Error('not found');
     const d = await r.json();
-    processXResponse(d);
+    leaderboardData = d.users || [];
+    updateGlobalStats(d.totals || {});
+    renderLeaderboard();
   } catch(e) {
-    renderEmpty('Error loading data. Please try again later.');
+    renderEmpty('No data yet. Check back soon.');
+    updateGlobalStats({});
+  } finally {
+    isLoading = false;
   }
-}
-
-function processXResponse(data) {
-  const users = {};
-  const usersMap = {};
-  (data.includes?.users || []).forEach(u => { usersMap[u.id] = u; });
-
-  (data.data || []).forEach(tweet => {
-    const uid = tweet.author_id;
-    const user = usersMap[uid];
-    if (!user) return;
-    if (!users[uid]) {
-      users[uid] = {
-        id: uid,
-        name: user.name,
-        handle: user.username,
-        followers: user.public_metrics?.followers_count || 0,
-        avatar: user.profile_image_url || '',
-        views: 0, likes: 0, posts: 0,
-        mentions: 0, keyword: 0, cashtag: 0, replies: 0,
-        firstPost: tweet.created_at, lastPost: tweet.created_at,
-        topPosts: []
-      };
-    }
-    const u = users[uid];
-    const m = tweet.public_metrics || {};
-    u.views += m.impression_count || 0;
-    u.likes += m.like_count || 0;
-    u.posts += 1;
-    const txt = (tweet.text || '').toLowerCase();
-    if (txt.includes('@nadohq')) u.mentions++;
-    if (txt.includes('nado')) u.keyword++;
-    if (txt.includes('$nado') || txt.includes('$ink')) u.cashtag++;
-    if (tweet.referenced_tweets?.some(r => r.type === 'replied_to')) u.replies++;
-    if (tweet.created_at < u.firstPost) u.firstPost = tweet.created_at;
-    if (tweet.created_at > u.lastPost) u.lastPost = tweet.created_at;
-    if (u.topPosts.length < 3) u.topPosts.push({ text: tweet.text, views: m.impression_count || 0, likes: m.like_count || 0, id: tweet.id });
-  });
-
-  leaderboardData = Object.values(users).sort((a,b) => b.views - a.views);
-  const totals = leaderboardData.reduce((t,u) => ({ views: t.views+u.views, likes: t.likes+u.likes, posts: t.posts+u.posts }), {views:0,likes:0,posts:0});
-  updateGlobalStats({ ...totals, users: leaderboardData.length });
-  renderLeaderboard();
-}
-
-function renderEmpty(msg) {
-  document.getElementById('lbBody').innerHTML = `<tr><td colspan="5" class="lb-empty">${msg}</td></tr>`;
 }
 
 // ── GLOBAL STATS ────────────────────────────────────────────────────
 function updateGlobalStats(t) {
   const set = (id, val) => {
     const el = document.getElementById(id);
-    el.textContent = val !== undefined && val !== null ? formatNum(val) : '—';
+    el.textContent = (val !== undefined && val !== null) ? formatNum(val) : '—';
     el.classList.remove('loading');
   };
   set('gViews', t.views);
@@ -1146,8 +1070,10 @@ function setSort(s) {
 
 function renderLeaderboard() {
   const sorted = [...leaderboardData].sort((a,b) => b[currentSort] - a[currentSort]);
-  if (!sorted.length) { renderEmpty('No data yet. Check back soon.'); return; }
-
+  if (!sorted.length) {
+    renderEmpty('No data yet. Check back soon.');
+    return;
+  }
   const rows = sorted.map((u, i) => {
     const rankClass = i === 0 ? 'gold' : i === 1 ? 'silver' : i === 2 ? 'bronze' : '';
     const avatarHtml = u.avatar
@@ -1169,48 +1095,74 @@ function renderLeaderboard() {
       <td class="num-posts">${formatNum(u.posts)}</td>
     </tr>`;
   }).join('');
-
   document.getElementById('lbBody').innerHTML = rows;
+}
+
+function renderEmpty(msg) {
+  document.getElementById('lbBody').innerHTML =
+    `<tr><td colspan="5" class="lb-empty">${msg}</td></tr>`;
+}
+
+// ── SCAN — только поиск внутри leaderboard.json ─────────────────────
+function scanHandle() {
+  const raw = document.getElementById('searchInput').value.trim().replace(/^@/, '');
+  if (!raw) return;
+
+  if (isLoading) {
+    notify('Loading data, please wait…');
+    return;
+  }
+
+  const found = leaderboardData.find(
+    u => u.handle.toLowerCase() === raw.toLowerCase()
+  );
+
+  if (found) {
+    openProfile(found.handle);
+  } else {
+    notify('@' + raw + ' not found in leaderboard.');
+  }
 }
 
 // ── PROFILE ─────────────────────────────────────────────────────────
 function openProfile(handle) {
-  const user = leaderboardData.find(u => u.handle.toLowerCase() === handle.toLowerCase());
-  if (!user) { scanHandle(handle); return; }
+  const user = leaderboardData.find(
+    u => u.handle.toLowerCase() === handle.toLowerCase()
+  );
+  if (!user) return;
 
-  const sorted = [...leaderboardData].sort((a,b) => b.views - a.views);
-  const vRank = sorted.findIndex(u => u.handle === user.handle) + 1;
-  const lSorted = [...leaderboardData].sort((a,b) => b.likes - a.likes);
-  const lRank = lSorted.findIndex(u => u.handle === user.handle) + 1;
-  const pSorted = [...leaderboardData].sort((a,b) => b.posts - a.posts);
-  const pRank = pSorted.findIndex(u => u.handle === user.handle) + 1;
+  const byViews = [...leaderboardData].sort((a,b) => b.views - a.views);
+  const byLikes = [...leaderboardData].sort((a,b) => b.likes - a.likes);
+  const byPosts = [...leaderboardData].sort((a,b) => b.posts - a.posts);
+  const vRank = byViews.findIndex(u => u.handle === user.handle) + 1;
+  const lRank = byLikes.findIndex(u => u.handle === user.handle) + 1;
+  const pRank = byPosts.findIndex(u => u.handle === user.handle) + 1;
 
   const ava = document.getElementById('profAva');
-  if (user.avatar) {
-    ava.innerHTML = `<img src="${user.avatar}" alt="" />`;
-  } else {
-    ava.textContent = user.handle.charAt(0).toUpperCase();
-  }
+  ava.innerHTML = user.avatar
+    ? `<img src="${user.avatar}" alt="" />`
+    : user.handle.charAt(0).toUpperCase();
 
-  document.getElementById('profName').textContent = user.name;
-  document.getElementById('profHandle').textContent = '@' + user.handle;
+  document.getElementById('profName').textContent      = user.name;
+  document.getElementById('profHandle').textContent    = '@' + user.handle;
   document.getElementById('profFollowers').textContent = formatNum(user.followers) + ' followers';
-  document.getElementById('profXLink').href = `https://x.com/${user.handle}`;
-  document.getElementById('profViews').textContent = formatNum(user.views);
-  document.getElementById('profLikes').textContent = formatNum(user.likes);
-  document.getElementById('profPosts').textContent = formatNum(user.posts);
-  document.getElementById('profViewRank').textContent = `Rank #${vRank}`;
-  document.getElementById('profLikeRank').textContent = `Rank #${lRank}`;
-  document.getElementById('profPostRank').textContent = `Rank #${pRank}`;
-  document.getElementById('bdMentions').textContent = formatNum(user.mentions || 0);
-  document.getElementById('bdKeyword').textContent = formatNum(user.keyword || 0);
-  document.getElementById('bdCashtag').textContent = formatNum(user.cashtag || 0);
-  document.getElementById('bdReplies').textContent = formatNum(user.replies || 0);
-  document.getElementById('bdFirst').textContent = user.firstPost ? fmtDate(user.firstPost) : '—';
-  document.getElementById('bdLast').textContent = user.lastPost ? fmtDate(user.lastPost) : '—';
-  document.getElementById('bdAvgViews').textContent = user.posts ? formatNum(Math.round(user.views / user.posts)) : '—';
-  const er = user.views ? ((user.likes / user.views) * 100).toFixed(2) + '%' : '—';
-  document.getElementById('bdEngRate').textContent = er;
+  document.getElementById('profXLink').href            = `https://x.com/${user.handle}`;
+  document.getElementById('profViews').textContent     = formatNum(user.views);
+  document.getElementById('profLikes').textContent     = formatNum(user.likes);
+  document.getElementById('profPosts').textContent     = formatNum(user.posts);
+  document.getElementById('profViewRank').textContent  = `Rank #${vRank}`;
+  document.getElementById('profLikeRank').textContent  = `Rank #${lRank}`;
+  document.getElementById('profPostRank').textContent  = `Rank #${pRank}`;
+  document.getElementById('bdMentions').textContent    = formatNum(user.mentions  || 0);
+  document.getElementById('bdKeyword').textContent     = formatNum(user.keyword   || 0);
+  document.getElementById('bdCashtag').textContent     = formatNum(user.cashtag   || 0);
+  document.getElementById('bdReplies').textContent     = formatNum(user.replies   || 0);
+  document.getElementById('bdFirst').textContent       = user.firstPost ? fmtDate(user.firstPost) : '—';
+  document.getElementById('bdLast').textContent        = user.lastPost  ? fmtDate(user.lastPost)  : '—';
+  document.getElementById('bdAvgViews').textContent    = user.posts
+    ? formatNum(Math.round(user.views / user.posts)) : '—';
+  document.getElementById('bdEngRate').textContent     = user.views
+    ? ((user.likes / user.views) * 100).toFixed(2) + '%' : '—';
 
   const postsHtml = (user.topPosts || []).map(p =>
     `<div class="post-item">
@@ -1218,11 +1170,13 @@ function openProfile(handle) {
         <span class="post-stat">👁 ${formatNum(p.views)}</span>
         <span class="post-stat">❤ ${formatNum(p.likes)}</span>
       </div>
-      <div class="post-text">${escHtml(p.text?.slice(0,200) || '—')}${(p.text?.length||0)>200?'…':''}</div>
+      <div class="post-text">${escHtml((p.text || '').slice(0, 200))}${(p.text||'').length > 200 ? '…' : ''}</div>
       ${p.id ? `<a class="post-link" href="https://x.com/${user.handle}/status/${p.id}" target="_blank">View on 𝕏 ↗</a>` : ''}
     </div>`
   ).join('');
-  document.getElementById('topPostsList').innerHTML = postsHtml || '<div class="post-item"><div class="post-text" style="color:var(--muted)">No posts indexed yet.</div></div>';
+
+  document.getElementById('topPostsList').innerHTML = postsHtml ||
+    '<div class="post-item"><div class="post-text" style="color:var(--muted)">No posts indexed yet.</div></div>';
 
   profileData = user;
   document.getElementById('profileSection').classList.add('visible');
@@ -1234,90 +1188,25 @@ function closeProfile() {
   profileData = null;
 }
 
-// ── SEARCH / SCAN ────────────────────────────────────────────────────
-function scanHandle(forceHandle) {
-  const handle = (forceHandle || document.getElementById('searchInput').value.trim().replace(/^@/, ''));
-  if (!handle) return;
-
-  const found = leaderboardData.find(u => u.handle.toLowerCase() === handle.toLowerCase());
-  if (found) { openProfile(found.handle); return; }
-
-  notify('Scanning @' + handle + '…');
-  fetchUserFromAPI(handle);
-}
-
-async function fetchUserFromAPI(handle) {
-  try {
-    const r = await fetch(`https://nado-proxy.runov-vlad37.workers.dev/?handle=${handle}`);
-    if (!r.ok) { notify('API error: ' + r.status); return; }
-    const d = await r.json();
-    const tweets = d.tweets || [];
-
-    if (!tweets.length) { notify('@' + handle + ' — no matching posts found.'); return; }
-
-    const author = tweets[0].author;
-    const u = {
-      id: author.id,
-      name: author.name,
-      handle: author.userName,
-      followers: author.followers || 0,
-      avatar: author.profilePicture || '',
-      views: 0, likes: 0, posts: 0,
-      mentions: 0, keyword: 0, cashtag: 0, replies: 0,
-      firstPost: tweets[0].createdAt,
-      lastPost: tweets[0].createdAt,
-      topPosts: []
-    };
-
-    tweets.forEach(tweet => {
-      if (tweet.text?.startsWith('RT @')) return;
-      u.views += tweet.viewCount || 0;
-      u.likes += tweet.likeCount || 0;
-      u.posts++;
-      const txt = (tweet.text || '').toLowerCase();
-      if (txt.includes('@nadohq')) u.mentions++;
-      if (txt.includes('nado')) u.keyword++;
-      if (txt.includes('$nado') || txt.includes('$ink')) u.cashtag++;
-      if (tweet.isReply) u.replies++;
-      if (tweet.createdAt < u.firstPost) u.firstPost = tweet.createdAt;
-      if (tweet.createdAt > u.lastPost)  u.lastPost  = tweet.created_at;
-      if (u.topPosts.length < 3) u.topPosts.push({
-        text: tweet.text, id: tweet.id, url: tweet.url,
-        views: tweet.viewCount || 0, likes: tweet.likeCount || 0
-      });
-    });
-
-    if (!leaderboardData.find(x => x.handle.toLowerCase() === u.handle.toLowerCase())) {
-      leaderboardData.push(u);
-    }
-    renderLeaderboard();
-    openProfile(u.handle);
-  } catch(e) {
-    notify('Error: ' + e.message);
-  }
-}
-
-document.getElementById('searchInput').addEventListener('keydown', e => {
-  if (e.key === 'Enter') scanHandle();
-});
-
-// ── SHARE / DOWNLOAD ─────────────────────────────────────────────────
+// ── SHARE ────────────────────────────────────────────────────────────
 function shareX() {
   if (!profileData) return;
-  const text = encodeURIComponent(`@${profileData.handle} has ${formatNum(profileData.views)} views on Nado-related content since Nov 2025 👁⚡\n\nProof of NADO — community tracker for @NadoHQ\n${window.location.href}`);
+  const text = encodeURIComponent(
+    `@${profileData.handle} has ${formatNum(profileData.views)} views on Nado-related content ⚡\n\nProof of NADO — community tracker for @NadoHQ\n${window.location.href}`
+  );
   window.open(`https://x.com/intent/tweet?text=${text}`, '_blank');
 }
 
 function downloadCard() {
-  notify('Download: take a screenshot of the profile card above.');
+  notify('Take a screenshot of the profile card to save it.');
 }
 
 // ── UTILS ─────────────────────────────────────────────────────────────
 function formatNum(n) {
   if (n === undefined || n === null) return '—';
-  if (n >= 1e9) return (n/1e9).toFixed(1) + 'B';
-  if (n >= 1e6) return (n/1e6).toFixed(1) + 'M';
-  if (n >= 1e3) return (n/1e3).toFixed(1) + 'K';
+  if (n >= 1e9) return (n / 1e9).toFixed(1) + 'B';
+  if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+  if (n >= 1e3) return (n / 1e3).toFixed(1) + 'K';
   return n.toString();
 }
 
@@ -1327,7 +1216,11 @@ function fmtDate(iso) {
 }
 
 function escHtml(s) {
-  return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  return (s || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
 }
 
 function notify(msg) {
@@ -1337,7 +1230,10 @@ function notify(msg) {
   setTimeout(() => el.classList.remove('show'), 3000);
 }
 
-// ── INIT ──────────────────────────────────────────────────────────────
+document.getElementById('searchInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') scanHandle();
+});
+
 loadData();
 </script>
 </body>
