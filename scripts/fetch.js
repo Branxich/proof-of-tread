@@ -4,12 +4,11 @@ import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'fs';
 const API_KEY = process.env.TWITTERAPI_KEY;
 const BASE = 'https://api.twitterapi.io/twitter/tweet/advanced_search';
 
-// June 1, 2025 00:00 UTC
+// June 1, 2025 00:00 UTC → May 31, 2026 23:59:59 UTC
 const START_TS = 1748736000;
-const END_TS   = Math.floor(Date.now() / 1000);
+const END_TS   = 1748735999 + 31536000;
 
-// Только @tread_fi, без ретвитов и реплаев
-const QUERY_BASE = `@tread_fi -filter:retweets -filter:replies lang:en`;
+const QUERY_BASE = `@tread_fi -filter:replies`;
 
 function parseTwitterTime(s) {
   return Math.floor(new Date(s).getTime() / 1000);
@@ -20,7 +19,6 @@ function isRelevant(tweet) {
   if (tweet.text?.startsWith('RT @')) return false;
   if (tweet.retweeted_tweet) return false;
   if (tweet.isReply) return false;
-  if (tweet.lang && tweet.lang !== 'en') return false;
 
   const txt = (tweet.text || '').toLowerCase();
 
