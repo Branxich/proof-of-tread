@@ -1129,20 +1129,35 @@ function closeProfile() {
 
 function findInLeaderboard() {
   if (!profileData) return;
+
+  const sorted = [...leaderboardData].sort((a,b) => b[currentSort] - a[currentSort]);
+  const idx = sorted.findIndex(u => u.handle.toLowerCase() === profileData.handle.toLowerCase());
+  if (idx >= 25 && !showAll) {
+    showAll = true;
+    document.getElementById('showMoreBtn').textContent = 'Show less ↑';
+    renderLeaderboard();
+  }
+
   closeProfile();
-  setTimeout(() => {
-    const rows = document.querySelectorAll('#lbBody tr');
-    for (const row of rows) {
-      const handle = row.querySelector('.user-handle');
-      if (handle && handle.textContent.toLowerCase() === '@' + profileData.handle.toLowerCase()) {
-        row.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        row.style.transition = 'background 0.2s';
-        row.style.background = 'rgba(244,124,32,0.25)';
-        setTimeout(() => { row.style.background = ''; }, 2000);
-        break;
+
+  // Ждём пока модал закроется и DOM обновится
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      const rows = document.querySelectorAll('#lbBody tr');
+      for (const row of rows) {
+        const handle = row.querySelector('.user-handle');
+        if (handle && handle.textContent.replace('@','').toLowerCase() === profileData.handle.toLowerCase()) {
+          setTimeout(() => {
+            row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            row.style.transition = 'background 0.3s';
+            row.style.background = 'rgba(244,124,32,0.3)';
+            setTimeout(() => { row.style.background = ''; }, 2500);
+          }, 100);
+          break;
+        }
       }
-    }
-  }, 400);
+    });
+  });
 }
 
 async function downloadCard() {
