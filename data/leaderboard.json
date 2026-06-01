@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-06-01T11:26:38.367Z",
+  "updatedAt": "2026-06-01T18:21:54.335Z",
   "totals": {
-    "views": 5094953,
-    "likes": 48728,
-    "posts": 3152,
+    "views": 5097827,
+    "likes": 48768,
+    "posts": 3154,
     "users": 829
   },
   "users": [
@@ -201,16 +201,16 @@
       "id": "1374444627504205824",
       "name": "onchainmonk",
       "handle": "onchainmonk",
-      "followers": 6437,
+      "followers": 6436,
       "avatar": "https://pbs.twimg.com/profile_images/1927757543444484096/HSQM8Ppf_normal.jpg",
-      "views": 185574,
-      "likes": 1770,
-      "posts": 47,
+      "views": 186255,
+      "likes": 1783,
+      "posts": 48,
       "mentions": 47,
       "cashtag": 9,
-      "keyword": 23,
+      "keyword": 24,
       "firstPost": "Tue Nov 18 06:34:44 +0000 2025",
-      "lastPost": "Wed May 27 17:21:58 +0000 2026",
+      "lastPost": "Sun May 31 02:09:53 +0000 2026",
       "topPosts": [
         {
           "text": "Monk has become a Market Maker first time using @tread_fi trading terminal and its Market Maker Bot.\n\nYou can make large volumes on Hyperliquid+ @tradexyz + Pacifica in hours + Earn Tread FI points (launching today)\n\nI am using directional basis to remain profitable.\n\nMM bots are very limited.\n\nIf you used my referral below, dm me for MM bot code if u want to farm heavily with volumes.\n\nhttps://t.co/QHaLq96bKg",
@@ -1188,6 +1188,44 @@
       ]
     },
     {
+      "id": "1674568302625009666",
+      "name": "katexbt.hl",
+      "handle": "katexbt",
+      "followers": 30042,
+      "avatar": "https://pbs.twimg.com/profile_images/2017119031720103938/woV2UKBQ_normal.jpg",
+      "views": 29674,
+      "likes": 289,
+      "posts": 9,
+      "mentions": 8,
+      "cashtag": 0,
+      "keyword": 3,
+      "firstPost": "Tue Nov 25 11:25:38 +0000 2025",
+      "lastPost": "Sun May 31 01:20:00 +0000 2026",
+      "topPosts": [
+        {
+          "text": "if you're under a 50k USD portfolio, farming HIP-3 markets by breaking eggs on @tread_fi is probably one of the better ways to make some omelettes\n\nThe question is one of when, not if.\n\nhttps://t.co/OaDUfOFpYI https://t.co/3EX4JNRQrX",
+          "id": "2013910440221270040",
+          "url": "https://x.com/katexbt/status/2013910440221270040",
+          "views": 6501,
+          "likes": 41
+        },
+        {
+          "text": "quant just told me that my @tread_fi points are worth 5x more than they were worth 2 days ago\n\ngood day to be alive https://t.co/O4rZ41ipFp",
+          "id": "2050586257009655981",
+          "url": "https://x.com/katexbt/status/2050586257009655981",
+          "views": 6056,
+          "likes": 47
+        },
+        {
+          "text": "If you're buying YTs for projects in 2026\n\nYou're probably lose money more often than not\n\nHowever, burning (or in some cases - earning) money by MMing perpdexes, using software, is +EV almost all the time\n\nHere's the best hidden secret: @tread_fi 👇 https://t.co/iUJq56NeX9",
+          "id": "1999749164700434438",
+          "url": "https://x.com/katexbt/status/1999749164700434438",
+          "views": 4482,
+          "likes": 70
+        }
+      ]
+    },
+    {
       "id": "1438316504253091848",
       "name": "AlphaWolf",
       "handle": "AlphaWolfPRMR",
@@ -1284,44 +1322,6 @@
           "url": "https://x.com/B33Fbanks/status/2049606352474100055",
           "views": 3937,
           "likes": 22
-        }
-      ]
-    },
-    {
-      "id": "1674568302625009666",
-      "name": "katexbt.hl",
-      "handle": "katexbt",
-      "followers": 30044,
-      "avatar": "https://pbs.twimg.com/profile_images/2017119031720103938/woV2UKBQ_normal.jpg",
-      "views": 27481,
-      "likes": 262,
-      "posts": 8,
-      "mentions": 8,
-      "cashtag": 0,
-      "keyword": 2,
-      "firstPost": "Tue Nov 25 11:25:38 +0000 2025",
-      "lastPost": "Fri May 29 10:49:53 +0000 2026",
-      "topPosts": [
-        {
-          "text": "if you're under a 50k USD portfolio, farming HIP-3 markets by breaking eggs on @tread_fi is probably one of the better ways to make some omelettes\n\nThe question is one of when, not if.\n\nhttps://t.co/OaDUfOFpYI https://t.co/3EX4JNRQrX",
-          "id": "2013910440221270040",
-          "url": "https://x.com/katexbt/status/2013910440221270040",
-          "views": 6501,
-          "likes": 41
-        },
-        {
-          "text": "quant just told me that my @tread_fi points are worth 5x more than they were worth 2 days ago\n\ngood day to be alive https://t.co/O4rZ41ipFp",
-          "id": "2050586257009655981",
-          "url": "https://x.com/katexbt/status/2050586257009655981",
-          "views": 6056,
-          "likes": 47
-        },
-        {
-          "text": "If you're buying YTs for projects in 2026\n\nYou're probably lose money more often than not\n\nHowever, burning (or in some cases - earning) money by MMing perpdexes, using software, is +EV almost all the time\n\nHere's the best hidden secret: @tread_fi 👇 https://t.co/iUJq56NeX9",
-          "id": "1999749164700434438",
-          "url": "https://x.com/katexbt/status/1999749164700434438",
-          "views": 4482,
-          "likes": 70
         }
       ]
     },
