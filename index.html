@@ -445,6 +445,183 @@
       .pod-ava { width: 44px; height: 44px; }
       .pod-1 .pod-ava { width: 56px; height: 56px; }
     }
+    /* SHARE CARD */
+    .share-card {
+      background: #0f0f0f;
+      border-bottom: 1px solid var(--border);
+      padding: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    .share-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--orange), var(--orange2), var(--orange));
+    }
+    .share-card::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; right: -80px;
+      width: 260px; height: 260px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(244,124,32,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .sc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    .sc-brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .sc-brand-icon {
+      width: 22px; height: 22px;
+      background: var(--orange);
+      border-radius: 3px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--cond); font-size: 12px; font-weight: 900; color: #000;
+    }
+    .sc-brand-name {
+      font-family: var(--cond);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted2);
+    }
+    .sc-brand-name strong { color: var(--orange); }
+    .sc-rank-badge {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--orange);
+      border: 1px solid var(--orange);
+      padding: 4px 12px;
+      border-radius: 2px;
+      letter-spacing: 0.06em;
+    }
+
+    .sc-user {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+    .sc-avatar {
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      border: 3px solid var(--orange);
+      background: var(--surface2);
+      overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--cond); font-size: 28px; font-weight: 800; color: var(--orange);
+      flex-shrink: 0;
+      box-shadow: 0 0 24px rgba(244,124,32,0.25);
+    }
+    .sc-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .sc-name {
+      font-family: var(--cond);
+      font-size: 32px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--text);
+      letter-spacing: 0.02em;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .sc-handle {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--orange);
+      margin-bottom: 4px;
+    }
+    .sc-followers {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .sc-stats {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      background: var(--surface2);
+      border: 1px solid var(--border2);
+      border-radius: 3px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .sc-stat {
+      flex: 1;
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .sc-stat-divider {
+      width: 1px;
+      height: 48px;
+      background: var(--border2);
+      flex-shrink: 0;
+    }
+    .sc-stat-val {
+      font-family: var(--cond);
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--orange);
+      letter-spacing: -0.01em;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .sc-stat-lab {
+      font-family: var(--mono);
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+    }
+
+    .sc-details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 24px;
+      margin-bottom: 24px;
+    }
+    .sc-detail-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 12px;
+    }
+    .sc-detail-row:last-child { border-bottom: none; }
+    .sc-detail-label { color: var(--muted2); }
+    .sc-detail-val { font-family: var(--mono); color: var(--text); font-size: 12px; }
+
+    .sc-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+    .sc-footer-url {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .sc-footer-tag {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--orange);
+      letter-spacing: 0.06em;
+    }
+
   </style>
 </head>
 <body>
@@ -452,7 +629,7 @@
 <header>
   <div class="header-inner">
     <div class="logo">
-      <div class="logo-icon">T</div>
+      <img src="logo.png" style="width:32px;height:32px;object-fit:contain;" />
       Proof of <span>TREAD</span>
     </div>
     <div class="header-links">
@@ -488,66 +665,87 @@
 
 <div class="profile-overlay" id="profileOverlay" onclick="overlayClick(event)">
 <div class="profile-section" id="profileSection">
+  <!-- Modal header with action buttons -->
   <div class="section-heading">
     <span><span class="orange-dot"></span>Profile</span>
-    <button class="back-btn" onclick="closeProfile()">✕</button>
+    <div style="display:flex;gap:8px;align-items:center;">
+      <button class="btn-ghost" onclick="downloadCard()" id="downloadBtn" style="font-size:10px;padding:6px 14px;">⬇ Save image</button>
+      <button class="btn-ghost" onclick="shareX()" style="font-size:10px;padding:6px 14px;">𝕏 Share</button>
+      <a id="profXLink" href="#" target="_blank" class="btn-orange" style="font-size:11px;padding:6px 14px;">View on 𝕏 ↗</a>
+      <button class="back-btn" onclick="closeProfile()">✕</button>
+    </div>
   </div>
-  <div class="profile-card">
-    <div class="profile-top">
-      <div class="profile-avatar" id="profAva">?</div>
-      <div class="profile-info">
-        <div class="profile-name" id="profName">—</div>
-        <div class="profile-handle" id="profHandle">@—</div>
-        <div class="profile-followers" id="profFollowers">0 followers</div>
+
+  <!-- Shareable card — this gets exported as image -->
+  <div class="share-card" id="shareCard">
+    <!-- Card header -->
+    <div class="sc-header">
+      <div class="sc-brand">
+        <img src="logo.png" style="width:22px;height:22px;object-fit:contain;" />
+        <span class="sc-brand-name">Proof of <strong>TREAD</strong></span>
       </div>
-      <div class="profile-actions">
-        <button class="btn-ghost" onclick="shareX()">𝕏 Share</button>
-        <a id="profXLink" href="#" target="_blank" class="btn-orange">View on 𝕏 ↗</a>
+      <div class="sc-rank-badge" id="scRankBadge">Rank #—</div>
+    </div>
+
+    <!-- User info -->
+    <div class="sc-user">
+      <div class="sc-avatar" id="scAva"></div>
+      <div class="sc-user-info">
+        <div class="sc-name" id="scName">—</div>
+        <div class="sc-handle" id="scHandle">@—</div>
+        <div class="sc-followers" id="scFollowers">— followers</div>
       </div>
     </div>
-    <div class="profile-metrics">
-      <div class="metric-cell">
-        <div class="metric-icon">👁</div>
-        <div class="metric-val" id="profViews">0</div>
-        <div class="metric-lab">Views</div>
-        <div class="metric-rank" id="profViewRank">Rank #—</div>
+
+    <!-- Big stats -->
+    <div class="sc-stats">
+      <div class="sc-stat">
+        <div class="sc-stat-val" id="scViews">—</div>
+        <div class="sc-stat-lab">VIEWS</div>
       </div>
-      <div class="metric-cell">
-        <div class="metric-icon">❤</div>
-        <div class="metric-val" id="profLikes">0</div>
-        <div class="metric-lab">Likes</div>
-        <div class="metric-rank" id="profLikeRank">Rank #—</div>
+      <div class="sc-stat-divider"></div>
+      <div class="sc-stat">
+        <div class="sc-stat-val" id="scLikes">—</div>
+        <div class="sc-stat-lab">LIKES</div>
       </div>
-      <div class="metric-cell">
-        <div class="metric-icon">📝</div>
-        <div class="metric-val" id="profPosts">0</div>
-        <div class="metric-lab">Posts</div>
-        <div class="metric-rank" id="profPostRank">Rank #—</div>
+      <div class="sc-stat-divider"></div>
+      <div class="sc-stat">
+        <div class="sc-stat-val" id="scPosts">—</div>
+        <div class="sc-stat-lab">POSTS</div>
       </div>
     </div>
-    <div class="profile-breakdown">
-      <div>
-        <div class="breakdown-title">Mention breakdown</div>
-        <div class="breakdown-row"><span class="breakdown-label">🔗 @tread_fi mentions</span><span class="breakdown-val" id="bdMentions">0</span></div>
-        <div class="breakdown-row"><span class="breakdown-label">💵 $TREAD tag</span><span class="breakdown-val" id="bdCashtag">0</span></div>
-        <div class="breakdown-row"><span class="breakdown-label">📝 keyword "treadfi"</span><span class="breakdown-val" id="bdKeyword">0</span></div>
+
+    <!-- Detail rows -->
+    <div class="sc-details">
+      <div class="sc-detail-row">
+        <span class="sc-detail-label">@tread_fi mentions</span>
+        <span class="sc-detail-val" id="scMentions">—</span>
       </div>
-      <div>
-        <div class="breakdown-title">Activity</div>
-        <div class="breakdown-row"><span class="breakdown-label">First indexed post</span><span class="breakdown-val" id="bdFirst">—</span></div>
-        <div class="breakdown-row"><span class="breakdown-label">Most recent post</span><span class="breakdown-val" id="bdLast">—</span></div>
-        <div class="breakdown-row"><span class="breakdown-label">Avg views / post</span><span class="breakdown-val" id="bdAvgViews">—</span></div>
-        <div class="breakdown-row"><span class="breakdown-label">Engagement rate</span><span class="breakdown-val" id="bdEngRate">—</span></div>
+      <div class="sc-detail-row">
+        <span class="sc-detail-label">$TREAD tags</span>
+        <span class="sc-detail-val" id="scCashtag">—</span>
+      </div>
+      <div class="sc-detail-row">
+        <span class="sc-detail-label">Avg views / post</span>
+        <span class="sc-detail-val" id="scAvg">—</span>
+      </div>
+      <div class="sc-detail-row">
+        <span class="sc-detail-label">First post</span>
+        <span class="sc-detail-val" id="scFirst">—</span>
       </div>
     </div>
-    <div class="top-posts-section">
-      <div class="top-posts-title">Top Posts</div>
-      <div id="topPostsList"></div>
+
+    <!-- Footer -->
+    <div class="sc-footer">
+      <span class="sc-footer-url">proof-of-tread · tread.fi</span>
+      <span class="sc-footer-tag">@tread_fi</span>
     </div>
-    <div class="share-row">
-      <button class="btn-ghost" onclick="shareX()">𝕏 Share this profile</button>
-      <button class="btn-ghost" onclick="downloadCard()" id="downloadBtn">⬇ Save as image</button>
-    </div>
+  </div>
+
+  <!-- Top posts (outside card, not exported) -->
+  <div class="top-posts-section" style="border-top:1px solid var(--border);background:var(--surface);">
+    <div class="top-posts-title">Top Posts</div>
+    <div id="topPostsList"></div>
   </div>
 </div>
 </div>
@@ -878,26 +1076,23 @@ function openProfile(handle) {
   const lRank = byLikes.findIndex(u => u.handle === user.handle) + 1;
   const pRank = byPosts.findIndex(u => u.handle === user.handle) + 1;
 
-  const ava = document.getElementById('profAva');
-  ava.innerHTML = user.avatar ? `<img src="${user.avatar}" alt="" />` : user.handle.charAt(0).toUpperCase();
+  // Populate share card
+  const scAva = document.getElementById('scAva');
+  scAva.innerHTML = user.avatar ? `<img src="${user.avatar}" alt="" />` : user.handle.charAt(0).toUpperCase();
+  document.getElementById('scName').textContent      = user.name;
+  document.getElementById('scHandle').textContent    = '@' + user.handle;
+  document.getElementById('scFollowers').textContent = formatNum(user.followers) + ' followers';
+  document.getElementById('scRankBadge').textContent = `Rank #${vRank} by views`;
+  document.getElementById('scViews').textContent     = formatNum(user.views);
+  document.getElementById('scLikes').textContent     = formatNum(user.likes);
+  document.getElementById('scPosts').textContent     = formatNum(user.posts);
+  document.getElementById('scMentions').textContent  = formatNum(user.mentions || 0);
+  document.getElementById('scCashtag').textContent   = formatNum(user.cashtag  || 0);
+  document.getElementById('scAvg').textContent       = user.posts ? formatNum(Math.round(user.views / user.posts)) : '—';
+  document.getElementById('scFirst').textContent     = user.firstPost ? fmtDate(user.firstPost) : '—';
 
-  document.getElementById('profName').textContent      = user.name;
-  document.getElementById('profHandle').textContent    = '@' + user.handle;
-  document.getElementById('profFollowers').textContent = formatNum(user.followers) + ' followers';
-  document.getElementById('profXLink').href            = `https://x.com/${user.handle}`;
-  document.getElementById('profViews').textContent     = formatNum(user.views);
-  document.getElementById('profLikes').textContent     = formatNum(user.likes);
-  document.getElementById('profPosts').textContent     = formatNum(user.posts);
-  document.getElementById('profViewRank').textContent  = `Rank #${vRank}`;
-  document.getElementById('profLikeRank').textContent  = `Rank #${lRank}`;
-  document.getElementById('profPostRank').textContent  = `Rank #${pRank}`;
-  document.getElementById('bdMentions').textContent    = formatNum(user.mentions || 0);
-  document.getElementById('bdCashtag').textContent     = formatNum(user.cashtag  || 0);
-  document.getElementById('bdKeyword').textContent     = formatNum(user.keyword  || 0);
-  document.getElementById('bdFirst').textContent       = user.firstPost ? fmtDate(user.firstPost) : '—';
-  document.getElementById('bdLast').textContent        = user.lastPost  ? fmtDate(user.lastPost)  : '—';
-  document.getElementById('bdAvgViews').textContent    = user.posts ? formatNum(Math.round(user.views / user.posts)) : '—';
-  document.getElementById('bdEngRate').textContent     = user.views ? ((user.likes / user.views) * 100).toFixed(2) + '%' : '—';
+  // Keep profXLink for "View on X" button
+  document.getElementById('profXLink').href = `https://x.com/${user.handle}`;
 
   const postsHtml = (user.topPosts || []).map(p =>
     `<div class="post-item">
@@ -935,9 +1130,9 @@ async function downloadCard() {
   btn.disabled = true;
 
   try {
-    const card = document.getElementById('profileSection');
+    const card = document.getElementById('shareCard');
     const canvas = await html2canvas(card, {
-      backgroundColor: '#111111',
+      backgroundColor: '#0f0f0f',
       scale: 2,
       useCORS: true,
       allowTaint: true,
@@ -950,7 +1145,7 @@ async function downloadCard() {
   } catch(e) {
     notify('Could not export image. Try a screenshot instead.');
   } finally {
-    btn.textContent = '⬇ Save as image';
+    btn.textContent = '⬇ Save image';
     btn.disabled = false;
   }
 }
