@@ -7,8 +7,7 @@ const BASE = 'https://api.twitterapi.io';
 // June 1, 2025 00:00 UTC
 const SINCE_TIME = 1748736000;
 const UNTIL_TIME = Math.floor(Date.now() / 1000);
-
-const QUERY = `(@tread_fi OR "$TREAD" OR "#treadfi") -is:retweet lang:en since_time:${SINCE_TIME} until_time:${UNTIL_TIME}`;
+const QUERY = `(@tread_fi OR "$TREAD" OR "#treadfi" OR "tread.fi") -is:retweet lang:en since_time:${SINCE_TIME} until_time:${UNTIL_TIME}`;
 
 async function searchPage(cursor = '') {
   const params = new URLSearchParams({
@@ -55,7 +54,6 @@ async function main() {
       // Дополнительная проверка релевантности
       const txt = (tweet.text || '').toLowerCase();
       const isRelevant = txt.includes('@tread_fi') ||
-                         txt.includes('$tread') ||
                          txt.includes('treadfi') ||
                          txt.includes('tread.fi');
       if (!isRelevant) return;
