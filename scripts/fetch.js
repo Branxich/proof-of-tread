@@ -8,32 +8,25 @@ const BASE = 'https://api.twitterapi.io/twitter/tweet/advanced_search';
 const START_TS = 1748736000;
 const END_TS   = Math.floor(Date.now() / 1000);
 
-// Только самые точные теги в запросе
-const QUERY_BASE = `(@tread_fi OR "$TREAD") -filter:retweets lang:en`;
+// Только @tread_fi в запросе — самый точный фильтр
+const QUERY_BASE = `@tread_fi -filter:retweets lang:en`;
 
 function parseTwitterTime(s) {
   return Math.floor(new Date(s).getTime() / 1000);
 }
 
 function isRelevant(tweet) {
-  // Тройная проверка ретвитов
   if (tweet.isRetweet) return false;
   if (tweet.text?.startsWith('RT @')) return false;
   if (tweet.retweeted_tweet) return false;
-
-  // Только английский
   if (tweet.lang && tweet.lang !== 'en') return false;
 
   const txt = (tweet.text || '').toLowerCase();
 
   const hasMention = txt.includes('@tread_fi');
-  const hasCashtag = txt.includes('$tread') &&
-                     !txt.includes('$treadmill') &&
-                     !txt.includes('$treadway');
-  const hasUrl     = txt.includes('tread.fi') ||
-                     txt.includes('app.tread') ||
-                     txt.includes('tread_fi');
-  const hasTreadfi = txt.includes('treadfi');
+  const hasCashtag = /\$tread\b/.test(txt);
+  const hasUrl     = txt.includes('tread.fi') || txt.includes('app.tread.fi');
+  const hasTreadfi = /\btreadfi\b/.test(txt);
 
   return hasMention || hasCashtag || hasUrl || hasTreadfi;
 }
@@ -95,7 +88,6 @@ async function main() {
     } catch(e) { console.log('Starting fresh'); }
   }
 
-  // Дневные окна
   const ONE_DAY = 86400;
   const days = [];
   for (let ts = START_TS; ts < END_TS; ts += ONE_DAY) {
@@ -143,10 +135,10 @@ async function main() {
       u.likes += tweet.likeCount || 0;
       u.posts += 1;
 
-      if (txt.includes('@tread_fi'))                        u.mentions++;
-      if (txt.includes('$tread'))                           u.cashtag++;
-      if (txt.includes('tread.fi') || txt.includes('treadfi')) u.keyword++;
-      if (tweet.isReply)                                    u.replies++;
+      if (txt.includes('@tread_fi'))                            u.mentions++;
+      if (/\$tread\b/.test(txt))                                u.cashtag++;
+      if (txt.includes('tread.fi') || /\btreadfi\b/.test(txt)) u.keyword++;
+      if (tweet.isReply)                                        u.replies++;
 
       if (tweet.createdAt < u.firstPost) u.firstPost = tweet.createdAt;
       if (tweet.createdAt > u.lastPost)  u.lastPost  = tweet.createdAt;
@@ -163,14 +155,12 @@ async function main() {
     await new Promise(r => setTimeout(r, 200));
   }
 
-  // Топ-3 поста по просмотрам
   Object.values(fresh).forEach(u => {
     u.topPosts = u.topPosts
       .sort((a, b) => b.views - a.views)
       .slice(0, 3);
   });
 
-  // Merge старых и новых данных
   const merged = { ...existing };
 
   Object.entries(fresh).forEach(([key, u]) => {
