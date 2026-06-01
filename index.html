@@ -686,7 +686,11 @@
         <img src="logo.svg" style="width:32px;height:32px;object-fit:contain;" />
         <span class="sc-brand-name">Proof of <strong>TREAD</strong></span>
       </div>
-      <div class="sc-rank-badge" id="scRankBadge">Rank #—</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;">
+        <div class="sc-rank-badge" id="scRankBadge">Rank #— views</div>
+        <div class="sc-rank-badge" id="scRankLikes">Rank #— likes</div>
+        <div class="sc-rank-badge" id="scRankPosts">Rank #— posts</div>
+      </div>
     </div>
 
     <!-- User info -->
@@ -1086,7 +1090,9 @@ function openProfile(handle) {
   document.getElementById('scName').textContent      = user.name;
   document.getElementById('scHandle').textContent    = '@' + user.handle;
   document.getElementById('scFollowers').textContent = formatNum(user.followers) + ' followers';
-  document.getElementById('scRankBadge').textContent = `Rank #${vRank} by views`;
+  document.getElementById('scRankBadge').textContent  = `Rank #${vRank} views`;
+  document.getElementById('scRankLikes').textContent   = `Rank #${lRank} likes`;
+  document.getElementById('scRankPosts').textContent   = `Rank #${pRank} posts`;
   document.getElementById('scViews').textContent     = formatNum(user.views);
   document.getElementById('scLikes').textContent     = formatNum(user.likes);
   document.getElementById('scPosts').textContent     = formatNum(user.posts);
