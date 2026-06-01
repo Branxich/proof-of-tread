@@ -673,6 +673,7 @@
       <button class="btn-orange" onclick="downloadCard()" id="downloadBtn" style="font-size:13px;padding:10px 20px;">⬇ Save image</button>
       <button class="btn-ghost" onclick="shareX()" style="font-size:13px;padding:10px 20px;">𝕏 Share</button>
       <a id="profXLink" href="#" target="_blank" class="btn-orange" style="font-size:13px;padding:10px 20px;">View on 𝕏 ↗</a>
+      <button class="btn-ghost" onclick="findInLeaderboard()" style="font-size:13px;padding:10px 20px;">📋 Find in leaderboard</button>
       <button class="back-btn" onclick="closeProfile()">✕</button>
     </div>
   </div>
@@ -1124,6 +1125,24 @@ function closeProfile() {
   document.getElementById('profileOverlay').classList.remove('visible');
   document.body.style.overflow = '';
   profileData = null;
+}
+
+function findInLeaderboard() {
+  if (!profileData) return;
+  closeProfile();
+  setTimeout(() => {
+    const rows = document.querySelectorAll('#lbBody tr');
+    for (const row of rows) {
+      const handle = row.querySelector('.user-handle');
+      if (handle && handle.textContent.toLowerCase() === '@' + profileData.handle.toLowerCase()) {
+        row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        row.style.transition = 'background 0.2s';
+        row.style.background = 'rgba(244,124,32,0.25)';
+        setTimeout(() => { row.style.background = ''; }, 2000);
+        break;
+      }
+    }
+  }, 400);
 }
 
 async function downloadCard() {
