@@ -1247,44 +1247,49 @@ function scanHandle(forceHandle) {
 }
 
 async function fetchUserFromAPI(handle) {
-  const cfg = getConfig();
-  const query = encodeURIComponent(`from:${handle} (${cfg.keywords.split(',').map(k=>k.trim()).join(' OR ')}) -is:retweet`);
-  const url = `https://nado-proxy.runov-vlad37.workers.dev/2/tweets/search/recent?query=${query}&tweet.fields=public_metrics,created_at,referenced_tweets&expansions=author_id&user.fields=name,username,public_metrics,profile_image_url&max_results=100`;
-
   try {
-    const r = await fetch(url);
+    const r = await fetch(`https://nado-proxy.runov-vlad37.workers.dev/?handle=${handle}`);
     if (!r.ok) { notify('API error: ' + r.status); return; }
     const d = await r.json();
-    const userInfo = d.includes?.users?.[0];
-    if (!userInfo) { notify('@' + handle + ' not found or no matching posts.'); return; }
+    const tweets = d.tweets || [];
 
+    if (!tweets.length) { notify('@' + handle + ' — no matching posts found.'); return; }
+
+    const author = tweets[0].author;
     const u = {
-      id: userInfo.id,
-      name: userInfo.name,
-      handle: userInfo.username,
-      followers: userInfo.public_metrics?.followers_count || 0,
-      avatar: userInfo.profile_image_url || '',
+      id: author.id,
+      name: author.name,
+      handle: author.userName,
+      followers: author.followers || 0,
+      avatar: author.profilePicture || '',
       views: 0, likes: 0, posts: 0,
       mentions: 0, keyword: 0, cashtag: 0, replies: 0,
-      firstPost: null, lastPost: null,
+      firstPost: tweets[0].createdAt,
+      lastPost: tweets[0].createdAt,
       topPosts: []
     };
-    (d.data || []).forEach(tweet => {
-      const m = tweet.public_metrics || {};
-      u.views += m.impression_count || 0;
-      u.likes += m.like_count || 0;
+
+    tweets.forEach(tweet => {
+      if (tweet.text?.startsWith('RT @')) return;
+      u.views += tweet.viewCount || 0;
+      u.likes += tweet.likeCount || 0;
       u.posts++;
       const txt = (tweet.text || '').toLowerCase();
       if (txt.includes('@nadohq')) u.mentions++;
       if (txt.includes('nado')) u.keyword++;
       if (txt.includes('$nado') || txt.includes('$ink')) u.cashtag++;
-      if (tweet.referenced_tweets?.some(r => r.type === 'replied_to')) u.replies++;
-      if (!u.firstPost || tweet.created_at < u.firstPost) u.firstPost = tweet.created_at;
-      if (!u.lastPost || tweet.created_at > u.lastPost) u.lastPost = tweet.created_at;
-      if (u.topPosts.length < 3) u.topPosts.push({ text: tweet.text, views: m.impression_count||0, likes: m.like_count||0, id: tweet.id });
+      if (tweet.isReply) u.replies++;
+      if (tweet.createdAt < u.firstPost) u.firstPost = tweet.createdAt;
+      if (tweet.createdAt > u.lastPost)  u.lastPost  = tweet.created_at;
+      if (u.topPosts.length < 3) u.topPosts.push({
+        text: tweet.text, id: tweet.id, url: tweet.url,
+        views: tweet.viewCount || 0, likes: tweet.likeCount || 0
+      });
     });
 
-    if (!leaderboardData.find(x => x.handle === u.handle)) leaderboardData.push(u);
+    if (!leaderboardData.find(x => x.handle.toLowerCase() === u.handle.toLowerCase())) {
+      leaderboardData.push(u);
+    }
     renderLeaderboard();
     openProfile(u.handle);
   } catch(e) {
