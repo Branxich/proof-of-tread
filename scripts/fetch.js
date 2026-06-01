@@ -4,10 +4,12 @@ import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'fs';
 const API_KEY = process.env.TWITTERAPI_KEY;
 const BASE = 'https://api.twitterapi.io';
 
-// Unix timestamp для Nov 18, 2025 00:00 UTC
-const SINCE_TIME = 1747267200; // May 15, 2026 00:00 UTC
-const UNTIL_TIME = 1748044800; // May 22, 2026 00:00 UTC
-const QUERY = `(@nadoHQ OR "$NADO" OR "nado dex" OR "nado perps" OR "nado exchange" OR "nado trading" OR "trade on nado" OR "nado app") -is:retweet lang:en since_time:${SINCE_TIME} until_time:${UNTIL_TIME}`;
+// June 1, 2025 00:00 UTC
+const SINCE_TIME = 1748736000;
+const UNTIL_TIME = Math.floor(Date.now() / 1000);
+
+const QUERY = `(@tread_fi OR "$TREAD" OR "#treadfi") -is:retweet lang:en since_time:${SINCE_TIME} until_time:${UNTIL_TIME}`;
+
 async function searchPage(cursor = '') {
   const params = new URLSearchParams({
     query: QUERY,
@@ -24,7 +26,6 @@ async function searchPage(cursor = '') {
 }
 
 async function main() {
-  // Загружаем старые данные
   let existing = {};
   if (existsSync('data/leaderboard.json')) {
     try {
@@ -34,11 +35,9 @@ async function main() {
     } catch(e) { console.log('Starting fresh'); }
   }
 
-  // Собираем новые твиты
   const fresh = {};
   let cursor = '';
   let page = 0;
-  const MAX_PAGES = 9999; // без лимита
 
   do {
     const data = await searchPage(cursor);
@@ -46,19 +45,24 @@ async function main() {
     console.log(`Page ${page + 1}: ${tweets.length} tweets`);
 
     tweets.forEach(tweet => {
-      // Пропускаем чистые ретвиты
+      // Пропускаем ретвиты
       if (tweet.text?.startsWith('RT @')) return;
       if (tweet.retweeted_tweet) return;
 
-      // Пропускаем не-английские твиты
-if (tweet.lang && tweet.lang !== 'en') return;
-      
-      // Пропускаем пустые реплаи (только упоминание, никакого текста)
+      // Пропускаем не-английские
+      if (tweet.lang && tweet.lang !== 'en') return;
+
+      // Дополнительная проверка релевантности
+      const txt = (tweet.text || '').toLowerCase();
+      const isRelevant = txt.includes('@tread_fi') ||
+                         txt.includes('$tread') ||
+                         txt.includes('treadfi') ||
+                         txt.includes('tread.fi');
+      if (!isRelevant) return;
+
+      // Пропускаем пустые реплаи
       if (tweet.isReply) {
-        const textWithoutMentions = (tweet.text || '')
-          .replace(/@\w+/g, '')
-          .replace(/\s+/g, ' ')
-          .trim();
+        const textWithoutMentions = txt.replace(/@\w+/g, '').replace(/\s+/g, ' ').trim();
         if (textWithoutMentions.length < 5) return;
       }
 
@@ -82,21 +86,18 @@ if (tweet.lang && tweet.lang !== 'en') return;
       }
 
       const u = fresh[key];
-      u.views  += tweet.viewCount  || 0;
-      u.likes  += tweet.likeCount  || 0;
-      u.posts  += 1;
+      u.views += tweet.viewCount || 0;
+      u.likes += tweet.likeCount || 0;
+      u.posts += 1;
 
-      const txt = (tweet.text || '').toLowerCase();
-      if (txt.includes('@nadohq'))                          u.mentions++;
-      if (txt.includes('nado'))                             u.keyword++;
-      if (txt.includes('$nado') || txt.includes('$ink'))   u.cashtag++;
+      if (txt.includes('@tread_fi'))                        u.mentions++;
+      if (txt.includes('treadfi') || txt.includes('tread.fi')) u.keyword++;
+      if (txt.includes('$tread'))                           u.cashtag++;
       if (tweet.isReply)                                    u.replies++;
 
-      // Обновляем даты
       if (tweet.createdAt < u.firstPost) u.firstPost = tweet.createdAt;
       if (tweet.createdAt > u.lastPost)  u.lastPost  = tweet.createdAt;
 
-      // Топ посты по просмотрам
       u.topPosts.push({
         text:  tweet.text,
         id:    tweet.id,
@@ -109,23 +110,20 @@ if (tweet.lang && tweet.lang !== 'en') return;
     cursor = data.next_cursor || '';
     page++;
 
-    if (data.has_next_page && page < MAX_PAGES) {
+    if (data.has_next_page) {
       await new Promise(r => setTimeout(r, 500));
     } else {
       break;
     }
   } while (true);
 
-  // Оставляем топ-3 поста по просмотрам для каждого юзера
+  // Топ-3 поста по просмотрам
   Object.values(fresh).forEach(u => {
-    u.topPosts = u.topPosts
-      .sort((a, b) => b.views - a.views)
-      .slice(0, 3);
+    u.topPosts = u.topPosts.sort((a, b) => b.views - a.views).slice(0, 3);
   });
 
-  // Merge старых и новых данных
+  // Merge
   const merged = { ...existing };
-
   Object.entries(fresh).forEach(([key, u]) => {
     if (merged[key]) {
       const old = merged[key];
@@ -143,9 +141,7 @@ if (tweet.lang && tweet.lang !== 'en') return;
         replies:  old.replies  + u.replies,
         firstPost: old.firstPost < u.firstPost ? old.firstPost : u.firstPost,
         lastPost:  old.lastPost  > u.lastPost  ? old.lastPost  : u.lastPost,
-        topPosts:  [...old.topPosts, ...u.topPosts]
-          .sort((a, b) => b.views - a.views)
-          .slice(0, 3)
+        topPosts:  [...old.topPosts, ...u.topPosts].sort((a,b) => b.views - a.views).slice(0, 3)
       };
     } else {
       merged[key] = u;
