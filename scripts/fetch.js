@@ -4,12 +4,9 @@ import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'fs';
 const API_KEY = process.env.TWITTERAPI_KEY;
 const BASE = 'https://api.twitterapi.io/twitter/tweet/advanced_search';
 
-// Only yesterday
-const now = new Date();
-const todayMidnight = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
-const yesterdayMidnight = new Date(todayMidnight.getTime() - 86400000);
-const START_TS = Math.floor(yesterdayMidnight.getTime() / 1000);
-const END_TS   = Math.floor(todayMidnight.getTime() / 1000);
+// May 20 - May 30, 2026
+const START_TS = 1747699200;
+const END_TS   = 1748563200;
 
 const QUERY_BASE = `(@tread_fi OR "treadfi") -filter:replies`;
 
