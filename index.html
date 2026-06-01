@@ -9,6 +9,7 @@
   <meta property="og:description" content="Community tracker for @tread_fi on X — who's posting, who's growing the terminal." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <style>
     :root {
       --bg:       #0a0a0a;
@@ -215,15 +216,35 @@
     .stat-value.loading { font-family: var(--mono); font-size: 18px; color: var(--muted); animation: pulse 1.5s ease-in-out infinite; }
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.25} }
 
-    /* PROFILE */
-    .profile-section { max-width: 1040px; margin: 64px auto 0; padding: 0 24px; display: none; position: relative; z-index: 1; }
-    .profile-section.visible { display: block; }
+    /* PROFILE MODAL */
+    .profile-overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(6px);
+      z-index: 300;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .profile-overlay.visible { display: flex; }
+    .profile-section {
+      background: var(--surface);
+      border: 1px solid var(--border2);
+      border-radius: 4px;
+      width: 100%;
+      max-width: 720px;
+      max-height: 90vh;
+      overflow-y: auto;
+      position: relative;
+    }
     .section-heading {
       font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em;
       text-transform: uppercase; color: var(--muted);
-      margin-bottom: 20px; padding-bottom: 12px;
+      padding: 16px 24px;
       border-bottom: 1px solid var(--border);
       display: flex; justify-content: space-between; align-items: center;
+      position: sticky; top: 0; background: var(--surface); z-index: 1;
     }
     .section-heading .orange-dot {
       display: inline-block; width: 6px; height: 6px;
@@ -233,9 +254,10 @@
       background: none; border: none; color: var(--muted2);
       font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em;
       text-transform: uppercase; cursor: pointer; transition: color 0.2s;
+      font-size: 18px; line-height: 1; padding: 0 4px;
     }
     .back-btn:hover { color: var(--orange); }
-    .profile-card { border: 1px solid var(--border); background: var(--surface); border-radius: 3px; overflow: hidden; }
+    .profile-card { border: none; background: transparent; overflow: hidden; }
     .profile-top { padding: 32px; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 24px; }
     .profile-avatar {
       width: 64px; height: 64px; border-radius: 50%;
@@ -464,10 +486,11 @@
   <div class="stat-card"><div class="stat-label">Indexed Users</div><div class="stat-value loading" id="gUsers">—</div></div>
 </div>
 
+<div class="profile-overlay" id="profileOverlay" onclick="overlayClick(event)">
 <div class="profile-section" id="profileSection">
   <div class="section-heading">
     <span><span class="orange-dot"></span>Profile</span>
-    <button class="back-btn" onclick="closeProfile()">← Back to leaderboard</button>
+    <button class="back-btn" onclick="closeProfile()">✕</button>
   </div>
   <div class="profile-card">
     <div class="profile-top">
@@ -523,8 +546,10 @@
     </div>
     <div class="share-row">
       <button class="btn-ghost" onclick="shareX()">𝕏 Share this profile</button>
+      <button class="btn-ghost" onclick="downloadCard()" id="downloadBtn">⬇ Save as image</button>
     </div>
   </div>
+</div>
 </div>
 
 <div class="leaderboard-section" id="leaderboard">
@@ -626,7 +651,7 @@
   <div class="counted-box">
     <div class="counted-icon">📊</div>
     <div class="counted-text">
-      <strong>What gets counted:</strong> Original posts and quote tweets that contain <strong>@tread_fi</strong>, <strong>$TREAD</strong>, or <strong>treadfi</strong>. Plain retweets and empty replies are excluded. Data collected via X API starting <strong>Oct 17, 2023</strong>. Updated daily.
+      <strong>How it works:</strong> Every original post and quote tweet mentioning <strong>@tread_fi</strong>, <strong>$TREAD</strong>, or <strong>treadfi</strong> is indexed and attributed to its author. Retweets and empty replies don't count. Tracking started <strong>Oct 17, 2023</strong> — leaderboard refreshes every 24h.
     </div>
   </div>
 </div>
@@ -889,13 +914,45 @@ function openProfile(handle) {
     '<div class="post-item"><div class="post-text" style="color:var(--muted)">No posts indexed yet.</div></div>';
 
   profileData = user;
-  document.getElementById('profileSection').classList.add('visible');
-  document.getElementById('profileSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  document.getElementById('profileOverlay').classList.add('visible');
+  document.body.style.overflow = 'hidden';
+}
+
+function overlayClick(e) {
+  if (e.target === document.getElementById('profileOverlay')) closeProfile();
 }
 
 function closeProfile() {
-  document.getElementById('profileSection').classList.remove('visible');
+  document.getElementById('profileOverlay').classList.remove('visible');
+  document.body.style.overflow = '';
   profileData = null;
+}
+
+async function downloadCard() {
+  if (!profileData) return;
+  const btn = document.getElementById('downloadBtn');
+  btn.textContent = '⏳ Generating…';
+  btn.disabled = true;
+
+  try {
+    const card = document.getElementById('profileSection');
+    const canvas = await html2canvas(card, {
+      backgroundColor: '#111111',
+      scale: 2,
+      useCORS: true,
+      allowTaint: true,
+      logging: false
+    });
+    const link = document.createElement('a');
+    link.download = `proof-of-tread-${profileData.handle}.png`;
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+  } catch(e) {
+    notify('Could not export image. Try a screenshot instead.');
+  } finally {
+    btn.textContent = '⬇ Save as image';
+    btn.disabled = false;
+  }
 }
 
 function shareX() {
@@ -929,6 +986,8 @@ function notify(msg) {
   el.classList.add('show');
   setTimeout(() => el.classList.remove('show'), 3000);
 }
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeProfile(); });
 
 document.getElementById('searchInput').addEventListener('keydown', e => {
   if (e.key === 'Enter') scanHandle();
