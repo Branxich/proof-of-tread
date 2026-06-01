@@ -11,7 +11,7 @@ const yesterdayMidnight = new Date(todayMidnight.getTime() - 86400000);
 const START_TS = Math.floor(yesterdayMidnight.getTime() / 1000);
 const END_TS   = Math.floor(todayMidnight.getTime() / 1000);
 
-const QUERY_BASE = `@tread_fi -filter:replies`;
+const QUERY_BASE = `(@tread_fi OR "treadfi") -filter:replies`;
 
 function parseTwitterTime(s) {
   return Math.floor(new Date(s).getTime() / 1000);
@@ -28,7 +28,7 @@ function isRelevant(tweet) {
   const hasMention = txt.includes('@tread_fi');
   const hasCashtag = /\$tread\b/.test(txt);
   const hasUrl     = txt.includes('tread.fi') || txt.includes('app.tread.fi');
-  const hasTreadfi = /\btreadfi\b/.test(txt);
+  const hasTreadfi = txt.includes('treadfi');
 
   return hasMention || hasCashtag || hasUrl || hasTreadfi;
 }
