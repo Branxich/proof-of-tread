@@ -8,7 +8,7 @@ const BASE = 'https://api.twitterapi.io/twitter/tweet/advanced_search';
 const START_TS = 1735689600; // Jan 1, 2026 00:00 UTC
 const END_TS   = 1738368000; // Feb 1, 2026 00:00 UTC
 
-const QUERY_BASE = `(@tread_fi OR treadfi) -tread -treadmill -treadway -filter:replies`;
+const QUERY_BASE = `(@tread_fi OR treadfi OR url:tread.fi) -filter:replies`;
 function parseTwitterTime(s) {
   return Math.floor(new Date(s).getTime() / 1000);
 }
