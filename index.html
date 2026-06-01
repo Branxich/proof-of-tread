@@ -768,98 +768,6 @@
     }
     .notify.show { transform: translateX(-50%) translateY(0); }
 
-    /* ── CONFIG MODAL ── */
-    .modal-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.8);
-      z-index: 300;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
-    .modal-overlay.open { display: flex; }
-    .modal {
-      background: var(--surface);
-      border: 1px solid var(--border2);
-      border-radius: 4px;
-      padding: 40px;
-      max-width: 560px;
-      width: 100%;
-    }
-    .modal-title {
-      font-family: var(--serif);
-      font-size: 26px;
-      color: var(--accent);
-      margin-bottom: 8px;
-      letter-spacing: -0.02em;
-    }
-    .modal-sub {
-      font-size: 13px;
-      color: var(--muted2);
-      margin-bottom: 28px;
-      line-height: 1.6;
-    }
-    .modal label {
-      display: block;
-      font-family: var(--mono);
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-      margin-bottom: 8px;
-    }
-    .modal input {
-      width: 100%;
-      background: var(--bg);
-      border: 1px solid var(--border2);
-      padding: 12px 16px;
-      color: var(--text);
-      font-family: var(--mono);
-      font-size: 13px;
-      border-radius: 2px;
-      outline: none;
-      margin-bottom: 20px;
-      transition: border-color 0.2s;
-    }
-    .modal input:focus { border-color: var(--accent); }
-    .modal-note {
-      font-size: 12px;
-      color: var(--muted);
-      line-height: 1.6;
-      margin-bottom: 24px;
-    }
-    .modal-actions { display: flex; gap: 12px; }
-    .modal-cancel {
-      flex: 1;
-      padding: 12px;
-      background: none;
-      border: 1px solid var(--border2);
-      color: var(--muted2);
-      font-family: var(--mono);
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      border-radius: 2px;
-      transition: all 0.2s;
-    }
-    .modal-cancel:hover { border-color: var(--border2); color: var(--text); }
-    .modal-save {
-      flex: 2;
-      padding: 12px;
-      background: var(--accent);
-      border: none;
-      color: #000;
-      font-family: var(--mono);
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      border-radius: 2px;
-      transition: opacity 0.2s;
-    }
-    .modal-save:hover { opacity: 0.8; }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 640px) {
@@ -887,7 +795,6 @@
       <a href="#leaderboard">Leaderboard</a>
       <a href="#about">About</a>
       <a href="https://x.com/nadoHQ" target="_blank">@NadoHQ ↗</a>
-      <button class="btn-solid" onclick="document.getElementById('configModal').classList.add('open')" style="border-radius:2px;padding:7px 14px;">⚙ Setup API</button>
     </div>
   </div>
 </header>
@@ -1113,31 +1020,6 @@
 <!-- Notify -->
 <div class="notify" id="notify"></div>
 
-<!-- Config Modal -->
-<div class="modal-overlay" id="configModal">
-  <div class="modal">
-    <div class="modal-title">API Configuration</div>
-    <div class="modal-sub">Connect your X API Bearer Token to fetch live data. The token is stored only in your browser (localStorage) and never sent anywhere except api.twitter.com.</div>
-
-    <label>X API Bearer Token (v2)</label>
-    <input type="password" id="bearerInput" placeholder="AAAA…your bearer token…" />
-
-    <label>Additional search keywords (comma-separated)</label>
-    <input type="text" id="keywordsInput" placeholder="nado, nadoHQ, $INK, $NADO" value="nado, nadoHQ, $INK, $NADO" />
-
-    <label>Start date</label>
-    <input type="date" id="startDateInput" value="2025-11-18" />
-
-    <div class="modal-note">
-      ⚠️ X API v2 Basic tier allows ~10 queries/month. Pro tier (~$100/mo) is needed for full historical data. If you use GitHub Actions for daily fetching, set <code>BEARER_TOKEN</code> as a repo secret and update <code>data/leaderboard.json</code> automatically. See <a href="#" style="color:var(--muted2)">README.md</a> for the GitHub Actions workflow.
-    </div>
-
-    <div class="modal-actions">
-      <button class="modal-cancel" onclick="document.getElementById('configModal').classList.remove('open')">Cancel</button>
-      <button class="modal-save" onclick="saveConfig()">Save & Refresh</button>
-    </div>
-  </div>
-</div>
 
 <script>
 // ── STATE ──────────────────────────────────────────────────────────
@@ -1146,33 +1028,13 @@ let leaderboardData = [];
 let profileData = null;
 
 // ── CONFIG ─────────────────────────────────────────────────────────
+const CONFIG = {
+  keywords: 'nado, nadoHQ, $INK, $NADO',
+};
+
 function getConfig() {
-  return {
-    bearer: localStorage.getItem('nado_bearer') || '',
-    keywords: localStorage.getItem('nado_keywords') || 'nado, nadoHQ, $INK, $NADO',
-    startDate: localStorage.getItem('nado_start') || '2025-11-18'
-  };
+  return CONFIG;
 }
-
-function saveConfig() {
-  const bearer = document.getElementById('bearerInput').value.trim();
-  const kw = document.getElementById('keywordsInput').value.trim();
-  const sd = document.getElementById('startDateInput').value;
-  if (bearer) localStorage.setItem('nado_bearer', bearer);
-  localStorage.setItem('nado_keywords', kw);
-  localStorage.setItem('nado_start', sd);
-  document.getElementById('configModal').classList.remove('open');
-  notify('Config saved. Loading data…');
-  loadData();
-}
-
-// Pre-fill modal from config
-(function() {
-  const cfg = getConfig();
-  if (cfg.bearer) document.getElementById('bearerInput').value = cfg.bearer;
-  document.getElementById('keywordsInput').value = cfg.keywords;
-  document.getElementById('startDateInput').value = cfg.startDate;
-})();
 
 // ── DATA ────────────────────────────────────────────────────────────
 // Try to load from data/leaderboard.json (GitHub repo) or X API
@@ -1189,35 +1051,26 @@ async function loadData() {
     }
   } catch(e) {}
 
-  // Fallback: X API v2 recent search (requires bearer)
+  // Fallback: fetch live from proxy
   const cfg = getConfig();
-  if (!cfg.bearer) {
-    renderEmpty('No data yet. Set up your X API key via ⚙ Setup API, or commit data/leaderboard.json via GitHub Actions.');
-    updateGlobalStats({});
-    return;
-  }
-
   await fetchFromXAPI(cfg);
 }
 
 async function fetchFromXAPI(cfg) {
   const query = encodeURIComponent(`(${cfg.keywords.split(',').map(k=>k.trim()).join(' OR ')}) lang:en -is:retweet`);
-  const start = new Date(cfg.startDate).toISOString();
-  const url = `https://api.x.com/2/tweets/search/recent?query=${query}&start_time=${start}&tweet.fields=public_metrics,author_id,created_at,referenced_tweets&expansions=author_id&user.fields=name,username,public_metrics,profile_image_url&max_results=100`;
+  const url = `https://nado-proxy.runov-vlad37.workers.dev/2/tweets/search/recent?query=${query}&tweet.fields=public_metrics,author_id,created_at,referenced_tweets&expansions=author_id&user.fields=name,username,public_metrics,profile_image_url&max_results=100`;
 
   try {
-    const r = await fetch(url, {
-      headers: { 'Authorization': `Bearer ${cfg.bearer}` }
-    });
+    const r = await fetch(url);
     if (!r.ok) {
       const e = await r.json();
-      renderEmpty('X API error: ' + (e.title || r.status) + '. Check your Bearer Token.');
+      renderEmpty('Error loading data: ' + (e.title || r.status));
       return;
     }
     const d = await r.json();
     processXResponse(d);
   } catch(e) {
-    renderEmpty('Network error fetching X API. CORS may block browser requests — use GitHub Actions for server-side fetching. ' + e.message);
+    renderEmpty('Error loading data. Please try again later.');
   }
 }
 
@@ -1293,7 +1146,7 @@ function setSort(s) {
 
 function renderLeaderboard() {
   const sorted = [...leaderboardData].sort((a,b) => b[currentSort] - a[currentSort]);
-  if (!sorted.length) { renderEmpty('No data. Add your X API key via ⚙ Setup API or commit data/leaderboard.json.'); return; }
+  if (!sorted.length) { renderEmpty('No data yet. Check back soon.'); return; }
 
   const rows = sorted.map((u, i) => {
     const rankClass = i === 0 ? 'gold' : i === 1 ? 'silver' : i === 2 ? 'bronze' : '';
@@ -1389,23 +1242,17 @@ function scanHandle(forceHandle) {
   const found = leaderboardData.find(u => u.handle.toLowerCase() === handle.toLowerCase());
   if (found) { openProfile(found.handle); return; }
 
-  const cfg = getConfig();
-  if (!cfg.bearer) {
-    notify('Set your X API Bearer Token via ⚙ Setup API first.');
-    document.getElementById('configModal').classList.add('open');
-    return;
-  }
   notify('Scanning @' + handle + '…');
-  fetchUserFromAPI(handle, cfg);
+  fetchUserFromAPI(handle);
 }
 
-async function fetchUserFromAPI(handle, cfg) {
+async function fetchUserFromAPI(handle) {
+  const cfg = getConfig();
   const query = encodeURIComponent(`from:${handle} (${cfg.keywords.split(',').map(k=>k.trim()).join(' OR ')}) -is:retweet`);
-  const start = new Date(cfg.startDate).toISOString();
-  const url = `https://api.x.com/2/tweets/search/recent?query=${query}&start_time=${start}&tweet.fields=public_metrics,created_at,referenced_tweets&expansions=author_id&user.fields=name,username,public_metrics,profile_image_url&max_results=100`;
+  const url = `https://nado-proxy.runov-vlad37.workers.dev/2/tweets/search/recent?query=${query}&tweet.fields=public_metrics,created_at,referenced_tweets&expansions=author_id&user.fields=name,username,public_metrics,profile_image_url&max_results=100`;
 
   try {
-    const r = await fetch(url, { headers: { 'Authorization': `Bearer ${cfg.bearer}` }});
+    const r = await fetch(url);
     if (!r.ok) { notify('API error: ' + r.status); return; }
     const d = await r.json();
     const userInfo = d.includes?.users?.[0];
