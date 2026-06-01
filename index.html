@@ -3,54 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Proof of NADO</title>
-  <meta name="description" content="See who has helped @NadoHQ grow on X. Community leaderboard tracking mentions, views, and engagement since Nov 18, 2025." />
-  <meta property="og:title" content="Proof of NADO" />
-  <meta property="og:description" content="Community tracker for @NadoHQ on X — who's posting, who's growing the storm." />
-  <meta property="og:image" content="https://og-image.vercel.app/Proof%20of%20NADO.png" />
+  <title>Proof of TREAD</title>
+  <meta name="description" content="See who has helped @tread_fi grow on X. Community leaderboard tracking mentions, views, and engagement since June 2025." />
+  <meta property="og:title" content="Proof of TREAD" />
+  <meta property="og:description" content="Community tracker for @tread_fi on X — who's posting, who's growing the terminal." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #080808;
-      --surface: #111111;
-      --surface2: #1a1a1a;
-      --border: #222222;
-      --border2: #333333;
-      --text: #f0f0f0;
-      --muted: #666666;
-      --muted2: #888888;
-      --accent: #ffffff;
-      --accent-dim: rgba(255,255,255,0.07);
-      --accent-dim2: rgba(255,255,255,0.12);
-      --mono: 'Space Mono', monospace;
-      --serif: 'DM Serif Display', serif;
-      --sans: 'Inter', sans-serif;
+      --bg:       #0a0a0a;
+      --surface:  #111111;
+      --surface2: #181818;
+      --border:   #1e1e1e;
+      --border2:  #2a2a2a;
+      --text:     #f0ede8;
+      --muted:    #555;
+      --muted2:   #888;
+      --orange:   #f47c20;
+      --orange2:  #ff9640;
+      --orange-dim: rgba(244,124,32,0.12);
+      --orange-glow: rgba(244,124,32,0.06);
+      --mono: 'JetBrains Mono', monospace;
+      --cond: 'Barlow Condensed', sans-serif;
+      --body: 'Barlow', sans-serif;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
 
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: var(--sans);
+      font-family: var(--body);
       font-size: 15px;
       line-height: 1.6;
       min-height: 100vh;
       overflow-x: hidden;
     }
 
-    /* Grain overlay */
+    /* subtle grid bg */
     body::before {
       content: '';
       position: fixed;
       inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      background-image:
+        linear-gradient(rgba(244,124,32,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(244,124,32,0.03) 1px, transparent 1px);
+      background-size: 48px 48px;
       pointer-events: none;
-      z-index: 9999;
-      opacity: 0.5;
+      z-index: 0;
     }
 
     a { color: inherit; text-decoration: none; }
@@ -59,15 +60,15 @@
     /* ── HEADER ── */
     header {
       border-bottom: 1px solid var(--border);
-      padding: 18px 0;
+      padding: 16px 0;
       position: sticky;
       top: 0;
-      background: rgba(8,8,8,0.92);
-      backdrop-filter: blur(12px);
+      background: rgba(10,10,10,0.92);
+      backdrop-filter: blur(16px);
       z-index: 100;
     }
     .header-inner {
-      max-width: 960px;
+      max-width: 1040px;
       margin: 0 auto;
       padding: 0 24px;
       display: flex;
@@ -75,30 +76,32 @@
       justify-content: space-between;
     }
     .logo {
-      font-family: var(--serif);
-      font-size: 20px;
-      letter-spacing: -0.02em;
-      color: var(--accent);
+      font-family: var(--cond);
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text);
       display: flex;
       align-items: center;
       gap: 10px;
     }
-    .logo-mark {
-      width: 30px;
-      height: 30px;
-      border: 1.5px solid var(--accent);
-      border-radius: 50%;
+    .logo-icon {
+      width: 28px;
+      height: 28px;
+      background: var(--orange);
+      border-radius: 4px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: var(--mono);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0;
+      font-size: 14px;
+      font-weight: 900;
+      color: #000;
     }
+    .logo span { color: var(--orange); }
     .header-links {
       display: flex;
-      gap: 20px;
+      gap: 24px;
       align-items: center;
     }
     .header-links a {
@@ -106,70 +109,90 @@
       font-size: 11px;
       color: var(--muted2);
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
       transition: color 0.2s;
     }
-    .header-links a:hover { color: var(--accent); }
+    .header-links a:hover { color: var(--orange); }
 
     /* ── HERO ── */
     .hero {
-      max-width: 960px;
+      max-width: 1040px;
       margin: 0 auto;
-      padding: 72px 24px 60px;
+      padding: 80px 24px 64px;
       text-align: center;
       position: relative;
+      z-index: 1;
     }
     .hero-eyebrow {
       font-family: var(--mono);
       font-size: 11px;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--muted2);
+      color: var(--orange);
       margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .hero-eyebrow::before,
+    .hero-eyebrow::after {
+      content: '';
+      width: 32px;
+      height: 1px;
+      background: var(--orange);
+      opacity: 0.4;
     }
     .hero-title {
-      font-family: var(--serif);
-      font-size: clamp(48px, 8vw, 88px);
-      line-height: 0.95;
-      letter-spacing: -0.03em;
-      color: var(--accent);
-      margin-bottom: 24px;
+      font-family: var(--cond);
+      font-size: clamp(56px, 10vw, 108px);
+      font-weight: 800;
+      line-height: 0.9;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: var(--text);
+      margin-bottom: 8px;
     }
-    .hero-title em {
-      font-style: italic;
+    .hero-title .accent { color: var(--orange); }
+    .hero-sub-title {
+      font-family: var(--cond);
+      font-size: clamp(20px, 4vw, 32px);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
       color: var(--muted2);
+      margin-bottom: 28px;
     }
-    .hero-sub {
-      font-size: 16px;
+    .hero-desc {
+      font-size: 15px;
       color: var(--muted2);
-      max-width: 480px;
-      margin: 0 auto 40px;
+      max-width: 440px;
+      margin: 0 auto 44px;
       line-height: 1.7;
     }
 
     /* ── SEARCH ── */
-    .search-wrap {
-      max-width: 440px;
-      margin: 0 auto;
-    }
+    .search-wrap { max-width: 460px; margin: 0 auto; }
     .search-box {
       display: flex;
       border: 1px solid var(--border2);
       background: var(--surface);
-      border-radius: 4px;
+      border-radius: 3px;
       overflow: hidden;
-      transition: border-color 0.2s;
+      transition: border-color 0.2s, box-shadow 0.2s;
     }
-    .search-box:focus-within { border-color: var(--accent); }
+    .search-box:focus-within {
+      border-color: var(--orange);
+      box-shadow: 0 0 0 3px rgba(244,124,32,0.1);
+    }
     .search-at {
-      padding: 14px 12px 14px 16px;
+      padding: 14px 10px 14px 16px;
       font-family: var(--mono);
       font-size: 14px;
       color: var(--muted);
       background: transparent;
       border: none;
       pointer-events: none;
-      user-select: none;
     }
     .search-input {
       flex: 1;
@@ -183,18 +206,18 @@
     }
     .search-input::placeholder { color: var(--muted); }
     .search-btn {
-      padding: 14px 20px;
-      background: var(--accent);
+      padding: 14px 22px;
+      background: var(--orange);
       color: #000;
       border: none;
-      font-family: var(--mono);
-      font-size: 12px;
+      font-family: var(--cond);
+      font-size: 13px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
-      transition: background 0.2s, opacity 0.2s;
+      letter-spacing: 0.08em;
+      transition: background 0.2s;
     }
-    .search-btn:hover { background: #d0d0d0; }
+    .search-btn:hover { background: var(--orange2); }
     .search-hint {
       margin-top: 10px;
       font-size: 12px;
@@ -204,21 +227,36 @@
 
     /* ── GLOBAL STATS ── */
     .global-stats {
-      max-width: 960px;
-      margin: 60px auto 0;
+      max-width: 1040px;
+      margin: 64px auto 0;
       padding: 0 24px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1px;
       background: var(--border);
       border: 1px solid var(--border);
-      border-radius: 4px;
+      border-radius: 3px;
       overflow: hidden;
+      position: relative;
+      z-index: 1;
     }
     .stat-card {
       background: var(--surface);
       padding: 28px 24px;
+      position: relative;
+      overflow: hidden;
     }
+    .stat-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--orange);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+    .stat-card:hover::before { transform: scaleX(1); }
     .stat-label {
       font-family: var(--mono);
       font-size: 10px;
@@ -228,10 +266,11 @@
       margin-bottom: 10px;
     }
     .stat-value {
-      font-family: var(--serif);
-      font-size: 32px;
-      letter-spacing: -0.02em;
-      color: var(--accent);
+      font-family: var(--cond);
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      color: var(--orange);
       line-height: 1;
     }
     .stat-value.loading {
@@ -240,47 +279,56 @@
       color: var(--muted);
       animation: pulse 1.5s ease-in-out infinite;
     }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.25} }
 
-    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
-
-    /* ── PROFILE CARD ── */
+    /* ── PROFILE ── */
     .profile-section {
-      max-width: 960px;
-      margin: 60px auto 0;
+      max-width: 1040px;
+      margin: 64px auto 0;
       padding: 0 24px;
       display: none;
+      position: relative;
+      z-index: 1;
     }
     .profile-section.visible { display: block; }
+
     .section-heading {
       font-family: var(--mono);
-      font-size: 11px;
-      letter-spacing: 0.1em;
+      font-size: 10px;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--muted);
-      margin-bottom: 24px;
+      margin-bottom: 20px;
       padding-bottom: 12px;
       border-bottom: 1px solid var(--border);
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+    .section-heading .orange-dot {
+      display: inline-block;
+      width: 6px; height: 6px;
+      background: var(--orange);
+      border-radius: 50%;
+      margin-right: 8px;
+    }
     .back-btn {
       background: none;
       border: none;
       color: var(--muted2);
       font-family: var(--mono);
-      font-size: 11px;
+      font-size: 10px;
       letter-spacing: 0.06em;
       text-transform: uppercase;
       cursor: pointer;
       transition: color 0.2s;
     }
-    .back-btn:hover { color: var(--accent); }
+    .back-btn:hover { color: var(--orange); }
 
     .profile-card {
       border: 1px solid var(--border);
       background: var(--surface);
-      border-radius: 4px;
+      border-radius: 3px;
       overflow: hidden;
     }
     .profile-top {
@@ -291,72 +339,70 @@
       gap: 24px;
     }
     .profile-avatar {
-      width: 64px;
-      height: 64px;
+      width: 64px; height: 64px;
       border-radius: 50%;
-      border: 1px solid var(--border2);
+      border: 2px solid var(--orange);
       overflow: hidden;
       flex-shrink: 0;
       background: var(--surface2);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: var(--mono);
-      font-size: 22px;
-      color: var(--muted);
+      font-family: var(--cond);
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--orange);
     }
     .profile-avatar img { width: 100%; height: 100%; object-fit: cover; }
     .profile-info { flex: 1; }
     .profile-name {
-      font-family: var(--serif);
-      font-size: 26px;
-      color: var(--accent);
-      letter-spacing: -0.02em;
+      font-family: var(--cond);
+      font-size: 28px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--text);
+      letter-spacing: 0.02em;
       margin-bottom: 2px;
     }
     .profile-handle {
       font-family: var(--mono);
-      font-size: 13px;
-      color: var(--muted2);
-      margin-bottom: 8px;
+      font-size: 12px;
+      color: var(--orange);
+      margin-bottom: 6px;
     }
     .profile-followers {
       font-family: var(--mono);
-      font-size: 12px;
+      font-size: 11px;
       color: var(--muted);
     }
-    .profile-actions {
-      display: flex;
-      gap: 10px;
-      flex-shrink: 0;
-    }
+    .profile-actions { display: flex; gap: 8px; flex-shrink: 0; }
     .btn-ghost {
-      padding: 9px 16px;
+      padding: 8px 16px;
       border: 1px solid var(--border2);
       background: transparent;
       color: var(--muted2);
       font-family: var(--mono);
-      font-size: 11px;
+      font-size: 10px;
       text-transform: uppercase;
       letter-spacing: 0.06em;
       transition: all 0.2s;
       border-radius: 2px;
     }
-    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
-    .btn-solid {
-      padding: 9px 16px;
-      background: var(--accent);
+    .btn-ghost:hover { border-color: var(--orange); color: var(--orange); }
+    .btn-orange {
+      padding: 8px 16px;
+      background: var(--orange);
       color: #000;
       border: none;
-      font-family: var(--mono);
-      font-size: 11px;
+      font-family: var(--cond);
+      font-size: 12px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      transition: opacity 0.2s;
+      transition: background 0.2s;
       border-radius: 2px;
     }
-    .btn-solid:hover { opacity: 0.8; }
+    .btn-orange:hover { background: var(--orange2); }
 
     .profile-metrics {
       display: grid;
@@ -370,12 +416,13 @@
       padding: 24px;
       text-align: center;
     }
-    .metric-icon { font-size: 18px; margin-bottom: 8px; }
+    .metric-icon { font-size: 16px; margin-bottom: 8px; }
     .metric-val {
-      font-family: var(--serif);
-      font-size: 36px;
-      color: var(--accent);
-      letter-spacing: -0.02em;
+      font-family: var(--cond);
+      font-size: 40px;
+      font-weight: 800;
+      color: var(--orange);
+      letter-spacing: -0.01em;
       line-height: 1;
       margin-bottom: 4px;
     }
@@ -384,7 +431,7 @@
       font-size: 10px;
       color: var(--muted);
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
     }
     .metric-rank {
       font-family: var(--mono);
@@ -404,21 +451,18 @@
       font-size: 10px;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: var(--muted);
-      margin-bottom: 16px;
+      color: var(--orange);
+      margin-bottom: 14px;
     }
     .breakdown-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 0;
+      padding: 9px 0;
       border-bottom: 1px solid var(--border);
     }
     .breakdown-row:last-child { border-bottom: none; }
-    .breakdown-label {
-      font-size: 13px;
-      color: var(--muted2);
-    }
+    .breakdown-label { font-size: 13px; color: var(--muted2); }
     .breakdown-val {
       font-family: var(--mono);
       font-size: 13px;
@@ -434,59 +478,44 @@
       font-size: 10px;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: var(--muted);
-      padding: 24px 0 16px;
+      color: var(--orange);
+      padding: 24px 0 14px;
     }
     .post-item {
-      padding: 16px 0;
+      padding: 14px 0;
       border-bottom: 1px solid var(--border);
     }
     .post-item:last-child { border-bottom: none; }
-    .post-meta {
-      display: flex;
-      gap: 16px;
-      margin-bottom: 8px;
-    }
-    .post-stat {
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--muted2);
-    }
-    .post-text {
-      font-size: 13px;
-      color: var(--muted2);
-      line-height: 1.5;
-    }
+    .post-meta { display: flex; gap: 16px; margin-bottom: 6px; }
+    .post-stat { font-family: var(--mono); font-size: 11px; color: var(--muted2); }
+    .post-text { font-size: 13px; color: var(--muted2); line-height: 1.5; }
     .post-link {
       font-family: var(--mono);
       font-size: 10px;
-      color: var(--muted);
+      color: var(--orange);
       text-transform: uppercase;
       letter-spacing: 0.06em;
       margin-top: 6px;
       display: inline-block;
-      transition: color 0.2s;
+      transition: opacity 0.2s;
     }
-    .post-link:hover { color: var(--accent); }
+    .post-link:hover { opacity: 0.7; }
     .share-row {
-      padding: 24px 32px;
+      padding: 20px 32px;
       border-top: 1px solid var(--border);
       display: flex;
-      gap: 12px;
-      align-items: center;
+      gap: 10px;
     }
 
     /* ── LEADERBOARD ── */
     .leaderboard-section {
-      max-width: 960px;
-      margin: 60px auto 0;
+      max-width: 1040px;
+      margin: 64px auto 0;
       padding: 0 24px;
+      position: relative;
+      z-index: 1;
     }
-    .lb-controls {
-      display: flex;
-      gap: 4px;
-      align-items: center;
-    }
+    .lb-controls { display: flex; gap: 4px; align-items: center; }
     .lb-sort-btn {
       padding: 5px 12px;
       background: none;
@@ -499,34 +528,32 @@
       border-radius: 2px;
       transition: all 0.2s;
     }
-    .lb-sort-btn.active { background: var(--accent); color: #000; border-color: var(--accent); }
+    .lb-sort-btn.active { background: var(--orange); color: #000; border-color: var(--orange); font-weight: 700; }
     .lb-sort-btn:hover:not(.active) { border-color: var(--border2); color: var(--muted2); }
 
     .lb-table {
       width: 100%;
       border-collapse: collapse;
       border: 1px solid var(--border);
-      border-radius: 4px;
+      border-radius: 3px;
       overflow: hidden;
       margin-top: 20px;
     }
-    .lb-table thead {
-      background: var(--surface2);
-    }
+    .lb-table thead { background: var(--surface2); }
     .lb-table th {
       padding: 12px 16px;
       text-align: left;
       font-family: var(--mono);
       font-size: 10px;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
       color: var(--muted);
       border-bottom: 1px solid var(--border);
       font-weight: 400;
     }
-    .lb-table th:not(:first-child) { text-align: right; }
+    .lb-table th:not(:first-child):not(:nth-child(2)) { text-align: right; }
     .lb-table td {
-      padding: 14px 16px;
+      padding: 13px 16px;
       border-bottom: 1px solid var(--border);
       font-size: 13px;
     }
@@ -536,177 +563,156 @@
       transition: background 0.15s;
       cursor: pointer;
     }
-    .lb-table tbody tr:hover { background: var(--accent-dim); }
-    .lb-table td:not(:first-child):not(:nth-child(2)) { text-align: right; font-family: var(--mono); }
+    .lb-table tbody tr:hover { background: var(--orange-dim); }
+    .lb-table td:not(:first-child):not(:nth-child(2)) {
+      text-align: right;
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted2);
+    }
 
     .rank-num {
       font-family: var(--mono);
-      font-size: 12px;
+      font-size: 11px;
       color: var(--muted);
-      width: 40px;
+      width: 36px;
       display: inline-block;
     }
-    .rank-num.gold { color: #c8b400; }
-    .rank-num.silver { color: #909090; }
-    .rank-num.bronze { color: #8b5a2b; }
+    .rank-num.gold   { color: var(--orange); font-weight: 700; }
+    .rank-num.silver { color: #a0a0a0; }
+    .rank-num.bronze { color: #8b6a3e; }
 
-    .user-cell {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
+    .user-cell { display: flex; align-items: center; gap: 12px; }
     .user-ava {
-      width: 32px;
-      height: 32px;
+      width: 32px; height: 32px;
       border-radius: 50%;
       background: var(--surface2);
       border: 1px solid var(--border);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 12px;
+      font-family: var(--cond);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--orange);
       overflow: hidden;
       flex-shrink: 0;
     }
     .user-ava img { width: 100%; height: 100%; object-fit: cover; }
-    .user-handle {
-      font-family: var(--mono);
-      font-size: 12px;
-      color: var(--muted2);
-    }
-    .user-name { font-size: 13px; color: var(--text); }
+    .user-name { font-size: 13px; color: var(--text); font-weight: 500; }
+    .user-handle { font-family: var(--mono); font-size: 11px; color: var(--muted2); }
 
-    .num-views { color: var(--muted2); }
-    .num-likes { color: var(--muted2); }
-    .num-posts { color: var(--muted2); }
-
-    .lb-empty {
+    .lb-empty, .lb-loading {
       padding: 64px 24px;
       text-align: center;
       font-family: var(--mono);
       font-size: 12px;
       color: var(--muted);
     }
-    .lb-loading {
-      padding: 64px 24px;
-      text-align: center;
-      font-family: var(--mono);
-      font-size: 12px;
-      color: var(--muted);
-      animation: pulse 1.5s ease-in-out infinite;
-    }
+    .lb-loading { animation: pulse 1.5s ease-in-out infinite; }
 
-    /* ── INFO SECTIONS ── */
+    /* ── ABOUT ── */
     .info-grid {
-      max-width: 960px;
-      margin: 60px auto 0;
+      max-width: 1040px;
+      margin: 64px auto 0;
       padding: 0 24px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1px;
       background: var(--border);
       border: 1px solid var(--border);
-      border-radius: 4px;
+      border-radius: 3px;
       overflow: hidden;
+      position: relative;
+      z-index: 1;
     }
-    .info-block {
-      background: var(--surface);
-      padding: 32px;
-    }
-    .info-icon {
-      font-size: 24px;
-      margin-bottom: 14px;
-    }
+    .info-block { background: var(--surface); padding: 32px; }
+    .info-icon { font-size: 22px; margin-bottom: 12px; }
     .info-title {
-      font-family: var(--serif);
+      font-family: var(--cond);
       font-size: 20px;
-      color: var(--accent);
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--text);
       margin-bottom: 10px;
-      letter-spacing: -0.01em;
+      letter-spacing: 0.02em;
     }
-    .info-desc {
-      font-size: 13px;
-      color: var(--muted2);
-      line-height: 1.7;
-    }
+    .info-title span { color: var(--orange); }
+    .info-desc { font-size: 13px; color: var(--muted2); line-height: 1.7; }
 
     .what-counted {
-      max-width: 960px;
-      margin: 24px auto 0;
+      max-width: 1040px;
+      margin: 20px auto 0;
       padding: 0 24px;
+      position: relative;
+      z-index: 1;
     }
     .counted-box {
       border: 1px solid var(--border);
       background: var(--surface);
-      border-radius: 4px;
-      padding: 24px 28px;
+      border-left: 3px solid var(--orange);
+      border-radius: 3px;
+      padding: 20px 24px;
       display: flex;
-      gap: 16px;
+      gap: 14px;
       align-items: flex-start;
     }
-    .counted-icon {
-      font-size: 18px;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-    .counted-text {
-      font-size: 13px;
-      color: var(--muted2);
-      line-height: 1.7;
-    }
-    .counted-text strong { color: var(--muted2); font-weight: 600; }
+    .counted-icon { font-size: 16px; flex-shrink: 0; margin-top: 2px; }
+    .counted-text { font-size: 13px; color: var(--muted2); line-height: 1.7; }
+    .counted-text strong { color: var(--orange); font-weight: 600; }
 
-    /* ── REFERRAL ── */
-    .referral-section {
-      max-width: 960px;
-      margin: 60px auto 0;
+    /* ── CTA ── */
+    .cta-section {
+      max-width: 1040px;
+      margin: 64px auto 0;
       padding: 0 24px;
+      position: relative;
+      z-index: 1;
     }
-    .referral-card {
+    .cta-card {
       border: 1px solid var(--border2);
-      border-radius: 4px;
+      border-radius: 3px;
       overflow: hidden;
-    }
-    .referral-top {
       background: var(--surface);
-      padding: 32px;
+    }
+    .cta-top {
+      padding: 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 24px;
+      gap: 32px;
+      background: linear-gradient(135deg, var(--surface) 0%, rgba(244,124,32,0.05) 100%);
     }
-    .referral-title {
-      font-family: var(--serif);
-      font-size: 22px;
-      color: var(--accent);
-      letter-spacing: -0.02em;
-      margin-bottom: 6px;
+    .cta-title {
+      font-family: var(--cond);
+      font-size: 26px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--text);
+      letter-spacing: 0.02em;
+      margin-bottom: 8px;
     }
-    .referral-desc {
-      font-size: 13px;
-      color: var(--muted2);
-      line-height: 1.6;
-    }
-    .referral-cta {
-      flex-shrink: 0;
-    }
-    .ref-link {
+    .cta-title span { color: var(--orange); }
+    .cta-desc { font-size: 13px; color: var(--muted2); line-height: 1.6; max-width: 480px; }
+    .cta-link {
       display: inline-block;
-      padding: 12px 24px;
-      border: 1px solid var(--accent);
-      color: var(--accent);
-      font-family: var(--mono);
-      font-size: 12px;
+      padding: 14px 28px;
+      background: var(--orange);
+      color: #000;
+      font-family: var(--cond);
+      font-size: 14px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      transition: all 0.2s;
+      transition: background 0.2s;
       border-radius: 2px;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
-    .ref-link:hover { background: var(--accent); color: #000; }
-    .referral-bottom {
+    .cta-link:hover { background: var(--orange2); }
+    .cta-bottom {
       background: var(--surface2);
-      padding: 14px 32px;
+      padding: 12px 40px;
       font-family: var(--mono);
       font-size: 11px;
       color: var(--muted);
@@ -715,24 +721,27 @@
 
     /* ── FOOTER ── */
     footer {
-      max-width: 960px;
-      margin: 60px auto 0;
-      padding: 32px 24px 48px;
+      max-width: 1040px;
+      margin: 64px auto 0;
+      padding: 28px 24px 48px;
       border-top: 1px solid var(--border);
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 24px;
+      position: relative;
+      z-index: 1;
     }
     .footer-brand {
-      font-family: var(--serif);
+      font-family: var(--cond);
       font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
       color: var(--muted);
+      letter-spacing: 0.04em;
     }
-    .footer-links {
-      display: flex;
-      gap: 16px;
-    }
+    .footer-brand span { color: var(--orange); }
+    .footer-links { display: flex; gap: 20px; }
     .footer-links a {
       font-family: var(--mono);
       font-size: 10px;
@@ -741,69 +750,61 @@
       letter-spacing: 0.06em;
       transition: color 0.2s;
     }
-    .footer-links a:hover { color: var(--muted2); }
-    .footer-disc {
-      font-size: 11px;
-      color: var(--muted);
-      max-width: 400px;
-      line-height: 1.6;
-    }
+    .footer-links a:hover { color: var(--orange); }
+    .footer-disc { font-size: 11px; color: var(--muted); max-width: 340px; line-height: 1.6; }
 
-    /* ── NOTIFY BANNER ── */
+    /* ── NOTIFY ── */
     .notify {
       position: fixed;
       bottom: 24px;
       left: 50%;
       transform: translateX(-50%) translateY(100px);
       background: var(--surface);
-      border: 1px solid var(--border2);
+      border: 1px solid var(--orange);
       padding: 12px 24px;
       font-family: var(--mono);
       font-size: 12px;
       color: var(--text);
-      border-radius: 4px;
+      border-radius: 3px;
       transition: transform 0.3s ease;
       z-index: 200;
       white-space: nowrap;
     }
     .notify.show { transform: translateX(-50%) translateY(0); }
 
-
     /* ── RESPONSIVE ── */
     @media (max-width: 640px) {
       .global-stats { grid-template-columns: repeat(2, 1fr); }
       .profile-breakdown { grid-template-columns: 1fr; }
       .info-grid { grid-template-columns: 1fr; }
-      .profile-metrics { grid-template-columns: repeat(3, 1fr); }
-      .referral-top { flex-direction: column; }
+      .cta-top { flex-direction: column; }
       footer { flex-direction: column; text-align: center; }
       .profile-top { flex-direction: column; }
-      .profile-actions { flex-wrap: wrap; }
+      .header-links { gap: 12px; }
     }
   </style>
 </head>
 <body>
 
-<!-- Header -->
 <header>
   <div class="header-inner">
     <div class="logo">
-      <div class="logo-mark">⚡</div>
-      Proof of NADO
+      <div class="logo-icon">T</div>
+      Proof of <span>TREAD</span>
     </div>
     <div class="header-links">
       <a href="#leaderboard">Leaderboard</a>
       <a href="#about">About</a>
-      <a href="https://x.com/nadoHQ" target="_blank">@NadoHQ ↗</a>
+      <a href="https://x.com/tread_fi" target="_blank">@tread_fi ↗</a>
     </div>
   </div>
 </header>
 
-<!-- Hero -->
 <div class="hero">
-  <p class="hero-eyebrow">Community Tracker · @NadoHQ · Since Nov 18, 2025</p>
-  <h1 class="hero-title">Proof of<br><em>NADO</em></h1>
-  <p class="hero-sub">See who has helped <a href="https://x.com/nadoHQ" target="_blank" style="color:var(--muted2);text-decoration:underline;text-underline-offset:3px">@NadoHQ</a> grow on X. Index any account, open its profile, and share the card.</p>
+  <p class="hero-eyebrow">Community Tracker · @tread_fi · Since June 2025</p>
+  <h1 class="hero-title">Proof of<br><span class="accent">TREAD</span></h1>
+  <p class="hero-sub-title">Who's building the terminal</p>
+  <p class="hero-desc">See who has helped <a href="https://x.com/tread_fi" target="_blank" style="color:var(--orange)">@tread_fi</a> grow on X. Search any account, open their profile, and share the card.</p>
 
   <div class="search-wrap">
     <div class="search-box">
@@ -815,7 +816,6 @@
   </div>
 </div>
 
-<!-- Global Stats -->
 <div class="global-stats">
   <div class="stat-card">
     <div class="stat-label">Total Views</div>
@@ -835,10 +835,9 @@
   </div>
 </div>
 
-<!-- Profile Section -->
 <div class="profile-section" id="profileSection">
   <div class="section-heading">
-    <span>Profile</span>
+    <span><span class="orange-dot"></span>Profile</span>
     <button class="back-btn" onclick="closeProfile()">← Back to leaderboard</button>
   </div>
   <div class="profile-card">
@@ -850,9 +849,8 @@
         <div class="profile-followers" id="profFollowers">0 followers</div>
       </div>
       <div class="profile-actions">
-        <button class="btn-ghost" onclick="downloadCard()">⬇ PNG</button>
         <button class="btn-ghost" onclick="shareX()">𝕏 Share</button>
-        <a id="profXLink" href="#" target="_blank" class="btn-solid">View on 𝕏 ↗</a>
+        <a id="profXLink" href="#" target="_blank" class="btn-orange">View on 𝕏 ↗</a>
       </div>
     </div>
     <div class="profile-metrics">
@@ -879,16 +877,16 @@
       <div>
         <div class="breakdown-title">Mention breakdown</div>
         <div class="breakdown-row">
-          <span class="breakdown-label">🔗 @nadoHQ mentions</span>
+          <span class="breakdown-label">🔗 @tread_fi mentions</span>
           <span class="breakdown-val" id="bdMentions">0</span>
         </div>
         <div class="breakdown-row">
-          <span class="breakdown-label">📝 keyword "nado"</span>
-          <span class="breakdown-val" id="bdKeyword">0</span>
+          <span class="breakdown-label">💵 $TREAD tag</span>
+          <span class="breakdown-val" id="bdCashtag">0</span>
         </div>
         <div class="breakdown-row">
-          <span class="breakdown-label">💵 $NADO / $INK tag</span>
-          <span class="breakdown-val" id="bdCashtag">0</span>
+          <span class="breakdown-label">📝 keyword "treadfi"</span>
+          <span class="breakdown-val" id="bdKeyword">0</span>
         </div>
         <div class="breakdown-row">
           <span class="breakdown-label">💬 substantive replies</span>
@@ -896,7 +894,7 @@
         </div>
       </div>
       <div>
-        <div class="breakdown-title">First post</div>
+        <div class="breakdown-title">Activity</div>
         <div class="breakdown-row">
           <span class="breakdown-label">First indexed post</span>
           <span class="breakdown-val" id="bdFirst">—</span>
@@ -921,27 +919,24 @@
     </div>
     <div class="share-row">
       <button class="btn-ghost" onclick="shareX()">𝕏 Share this profile</button>
-      <button class="btn-ghost" onclick="downloadCard()">⬇ Download PNG</button>
     </div>
   </div>
 </div>
 
-<!-- Leaderboard -->
 <div class="leaderboard-section" id="leaderboard">
   <div class="section-heading">
-    <span>Leaderboard</span>
+    <span><span class="orange-dot"></span>Leaderboard</span>
     <div class="lb-controls">
-      <span style="font-size:10px;color:var(--muted);margin-right:8px;">Rank by</span>
+      <span style="font-size:10px;color:var(--muted);margin-right:6px;font-family:var(--mono)">Rank by</span>
       <button class="lb-sort-btn active" id="sortViews" onclick="setSort('views')">👁 Views</button>
       <button class="lb-sort-btn" id="sortLikes" onclick="setSort('likes')">❤ Likes</button>
       <button class="lb-sort-btn" id="sortPosts" onclick="setSort('posts')">📝 Posts</button>
     </div>
   </div>
-
   <table class="lb-table">
     <thead>
       <tr>
-        <th style="width:48px">#</th>
+        <th style="width:44px">#</th>
         <th>User</th>
         <th>Views</th>
         <th>Likes</th>
@@ -949,77 +944,67 @@
       </tr>
     </thead>
     <tbody id="lbBody">
-      <tr>
-        <td colspan="5" class="lb-loading">Loading data…</td>
-      </tr>
+      <tr><td colspan="5" class="lb-loading">Loading data…</td></tr>
     </tbody>
   </table>
 </div>
 
-<!-- What gets counted -->
 <div class="what-counted">
   <div class="counted-box">
     <div class="counted-icon">📊</div>
     <div class="counted-text">
-      <strong>What gets counted:</strong> Original posts, quote tweets, and replies with commentary that contain a mention of <strong>@nadoHQ</strong>, the keyword <strong>"nado"</strong>, or the <strong>$NADO / $INK</strong> cashtag. Plain retweets and empty replies are excluded. Data collected via X API v2 starting <strong>Nov 18, 2025</strong>. Refreshes every 24 hours.
+      <strong>What gets counted:</strong> Original posts and replies with commentary that contain <strong>@tread_fi</strong>, <strong>$TREAD</strong>, or <strong>"treadfi"</strong>. Plain retweets and empty replies are excluded. Data collected via X API starting <strong>June 1, 2025</strong>. Updated daily.
     </div>
   </div>
 </div>
 
-<!-- About Nado -->
 <div class="info-grid" id="about">
   <div class="info-block">
     <div class="info-icon">⚡</div>
-    <div class="info-title">CEX speed. DEX rails.</div>
-    <div class="info-desc">Nado delivers a centralized exchange experience — 5–15ms latency, pro tooling, unified margin — fully on-chain via Ink Network (Kraken's L2 on OP Stack).</div>
+    <div class="info-title">Algo <span>Trading</span> Terminal</div>
+    <div class="info-desc">tread.fi is a crypto trading terminal and OEMS for retail and pro traders. Automate trades, access CEXs and DEXs, and minimize slippage with ease.</div>
   </div>
   <div class="info-block">
-    <div class="info-icon">📖</div>
-    <div class="info-title">CLOB, not AMM</div>
-    <div class="info-desc">Peer-to-peer Central Limit Order Book model with up to 50x leverage, zero trading fees, and loss-refund mechanisms that flow value back to traders.</div>
+    <div class="info-icon">🔗</div>
+    <div class="info-title">CEX + DEX, <span>One Place</span></div>
+    <div class="info-desc">Trade on your own CEX/DEX accounts from one place with institutional grade tools designed for all traders. 0+ exchanges, $10B+ volume to date.</div>
+  </div>
+  <div class="info-block">
+    <div class="info-icon">🤖</div>
+    <div class="info-title">AI-Powered <span>Strategies</span></div>
+    <div class="info-desc">Use AI-powered strategy recommendations or take advantage of vast customizability. Optimize for market impact or opportunity cost. Let the engine handle the rest.</div>
   </div>
   <div class="info-block">
     <div class="info-icon">🔒</div>
-    <div class="info-title">Settled on-chain</div>
-    <div class="info-desc">All trades clear and settle on Arbitrum / Ink in isolated escrow smart contracts. Non-custodial. $200B+ volume processed since launch.</div>
-  </div>
-  <div class="info-block">
-    <div class="info-icon">🌊</div>
-    <div class="info-title">Templars of the Storm</div>
-    <div class="info-desc">Official 1,200-piece NFT collection. Holders receive points multipliers, automatic fee tiers, and access to long-term ecosystem lore throughout Season 1.</div>
+    <div class="info-title">vCeFi <span>On-Chain</span></div>
+    <div class="info-desc">Soulbound your CEX trading data privately on-chain to provide verifiable zk-proofs of your CeFi trading strategies. Bring CeFi to DeFi seamlessly.</div>
   </div>
 </div>
 
-<!-- Referral -->
-<div class="referral-section">
-  <div class="referral-card">
-    <div class="referral-top">
+<div class="cta-section">
+  <div class="cta-card">
+    <div class="cta-top">
       <div>
-        <div class="referral-title">About Nado</div>
-        <div class="referral-desc">Proof of NADO is an independent community tracker. It is not affiliated with Nado or X. Trade on Nado at <strong>app.nadohq.com</strong> — the DEX built by the team behind Kraken.</div>
+        <div class="cta-title">Start <span>Trading</span> on tread.fi</div>
+        <div class="cta-desc">Proof of TREAD is an independent community tracker. Not affiliated with tread.fi or X. Trade on tread.fi using the link below.</div>
       </div>
-      <div class="referral-cta">
-        <a class="ref-link" href="https://app.nadohq.com" target="_blank">Trade on Nado ↗</a>
-      </div>
+      <a class="cta-link" href="https://app.tread.fi/referral/7WG1VZXC" target="_blank">Launch App ↗</a>
     </div>
-    <div class="referral-bottom">Proof of NADO does not handle funds and is not financial advice. This is a community project.</div>
+    <div class="cta-bottom">Proof of TREAD does not handle funds and is not financial advice. This is a community project.</div>
   </div>
 </div>
 
-<!-- Footer -->
 <footer>
-  <div class="footer-brand">Proof of NADO</div>
+  <div class="footer-brand">Proof of <span>TREAD</span></div>
   <div class="footer-links">
-    <a href="https://x.com/nadoHQ" target="_blank">@NadoHQ</a>
-    <a href="https://app.nadohq.com" target="_blank">Nado App</a>
+    <a href="https://x.com/tread_fi" target="_blank">@tread_fi</a>
+    <a href="https://app.tread.fi/referral/7WG1VZXC" target="_blank">Trade</a>
     <a href="#leaderboard">Leaderboard</a>
   </div>
-  <div class="footer-disc">Community project. Not affiliated with Nado or X Corp.</div>
+  <div class="footer-disc">Community project. Not affiliated with tread.fi or X Corp.</div>
 </footer>
 
-<!-- Notify -->
 <div class="notify" id="notify"></div>
-
 
 <script>
 let currentSort = 'views';
@@ -1027,7 +1012,6 @@ let leaderboardData = [];
 let profileData = null;
 let isLoading = true;
 
-// ── LOAD DATA (только из leaderboard.json) ──────────────────────────
 async function loadData() {
   isLoading = true;
   try {
@@ -1045,7 +1029,6 @@ async function loadData() {
   }
 }
 
-// ── GLOBAL STATS ────────────────────────────────────────────────────
 function updateGlobalStats(t) {
   const set = (id, val) => {
     const el = document.getElementById(id);
@@ -1058,7 +1041,6 @@ function updateGlobalStats(t) {
   set('gUsers', t.users);
 }
 
-// ── LEADERBOARD ─────────────────────────────────────────────────────
 function setSort(s) {
   currentSort = s;
   ['views','likes','posts'].forEach(x => {
@@ -1070,15 +1052,12 @@ function setSort(s) {
 
 function renderLeaderboard() {
   const sorted = [...leaderboardData].sort((a,b) => b[currentSort] - a[currentSort]);
-  if (!sorted.length) {
-    renderEmpty('No data yet. Check back soon.');
-    return;
-  }
+  if (!sorted.length) { renderEmpty('No data yet. Check back soon.'); return; }
   const rows = sorted.map((u, i) => {
     const rankClass = i === 0 ? 'gold' : i === 1 ? 'silver' : i === 2 ? 'bronze' : '';
     const avatarHtml = u.avatar
       ? `<img src="${u.avatar}" alt="" />`
-      : `<span style="font-size:12px">${u.handle.charAt(0).toUpperCase()}</span>`;
+      : `<span>${u.handle.charAt(0).toUpperCase()}</span>`;
     return `<tr onclick="openProfile('${u.handle}')">
       <td><span class="rank-num ${rankClass}">#${i+1}</span></td>
       <td>
@@ -1090,9 +1069,9 @@ function renderLeaderboard() {
           </div>
         </div>
       </td>
-      <td class="num-views">${formatNum(u.views)}</td>
-      <td class="num-likes">${formatNum(u.likes)}</td>
-      <td class="num-posts">${formatNum(u.posts)}</td>
+      <td>${formatNum(u.views)}</td>
+      <td>${formatNum(u.likes)}</td>
+      <td>${formatNum(u.posts)}</td>
     </tr>`;
   }).join('');
   document.getElementById('lbBody').innerHTML = rows;
@@ -1103,20 +1082,11 @@ function renderEmpty(msg) {
     `<tr><td colspan="5" class="lb-empty">${msg}</td></tr>`;
 }
 
-// ── SCAN — только поиск внутри leaderboard.json ─────────────────────
 function scanHandle() {
   const raw = document.getElementById('searchInput').value.trim().replace(/^@/, '');
   if (!raw) return;
-
-  if (isLoading) {
-    notify('Loading data, please wait…');
-    return;
-  }
-
-  const found = leaderboardData.find(
-    u => u.handle.toLowerCase() === raw.toLowerCase()
-  );
-
+  if (isLoading) { notify('Loading data, please wait…'); return; }
+  const found = leaderboardData.find(u => u.handle.toLowerCase() === raw.toLowerCase());
   if (found) {
     openProfile(found.handle);
   } else {
@@ -1124,11 +1094,8 @@ function scanHandle() {
   }
 }
 
-// ── PROFILE ─────────────────────────────────────────────────────────
 function openProfile(handle) {
-  const user = leaderboardData.find(
-    u => u.handle.toLowerCase() === handle.toLowerCase()
-  );
+  const user = leaderboardData.find(u => u.handle.toLowerCase() === handle.toLowerCase());
   if (!user) return;
 
   const byViews = [...leaderboardData].sort((a,b) => b.views - a.views);
@@ -1139,9 +1106,7 @@ function openProfile(handle) {
   const pRank = byPosts.findIndex(u => u.handle === user.handle) + 1;
 
   const ava = document.getElementById('profAva');
-  ava.innerHTML = user.avatar
-    ? `<img src="${user.avatar}" alt="" />`
-    : user.handle.charAt(0).toUpperCase();
+  ava.innerHTML = user.avatar ? `<img src="${user.avatar}" alt="" />` : user.handle.charAt(0).toUpperCase();
 
   document.getElementById('profName').textContent      = user.name;
   document.getElementById('profHandle').textContent    = '@' + user.handle;
@@ -1154,15 +1119,13 @@ function openProfile(handle) {
   document.getElementById('profLikeRank').textContent  = `Rank #${lRank}`;
   document.getElementById('profPostRank').textContent  = `Rank #${pRank}`;
   document.getElementById('bdMentions').textContent    = formatNum(user.mentions  || 0);
-  document.getElementById('bdKeyword').textContent     = formatNum(user.keyword   || 0);
   document.getElementById('bdCashtag').textContent     = formatNum(user.cashtag   || 0);
+  document.getElementById('bdKeyword').textContent     = formatNum(user.keyword   || 0);
   document.getElementById('bdReplies').textContent     = formatNum(user.replies   || 0);
   document.getElementById('bdFirst').textContent       = user.firstPost ? fmtDate(user.firstPost) : '—';
   document.getElementById('bdLast').textContent        = user.lastPost  ? fmtDate(user.lastPost)  : '—';
-  document.getElementById('bdAvgViews').textContent    = user.posts
-    ? formatNum(Math.round(user.views / user.posts)) : '—';
-  document.getElementById('bdEngRate').textContent     = user.views
-    ? ((user.likes / user.views) * 100).toFixed(2) + '%' : '—';
+  document.getElementById('bdAvgViews').textContent    = user.posts ? formatNum(Math.round(user.views / user.posts)) : '—';
+  document.getElementById('bdEngRate').textContent     = user.views ? ((user.likes / user.views) * 100).toFixed(2) + '%' : '—';
 
   const postsHtml = (user.topPosts || []).map(p =>
     `<div class="post-item">
@@ -1170,7 +1133,7 @@ function openProfile(handle) {
         <span class="post-stat">👁 ${formatNum(p.views)}</span>
         <span class="post-stat">❤ ${formatNum(p.likes)}</span>
       </div>
-      <div class="post-text">${escHtml((p.text || '').slice(0, 200))}${(p.text||'').length > 200 ? '…' : ''}</div>
+      <div class="post-text">${escHtml((p.text||'').slice(0,200))}${(p.text||'').length>200?'…':''}</div>
       ${p.id ? `<a class="post-link" href="https://x.com/${user.handle}/status/${p.id}" target="_blank">View on 𝕏 ↗</a>` : ''}
     </div>`
   ).join('');
@@ -1188,39 +1151,29 @@ function closeProfile() {
   profileData = null;
 }
 
-// ── SHARE ────────────────────────────────────────────────────────────
 function shareX() {
   if (!profileData) return;
   const text = encodeURIComponent(
-    `@${profileData.handle} has ${formatNum(profileData.views)} views on Nado-related content ⚡\n\nProof of NADO — community tracker for @NadoHQ\n${window.location.href}`
+    `@${profileData.handle} has ${formatNum(profileData.views)} views on tread.fi content ⚡\n\nProof of TREAD — community tracker for @tread_fi\n${window.location.href}`
   );
   window.open(`https://x.com/intent/tweet?text=${text}`, '_blank');
 }
 
-function downloadCard() {
-  notify('Take a screenshot of the profile card to save it.');
-}
-
-// ── UTILS ─────────────────────────────────────────────────────────────
 function formatNum(n) {
   if (n === undefined || n === null) return '—';
-  if (n >= 1e9) return (n / 1e9).toFixed(1) + 'B';
-  if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
-  if (n >= 1e3) return (n / 1e3).toFixed(1) + 'K';
+  if (n >= 1e9) return (n/1e9).toFixed(1)+'B';
+  if (n >= 1e6) return (n/1e6).toFixed(1)+'M';
+  if (n >= 1e3) return (n/1e3).toFixed(1)+'K';
   return n.toString();
 }
 
 function fmtDate(iso) {
   if (!iso) return '—';
-  return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  return new Date(iso).toLocaleDateString('en-US', { month:'short', day:'numeric', year:'numeric' });
 }
 
 function escHtml(s) {
-  return (s || '')
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
+  return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
 function notify(msg) {
