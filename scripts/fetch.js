@@ -87,7 +87,7 @@ async function main() {
     } catch(e) { console.log('Starting fresh'); }
   }
 
-  const date = yesterdayMidnight.toISOString().slice(0, 10);
+  const date = new Date(START_TS * 1000).toISOString().slice(0, 10);
   console.log(`Fetching ${date}...`);
 
   const tweets = await fetchWindow(START_TS, END_TS);
