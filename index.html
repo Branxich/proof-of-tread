@@ -375,22 +375,22 @@
     .lb-sort-btn:hover:not(.active) { border-color: var(--border2); color: var(--muted2); }
     .lb-table { width: 100%; border-collapse: collapse; border: 1px solid var(--border); border-radius: 3px; overflow: hidden; margin-top: 20px; }
     .lb-table thead { background: var(--surface2); }
-    .lb-table th { padding: 12px 16px; text-align: left; font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); border-bottom: 1px solid var(--border); font-weight: 400; }
+    .lb-table th { padding: 14px 20px; text-align: left; font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); border-bottom: 1px solid var(--border); font-weight: 400; }
     .lb-table th:not(:first-child):not(:nth-child(2)) { text-align: right; }
-    .lb-table td { padding: 13px 16px; border-bottom: 1px solid var(--border); font-size: 13px; }
+    .lb-table td { padding: 16px 20px; border-bottom: 1px solid var(--border); font-size: 14px; }
     .lb-table tr:last-child td { border-bottom: none; }
     .lb-table tbody tr { background: var(--surface); transition: background 0.15s; cursor: pointer; }
     .lb-table tbody tr:hover { background: var(--orange-dim); }
-    .lb-table td:not(:first-child):not(:nth-child(2)) { text-align: right; font-family: var(--mono); font-size: 12px; color: var(--muted2); }
-    .rank-num { font-family: var(--mono); font-size: 11px; color: var(--muted); width: 36px; display: inline-block; }
+    .lb-table td:not(:first-child):not(:nth-child(2)) { text-align: right; font-family: var(--mono); font-size: 13px; color: var(--muted2); }
+    .rank-num { font-family: var(--mono); font-size: 13px; color: var(--muted); width: 40px; display: inline-block; }
     .rank-num.gold { color: var(--orange); font-weight: 700; }
     .rank-num.silver { color: #a0a0a0; }
     .rank-num.bronze { color: #8b6a3e; }
-    .user-cell { display: flex; align-items: center; gap: 12px; }
-    .user-ava { width: 32px; height: 32px; border-radius: 50%; background: var(--surface2); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-family: var(--cond); font-size: 13px; font-weight: 700; color: var(--orange); overflow: hidden; flex-shrink: 0; }
+    .user-cell { display: flex; align-items: center; gap: 14px; }
+    .user-ava { width: 40px; height: 40px; border-radius: 50%; background: var(--surface2); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-family: var(--cond); font-size: 15px; font-weight: 700; color: var(--orange); overflow: hidden; flex-shrink: 0; }
     .user-ava img { width: 100%; height: 100%; object-fit: cover; }
-    .user-name { font-size: 13px; color: var(--text); font-weight: 500; }
-    .user-handle { font-family: var(--mono); font-size: 11px; color: var(--muted2); }
+    .user-name { font-size: 14px; color: var(--text); font-weight: 500; }
+    .user-handle { font-family: var(--mono); font-size: 12px; color: var(--muted2); }
     .lb-empty, .lb-loading { padding: 64px 24px; text-align: center; font-family: var(--mono); font-size: 12px; color: var(--muted); }
     .lb-loading { animation: pulse 1.5s ease-in-out infinite; }
 
@@ -737,7 +737,7 @@
 
     <!-- Footer -->
     <div class="sc-footer">
-      <span class="sc-footer-url">proof-of-tread · tread.fi</span>
+      <span class="sc-footer-url">proof-of-tread</span>
       <span class="sc-footer-tag">@tread_fi</span>
     </div>
   </div>
@@ -854,29 +854,6 @@
   </div>
 </div>
 
-<div class="info-grid" id="about">
-  <div class="info-block">
-    <div class="info-icon">⚡</div>
-    <div class="info-title">Algo <span>Trading</span> Terminal</div>
-    <div class="info-desc">tread.fi is a crypto trading terminal and OEMS for retail and pro traders. Automate trades, access CEXs and DEXs, and minimize slippage with ease.</div>
-  </div>
-  <div class="info-block">
-    <div class="info-icon">🔗</div>
-    <div class="info-title">CEX + DEX, <span>One Place</span></div>
-    <div class="info-desc">Trade on your own CEX/DEX accounts from one place with institutional grade tools designed for all traders. 0+ exchanges, $10B+ volume to date.</div>
-  </div>
-  <div class="info-block">
-    <div class="info-icon">🤖</div>
-    <div class="info-title">AI-Powered <span>Strategies</span></div>
-    <div class="info-desc">Use AI-powered strategy recommendations or take advantage of vast customizability. Optimize for market impact or opportunity cost. Let the engine handle the rest.</div>
-  </div>
-  <div class="info-block">
-    <div class="info-icon">🔒</div>
-    <div class="info-title">vCeFi <span>On-Chain</span></div>
-    <div class="info-desc">Soulbound your CEX trading data privately on-chain to provide verifiable zk-proofs of your CeFi trading strategies. Bring CeFi to DeFi seamlessly.</div>
-  </div>
-</div>
-
 <div class="cta-section">
   <div class="cta-card">
     <div class="cta-top">
@@ -887,6 +864,29 @@
       <a class="cta-link" href="https://app.tread.fi/referral/7WG1VZXC" target="_blank">Launch App ↗</a>
     </div>
     <div class="cta-bottom">Proof of TREAD does not handle funds and is not financial advice. This is a community project.</div>
+  </div>
+</div>
+
+<div class="info-grid" id="about">
+  <div class="info-block">
+    <div class="info-icon">⚡</div>
+    <div class="info-title">Algo <span>Execution</span></div>
+    <div class="info-desc">Automate trades with precision using industry-leading execution algorithms. Reduce market impact, prioritize maker fills, and cut transaction costs across CEXs, perp DEXs, and on-chain swaps.</div>
+  </div>
+  <div class="info-block">
+    <div class="info-icon">🤖</div>
+    <div class="info-title">Market Making <span>Bot</span></div>
+    <div class="info-desc">Deploy institutional-grade MM strategies in a few clicks. Capture spreads, provide liquidity, and keep limit orders competitive through smart order routing — no code required.</div>
+  </div>
+  <div class="info-block">
+    <div class="info-icon">📊</div>
+    <div class="info-title">Delta-Neutral <span>Bot</span></div>
+    <div class="info-desc">Earn funding rate yields while staying delta-neutral. Execute and monitor both legs of long/short arb trades through a unified dashboard with one-click delta management.</div>
+  </div>
+  <div class="info-block">
+    <div class="info-icon">🔗</div>
+    <div class="info-title">Unified <span>Terminal</span></div>
+    <div class="info-desc">Connect every exchange and manage your full portfolio from one interface. CEXs, perpetual DEXs, and on-chain protocols — no more juggling multiple platforms.</div>
   </div>
 </div>
 
