@@ -5,7 +5,7 @@ const API_KEY = process.env.TWITTERAPI_KEY;
 const BASE = 'https://api.twitterapi.io/twitter/tweet/advanced_search';
 
 // June 1, 2025 00:00 UTC → May 31, 2026 23:59:59 UTC
-const START_TS = 1748736000;
+const START_TS = 1697500800;
 const END_TS   = 1748735999 + 31536000;
 
 const QUERY_BASE = `@tread_fi -filter:replies`;
@@ -138,8 +138,8 @@ async function main() {
       if (/\$tread\b/.test(txt))                                u.cashtag++;
       if (txt.includes('tread.fi') || /\btreadfi\b/.test(txt)) u.keyword++;
 
-      if (tweet.createdAt < u.firstPost) u.firstPost = tweet.createdAt;
-      if (tweet.createdAt > u.lastPost)  u.lastPost  = tweet.createdAt;
+      if (parseTwitterTime(tweet.createdAt) < parseTwitterTime(u.firstPost)) u.firstPost = tweet.createdAt;
+      if (parseTwitterTime(tweet.createdAt) > parseTwitterTime(u.lastPost))  u.lastPost  = tweet.createdAt;
 
       u.topPosts.push({
         text:  tweet.text,
@@ -175,8 +175,8 @@ async function main() {
         mentions: old.mentions + u.mentions,
         cashtag:  old.cashtag  + u.cashtag,
         keyword:  old.keyword  + u.keyword,
-        firstPost: old.firstPost < u.firstPost ? old.firstPost : u.firstPost,
-        lastPost:  old.lastPost  > u.lastPost  ? old.lastPost  : u.lastPost,
+        firstPost: parseTwitterTime(old.firstPost) < parseTwitterTime(u.firstPost) ? old.firstPost : u.firstPost,
+        lastPost:  parseTwitterTime(old.lastPost)  > parseTwitterTime(u.lastPost)  ? old.lastPost  : u.lastPost,
         topPosts:  [...old.topPosts, ...u.topPosts]
           .sort((a, b) => b.views - a.views)
           .slice(0, 3)
