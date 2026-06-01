@@ -4,11 +4,15 @@ import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'fs';
 const API_KEY = process.env.TWITTERAPI_KEY;
 const BASE = 'https://api.twitterapi.io/twitter/tweet/advanced_search';
 
-// May 20 - May 30, 2026
-const START_TS = 1735689600; // Jan 1, 2026 00:00 UTC
-const END_TS   = 1738368000; // Feb 1, 2026 00:00 UTC
+// Only yesterday
+const now = new Date();
+const todayMidnight = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+const yesterdayMidnight = new Date(todayMidnight.getTime() - 86400000);
+const START_TS = Math.floor(yesterdayMidnight.getTime() / 1000);
+const END_TS   = Math.floor(todayMidnight.getTime() / 1000);
 
-const QUERY_BASE = `(@tread_fi OR treadfi OR url:tread.fi) -filter:replies`;
+const QUERY_BASE = `@tread_fi -filter:replies`;
+
 function parseTwitterTime(s) {
   return Math.floor(new Date(s).getTime() / 1000);
 }
@@ -24,7 +28,7 @@ function isRelevant(tweet) {
   const hasMention = txt.includes('@tread_fi');
   const hasCashtag = /\$tread\b/.test(txt);
   const hasUrl     = txt.includes('tread.fi') || txt.includes('app.tread.fi');
-  const hasTreadfi = txt.includes('treadfi');
+  const hasTreadfi = /\btreadfi\b/.test(txt);
 
   return hasMention || hasCashtag || hasUrl || hasTreadfi;
 }
@@ -86,7 +90,7 @@ async function main() {
     } catch(e) { console.log('Starting fresh'); }
   }
 
-  const date = new Date(START_TS * 1000).toISOString().slice(0, 10);
+  const date = yesterdayMidnight.toISOString().slice(0, 10);
   console.log(`Fetching ${date}...`);
 
   const tweets = await fetchWindow(START_TS, END_TS);
@@ -143,7 +147,7 @@ async function main() {
   });
 
   Object.values(fresh).forEach(u => {
-    u.topPosts = u.topPosts.sort((a, b) => b.views - a.views).slice(0, 3);
+    u.topPosts = u.topPosts.sort((a, b) => b.views - a.views).slice(0, 5);
   });
 
   const merged = { ...existing };
@@ -166,7 +170,7 @@ async function main() {
         lastPost:  parseTwitterTime(old.lastPost)  > parseTwitterTime(u.lastPost)  ? old.lastPost  : u.lastPost,
         topPosts:  [...old.topPosts, ...u.topPosts]
           .sort((a, b) => b.views - a.views)
-          .slice(0, 3)
+          .slice(0, 5)
       };
     } else {
       merged[key] = u;
