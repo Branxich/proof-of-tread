@@ -8,8 +8,8 @@ const BASE = 'https://api.twitterapi.io/twitter/tweet/advanced_search';
 const START_TS = 1748736000;
 const END_TS   = Math.floor(Date.now() / 1000);
 
-// Только @tread_fi в запросе — самый точный фильтр
-const QUERY_BASE = `@tread_fi -filter:retweets lang:en`;
+// Только @tread_fi, без ретвитов и реплаев
+const QUERY_BASE = `@tread_fi -filter:retweets -filter:replies lang:en`;
 
 function parseTwitterTime(s) {
   return Math.floor(new Date(s).getTime() / 1000);
@@ -19,6 +19,7 @@ function isRelevant(tweet) {
   if (tweet.isRetweet) return false;
   if (tweet.text?.startsWith('RT @')) return false;
   if (tweet.retweeted_tweet) return false;
+  if (tweet.isReply) return false;
   if (tweet.lang && tweet.lang !== 'en') return false;
 
   const txt = (tweet.text || '').toLowerCase();
@@ -121,7 +122,7 @@ async function main() {
           followers: author.followers || 0,
           avatar:    author.profilePicture || '',
           views: 0, likes: 0, posts: 0,
-          mentions: 0, cashtag: 0, keyword: 0, replies: 0,
+          mentions: 0, cashtag: 0, keyword: 0,
           firstPost: tweet.createdAt,
           lastPost:  tweet.createdAt,
           topPosts:  []
@@ -138,7 +139,6 @@ async function main() {
       if (txt.includes('@tread_fi'))                            u.mentions++;
       if (/\$tread\b/.test(txt))                                u.cashtag++;
       if (txt.includes('tread.fi') || /\btreadfi\b/.test(txt)) u.keyword++;
-      if (tweet.isReply)                                        u.replies++;
 
       if (tweet.createdAt < u.firstPost) u.firstPost = tweet.createdAt;
       if (tweet.createdAt > u.lastPost)  u.lastPost  = tweet.createdAt;
@@ -177,7 +177,6 @@ async function main() {
         mentions: old.mentions + u.mentions,
         cashtag:  old.cashtag  + u.cashtag,
         keyword:  old.keyword  + u.keyword,
-        replies:  old.replies  + u.replies,
         firstPost: old.firstPost < u.firstPost ? old.firstPost : u.firstPost,
         lastPost:  old.lastPost  > u.lastPost  ? old.lastPost  : u.lastPost,
         topPosts:  [...old.topPosts, ...u.topPosts]
