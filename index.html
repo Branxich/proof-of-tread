@@ -1138,26 +1138,30 @@ function findInLeaderboard() {
     renderLeaderboard();
   }
 
-  closeProfile();
+  // Сначала восстанавливаем скролл, закрываем модал
+  document.body.style.overflow = '';
+  document.getElementById('profileOverlay').classList.remove('visible');
 
-  // Ждём пока модал закроется и DOM обновится
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      const rows = document.querySelectorAll('#lbBody tr');
-      for (const row of rows) {
-        const handle = row.querySelector('.user-handle');
-        if (handle && handle.textContent.replace('@','').toLowerCase() === profileData.handle.toLowerCase()) {
-          setTimeout(() => {
-            row.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            row.style.transition = 'background 0.3s';
-            row.style.background = 'rgba(244,124,32,0.3)';
-            setTimeout(() => { row.style.background = ''; }, 2500);
-          }, 100);
-          break;
-        }
+  setTimeout(() => {
+    const rows = document.querySelectorAll('#lbBody tr');
+    let targetRow = null;
+    for (const row of rows) {
+      const handle = row.querySelector('.user-handle');
+      if (handle && handle.textContent.replace('@','').trim().toLowerCase() === profileData.handle.toLowerCase()) {
+        targetRow = row;
+        break;
       }
-    });
-  });
+    }
+    if (targetRow) {
+      const rect = targetRow.getBoundingClientRect();
+      const scrollTop = window.pageYOffset + rect.top - window.innerHeight / 2;
+      window.scrollTo({ top: scrollTop, behavior: 'smooth' });
+      targetRow.style.transition = 'background 0.3s';
+      targetRow.style.background = 'rgba(244,124,32,0.3)';
+      setTimeout(() => { targetRow.style.background = ''; }, 2500);
+    }
+    profileData = null;
+  }, 150);
 }
 
 async function downloadCard() {
