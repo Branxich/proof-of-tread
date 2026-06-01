@@ -761,6 +761,41 @@
     </div>
   </div>
 
+  <div class="pod-highlights">
+    <div class="pod-highlight" id="hlViews" onclick="hlClick('hlViewsName')">
+      <div class="pod-hl-ava" id="hlViewsAva"></div>
+      <div>
+        <div class="pod-hl-label">👁 Most Views</div>
+        <div class="pod-hl-name" id="hlViewsName">—</div>
+      </div>
+      <div class="pod-hl-val" id="hlViewsVal">—</div>
+    </div>
+    <div class="pod-highlight" id="hlLikes" onclick="hlClick('hlLikesName')">
+      <div class="pod-hl-ava" id="hlLikesAva"></div>
+      <div>
+        <div class="pod-hl-label">❤ Most Likes</div>
+        <div class="pod-hl-name" id="hlLikesName">—</div>
+      </div>
+      <div class="pod-hl-val" id="hlLikesVal">—</div>
+    </div>
+    <div class="pod-highlight" id="hlPosts" onclick="hlClick('hlPostsName')">
+      <div class="pod-hl-ava" id="hlPostsAva"></div>
+      <div>
+        <div class="pod-hl-label">📝 Most Posts</div>
+        <div class="pod-hl-name" id="hlPostsName">—</div>
+      </div>
+      <div class="pod-hl-val" id="hlPostsVal">—</div>
+    </div>
+    <div class="pod-highlight" id="hlEarliest" onclick="hlClick('hlEarliestName')">
+      <div class="pod-hl-ava" id="hlEarliestAva"></div>
+      <div>
+        <div class="pod-hl-label">🕐 Earliest Post</div>
+        <div class="pod-hl-name" id="hlEarliestName">—</div>
+      </div>
+      <div class="pod-hl-val" id="hlEarliestVal">—</div>
+    </div>
+  </div>
+
 
   <table class="lb-table">
     <thead>
@@ -951,7 +986,34 @@ function hlClick(nameId) {
   if (handle) openProfile(handle);
 }
 
+function renderHighlights() {
+  if (!leaderboardData.length) return;
+
+  const byViews  = [...leaderboardData].sort((a,b) => b.views - a.views)[0];
+  const byLikes  = [...leaderboardData].sort((a,b) => b.likes - a.likes)[0];
+  const byPosts  = [...leaderboardData].sort((a,b) => b.posts - a.posts)[0];
+  const earliest = [...leaderboardData].sort((a,b) =>
+    parseTwitterTime(a.firstPost) - parseTwitterTime(b.firstPost)
+  )[0];
+
+  function setHL(prefix, user, val) {
+    if (!user) return;
+    const ava = document.getElementById(`hl${prefix}Ava`);
+    if (!ava) return;
+    ava.innerHTML = user.avatar ? `<img src="${hqAvatar(user.avatar)}" alt="" />` : user.handle.charAt(0).toUpperCase();
+    document.getElementById(`hl${prefix}Name`).textContent = user.name;
+    document.getElementById(`hl${prefix}Val`).textContent  = val;
+    document.getElementById(`hl${prefix}Name`).dataset.handle = user.handle;
+  }
+
+  setHL('Views',    byViews,  formatNum(byViews?.views));
+  setHL('Likes',    byLikes,  formatNum(byLikes?.likes));
+  setHL('Posts',    byPosts,  formatNum(byPosts?.posts));
+  setHL('Earliest', earliest, fmtDate(earliest?.firstPost));
+}
+
 function renderLeaderboard() {
+  renderHighlights();
   const sorted = [...leaderboardData].sort((a,b) => b[currentSort] - a[currentSort]);
   if (!sorted.length) { renderEmpty('No data yet. Check back soon.'); return; }
 
