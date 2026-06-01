@@ -1,114 +1,157 @@
 import fetch from 'node-fetch';
-import { writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'fs';
 
-const BEARER = process.env.BEARER_TOKEN;
-const START_DATE = '2025-11-18T00:00:00Z';
-const QUERY = '(@nadoHQ OR nado OR $NADO OR $INK) lang:en -is:retweet';
-const MAX_PAGES = 10;
+const API_KEY = process.env.TWITTERAPI_KEY;
+const BASE = 'https://api.twitterapi.io';
 
-const headers = { Authorization: `Bearer ${BEARER}` };
+// Unix timestamp для Nov 18, 2025 00:00 UTC
+const SINCE_TIME = 1731888000;
+const QUERY = `(@nadoHQ OR nado OR "$NADO" OR "$INK") -is:retweet lang:en since_time:${SINCE_TIME}`;
 
-async function searchTweets(nextToken) {
+async function searchPage(cursor = '') {
   const params = new URLSearchParams({
     query: QUERY,
-    start_time: START_DATE,
-    'tweet.fields': 'public_metrics,author_id,created_at,referenced_tweets,text',
-    expansions: 'author_id',
-    'user.fields': 'name,username,public_metrics,profile_image_url',
-    max_results: '100',
-    ...(nextToken ? { next_token: nextToken } : {})
+    queryType: 'Latest',
+    ...(cursor ? { cursor } : {})
   });
-  const r = await fetch(
-    `https://api.twitter.com/2/tweets/search/recent?${params}`,
-    { headers }
-  );
+
+  const r = await fetch(`${BASE}/twitter/tweet/advanced_search?${params}`, {
+    headers: { 'X-API-Key': API_KEY }
+  });
+
   if (!r.ok) throw new Error(`API error ${r.status}: ${await r.text()}`);
   return r.json();
 }
 
 async function main() {
-  const users = {};
-  let nextToken;
+  // Загружаем старые данные
+  let existing = {};
+  if (existsSync('data/leaderboard.json')) {
+    try {
+      const old = JSON.parse(readFileSync('data/leaderboard.json', 'utf8'));
+      (old.users || []).forEach(u => { existing[u.handle.toLowerCase()] = u; });
+      console.log(`Loaded ${Object.keys(existing).length} existing users`);
+    } catch(e) { console.log('Starting fresh'); }
+  }
+
+  // Собираем новые твиты
+  const fresh = {};
+  let cursor = '';
   let page = 0;
+  const MAX_PAGES = 50; // ~1000 твитов за запуск
 
   do {
-    const data = await searchTweets(nextToken);
-    const usersMap = {};
-    (data.includes?.users || []).forEach(u => usersMap[u.id] = u);
+    const data = await searchPage(cursor);
+    const tweets = data.tweets || [];
+    console.log(`Page ${page + 1}: ${tweets.length} tweets`);
 
-    (data.data || []).forEach(tweet => {
-      const user = usersMap[tweet.author_id];
-      if (!user) return;
-      const uid = user.id;
+    tweets.forEach(tweet => {
+      // Пропускаем чистые ретвиты
+      if (tweet.retweeted_tweet && !tweet.text?.startsWith('RT @') === false) return;
+      if (tweet.text?.startsWith('RT @')) return;
 
-      if (!users[uid]) {
-        users[uid] = {
-          id: uid,
-          name: user.name,
-          handle: user.username,
-          followers: user.public_metrics?.followers_count || 0,
-          avatar: user.profile_image_url || '',
+      const author = tweet.author;
+      if (!author) return;
+      const key = author.userName.toLowerCase();
+
+      if (!fresh[key]) {
+        fresh[key] = {
+          id: author.id,
+          name: author.name,
+          handle: author.userName,
+          followers: author.followers || 0,
+          avatar: author.profilePicture || '',
           views: 0, likes: 0, posts: 0,
           mentions: 0, keyword: 0, cashtag: 0, replies: 0,
-          firstPost: tweet.created_at,
-          lastPost: tweet.created_at,
+          firstPost: tweet.createdAt,
+          lastPost: tweet.createdAt,
           topPosts: []
         };
       }
 
-      const u = users[uid];
-      const m = tweet.public_metrics || {};
-      u.views += m.impression_count || 0;
-      u.likes  += m.like_count || 0;
+      const u = fresh[key];
+      u.views  += tweet.viewCount  || 0;
+      u.likes  += tweet.likeCount  || 0;
       u.posts  += 1;
 
       const txt = (tweet.text || '').toLowerCase();
-      if (txt.includes('@nadohq'))               u.mentions++;
-      if (txt.includes('nado'))                  u.keyword++;
-      if (txt.includes('$nado') || txt.includes('$ink')) u.cashtag++;
-      if (tweet.referenced_tweets?.some(r => r.type === 'replied_to')) u.replies++;
+      if (txt.includes('@nadohq'))                          u.mentions++;
+      if (txt.includes('nado'))                             u.keyword++;
+      if (txt.includes('$nado') || txt.includes('$ink'))   u.cashtag++;
+      if (tweet.isReply)                                    u.replies++;
 
-      if (tweet.created_at < u.firstPost) u.firstPost = tweet.created_at;
-      if (tweet.created_at > u.lastPost)  u.lastPost  = tweet.created_at;
+      // Обновляем даты
+      if (tweet.createdAt < u.firstPost) u.firstPost = tweet.createdAt;
+      if (tweet.createdAt > u.lastPost)  u.lastPost  = tweet.createdAt;
 
-      if (u.topPosts.length < 3) {
-        u.topPosts.push({
-          text:  tweet.text,
-          id:    tweet.id,
-          views: m.impression_count || 0,
-          likes: m.like_count || 0
-        });
-      }
+      // Топ посты по просмотрам
+      u.topPosts.push({
+        text:  tweet.text,
+        id:    tweet.id,
+        url:   tweet.url,
+        views: tweet.viewCount || 0,
+        likes: tweet.likeCount || 0
+      });
     });
 
-    nextToken = data.meta?.next_token;
+    cursor = data.next_cursor || '';
     page++;
 
-    if (page < MAX_PAGES && nextToken) {
-      await new Promise(r => setTimeout(r, 1000));
+    if (data.has_next_page && page < MAX_PAGES) {
+      await new Promise(r => setTimeout(r, 500));
+    } else {
+      break;
     }
-  } while (nextToken && page < MAX_PAGES);
+  } while (true);
 
-  const userList = Object.values(users).sort((a, b) => b.views - a.views);
+  // Оставляем топ-3 поста по просмотрам для каждого юзера
+  Object.values(fresh).forEach(u => {
+    u.topPosts = u.topPosts
+      .sort((a, b) => b.views - a.views)
+      .slice(0, 3);
+  });
 
+  // Merge старых и новых данных
+  const merged = { ...existing };
+
+  Object.entries(fresh).forEach(([key, u]) => {
+    if (merged[key]) {
+      const old = merged[key];
+      merged[key] = {
+        ...old,
+        name:      u.name,
+        followers: u.followers,
+        avatar:    u.avatar,
+        views:    old.views    + u.views,
+        likes:    old.likes    + u.likes,
+        posts:    old.posts    + u.posts,
+        mentions: old.mentions + u.mentions,
+        keyword:  old.keyword  + u.keyword,
+        cashtag:  old.cashtag  + u.cashtag,
+        replies:  old.replies  + u.replies,
+        firstPost: old.firstPost < u.firstPost ? old.firstPost : u.firstPost,
+        lastPost:  old.lastPost  > u.lastPost  ? old.lastPost  : u.lastPost,
+        topPosts:  [...old.topPosts, ...u.topPosts]
+          .sort((a, b) => b.views - a.views)
+          .slice(0, 3)
+      };
+    } else {
+      merged[key] = u;
+    }
+  });
+
+  const userList = Object.values(merged).sort((a, b) => b.views - a.views);
   const totals = userList.reduce(
-    (t, u) => ({
-      views: t.views + u.views,
-      likes: t.likes + u.likes,
-      posts: t.posts + u.posts
-    }),
+    (t, u) => ({ views: t.views+u.views, likes: t.likes+u.likes, posts: t.posts+u.posts }),
     { views: 0, likes: 0, posts: 0 }
   );
 
   mkdirSync('data', { recursive: true });
-  writeFileSync(
-    'data/leaderboard.json',
-    JSON.stringify({
-      updatedAt: new Date().toISOString(),
-      totals: { ...totals, users: userList.length },
-      users: userList
-    }, null, 2)
-  );
+  writeFileSync('data/leaderboard.json', JSON.stringify({
+    updatedAt: new Date().toISOString(),
+    totals: { ...totals, users: userList.length },
+    users: userList
+  }, null, 2));
 
   console.log(`✓ Done: ${userList.length} users, ${totals.posts} posts, ${totals.views} views`);
 }
