@@ -4,9 +4,12 @@ import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'fs';
 const API_KEY = process.env.TWITTERAPI_KEY;
 const BASE = 'https://api.twitterapi.io/twitter/tweet/advanced_search';
 
-// June 1, 2025 00:00 UTC → May 31, 2026 23:59:59 UTC
-const START_TS = 1697500800;
-const END_TS   = 1748735999 + 31536000;
+// Only yesterday
+const now = new Date();
+const todayMidnight = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+const yesterdayMidnight = new Date(todayMidnight.getTime() - 86400000);
+const START_TS = Math.floor(yesterdayMidnight.getTime() / 1000);
+const END_TS   = Math.floor(todayMidnight.getTime() / 1000);
 
 const QUERY_BASE = `@tread_fi -filter:replies`;
 
@@ -87,76 +90,64 @@ async function main() {
     } catch(e) { console.log('Starting fresh'); }
   }
 
-  const ONE_DAY = 86400;
-  const days = [];
-  for (let ts = START_TS; ts < END_TS; ts += ONE_DAY) {
-    days.push({ since: ts, until: Math.min(ts + ONE_DAY, END_TS) });
-  }
+  const date = yesterdayMidnight.toISOString().slice(0, 10);
+  console.log(`Fetching ${date}...`);
 
-  console.log(`Processing ${days.length} day windows...`);
+  const tweets = await fetchWindow(START_TS, END_TS);
+  const relevant = tweets.filter(isRelevant);
+
+  console.log(`${tweets.length} raw → ${relevant.length} relevant`);
 
   const fresh = {};
 
-  for (const { since, until } of days) {
-    const date = new Date(since * 1000).toISOString().slice(0, 10);
-    const tweets = await fetchWindow(since, until);
-    const relevant = tweets.filter(isRelevant);
+  relevant.forEach(tweet => {
+    if (seenIds.has(tweet.id)) return;
+    seenIds.add(tweet.id);
 
-    console.log(`[${date}] ${tweets.length} raw → ${relevant.length} relevant`);
+    const author = tweet.author;
+    if (!author) return;
+    const key = author.userName.toLowerCase();
 
-    relevant.forEach(tweet => {
-      if (seenIds.has(tweet.id)) return;
-      seenIds.add(tweet.id);
+    if (!fresh[key]) {
+      fresh[key] = {
+        id:        author.id,
+        name:      author.name,
+        handle:    author.userName,
+        followers: author.followers || 0,
+        avatar:    author.profilePicture || '',
+        views: 0, likes: 0, posts: 0,
+        mentions: 0, cashtag: 0, keyword: 0,
+        firstPost: tweet.createdAt,
+        lastPost:  tweet.createdAt,
+        topPosts:  []
+      };
+    }
 
-      const author = tweet.author;
-      if (!author) return;
-      const key = author.userName.toLowerCase();
+    const u = fresh[key];
+    const txt = (tweet.text || '').toLowerCase();
 
-      if (!fresh[key]) {
-        fresh[key] = {
-          id:        author.id,
-          name:      author.name,
-          handle:    author.userName,
-          followers: author.followers || 0,
-          avatar:    author.profilePicture || '',
-          views: 0, likes: 0, posts: 0,
-          mentions: 0, cashtag: 0, keyword: 0,
-          firstPost: tweet.createdAt,
-          lastPost:  tweet.createdAt,
-          topPosts:  []
-        };
-      }
+    u.views += tweet.viewCount || 0;
+    u.likes += tweet.likeCount || 0;
+    u.posts += 1;
 
-      const u = fresh[key];
-      const txt = (tweet.text || '').toLowerCase();
+    if (txt.includes('@tread_fi'))                            u.mentions++;
+    if (/\$tread\b/.test(txt))                                u.cashtag++;
+    if (txt.includes('tread.fi') || /\btreadfi\b/.test(txt)) u.keyword++;
 
-      u.views += tweet.viewCount || 0;
-      u.likes += tweet.likeCount || 0;
-      u.posts += 1;
+    if (parseTwitterTime(tweet.createdAt) < parseTwitterTime(u.firstPost)) u.firstPost = tweet.createdAt;
+    if (parseTwitterTime(tweet.createdAt) > parseTwitterTime(u.lastPost))  u.lastPost  = tweet.createdAt;
 
-      if (txt.includes('@tread_fi'))                            u.mentions++;
-      if (/\$tread\b/.test(txt))                                u.cashtag++;
-      if (txt.includes('tread.fi') || /\btreadfi\b/.test(txt)) u.keyword++;
-
-      if (parseTwitterTime(tweet.createdAt) < parseTwitterTime(u.firstPost)) u.firstPost = tweet.createdAt;
-      if (parseTwitterTime(tweet.createdAt) > parseTwitterTime(u.lastPost))  u.lastPost  = tweet.createdAt;
-
-      u.topPosts.push({
-        text:  tweet.text,
-        id:    tweet.id,
-        url:   tweet.url,
-        views: tweet.viewCount || 0,
-        likes: tweet.likeCount || 0
-      });
+    u.topPosts.push({
+      text:  tweet.text,
+      id:    tweet.id,
+      url:   tweet.url,
+      views: tweet.viewCount || 0,
+      likes: tweet.likeCount || 0
     });
-
-    await new Promise(r => setTimeout(r, 200));
-  }
+  });
 
   Object.values(fresh).forEach(u => {
-    u.topPosts = u.topPosts
-      .sort((a, b) => b.views - a.views)
-      .slice(0, 3);
+    u.topPosts = u.topPosts.sort((a, b) => b.views - a.views).slice(0, 3);
   });
 
   const merged = { ...existing };
