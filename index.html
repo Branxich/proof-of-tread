@@ -795,7 +795,7 @@
     <div class="pod-highlight" id="hlEarliest" onclick="hlClick('hlEarliestName')">
       <div class="pod-hl-ava" id="hlEarliestAva"></div>
       <div>
-        <div class="pod-hl-label">🕐 Earliest Post</div>
+        <div class="pod-hl-label">🔥 Top Post</div>
         <div class="pod-hl-name" id="hlEarliestName">—</div>
       </div>
       <div class="pod-hl-val" id="hlEarliestVal">—</div>
@@ -968,9 +968,7 @@ function renderPodium() {
   const byViews   = [...leaderboardData].sort((a,b) => b.views - a.views)[0];
   const byLikes   = [...leaderboardData].sort((a,b) => b.likes - a.likes)[0];
   const byPosts   = [...leaderboardData].sort((a,b) => b.posts - a.posts)[0];
-  const earliest  = [...leaderboardData].sort((a,b) =>
-    parseTwitterTime(a.firstPost) - parseTwitterTime(b.firstPost)
-  )[0];
+  const topPost  = [...leaderboardData].sort((a,b) => (b.topPosts?.[0]?.views||0) - (a.topPosts?.[0]?.views||0))[0];
 
   function setHL(prefix, user, val) {
     if (!user) return;
@@ -984,7 +982,7 @@ function renderPodium() {
   setHL('Views',    byViews,  formatNum(byViews?.views));
   setHL('Likes',    byLikes,  formatNum(byLikes?.likes));
   setHL('Posts',    byPosts,  formatNum(byPosts?.posts));
-  setHL('Earliest', earliest, fmtDate(earliest?.firstPost));
+  setHL('Earliest', topPost,  formatNum(topPost?.topPosts?.[0]?.views) + ' views');
 }
 
 function hlClick(nameId) {
@@ -998,9 +996,7 @@ function renderHighlights() {
   const byViews  = [...leaderboardData].sort((a,b) => b.views - a.views)[0];
   const byLikes  = [...leaderboardData].sort((a,b) => b.likes - a.likes)[0];
   const byPosts  = [...leaderboardData].sort((a,b) => b.posts - a.posts)[0];
-  const earliest = [...leaderboardData].sort((a,b) =>
-    parseTwitterTime(a.firstPost) - parseTwitterTime(b.firstPost)
-  )[0];
+  const topPost  = [...leaderboardData].sort((a,b) => (b.topPosts?.[0]?.views||0) - (a.topPosts?.[0]?.views||0))[0];
 
   function setHL(prefix, user, val) {
     if (!user) return;
@@ -1015,7 +1011,7 @@ function renderHighlights() {
   setHL('Views',    byViews,  formatNum(byViews?.views));
   setHL('Likes',    byLikes,  formatNum(byLikes?.likes));
   setHL('Posts',    byPosts,  formatNum(byPosts?.posts));
-  setHL('Earliest', earliest, fmtDate(earliest?.firstPost));
+  setHL('Earliest', topPost,  formatNum(topPost?.topPosts?.[0]?.views) + ' views');
 }
 
 function renderLeaderboard() {
@@ -1027,6 +1023,7 @@ function renderLeaderboard() {
   const showMoreWrap = document.getElementById('showMoreWrap');
   if (sorted.length > 25) {
     showMoreWrap.style.display = 'block';
+    document.getElementById('showMoreBtn').textContent = showAll ? 'Show less ↑' : 'Show all users ↓';
   } else {
     showMoreWrap.style.display = 'none';
   }
@@ -1133,27 +1130,33 @@ function closeProfile() {
   profileData = null;
 }
 
+function toggleShowAll() {
+  visibleCount += 50;
+  renderLeaderboard();
+}
+
 function findInLeaderboard() {
   if (!profileData) return;
 
+  const handle = profileData.handle;
   const sorted = [...leaderboardData].sort((a,b) => b[currentSort] - a[currentSort]);
-  const idx = sorted.findIndex(u => u.handle.toLowerCase() === profileData.handle.toLowerCase());
+  const idx = sorted.findIndex(u => u.handle.toLowerCase() === handle.toLowerCase());
+
   if (idx >= 25 && !showAll) {
     showAll = true;
-    document.getElementById('showMoreBtn').textContent = 'Show less ↑';
     renderLeaderboard();
   }
 
-  // Сначала восстанавливаем скролл, закрываем модал
   document.body.style.overflow = '';
   document.getElementById('profileOverlay').classList.remove('visible');
+  profileData = null;
 
   setTimeout(() => {
     const rows = document.querySelectorAll('#lbBody tr');
     let targetRow = null;
     for (const row of rows) {
-      const handle = row.querySelector('.user-handle');
-      if (handle && handle.textContent.replace('@','').trim().toLowerCase() === profileData.handle.toLowerCase()) {
+      const cell = row.querySelector('.user-handle');
+      if (cell && cell.textContent.replace('@','').trim().toLowerCase() === handle.toLowerCase()) {
         targetRow = row;
         break;
       }
@@ -1166,8 +1169,7 @@ function findInLeaderboard() {
       targetRow.style.background = 'rgba(244,124,32,0.3)';
       setTimeout(() => { targetRow.style.background = ''; }, 2500);
     }
-    profileData = null;
-  }, 150);
+  }, 300);
 }
 
 async function downloadCard() {
