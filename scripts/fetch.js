@@ -4,9 +4,12 @@ import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'fs';
 const API_KEY = process.env.TWITTERAPI_KEY;
 const BASE = 'https://api.twitterapi.io/twitter/tweet/advanced_search';
 
-// ── Диапазон сбора ──
-const START_TS = Math.floor(new Date('2025-04-01T00:00:00Z').getTime() / 1000);
-const END_TS   = Math.floor(new Date('2026-06-01T00:00:00Z').getTime() / 1000);
+// Only yesterday
+const now = new Date();
+const todayMidnight = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+const yesterdayMidnight = new Date(todayMidnight.getTime() - 86400000);
+const START_TS = Math.floor(yesterdayMidnight.getTime() / 1000);
+const END_TS   = Math.floor(todayMidnight.getTime() / 1000);
 
 const QUERY_BASE = `@tread_fi`;
 
@@ -106,26 +109,9 @@ async function main() {
     } catch(e) { console.log('Starting fresh'); }
   }
 
-  // Прогресс хранится отдельно
-  let effectiveEnd = END_TS;
-  if (existsSync('data/progress.json')) {
-    try {
-      const p = JSON.parse(readFileSync('data/progress.json', 'utf8'));
-      if (p.lastUntil && p.lastUntil > 0 && isFinite(p.lastUntil)) {
-        effectiveEnd = p.lastUntil;
-        console.log(`Resuming from ${new Date(effectiveEnd * 1000).toISOString()}`);
-      }
-    } catch(e) {}
-  }
+  console.log(`Fetching ${yesterdayMidnight.toISOString().slice(0,10)}...`);
 
-  if (effectiveEnd <= START_TS) {
-    console.log('✓ Already fully collected, nothing to do.');
-    return;
-  }
-
-  console.log(`Fetching ${new Date(START_TS * 1000).toISOString().slice(0,10)} → ${new Date(effectiveEnd * 1000).toISOString().slice(0,10)}...`);
-
-  const tweets = await fetchWindow(START_TS, effectiveEnd);
+  const tweets = await fetchWindow(START_TS, END_TS);
   const relevant = tweets.filter(isRelevant);
 
   console.log(`\n${tweets.length} raw → ${relevant.length} relevant`);
@@ -216,11 +202,6 @@ async function main() {
   );
 
   mkdirSync('data', { recursive: true });
-
-  writeFileSync('data/progress.json', JSON.stringify({
-    lastUntil: START_TS,
-    updatedAt: new Date().toISOString()
-  }, null, 2));
 
   writeFileSync('data/leaderboard.json', JSON.stringify({
     updatedAt: new Date().toISOString(),
