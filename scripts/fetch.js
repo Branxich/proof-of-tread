@@ -4,14 +4,11 @@ import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'fs';
 const API_KEY = process.env.TWITTERAPI_KEY;
 const BASE = 'https://api.twitterapi.io/twitter/tweet/advanced_search';
 
-// Only yesterday
-const now = new Date();
-const todayMidnight = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
-const yesterdayMidnight = new Date(todayMidnight.getTime() - 86400000);
-const START_TS = Math.floor(yesterdayMidnight.getTime() / 1000);
-const END_TS   = Math.floor(todayMidnight.getTime() / 1000);
+// ── Диапазон сбора ──
+const START_TS = Math.floor(new Date('2025-04-01T00:00:00Z').getTime() / 1000);
+const END_TS   = Math.floor(new Date('2026-06-01T00:00:00Z').getTime() / 1000);
 
-const QUERY_BASE = `@tread_fi -filter:replies`;
+const QUERY_BASE = `@tread_fi`;
 
 function parseTwitterTime(s) {
   return Math.floor(new Date(s).getTime() / 1000);
@@ -21,7 +18,6 @@ function isRelevant(tweet) {
   if (tweet.isRetweet) return false;
   if (tweet.text?.startsWith('RT @')) return false;
   if (tweet.retweeted_tweet) return false;
-  if (tweet.isReply) return false;
 
   const txt = (tweet.text || '').toLowerCase();
 
@@ -36,38 +32,58 @@ function isRelevant(tweet) {
 async function fetchWindow(sinceTs, untilTs) {
   const tweets = [];
   let currentUntil = untilTs;
-  let calls = 0;
-  const MAX_CALLS = 200;
+  let emptyStreak = 0;
+  const MAX_EMPTY_STREAK = 10;
 
-  while (currentUntil > sinceTs && calls < MAX_CALLS) {
+  while (currentUntil > sinceTs) {
     const query = `${QUERY_BASE} since_time:${sinceTs} until_time:${currentUntil}`;
     const params = new URLSearchParams({ query, queryType: 'Latest' });
 
-    const r = await fetch(`${BASE}?${params}`, {
-      headers: { 'X-API-Key': API_KEY }
-    });
+    let r;
+    try {
+      r = await fetch(`${BASE}?${params}`, {
+        headers: { 'X-API-Key': API_KEY }
+      });
+    } catch(e) {
+      console.error(`Fetch error: ${e.message}, retrying in 5s...`);
+      await new Promise(r => setTimeout(r, 5000));
+      continue;
+    }
 
     if (!r.ok) {
-      console.error(`API error ${r.status}: ${await r.text()}`);
-      break;
+      const text = await r.text();
+      console.error(`API error ${r.status}: ${text}, retrying in 5s...`);
+      await new Promise(r => setTimeout(r, 5000));
+      continue;
     }
 
     const data = await r.json();
     const batch = data.tweets || [];
-    calls++;
 
-    if (!batch.length) break;
+    console.log(`  got ${batch.length} tweets (until ${new Date(currentUntil * 1000).toISOString().slice(0,10)})`);
 
+    if (!batch.length) {
+      emptyStreak++;
+      if (emptyStreak >= MAX_EMPTY_STREAK) {
+        console.log(`  ${MAX_EMPTY_STREAK} empty responses, jumping back 7 days...`);
+        currentUntil -= 86400 * 7;
+        emptyStreak = 0;
+      } else {
+        currentUntil -= 86400;
+      }
+      await new Promise(r => setTimeout(r, 300));
+      continue;
+    }
+
+    emptyStreak = 0;
     tweets.push(...batch);
 
     const earliest = Math.min(...batch.map(t => parseTwitterTime(t.createdAt)));
     if (earliest < currentUntil) {
       currentUntil = earliest - 1;
     } else {
-      break;
+      currentUntil -= 86400;
     }
-
-    if (batch.length < 20) break;
 
     await new Promise(r => setTimeout(r, 300));
   }
@@ -86,17 +102,33 @@ async function main() {
         existing[u.handle.toLowerCase()] = u;
         (u.topPosts || []).forEach(p => p.id && seenIds.add(p.id));
       });
-      console.log(`Loaded ${Object.keys(existing).length} existing users`);
+      console.log(`Loaded ${Object.keys(existing).length} existing users, ${seenIds.size} known tweet IDs`);
     } catch(e) { console.log('Starting fresh'); }
   }
 
-  const date = yesterdayMidnight.toISOString().slice(0, 10);
-  console.log(`Fetching ${date}...`);
+  // Прогресс хранится отдельно
+  let effectiveEnd = END_TS;
+  if (existsSync('data/progress.json')) {
+    try {
+      const p = JSON.parse(readFileSync('data/progress.json', 'utf8'));
+      if (p.lastUntil && p.lastUntil > 0 && isFinite(p.lastUntil)) {
+        effectiveEnd = p.lastUntil;
+        console.log(`Resuming from ${new Date(effectiveEnd * 1000).toISOString()}`);
+      }
+    } catch(e) {}
+  }
 
-  const tweets = await fetchWindow(START_TS, END_TS);
+  if (effectiveEnd <= START_TS) {
+    console.log('✓ Already fully collected, nothing to do.');
+    return;
+  }
+
+  console.log(`Fetching ${new Date(START_TS * 1000).toISOString().slice(0,10)} → ${new Date(effectiveEnd * 1000).toISOString().slice(0,10)}...`);
+
+  const tweets = await fetchWindow(START_TS, effectiveEnd);
   const relevant = tweets.filter(isRelevant);
 
-  console.log(`${tweets.length} raw → ${relevant.length} relevant`);
+  console.log(`\n${tweets.length} raw → ${relevant.length} relevant`);
 
   const fresh = {};
 
@@ -179,18 +211,24 @@ async function main() {
 
   const userList = Object.values(merged).sort((a, b) => b.views - a.views);
   const totals = userList.reduce(
-    (t, u) => ({ views: t.views+u.views, likes: t.likes+u.likes, posts: t.posts+u.posts }),
+    (t, u) => ({ views: t.views + u.views, likes: t.likes + u.likes, posts: t.posts + u.posts }),
     { views: 0, likes: 0, posts: 0 }
   );
 
   mkdirSync('data', { recursive: true });
+
+  writeFileSync('data/progress.json', JSON.stringify({
+    lastUntil: START_TS,
+    updatedAt: new Date().toISOString()
+  }, null, 2));
+
   writeFileSync('data/leaderboard.json', JSON.stringify({
     updatedAt: new Date().toISOString(),
     totals: { ...totals, users: userList.length },
     users: userList
   }, null, 2));
 
-  console.log(`✓ Done: ${userList.length} users, ${totals.posts} posts, ${totals.views} views`);
+  console.log(`\n✓ Done: ${userList.length} users, ${totals.posts} posts, ${totals.views} views`);
 }
 
 main().catch(e => { console.error(e); process.exit(1); });
