@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-06-27T08:41:00.198Z",
+  "updatedAt": "2026-06-28T09:16:08.528Z",
   "totals": {
-    "views": 9881293,
-    "likes": 99635,
-    "posts": 29377,
-    "users": 6724
+    "views": 9885157,
+    "likes": 99675,
+    "posts": 29393,
+    "users": 6729
   },
   "users": [
     {
@@ -115,16 +115,16 @@
       "id": "345918982",
       "name": "noorucn",
       "handle": "sportytechworld",
-      "followers": 1077,
+      "followers": 1078,
       "avatar": "https://pbs.twimg.com/profile_images/1944017942913630208/jdnYG3xs_normal.jpg",
-      "views": 434118,
-      "likes": 5741,
-      "posts": 763,
-      "mentions": 763,
+      "views": 434168,
+      "likes": 5742,
+      "posts": 764,
+      "mentions": 764,
       "cashtag": 1,
       "keyword": 71,
       "firstPost": "Thu Oct 09 09:51:27 +0000 2025",
-      "lastPost": "Fri Jun 26 14:18:49 +0000 2026",
+      "lastPost": "Sat Jun 27 08:38:48 +0000 2026",
       "topPosts": [
         {
           "text": "Everyone asks me if you can MM profitably on @tread_fi. This guy did $70-80M in volume over 2 weeks—profitably. Team of 5, he's a quant and one of the top market makers on @HyperliquidX. I've been picking his brain for days and been constantly talking  with him about how we can educate people to tread profitably.\n\nHere's how he does it.",
@@ -1962,16 +1962,16 @@
       "id": "1143775294379061248",
       "name": "Alpha by Dhruv",
       "handle": "Dhruv_Sniper",
-      "followers": 1356,
+      "followers": 1361,
       "avatar": "https://pbs.twimg.com/profile_images/2020122636202938368/p3Dk8Bzr_normal.jpg",
-      "views": 34569,
-      "likes": 522,
-      "posts": 154,
-      "mentions": 154,
+      "views": 35178,
+      "likes": 537,
+      "posts": 156,
+      "mentions": 156,
       "cashtag": 5,
-      "keyword": 54,
+      "keyword": 55,
       "firstPost": "Sat Nov 29 03:25:38 +0000 2025",
-      "lastPost": "Sun Jun 07 16:20:11 +0000 2026",
+      "lastPost": "Sat Jun 27 19:44:59 +0000 2026",
       "topPosts": [
         {
           "text": "End of a beautiful journey. Season 1 for @tread_fi ended today.\n\n27 weeks, 180 days of insane drama every week.\n\nHere is where I ended at:\nVolume - 19.8M$\nAdj Volume - 30.7M$ \nFees + P&L - 1827.67$ \nPoints - 1289.15\nCost per point - 1.42$\n\nUpcoming updates from Tread - New MM bot modes, Underrated trading terminal, AI trading agents & numerous integrations coming\n\nShoutout to @davidyjeong for creating Treadfi, which a lot of retailers didn't had access to and for helping me get my first X badge.\n\nShoutout to @0xasrequired & @sportytechworld for the invite & entry into Consortium.",
@@ -2621,6 +2621,58 @@
       ]
     },
     {
+      "id": "765661464032075776",
+      "name": "Nitro.hl",
+      "handle": "NitroOGFX",
+      "followers": 3238,
+      "avatar": "https://pbs.twimg.com/profile_images/2059200854352392192/BaQAYjnA_normal.jpg",
+      "views": 26482,
+      "likes": 235,
+      "posts": 34,
+      "mentions": 34,
+      "cashtag": 0,
+      "keyword": 1,
+      "firstPost": "Tue Jun 02 09:26:03 +0000 2026",
+      "lastPost": "Sat Jun 27 16:39:22 +0000 2026",
+      "topPosts": [
+        {
+          "text": "Quick MM update: \n\nCurrent balance: $55,451\n\n$ZEC realized: $1.2k\n$HYPE realized: $120\n\nTrading on @tread_fi https://t.co/n4EdVukSbF",
+          "id": "2062102816290721863",
+          "url": "https://x.com/NitroOGFX/status/2062102816290721863",
+          "views": 7452,
+          "likes": 34
+        },
+        {
+          "text": "Got my hands on the @tread_fi market making agent and the results speak for themselves. Just understand the market and what data to use; the agent will do the rest. It’s a discipline version of yourself. \n\nBeen around 4 hours now. $3k margin. https://t.co/GHlIWGoGKE",
+          "id": "2065101643947835696",
+          "url": "https://x.com/NitroOGFX/status/2065101643947835696",
+          "views": 5122,
+          "likes": 46
+        },
+        {
+          "text": "$7k margin 10x. started around 45  mins ago. \n\nLong Skew. mid spread. @tread_fi  \n\nLowering the margins to make it more relatable to the ones interested in learning more about MM. https://t.co/kPxc1NHnEM",
+          "id": "2062161603341029381",
+          "url": "https://x.com/NitroOGFX/status/2062161603341029381",
+          "views": 2671,
+          "likes": 47
+        },
+        {
+          "text": "finally got to @tread_fi tier 5 fee. 1bps only. https://t.co/CK1B31DDzO",
+          "id": "2062409354632999196",
+          "url": "https://x.com/NitroOGFX/status/2062409354632999196",
+          "views": 2230,
+          "likes": 23
+        },
+        {
+          "text": "There are 2 wallets associated with this X. \n\nOne is for scalping and I just opened a sub account yesterday for strictly experimenting with @tread_fi \n\nStart balance of the MM account is $5k \n\nCurrently $5.4k after 2 BTC $BTC mm sessions. \n\nOnce I have a solid strategy for accounts with not much discounted fees, I’ll let you know. \n\nMy current fee tier on hyper allows me to have narrow spreads, so don’t copy unless you pay next to nothing in fees. \n\nI’m also open to suggestions for anyone who wants to test a strategy on lower fees. Just dm me and I’ll run the parameters for you if they are solid and make sense.",
+          "id": "2062399494822527067",
+          "url": "https://x.com/NitroOGFX/status/2062399494822527067",
+          "views": 2006,
+          "likes": 27
+        }
+      ]
+    },
+    {
       "id": "1903429012535525376",
       "name": "HYPEconomist | Theo Arc",
       "handle": "HYPEconomist",
@@ -2669,58 +2721,6 @@
           "url": "https://x.com/HYPEconomist/status/2008925814092341521",
           "views": 655,
           "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "765661464032075776",
-      "name": "Nitro",
-      "handle": "NitroOGFX",
-      "followers": 3128,
-      "avatar": "https://pbs.twimg.com/profile_images/2059200854352392192/BaQAYjnA_normal.jpg",
-      "views": 25230,
-      "likes": 228,
-      "posts": 33,
-      "mentions": 33,
-      "cashtag": 0,
-      "keyword": 1,
-      "firstPost": "Tue Jun 02 09:26:03 +0000 2026",
-      "lastPost": "Sat Jun 13 12:28:04 +0000 2026",
-      "topPosts": [
-        {
-          "text": "Quick MM update: \n\nCurrent balance: $55,451\n\n$ZEC realized: $1.2k\n$HYPE realized: $120\n\nTrading on @tread_fi https://t.co/n4EdVukSbF",
-          "id": "2062102816290721863",
-          "url": "https://x.com/NitroOGFX/status/2062102816290721863",
-          "views": 7452,
-          "likes": 34
-        },
-        {
-          "text": "Got my hands on the @tread_fi market making agent and the results speak for themselves. Just understand the market and what data to use; the agent will do the rest. It’s a discipline version of yourself. \n\nBeen around 4 hours now. $3k margin. https://t.co/GHlIWGoGKE",
-          "id": "2065101643947835696",
-          "url": "https://x.com/NitroOGFX/status/2065101643947835696",
-          "views": 5122,
-          "likes": 46
-        },
-        {
-          "text": "$7k margin 10x. started around 45  mins ago. \n\nLong Skew. mid spread. @tread_fi  \n\nLowering the margins to make it more relatable to the ones interested in learning more about MM. https://t.co/kPxc1NHnEM",
-          "id": "2062161603341029381",
-          "url": "https://x.com/NitroOGFX/status/2062161603341029381",
-          "views": 2671,
-          "likes": 47
-        },
-        {
-          "text": "finally got to @tread_fi tier 5 fee. 1bps only. https://t.co/CK1B31DDzO",
-          "id": "2062409354632999196",
-          "url": "https://x.com/NitroOGFX/status/2062409354632999196",
-          "views": 2230,
-          "likes": 23
-        },
-        {
-          "text": "There are 2 wallets associated with this X. \n\nOne is for scalping and I just opened a sub account yesterday for strictly experimenting with @tread_fi \n\nStart balance of the MM account is $5k \n\nCurrently $5.4k after 2 BTC $BTC mm sessions. \n\nOnce I have a solid strategy for accounts with not much discounted fees, I’ll let you know. \n\nMy current fee tier on hyper allows me to have narrow spreads, so don’t copy unless you pay next to nothing in fees. \n\nI’m also open to suggestions for anyone who wants to test a strategy on lower fees. Just dm me and I’ll run the parameters for you if they are solid and make sense.",
-          "id": "2062399494822527067",
-          "url": "https://x.com/NitroOGFX/status/2062399494822527067",
-          "views": 2006,
-          "likes": 27
         }
       ]
     },
@@ -4443,6 +4443,58 @@
       ]
     },
     {
+      "id": "1863580679549628416",
+      "name": "BoldXBT",
+      "handle": "boldxbt",
+      "followers": 233,
+      "avatar": "https://pbs.twimg.com/profile_images/2034552584170524672/bo-58e5W_normal.jpg",
+      "views": 12833,
+      "likes": 184,
+      "posts": 82,
+      "mentions": 82,
+      "cashtag": 1,
+      "keyword": 0,
+      "firstPost": "Thu Nov 20 15:33:09 +0000 2025",
+      "lastPost": "Sat Jun 27 17:57:04 +0000 2026",
+      "topPosts": [
+        {
+          "text": "Received 354 USDC in rewards this week just from running volume on the @tread_fi delta neutral & market making bot.\n\nMostly ran various stocks & metal on @OndoPerps\nNew week started and the rewards are looking even better already, starting from 125,000 up from 100,000 last week, so should be even better.\n\nIf you want access to ONDO Perps: https://t.co/CsmXaiY90T\n\nNot on Tread yet? idk what you’re doing:\nhttps://t.co/eVSh8wTGcA\n\nOndo is providing free volume by giving you 2-3x your cost.\n\nStart treading, don’t fade.",
+          "id": "2064241959955202412",
+          "url": "https://x.com/boldxbt/status/2064241959955202412",
+          "views": 1959,
+          "likes": 35
+        },
+        {
+          "text": "\"Timing beats power, precision beats speed.\"\n\nWhat happens if you have all 4 = @tread_fi \n\nOverall happy with the results, might start posting more of these daily performances, @OndoPerps is definitely trickier right now to get positive PnL, but lets see how the campaign offsets. https://t.co/WxJqM40NoK",
+          "id": "2070815463139889510",
+          "url": "https://x.com/boldxbt/status/2070815463139889510",
+          "views": 1211,
+          "likes": 12
+        },
+        {
+          "text": "@tread_fi is a generational opportunity that everyone should be taking.\n\nI see a lot of posts of people farming perp dexes manually and getting brutally annihilated, well if you use their market maker bot you avoid all that by just setting the budget you want to spend and the directional bias.\n\nBecome the market maker - https://t.co/eVSh8wTGcA\n\nI haven't been this excited about a platform in a long time.",
+          "id": "1991530259372503507",
+          "url": "https://x.com/boldxbt/status/1991530259372503507",
+          "views": 949,
+          "likes": 5
+        },
+        {
+          "text": "Who would have thought that there would come a day where you can simply tell an agent what your goal is and it will figure out strategies and execute them, nothing complex, extremely easy and actually profitable.\n\nI am currently running metals on @OndoPerps via @tread_fi MM Agent, there is a 12 week reward campaign of up to 250,000$ per week.\n\nLast week the rewards were 3-4-5x depending on your PNL, expecting similar results this week, still need an access/referral link to access Ondo.\n\nhttps://t.co/CsmXaiY90T\n\nhttps://t.co/eVSh8wTGcA",
+          "id": "2064627912339227079",
+          "url": "https://x.com/boldxbt/status/2064627912339227079",
+          "views": 581,
+          "likes": 15
+        },
+        {
+          "text": "Running a delta neutral on silver right now with the @tread_fi delta neutral bot.\n\nXAG on @OndoPerps & Silver on @HyperliquidX \n\nBasically just pay the fees on both exchanges, if you want to start, do it now because Ondo Perps is not open to everyone yet, but can be accessed with access code or ref:\n\nhttps://t.co/CsmXaiY90T\n\nAnd if you're somehow not on @tread_fi yet, then idk what you are doing:\n\nhttps://t.co/eVSh8wTGcA\n\nStart treading, don't fade.",
+          "id": "2062907333538144595",
+          "url": "https://x.com/boldxbt/status/2062907333538144595",
+          "views": 526,
+          "likes": 14
+        }
+      ]
+    },
+    {
       "id": "793348049992978432",
       "name": "Syc.hype",
       "handle": "Sychype",
@@ -4768,58 +4820,6 @@
           "url": "https://x.com/shadowmakerxyz/status/1989794318408732863",
           "views": 173,
           "likes": 1
-        }
-      ]
-    },
-    {
-      "id": "1863580679549628416",
-      "name": "BoldXBT",
-      "handle": "boldxbt",
-      "followers": 229,
-      "avatar": "https://pbs.twimg.com/profile_images/2034552584170524672/bo-58e5W_normal.jpg",
-      "views": 11460,
-      "likes": 170,
-      "posts": 79,
-      "mentions": 79,
-      "cashtag": 1,
-      "keyword": 0,
-      "firstPost": "Thu Nov 20 15:33:09 +0000 2025",
-      "lastPost": "Thu Jun 25 21:29:45 +0000 2026",
-      "topPosts": [
-        {
-          "text": "Received 354 USDC in rewards this week just from running volume on the @tread_fi delta neutral & market making bot.\n\nMostly ran various stocks & metal on @OndoPerps\nNew week started and the rewards are looking even better already, starting from 125,000 up from 100,000 last week, so should be even better.\n\nIf you want access to ONDO Perps: https://t.co/CsmXaiY90T\n\nNot on Tread yet? idk what you’re doing:\nhttps://t.co/eVSh8wTGcA\n\nOndo is providing free volume by giving you 2-3x your cost.\n\nStart treading, don’t fade.",
-          "id": "2064241959955202412",
-          "url": "https://x.com/boldxbt/status/2064241959955202412",
-          "views": 1959,
-          "likes": 35
-        },
-        {
-          "text": "@tread_fi is a generational opportunity that everyone should be taking.\n\nI see a lot of posts of people farming perp dexes manually and getting brutally annihilated, well if you use their market maker bot you avoid all that by just setting the budget you want to spend and the directional bias.\n\nBecome the market maker - https://t.co/eVSh8wTGcA\n\nI haven't been this excited about a platform in a long time.",
-          "id": "1991530259372503507",
-          "url": "https://x.com/boldxbt/status/1991530259372503507",
-          "views": 949,
-          "likes": 5
-        },
-        {
-          "text": "Who would have thought that there would come a day where you can simply tell an agent what your goal is and it will figure out strategies and execute them, nothing complex, extremely easy and actually profitable.\n\nI am currently running metals on @OndoPerps via @tread_fi MM Agent, there is a 12 week reward campaign of up to 250,000$ per week.\n\nLast week the rewards were 3-4-5x depending on your PNL, expecting similar results this week, still need an access/referral link to access Ondo.\n\nhttps://t.co/CsmXaiY90T\n\nhttps://t.co/eVSh8wTGcA",
-          "id": "2064627912339227079",
-          "url": "https://x.com/boldxbt/status/2064627912339227079",
-          "views": 581,
-          "likes": 15
-        },
-        {
-          "text": "Running a delta neutral on silver right now with the @tread_fi delta neutral bot.\n\nXAG on @OndoPerps & Silver on @HyperliquidX \n\nBasically just pay the fees on both exchanges, if you want to start, do it now because Ondo Perps is not open to everyone yet, but can be accessed with access code or ref:\n\nhttps://t.co/CsmXaiY90T\n\nAnd if you're somehow not on @tread_fi yet, then idk what you are doing:\n\nhttps://t.co/eVSh8wTGcA\n\nStart treading, don't fade.",
-          "id": "2062907333538144595",
-          "url": "https://x.com/boldxbt/status/2062907333538144595",
-          "views": 526,
-          "likes": 14
-        },
-        {
-          "text": "@DidiTrading Missing @tread_fi Didi, which empowers those",
-          "id": "2009331655732048192",
-          "url": "https://x.com/boldxbt/status/2009331655732048192",
-          "views": 433,
-          "likes": 2
         }
       ]
     },
@@ -9402,16 +9402,16 @@
       "id": "935948665407049729",
       "name": "RobSVR PerpsMania",
       "handle": "Robsvr",
-      "followers": 5351,
+      "followers": 5352,
       "avatar": "https://pbs.twimg.com/profile_images/2011158948896706560/vCsDj8Vi_normal.jpg",
-      "views": 3555,
-      "likes": 44,
-      "posts": 60,
-      "mentions": 60,
+      "views": 3585,
+      "likes": 45,
+      "posts": 61,
+      "mentions": 61,
       "cashtag": 0,
       "keyword": 2,
       "firstPost": "Wed Mar 04 07:14:39 +0000 2026",
-      "lastPost": "Tue Jun 23 19:09:31 +0000 2026",
+      "lastPost": "Sat Jun 27 20:27:16 +0000 2026",
       "topPosts": [
         {
           "text": "@tread_fi looks bad tbh. Those guys scammed a lot of people.😐",
@@ -25505,6 +25505,58 @@
       ]
     },
     {
+      "id": "961981009",
+      "name": "Goul base.eth",
+      "handle": "goul82",
+      "followers": 589,
+      "avatar": "https://pbs.twimg.com/profile_images/2012111062552948736/qSai1CLz_normal.jpg",
+      "views": 913,
+      "likes": 19,
+      "posts": 20,
+      "mentions": 20,
+      "cashtag": 0,
+      "keyword": 2,
+      "firstPost": "Sat Jan 24 10:25:19 +0000 2026",
+      "lastPost": "Sat Jun 27 20:06:19 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@Aero96193997 @tread_fi @Polymarket How much will 1 point be worth if we get 80 mil??",
+          "id": "2060292917386788998",
+          "url": "https://x.com/goul82/status/2060292917386788998",
+          "views": 122,
+          "likes": 0
+        },
+        {
+          "text": "@tread_fi https://t.co/qKhnicXDCm",
+          "id": "2056658473157267541",
+          "url": "https://x.com/goul82/status/2056658473157267541",
+          "views": 117,
+          "likes": 4
+        },
+        {
+          "text": "@rinne_hl @tread_fi @extendedapp Not worth it dude. you are just burning fees and you are competing with whales on Extended",
+          "id": "2015008001736736993",
+          "url": "https://x.com/goul82/status/2015008001736736993",
+          "views": 106,
+          "likes": 2
+        },
+        {
+          "text": "@rinne_hl @tread_fi This works only for those Perp Dexs with no fees like Paradex, which if you are starting now, you are too late. Also late is Extended and Variational",
+          "id": "2015682396700418192",
+          "url": "https://x.com/goul82/status/2015682396700418192",
+          "views": 96,
+          "likes": 0
+        },
+        {
+          "text": "@tread_fi 🤪🤑😁",
+          "id": "2056654042881790305",
+          "url": "https://x.com/goul82/status/2056654042881790305",
+          "views": 88,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1856581926032957440",
       "name": "ohim.rise",
       "handle": "kederidiot12",
@@ -25919,58 +25971,6 @@
           "id": "2036024240177025195",
           "url": "https://x.com/Samtolad/status/2036024240177025195",
           "views": 73,
-          "likes": 1
-        }
-      ]
-    },
-    {
-      "id": "961981009",
-      "name": "Goul base.eth",
-      "handle": "goul82",
-      "followers": 559,
-      "avatar": "https://pbs.twimg.com/profile_images/2012111062552948736/qSai1CLz_normal.jpg",
-      "views": 894,
-      "likes": 19,
-      "posts": 19,
-      "mentions": 19,
-      "cashtag": 0,
-      "keyword": 2,
-      "firstPost": "Sat Jan 24 10:25:19 +0000 2026",
-      "lastPost": "Tue Jun 09 15:09:53 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@Aero96193997 @tread_fi @Polymarket How much will 1 point be worth if we get 80 mil??",
-          "id": "2060292917386788998",
-          "url": "https://x.com/goul82/status/2060292917386788998",
-          "views": 122,
-          "likes": 0
-        },
-        {
-          "text": "@tread_fi https://t.co/qKhnicXDCm",
-          "id": "2056658473157267541",
-          "url": "https://x.com/goul82/status/2056658473157267541",
-          "views": 117,
-          "likes": 4
-        },
-        {
-          "text": "@rinne_hl @tread_fi @extendedapp Not worth it dude. you are just burning fees and you are competing with whales on Extended",
-          "id": "2015008001736736993",
-          "url": "https://x.com/goul82/status/2015008001736736993",
-          "views": 106,
-          "likes": 2
-        },
-        {
-          "text": "@rinne_hl @tread_fi This works only for those Perp Dexs with no fees like Paradex, which if you are starting now, you are too late. Also late is Extended and Variational",
-          "id": "2015682396700418192",
-          "url": "https://x.com/goul82/status/2015682396700418192",
-          "views": 96,
-          "likes": 0
-        },
-        {
-          "text": "@tread_fi 🤪🤑😁",
-          "id": "2056654042881790305",
-          "url": "https://x.com/goul82/status/2056654042881790305",
-          "views": 88,
           "likes": 1
         }
       ]
@@ -87367,6 +87367,30 @@
       ]
     },
     {
+      "id": "1096728744813907969",
+      "name": "AltcoinAce ♠️",
+      "handle": "the_altcoinace",
+      "followers": 40549,
+      "avatar": "https://pbs.twimg.com/profile_images/1689159365482188800/6sveU-iY_normal.jpg",
+      "views": 136,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sat Jun 27 14:33:36 +0000 2026",
+      "lastPost": "Sat Jun 27 14:33:36 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@the_moonxbtee @OndoPerps @nadoHQ @tread_fi @AFX_XYZ where’s GRVT?",
+          "id": "2070878218429558873",
+          "url": "https://x.com/the_altcoinace/status/2070878218429558873",
+          "views": 136,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "713029620",
       "name": "Wizzle | Silhouette",
       "handle": "WaynesWorldza",
@@ -91205,6 +91229,44 @@
       ]
     },
     {
+      "id": "1654166347272847361",
+      "name": "Trainerx",
+      "handle": "tranerx1981",
+      "followers": 353,
+      "avatar": "https://pbs.twimg.com/profile_images/1988593289646485504/mo5n5IUR_normal.jpg",
+      "views": 126,
+      "likes": 0,
+      "posts": 3,
+      "mentions": 3,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Wed Jan 14 07:38:15 +0000 2026",
+      "lastPost": "Sat Jun 27 07:49:03 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@sportytechworld @tread_fi can this work with limit orders ? usually to get the better price and lower fee i put a limit on ondo or extended but i have to wait for sometime to get them fill , the moment they fill i smash a market order on var. would be nice if i can do this on autopilot",
+          "id": "2070776407698129304",
+          "url": "https://x.com/tranerx1981/status/2070776407698129304",
+          "views": 95,
+          "likes": 0
+        },
+        {
+          "text": "@sunboud0 @tread_fi did you compare the costs with otc price  ?",
+          "id": "2011342596120186893",
+          "url": "https://x.com/tranerx1981/status/2011342596120186893",
+          "views": 18,
+          "likes": 0
+        },
+        {
+          "text": "@jacq_capital @LagesDiogo @tread_fi @PlanemoTrading @interchainriley hows its going rn? do you think worth it to farm with tread",
+          "id": "2011342080212361653",
+          "url": "https://x.com/tranerx1981/status/2011342080212361653",
+          "views": 13,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1977309326768545792",
       "name": "Lycan",
       "handle": "0xlycanlab1m",
@@ -93124,6 +93186,30 @@
           "text": "@coingecko @phantom @BasedOneX @pvp_dot_trade @MetaMask @InsilicoTrading @infinex @AxiomExchange @tread_fi @Dreamcash @massdotmoney Thanks 🐸 🌅",
           "id": "2062787935674454214",
           "url": "https://x.com/rudykadoch/status/2062787935674454214",
+          "views": 121,
+          "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "1664248778625282049",
+      "name": "𝘾𝙤𝙡𝙚 𝙓",
+      "handle": "XbtCole_",
+      "followers": 35427,
+      "avatar": "https://pbs.twimg.com/profile_images/2066420077457506304/cl8B8Gp4_normal.jpg",
+      "views": 121,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sat Jun 27 15:22:39 +0000 2026",
+      "lastPost": "Sat Jun 27 15:22:39 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@the_moonxbtee @OndoPerps @nadoHQ @tread_fi @AFX_XYZ Solid projects right there",
+          "id": "2070890559254749306",
+          "url": "https://x.com/XbtCole_/status/2070890559254749306",
           "views": 121,
           "likes": 0
         }
@@ -116191,6 +116277,30 @@
       ]
     },
     {
+      "id": "1545086374851780608",
+      "name": "Ice_xbt🧸",
+      "handle": "Xbtee_ice",
+      "followers": 75914,
+      "avatar": "https://pbs.twimg.com/profile_images/1743601357515276288/vOd9tjZ3_normal.jpg",
+      "views": 75,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sat Jun 27 15:20:38 +0000 2026",
+      "lastPost": "Sat Jun 27 15:20:38 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@the_moonxbtee @OndoPerps @nadoHQ @tread_fi @AFX_XYZ Well said moonx",
+          "id": "2070890051685285956",
+          "url": "https://x.com/Xbtee_ice/status/2070890051685285956",
+          "views": 75,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "825002382",
       "name": "Nyx",
       "handle": "web3_nyx",
@@ -118631,6 +118741,30 @@
           "text": "@Peter_rock07 @variational_io @nadoHQ @bulktrade @tradexyz @risextrade @tread_fi @slx_fi @get_truenorth @ProprXYZ @novadotmarkets @pacifica_fi @CarbonTerminal @01Exchange nice",
           "id": "2067905635300348133",
           "url": "https://x.com/droidbuilds/status/2067905635300348133",
+          "views": 71,
+          "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "60344721",
+      "name": "Abhay 📍NYC",
+      "handle": "abhayait",
+      "followers": 2402,
+      "avatar": "https://pbs.twimg.com/profile_images/2037158885191241728/0gl9wRUJ_normal.jpg",
+      "views": 71,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sat Jun 27 04:21:51 +0000 2026",
+      "lastPost": "Sat Jun 27 04:21:51 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@sportytechworld @tread_fi I have something exciting for you on delta neutral \n\nDM me or tg: napolean0",
+          "id": "2070724265880744185",
+          "url": "https://x.com/abhayait/status/2070724265880744185",
           "views": 71,
           "likes": 0
         }
@@ -155047,6 +155181,37 @@
       ]
     },
     {
+      "id": "1679689048510586880",
+      "name": "Jim",
+      "handle": "jim_incrypto",
+      "followers": 333,
+      "avatar": "https://pbs.twimg.com/profile_images/2028593545452412928/8MVn1dq-_normal.jpg",
+      "views": 33,
+      "likes": 2,
+      "posts": 2,
+      "mentions": 2,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sat Jun 27 19:23:53 +0000 2026",
+      "lastPost": "Sat Jun 27 20:21:56 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@Dhruv_Sniper @risextrade @tread_fi @risechain @sam_battenally 👍",
+          "id": "2070965875406999723",
+          "url": "https://x.com/jim_incrypto/status/2070965875406999723",
+          "views": 17,
+          "likes": 1
+        },
+        {
+          "text": "@Dhruv_Sniper @risextrade @tread_fi @risechain @sam_battenally Very useful information, especially since you delete the strategies you used",
+          "id": "2070951269196259508",
+          "url": "https://x.com/jim_incrypto/status/2070951269196259508",
+          "views": 16,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1742696645244948480",
       "name": "Davis (✸,✸)",
       "handle": "Schmetisolo",
@@ -157108,37 +157273,6 @@
           "id": "2011935782592717079",
           "url": "https://x.com/ivann_fuel/status/2011935782592717079",
           "views": 31,
-          "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "1654166347272847361",
-      "name": "Trainerx",
-      "handle": "tranerx1981",
-      "followers": 354,
-      "avatar": "https://pbs.twimg.com/profile_images/1988593289646485504/mo5n5IUR_normal.jpg",
-      "views": 31,
-      "likes": 0,
-      "posts": 2,
-      "mentions": 2,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Wed Jan 14 07:38:15 +0000 2026",
-      "lastPost": "Wed Jan 14 07:40:18 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@sunboud0 @tread_fi did you compare the costs with otc price  ?",
-          "id": "2011342596120186893",
-          "url": "https://x.com/tranerx1981/status/2011342596120186893",
-          "views": 18,
-          "likes": 0
-        },
-        {
-          "text": "@jacq_capital @LagesDiogo @tread_fi @PlanemoTrading @interchainriley hows its going rn? do you think worth it to farm with tread",
-          "id": "2011342080212361653",
-          "url": "https://x.com/tranerx1981/status/2011342080212361653",
-          "views": 13,
           "likes": 0
         }
       ]
