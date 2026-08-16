@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-08-15T06:42:13.421Z",
+  "updatedAt": "2026-08-16T06:44:13.829Z",
   "totals": {
-    "views": 10573072,
+    "views": 10573292,
     "likes": 109627,
-    "posts": 32468,
-    "users": 7257
+    "posts": 32471,
+    "users": 7258
   },
   "users": [
     {
@@ -73376,6 +73376,30 @@
       ]
     },
     {
+      "id": "452892474",
+      "name": "V0id",
+      "handle": "lawof0",
+      "followers": 121,
+      "avatar": "https://pbs.twimg.com/profile_images/1983511355480309760/RlqkZ2Zs_normal.jpg",
+      "views": 215,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sat Aug 15 10:15:51 +0000 2026",
+      "lastPost": "Sat Aug 15 10:15:51 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@aiqiang888 Is it more efficient than @tread_fi 's Grid?",
+          "id": "2088570357532004851",
+          "url": "https://x.com/lawof0/status/2088570357532004851",
+          "views": 215,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1599609698231132160",
       "name": "Torvannon",
       "handle": "Torvannon",
@@ -88722,6 +88746,58 @@
       ]
     },
     {
+      "id": "1895180476983205888",
+      "name": "Zeno",
+      "handle": "zeno_0x1",
+      "followers": 38,
+      "avatar": "https://pbs.twimg.com/profile_images/2030043949738676224/jxNAdKrv_normal.jpg",
+      "views": 152,
+      "likes": 2,
+      "posts": 5,
+      "mentions": 5,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Thu Jan 22 06:05:30 +0000 2026",
+      "lastPost": "Sat Aug 15 20:19:00 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@Farmrick @tread_fi Great feedback! Adding @markets_xyz / @kinetiq_xyz to this strategy could be interesting too",
+          "id": "2022569209583087733",
+          "url": "https://x.com/zeno_0x1/status/2022569209583087733",
+          "views": 55,
+          "likes": 1
+        },
+        {
+          "text": "@tread_fi @__GOOPY__ Crazy!",
+          "id": "2056607961099731179",
+          "url": "https://x.com/zeno_0x1/status/2056607961099731179",
+          "views": 35,
+          "likes": 0
+        },
+        {
+          "text": "Have you started using @tread_fi?\nIt’s a really interesting product",
+          "id": "2014217840581022035",
+          "url": "https://x.com/zeno_0x1/status/2014217840581022035",
+          "views": 31,
+          "likes": 0
+        },
+        {
+          "text": "@MoJJo_V @tread_fi Well done! You were definitely early!\nTotally agree with your words",
+          "id": "2056609017036669137",
+          "url": "https://x.com/zeno_0x1/status/2056609017036669137",
+          "views": 27,
+          "likes": 1
+        },
+        {
+          "text": "@tread_fi @treadfoundation TGE in August?",
+          "id": "2088722142938448330",
+          "url": "https://x.com/zeno_0x1/status/2088722142938448330",
+          "views": 4,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1836432032538214401",
       "name": "Oxygen💭💦",
       "handle": "CryptoOxygen01",
@@ -89796,51 +89872,6 @@
           "id": "2011843413344154038",
           "url": "https://x.com/Biffbuster/status/2011843413344154038",
           "views": 148,
-          "likes": 1
-        }
-      ]
-    },
-    {
-      "id": "1895180476983205888",
-      "name": "Zeno",
-      "handle": "zeno_0x1",
-      "followers": 39,
-      "avatar": "https://pbs.twimg.com/profile_images/2030043949738676224/jxNAdKrv_normal.jpg",
-      "views": 148,
-      "likes": 2,
-      "posts": 4,
-      "mentions": 4,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Thu Jan 22 06:05:30 +0000 2026",
-      "lastPost": "Tue May 19 05:32:54 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@Farmrick @tread_fi Great feedback! Adding @markets_xyz / @kinetiq_xyz to this strategy could be interesting too",
-          "id": "2022569209583087733",
-          "url": "https://x.com/zeno_0x1/status/2022569209583087733",
-          "views": 55,
-          "likes": 1
-        },
-        {
-          "text": "@tread_fi @__GOOPY__ Crazy!",
-          "id": "2056607961099731179",
-          "url": "https://x.com/zeno_0x1/status/2056607961099731179",
-          "views": 35,
-          "likes": 0
-        },
-        {
-          "text": "Have you started using @tread_fi?\nIt’s a really interesting product",
-          "id": "2014217840581022035",
-          "url": "https://x.com/zeno_0x1/status/2014217840581022035",
-          "views": 31,
-          "likes": 0
-        },
-        {
-          "text": "@MoJJo_V @tread_fi Well done! You were definitely early!\nTotally agree with your words",
-          "id": "2056609017036669137",
-          "url": "https://x.com/zeno_0x1/status/2056609017036669137",
-          "views": 27,
           "likes": 1
         }
       ]
@@ -141891,6 +141922,37 @@
       ]
     },
     {
+      "id": "1823746967543144449",
+      "name": "lvnbbs_bnb 🐬TermMax",
+      "handle": "lvn_crypto",
+      "followers": 20103,
+      "avatar": "https://pbs.twimg.com/profile_images/2053874661411405824/avH65LcL_normal.jpg",
+      "views": 56,
+      "likes": 1,
+      "posts": 2,
+      "mentions": 2,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Thu Dec 04 00:32:42 +0000 2025",
+      "lastPost": "Sat Aug 15 19:14:34 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@xxceptive @Polymarket @Lighter_xyz @base @HyperliquidX @tread_fi @extendedapp @unitxyz ah missed metamask  s-tier wallet beast, everyone's sleeping on the print.",
+          "id": "1996377083673760161",
+          "url": "https://x.com/lvn_crypto/status/1996377083673760161",
+          "views": 55,
+          "likes": 1
+        },
+        {
+          "text": "@bizyugo @tread_fi how do you handle slippage during high volume spikes?",
+          "id": "2088705928254369793",
+          "url": "https://x.com/lvn_crypto/status/2088705928254369793",
+          "views": 1,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1905239992332677120",
       "name": "blumentritt",
       "handle": "brauseblume",
@@ -142513,30 +142575,6 @@
           "url": "https://x.com/milaidik/status/1996604131121799200",
           "views": 14,
           "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "1823746967543144449",
-      "name": "lvnbbs_bnb 🐬TermMax",
-      "handle": "lvn_crypto",
-      "followers": 4218,
-      "avatar": "https://pbs.twimg.com/profile_images/2053874661411405824/avH65LcL_normal.jpg",
-      "views": 55,
-      "likes": 1,
-      "posts": 1,
-      "mentions": 1,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Thu Dec 04 00:32:42 +0000 2025",
-      "lastPost": "Thu Dec 04 00:32:42 +0000 2025",
-      "topPosts": [
-        {
-          "text": "@xxceptive @Polymarket @Lighter_xyz @base @HyperliquidX @tread_fi @extendedapp @unitxyz ah missed metamask  s-tier wallet beast, everyone's sleeping on the print.",
-          "id": "1996377083673760161",
-          "url": "https://x.com/lvn_crypto/status/1996377083673760161",
-          "views": 55,
-          "likes": 1
         }
       ]
     },
