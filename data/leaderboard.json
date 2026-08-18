@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-08-17T07:01:20.424Z",
+  "updatedAt": "2026-08-18T06:49:10.855Z",
   "totals": {
-    "views": 10580474,
-    "likes": 109777,
-    "posts": 32500,
-    "users": 7260
+    "views": 10609131,
+    "likes": 110021,
+    "posts": 32548,
+    "users": 7279
   },
   "users": [
     {
@@ -479,16 +479,16 @@
       "id": "886765719391789057",
       "name": "zac.eth",
       "handle": "zacxbt",
-      "followers": 52505,
+      "followers": 52520,
       "avatar": "https://pbs.twimg.com/profile_images/1760942755545800704/wFBpdSgp_normal.jpg",
-      "views": 217610,
-      "likes": 1453,
-      "posts": 73,
-      "mentions": 73,
+      "views": 217973,
+      "likes": 1454,
+      "posts": 74,
+      "mentions": 74,
       "cashtag": 0,
       "keyword": 2,
       "firstPost": "Fri Jun 27 16:54:17 +0000 2025",
-      "lastPost": "Thu Aug 13 07:17:59 +0000 2026",
+      "lastPost": "Mon Aug 17 07:05:44 +0000 2026",
       "topPosts": [
         {
           "text": "made a @tread_fi tutorial video\n\nfarm multiple perp dex points in one place w/ their market maker bot\n\n$100 → $227k volume (@tradexyz)\n$100 → $285k volume (@pacifica_fi)\n$100 → $5m volume (@paradex)\n\nactive traders comment for access code https://t.co/EErQjQansu",
@@ -1349,16 +1349,16 @@
       "id": "1749041980586233856",
       "name": "x256.hl",
       "handle": "x256xx",
-      "followers": 15541,
+      "followers": 16253,
       "avatar": "https://pbs.twimg.com/profile_images/1968492070936489987/K67Y1wru_normal.jpg",
-      "views": 55494,
-      "likes": 489,
-      "posts": 39,
-      "mentions": 39,
+      "views": 55720,
+      "likes": 490,
+      "posts": 40,
+      "mentions": 40,
       "cashtag": 0,
       "keyword": 0,
       "firstPost": "Fri Jan 09 17:38:22 +0000 2026",
-      "lastPost": "Mon May 11 10:17:54 +0000 2026",
+      "lastPost": "Mon Aug 17 20:07:01 +0000 2026",
       "topPosts": [
         {
           "text": "2026 Hyperliquid eco airdrop farming tier list:\n\nS: @HyperliquidX @tradexyz \n\nA: @felixprotocol @unitxyz @Theo_Network @liquidtrading @tread_fi \n\nB: @ventuals @silhouette_ex @BullpenFi \n\nC: @prjx_hl @HypurrFi @ryskfinance @liminalmoney @Dexari \n\nD: @ValantisLabs @sentimentxyz @lit_trade",
@@ -3037,6 +3037,51 @@
       ]
     },
     {
+      "id": "1828256916679917568",
+      "name": "HypurrCollective.hl 🐱",
+      "handle": "hypurr_co",
+      "followers": 22103,
+      "avatar": "https://pbs.twimg.com/profile_images/1977763426719195136/ADGnAT8x_normal.jpg",
+      "views": 23674,
+      "likes": 179,
+      "posts": 4,
+      "mentions": 4,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 14:00:00 +0000 2026",
+      "lastPost": "Mon Aug 17 16:00:52 +0000 2026",
+      "topPosts": [
+        {
+          "text": "HypurrCo gathers.\n\n8 Oct 2026, Singapore.\n\nOnly made possible with our incredible sponsors/partners @HyperliquidPC, @HypeStrat, @InsilicoTrading, @nansen_ai, @chainlink, @eliospay, @hyperbeat, @wintermute_t, @hyperlendx, @talistrade, @hyperlink_xyz @tread_fi, Velar Tech, @ValantisLabs, @HypernovaX, @liquidtrading, @21shares \n\nVenue will be announced closer to the event.\n\nRSVP here: https://t.co/fWsMsjMIod",
+          "id": "2089351542189285650",
+          "url": "https://x.com/hypurr_co/status/2089351542189285650",
+          "views": 22870,
+          "likes": 176
+        },
+        {
+          "text": "@talistrade @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @hyperlink_xyz @tread_fi See you there!",
+          "id": "2089381957415346276",
+          "url": "https://x.com/hypurr_co/status/2089381957415346276",
+          "views": 355,
+          "likes": 1
+        },
+        {
+          "text": "@HypernovaX @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi See you there!",
+          "id": "2089381895318782001",
+          "url": "https://x.com/hypurr_co/status/2089381895318782001",
+          "views": 228,
+          "likes": 1
+        },
+        {
+          "text": "@StratiumX @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi See you there!",
+          "id": "2089381856664031725",
+          "url": "https://x.com/hypurr_co/status/2089381856664031725",
+          "views": 221,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1887465962171232256",
       "name": "Pacifica",
       "handle": "pacifica_fi",
@@ -3674,16 +3719,16 @@
       "id": "1738280858832818176",
       "name": "Mad Journalist 🗞️",
       "handle": "yekaza123",
-      "followers": 2640,
+      "followers": 2707,
       "avatar": "https://pbs.twimg.com/profile_images/1909242547349663745/7oCGwdvJ_normal.jpg",
-      "views": 19147,
-      "likes": 477,
-      "posts": 58,
-      "mentions": 58,
+      "views": 19173,
+      "likes": 478,
+      "posts": 59,
+      "mentions": 59,
       "cashtag": 1,
       "keyword": 7,
       "firstPost": "Thu Apr 02 12:27:31 +0000 2026",
-      "lastPost": "Thu Jul 30 01:02:25 +0000 2026",
+      "lastPost": "Mon Aug 17 08:51:25 +0000 2026",
       "topPosts": [
         {
           "text": "I pushed total of 360 k volume in @risextrade \n\nFinally I got some codes for RiseX 🥳unfortunately it's very very limited \n\nIf you are a serious trader and know the value of RiseX and plan to push decent volume Dm me with some proofs and I will let you in 🫡\n\nUsed @tread_fi MM bot and results were clean , 250 k volume with 196 CPM and 100 k volume with 249 CPM \n\nYou need to use bots when liquidity is low and platform is new in order to avoid fees and spreads \n\nWant to win double points for tread and risex ? Here you go 👇 Trust me tread points will be very valuable too\nhttps://t.co/io6ZmoY6Hb\n\nWe are in this together I will also share the key points and bot configurations with those guys \n\nLet's smash some volume BEFORE the points program launches\n\nIFYKYK ;)",
@@ -7911,6 +7956,58 @@
       ]
     },
     {
+      "id": "894893403321880576",
+      "name": "Laz",
+      "handle": "_lazos935",
+      "followers": 481,
+      "avatar": "https://pbs.twimg.com/profile_images/2030997441420689408/nKK_iwp7_normal.jpg",
+      "views": 5927,
+      "likes": 84,
+      "posts": 80,
+      "mentions": 80,
+      "cashtag": 4,
+      "keyword": 15,
+      "firstPost": "Mon Jan 05 10:46:09 +0000 2026",
+      "lastPost": "Mon Aug 17 09:05:11 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi @nadoHQ Let’s go",
+          "id": "2008190494980080023",
+          "url": "https://x.com/_lazos935/status/2008190494980080023",
+          "views": 424,
+          "likes": 0
+        },
+        {
+          "text": "I don't even know how he does it, but he does.\nAs required, @davidyjeong cooked again \n\nFirst @tread_fi DGrid Trade\n\nThis week's goal is finally reach 1K points ( 84 left ) \n\n42$ profit with 170$ margin, all automated, all using https://t.co/rpUGWOY0nX, not bad at all https://t.co/sqi93YUrvA",
+          "id": "2047376379520397396",
+          "url": "https://x.com/_lazos935/status/2047376379520397396",
+          "views": 417,
+          "likes": 10
+        },
+        {
+          "text": "@DeFiVoyager_X @tread_fi It surely is\nCheck my profile too 😉",
+          "id": "2014652872676270354",
+          "url": "https://x.com/_lazos935/status/2014652872676270354",
+          "views": 337,
+          "likes": 0
+        },
+        {
+          "text": "@MaxVoshchansky @variational_io @etherealdex @tread_fi ?",
+          "id": "2027149362283843616",
+          "url": "https://x.com/_lazos935/status/2027149362283843616",
+          "views": 335,
+          "likes": 1
+        },
+        {
+          "text": "Been running with @tread_fi for 7 months and the new Sports AI Agent is seriously impressive 🔥\nDead simple to use, improves daily, and remembers your old chats.\nIt won’t promise guaranteed profits, but it’s giving me a solid edge.\n\nHere are today’s picks for Portugal 🇵🇹 vs Spain 🇪🇸 from the agent:\n\nBet Builder For External Sportbook (~@8.00)\n •BTTS \n •2nd Half Highest Scoring  \n •Cards Over 2.5 \n •Goncalo Ramos 1+ Shot on Target\n\n Polymarket Picks  \n•Announcers say \"VAR\" — 78.5%  \n•Announcers say \"Referee\" 10+ times — 73%  •Announcers say \"Save\" 5+ times — 61%\n\n📊 All picks data-driven & odds-verified by my AI Sports Consultant on @treadfi \nThe sharpest way to research your bets ⚡\n\n We’ll be back tomorrow with the results\n\nWhat's your thoughts on these picks?\n\n#Portugal #Spain #ESP #POR #FIFA #BetBuilder #Polymarket #WorldCup2026 #TREAD",
+          "id": "2074184598314168397",
+          "url": "https://x.com/_lazos935/status/2074184598314168397",
+          "views": 308,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1775630562373345280",
       "name": "Jimbos Crypto Land",
       "handle": "JimboCryptoLand",
@@ -7959,58 +8056,6 @@
           "url": "https://x.com/JimboCryptoLand/status/2044010544596705525",
           "views": 92,
           "likes": 2
-        }
-      ]
-    },
-    {
-      "id": "894893403321880576",
-      "name": "Laz",
-      "handle": "_lazos935",
-      "followers": 495,
-      "avatar": "https://pbs.twimg.com/profile_images/2030997441420689408/nKK_iwp7_normal.jpg",
-      "views": 5899,
-      "likes": 83,
-      "posts": 79,
-      "mentions": 79,
-      "cashtag": 3,
-      "keyword": 15,
-      "firstPost": "Mon Jan 05 10:46:09 +0000 2026",
-      "lastPost": "Mon Jul 20 16:15:43 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@tread_fi @nadoHQ Let’s go",
-          "id": "2008190494980080023",
-          "url": "https://x.com/_lazos935/status/2008190494980080023",
-          "views": 424,
-          "likes": 0
-        },
-        {
-          "text": "I don't even know how he does it, but he does.\nAs required, @davidyjeong cooked again \n\nFirst @tread_fi DGrid Trade\n\nThis week's goal is finally reach 1K points ( 84 left ) \n\n42$ profit with 170$ margin, all automated, all using https://t.co/rpUGWOY0nX, not bad at all https://t.co/sqi93YUrvA",
-          "id": "2047376379520397396",
-          "url": "https://x.com/_lazos935/status/2047376379520397396",
-          "views": 417,
-          "likes": 10
-        },
-        {
-          "text": "@DeFiVoyager_X @tread_fi It surely is\nCheck my profile too 😉",
-          "id": "2014652872676270354",
-          "url": "https://x.com/_lazos935/status/2014652872676270354",
-          "views": 337,
-          "likes": 0
-        },
-        {
-          "text": "@MaxVoshchansky @variational_io @etherealdex @tread_fi ?",
-          "id": "2027149362283843616",
-          "url": "https://x.com/_lazos935/status/2027149362283843616",
-          "views": 335,
-          "likes": 1
-        },
-        {
-          "text": "Been running with @tread_fi for 7 months and the new Sports AI Agent is seriously impressive 🔥\nDead simple to use, improves daily, and remembers your old chats.\nIt won’t promise guaranteed profits, but it’s giving me a solid edge.\n\nHere are today’s picks for Portugal 🇵🇹 vs Spain 🇪🇸 from the agent:\n\nBet Builder For External Sportbook (~@8.00)\n •BTTS \n •2nd Half Highest Scoring  \n •Cards Over 2.5 \n •Goncalo Ramos 1+ Shot on Target\n\n Polymarket Picks  \n•Announcers say \"VAR\" — 78.5%  \n•Announcers say \"Referee\" 10+ times — 73%  •Announcers say \"Save\" 5+ times — 61%\n\n📊 All picks data-driven & odds-verified by my AI Sports Consultant on @treadfi \nThe sharpest way to research your bets ⚡\n\n We’ll be back tomorrow with the results\n\nWhat's your thoughts on these picks?\n\n#Portugal #Spain #ESP #POR #FIFA #BetBuilder #Polymarket #WorldCup2026 #TREAD",
-          "id": "2074184598314168397",
-          "url": "https://x.com/_lazos935/status/2074184598314168397",
-          "views": 308,
-          "likes": 1
         }
       ]
     },
@@ -19641,6 +19686,58 @@
       ]
     },
     {
+      "id": "1532516420013129735",
+      "name": "Tradfibaby",
+      "handle": "TradfiBaby",
+      "followers": 1131,
+      "avatar": "https://pbs.twimg.com/profile_images/1992727921706799104/JDfK3ipA_normal.jpg",
+      "views": 1475,
+      "likes": 17,
+      "posts": 18,
+      "mentions": 18,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Thu Oct 30 14:19:29 +0000 2025",
+      "lastPost": "Mon Aug 17 19:15:00 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@OG_Branxi @tread_fi 👌❤️👀",
+          "id": "2022746586032250925",
+          "url": "https://x.com/TradfiBaby/status/2022746586032250925",
+          "views": 259,
+          "likes": 1
+        },
+        {
+          "text": "@0xasrequired @tread_fi lmaoo",
+          "id": "1989885406410936421",
+          "url": "https://x.com/TradfiBaby/status/1989885406410936421",
+          "views": 180,
+          "likes": 1
+        },
+        {
+          "text": "@davidyjeong @tread_fi decentralised market making",
+          "id": "1992629289825788213",
+          "url": "https://x.com/TradfiBaby/status/1992629289825788213",
+          "views": 165,
+          "likes": 0
+        },
+        {
+          "text": "Volume bot like @tread_fi that:\n\n- Give retail access to market making bots\n-> Provide liquidity on both sides of the orderbook\n-> Make orderbook thicker -> lower slippage\n-> Keep the spread tighter -> better execution\n\nSuddenly, points farmers are useful, not doing stupid social tasks to grind for roles",
+          "id": "1993116066193539358",
+          "url": "https://x.com/TradfiBaby/status/1993116066193539358",
+          "views": 134,
+          "likes": 1
+        },
+        {
+          "text": "@0xasrequired @tread_fi Amen",
+          "id": "1983901574880752063",
+          "url": "https://x.com/TradfiBaby/status/1983901574880752063",
+          "views": 126,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1312441977787514880",
       "name": "venividi 🔎",
       "handle": "venividi_trade",
@@ -19734,6 +19831,58 @@
           "url": "https://x.com/hyperfoiler/status/1989773051672805643",
           "views": 57,
           "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "1972409489015054336",
+      "name": "Stratium",
+      "handle": "StratiumX",
+      "followers": 1254,
+      "avatar": "https://pbs.twimg.com/profile_images/2018353989767790592/1qC174X8_normal.jpg",
+      "views": 1459,
+      "likes": 8,
+      "posts": 9,
+      "mentions": 9,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sat Nov 15 19:28:23 +0000 2025",
+      "lastPost": "Mon Aug 17 16:08:11 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi People still underestimate",
+          "id": "1989777519596466442",
+          "url": "https://x.com/StratiumX/status/1989777519596466442",
+          "views": 385,
+          "likes": 0
+        },
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi Singapore here we come\n\nHyperliquid",
+          "id": "2089374207385690260",
+          "url": "https://x.com/StratiumX/status/2089374207385690260",
+          "views": 230,
+          "likes": 2
+        },
+        {
+          "text": "@tread_fi Exactly. Bots just tighten the book so takers get filled at better levels.",
+          "id": "1991470222726033573",
+          "url": "https://x.com/StratiumX/status/1991470222726033573",
+          "views": 215,
+          "likes": 1
+        },
+        {
+          "text": "@tread_fi Deserve that spot",
+          "id": "1993179344907518199",
+          "url": "https://x.com/StratiumX/status/1993179344907518199",
+          "views": 182,
+          "likes": 0
+        },
+        {
+          "text": "@sportytechworld @tread_fi @davidyjeong No washtrading on @tread_fi",
+          "id": "1993178184515567654",
+          "url": "https://x.com/StratiumX/status/1993178184515567654",
+          "views": 170,
+          "likes": 1
         }
       ]
     },
@@ -20178,53 +20327,53 @@
       ]
     },
     {
-      "id": "1532516420013129735",
-      "name": "Tradfibaby",
-      "handle": "TradfiBaby",
-      "followers": 1103,
-      "avatar": "https://pbs.twimg.com/profile_images/1992727921706799104/JDfK3ipA_normal.jpg",
-      "views": 1419,
-      "likes": 17,
-      "posts": 17,
-      "mentions": 17,
+      "id": "400798874",
+      "name": "Aran",
+      "handle": "0xaranz",
+      "followers": 3610,
+      "avatar": "https://pbs.twimg.com/profile_images/2059628777983070208/ve-Y4MO9_normal.jpg",
+      "views": 1410,
+      "likes": 10,
+      "posts": 10,
+      "mentions": 10,
       "cashtag": 0,
       "keyword": 0,
-      "firstPost": "Thu Oct 30 14:19:29 +0000 2025",
-      "lastPost": "Wed May 20 21:53:31 +0000 2026",
+      "firstPost": "Mon Nov 10 17:48:38 +0000 2025",
+      "lastPost": "Mon Aug 17 14:52:50 +0000 2026",
       "topPosts": [
         {
-          "text": "@OG_Branxi @tread_fi 👌❤️👀",
-          "id": "2022746586032250925",
-          "url": "https://x.com/TradfiBaby/status/2022746586032250925",
-          "views": 259,
+          "text": "@tread_fi based in Thailand 🇹🇭.",
+          "id": "1995405185691361357",
+          "url": "https://x.com/0xaranz/status/1995405185691361357",
+          "views": 443,
+          "likes": 3
+        },
+        {
+          "text": "Wow, nice work. I didn’t know that @tread_fi does not post about reward campaigns.",
+          "id": "2057476328488894712",
+          "url": "https://x.com/0xaranz/status/2057476328488894712",
+          "views": 228,
           "likes": 1
         },
         {
-          "text": "@0xasrequired @tread_fi lmaoo",
-          "id": "1989885406410936421",
-          "url": "https://x.com/TradfiBaby/status/1989885406410936421",
-          "views": 180,
+          "text": "@0xLcrgs @LorisTools @tread_fi @farmer_tools @dextrabot @Nomina @LorisTools  can i get access 🙇🙏🏻",
+          "id": "2038472254649233805",
+          "url": "https://x.com/0xaranz/status/2038472254649233805",
+          "views": 129,
+          "likes": 2
+        },
+        {
+          "text": "@tread_fi @tradeparagon let go",
+          "id": "2086667648499413399",
+          "url": "https://x.com/0xaranz/status/2086667648499413399",
+          "views": 108,
           "likes": 1
         },
         {
-          "text": "@davidyjeong @tread_fi decentralised market making",
-          "id": "1992629289825788213",
-          "url": "https://x.com/TradfiBaby/status/1992629289825788213",
-          "views": 165,
-          "likes": 0
-        },
-        {
-          "text": "Volume bot like @tread_fi that:\n\n- Give retail access to market making bots\n-> Provide liquidity on both sides of the orderbook\n-> Make orderbook thicker -> lower slippage\n-> Keep the spread tighter -> better execution\n\nSuddenly, points farmers are useful, not doing stupid social tasks to grind for roles",
-          "id": "1993116066193539358",
-          "url": "https://x.com/TradfiBaby/status/1993116066193539358",
-          "views": 134,
-          "likes": 1
-        },
-        {
-          "text": "@0xasrequired @tread_fi Amen",
-          "id": "1983901574880752063",
-          "url": "https://x.com/TradfiBaby/status/1983901574880752063",
-          "views": 126,
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi Can’t wait",
+          "id": "2089364836564279612",
+          "url": "https://x.com/0xaranz/status/2089364836564279612",
+          "views": 108,
           "likes": 1
         }
       ]
@@ -21500,58 +21649,6 @@
       ]
     },
     {
-      "id": "400798874",
-      "name": "Aran",
-      "handle": "0xaranz",
-      "followers": 3594,
-      "avatar": "https://pbs.twimg.com/profile_images/2059628777983070208/ve-Y4MO9_normal.jpg",
-      "views": 1302,
-      "likes": 9,
-      "posts": 9,
-      "mentions": 9,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Mon Nov 10 17:48:38 +0000 2025",
-      "lastPost": "Mon Aug 10 04:15:10 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@tread_fi based in Thailand 🇹🇭.",
-          "id": "1995405185691361357",
-          "url": "https://x.com/0xaranz/status/1995405185691361357",
-          "views": 443,
-          "likes": 3
-        },
-        {
-          "text": "Wow, nice work. I didn’t know that @tread_fi does not post about reward campaigns.",
-          "id": "2057476328488894712",
-          "url": "https://x.com/0xaranz/status/2057476328488894712",
-          "views": 228,
-          "likes": 1
-        },
-        {
-          "text": "@0xLcrgs @LorisTools @tread_fi @farmer_tools @dextrabot @Nomina @LorisTools  can i get access 🙇🙏🏻",
-          "id": "2038472254649233805",
-          "url": "https://x.com/0xaranz/status/2038472254649233805",
-          "views": 129,
-          "likes": 2
-        },
-        {
-          "text": "@tread_fi @tradeparagon let go",
-          "id": "2086667648499413399",
-          "url": "https://x.com/0xaranz/status/2086667648499413399",
-          "views": 108,
-          "likes": 1
-        },
-        {
-          "text": "@tread_fi @Kalshi TREAD is GOAT of the year",
-          "id": "2085053872880623728",
-          "url": "https://x.com/0xaranz/status/2085053872880623728",
-          "views": 96,
-          "likes": 1
-        }
-      ]
-    },
-    {
       "id": "1459105377782538269",
       "name": "Dönay",
       "handle": "Dnyelfy",
@@ -21860,6 +21957,58 @@
           "url": "https://x.com/MavenHL/status/2009248142915449243",
           "views": 44,
           "likes": 1
+        }
+      ]
+    },
+    {
+      "id": "1541783099561971712",
+      "name": "Big Belly Santa",
+      "handle": "Azeem7236",
+      "followers": 246,
+      "avatar": "https://pbs.twimg.com/profile_images/1769370723918008320/bC_4WntE_normal.jpg",
+      "views": 1278,
+      "likes": 12,
+      "posts": 25,
+      "mentions": 25,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sun Nov 23 13:43:52 +0000 2025",
+      "lastPost": "Mon Aug 17 17:11:25 +0000 2026",
+      "topPosts": [
+        {
+          "text": "Done over 2 million on  @arcus_xyz now . This weekend was good with cpm around 40-60$ on @vesper_mm . \n\nGoing to Speed run to 5m+ before Arcus goes live on @tread_fi then vol will 3-4x https://t.co/oE0HCgKYs6",
+          "id": "2089254265395327414",
+          "url": "https://x.com/Azeem7236/status/2089254265395327414",
+          "views": 315,
+          "likes": 9
+        },
+        {
+          "text": "@Akriixx @extendedapp @tread_fi How long you hold your position? \n\nIf i Trade like this by maker strategy \nOpen poison at 87000\nAnd set sl &amp; tp 5-8$ away from my entry \n\nwill me trade  Going to count as Sybil because of positive open and closed in few seconds?",
+          "id": "2004873011456082407",
+          "url": "https://x.com/Azeem7236/status/2004873011456082407",
+          "views": 125,
+          "likes": 0
+        },
+        {
+          "text": "@OG_Branxi @OndoPerps @tread_fi @OndoFinance Maket maker don't give points?",
+          "id": "2064227726110912644",
+          "url": "https://x.com/Azeem7236/status/2064227726110912644",
+          "views": 96,
+          "likes": 0
+        },
+        {
+          "text": "@Wat_wattson @tread_fi @OndoPerps How much was your holding time ?",
+          "id": "2064242926730051602",
+          "url": "https://x.com/Azeem7236/status/2064242926730051602",
+          "views": 78,
+          "likes": 0
+        },
+        {
+          "text": "@Dhruv_Sniper @tread_fi @davidyjeong How much you expect 1 point to be worth?",
+          "id": "2050375919634969009",
+          "url": "https://x.com/Azeem7236/status/2050375919634969009",
+          "views": 60,
+          "likes": 0
         }
       ]
     },
@@ -23220,58 +23369,6 @@
           "url": "https://x.com/Panachequant/status/1988198424152580175",
           "views": 70,
           "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "1972409489015054336",
-      "name": "Stratium",
-      "handle": "StratiumX",
-      "followers": 1228,
-      "avatar": "https://pbs.twimg.com/profile_images/2018353989767790592/1qC174X8_normal.jpg",
-      "views": 1181,
-      "likes": 6,
-      "posts": 7,
-      "mentions": 7,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Sat Nov 15 19:28:23 +0000 2025",
-      "lastPost": "Wed May 06 17:06:04 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@tread_fi People still underestimate",
-          "id": "1989777519596466442",
-          "url": "https://x.com/StratiumX/status/1989777519596466442",
-          "views": 385,
-          "likes": 0
-        },
-        {
-          "text": "@tread_fi Exactly. Bots just tighten the book so takers get filled at better levels.",
-          "id": "1991470222726033573",
-          "url": "https://x.com/StratiumX/status/1991470222726033573",
-          "views": 215,
-          "likes": 1
-        },
-        {
-          "text": "@tread_fi Deserve that spot",
-          "id": "1993179344907518199",
-          "url": "https://x.com/StratiumX/status/1993179344907518199",
-          "views": 182,
-          "likes": 0
-        },
-        {
-          "text": "@sportytechworld @tread_fi @davidyjeong No washtrading on @tread_fi",
-          "id": "1993178184515567654",
-          "url": "https://x.com/StratiumX/status/1993178184515567654",
-          "views": 170,
-          "likes": 1
-        },
-        {
-          "text": "@tread_fi Shipping out products as per user demand",
-          "id": "2016075233808224288",
-          "url": "https://x.com/StratiumX/status/2016075233808224288",
-          "views": 120,
-          "likes": 1
         }
       ]
     },
@@ -25625,6 +25722,37 @@
           "url": "https://x.com/NftChoup/status/1991123681074884711",
           "views": 39,
           "likes": 1
+        }
+      ]
+    },
+    {
+      "id": "1547799545345519617",
+      "name": "✌️Hypio✌️",
+      "handle": "HypioHL",
+      "followers": 17318,
+      "avatar": "https://pbs.twimg.com/profile_images/2023733980546428928/VHJhX8QC_normal.jpg",
+      "views": 1006,
+      "likes": 7,
+      "posts": 2,
+      "mentions": 2,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sat Nov 15 08:14:18 +0000 2025",
+      "lastPost": "Mon Aug 17 14:16:03 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi Welcome",
+          "id": "1989607880811757591",
+          "url": "https://x.com/HypioHL/status/1989607880811757591",
+          "views": 738,
+          "likes": 3
+        },
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi Hypurrliquid",
+          "id": "2089355579731116473",
+          "url": "https://x.com/HypioHL/status/2089355579731116473",
+          "views": 268,
+          "likes": 4
         }
       ]
     },
@@ -28646,58 +28774,6 @@
           "url": "https://x.com/SBJsol/status/2038797028596101563",
           "views": 77,
           "likes": 2
-        }
-      ]
-    },
-    {
-      "id": "1541783099561971712",
-      "name": "Big Belly Santa",
-      "handle": "Azeem7236",
-      "followers": 231,
-      "avatar": "https://pbs.twimg.com/profile_images/1769370723918008320/bC_4WntE_normal.jpg",
-      "views": 875,
-      "likes": 1,
-      "posts": 20,
-      "mentions": 20,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Sun Nov 23 13:43:52 +0000 2025",
-      "lastPost": "Tue Jul 14 10:03:31 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@Akriixx @extendedapp @tread_fi How long you hold your position? \n\nIf i Trade like this by maker strategy \nOpen poison at 87000\nAnd set sl &amp; tp 5-8$ away from my entry \n\nwill me trade  Going to count as Sybil because of positive open and closed in few seconds?",
-          "id": "2004873011456082407",
-          "url": "https://x.com/Azeem7236/status/2004873011456082407",
-          "views": 125,
-          "likes": 0
-        },
-        {
-          "text": "@OG_Branxi @OndoPerps @tread_fi @OndoFinance Maket maker don't give points?",
-          "id": "2064227726110912644",
-          "url": "https://x.com/Azeem7236/status/2064227726110912644",
-          "views": 96,
-          "likes": 0
-        },
-        {
-          "text": "@Wat_wattson @tread_fi @OndoPerps How much was your holding time ?",
-          "id": "2064242926730051602",
-          "url": "https://x.com/Azeem7236/status/2064242926730051602",
-          "views": 78,
-          "likes": 0
-        },
-        {
-          "text": "@Dhruv_Sniper @tread_fi @davidyjeong How much you expect 1 point to be worth?",
-          "id": "2050375919634969009",
-          "url": "https://x.com/Azeem7236/status/2050375919634969009",
-          "views": 60,
-          "likes": 0
-        },
-        {
-          "text": "@0xbeiu @tread_fi How much volume was it ?",
-          "id": "2064242201182523582",
-          "url": "https://x.com/Azeem7236/status/2064242201182523582",
-          "views": 56,
-          "likes": 0
         }
       ]
     },
@@ -32562,30 +32638,6 @@
           "url": "https://x.com/candle_erection/status/1991174847443943759",
           "views": 72,
           "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "1547799545345519617",
-      "name": "✌️Hypio✌️",
-      "handle": "HypioHL",
-      "followers": 17683,
-      "avatar": "https://pbs.twimg.com/profile_images/2023733980546428928/VHJhX8QC_normal.jpg",
-      "views": 738,
-      "likes": 3,
-      "posts": 1,
-      "mentions": 1,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Sat Nov 15 08:14:18 +0000 2025",
-      "lastPost": "Sat Nov 15 08:14:18 +0000 2025",
-      "topPosts": [
-        {
-          "text": "@tread_fi Welcome",
-          "id": "1989607880811757591",
-          "url": "https://x.com/HypioHL/status/1989607880811757591",
-          "views": 738,
-          "likes": 3
         }
       ]
     },
@@ -40605,6 +40657,30 @@
       ]
     },
     {
+      "id": "1862879514629402624",
+      "name": "Hyperbeat",
+      "handle": "hyperbeat",
+      "followers": 24646,
+      "avatar": "https://pbs.twimg.com/profile_images/1879158343194796032/ftN7FT3s_normal.jpg",
+      "views": 534,
+      "likes": 8,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 14:10:17 +0000 2026",
+      "lastPost": "Mon Aug 17 14:10:17 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi Singapurrrr🤍",
+          "id": "2089354131517374544",
+          "url": "https://x.com/hyperbeat/status/2089354131517374544",
+          "views": 534,
+          "likes": 8
+        }
+      ]
+    },
+    {
       "id": "1547305489016336384",
       "name": "𝑬𝑴𝑷𝓇𝑒𝓈𝓈⋮",
       "handle": "Hope_ology",
@@ -43212,6 +43288,58 @@
       ]
     },
     {
+      "id": "1491402793911033856",
+      "name": "Thedwarf.hl",
+      "handle": "Thenoisydwarf",
+      "followers": 488,
+      "avatar": "https://pbs.twimg.com/profile_images/1491403163479515136/je8Il3Hs_normal.jpg",
+      "views": 486,
+      "likes": 8,
+      "posts": 14,
+      "mentions": 14,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sun Dec 07 01:15:11 +0000 2025",
+      "lastPost": "Mon Aug 17 23:24:05 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@sportytechworld @tread_fi @HyperliquidX @OndoPerps @extendedapp @risextrade @nadoHQ Already on?",
+          "id": "2063569233028452588",
+          "url": "https://x.com/Thenoisydwarf/status/2063569233028452588",
+          "views": 86,
+          "likes": 2
+        },
+        {
+          "text": "@OG_Branxi @tread_fi @davidyjeong Best moderator in the game",
+          "id": "2074442034895540502",
+          "url": "https://x.com/Thenoisydwarf/status/2074442034895540502",
+          "views": 73,
+          "likes": 3
+        },
+        {
+          "text": "@tread_fi Omg",
+          "id": "2056504836711993402",
+          "url": "https://x.com/Thenoisydwarf/status/2056504836711993402",
+          "views": 70,
+          "likes": 1
+        },
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi Be Hypurrrrr",
+          "id": "2089493497875210328",
+          "url": "https://x.com/Thenoisydwarf/status/2089493497875210328",
+          "views": 62,
+          "likes": 0
+        },
+        {
+          "text": "@sportytechworld @tread_fi @tradexyz PUSSHHHHHh you are a giant https://t.co/KDiIcgrAdn",
+          "id": "2056369151753461931",
+          "url": "https://x.com/Thenoisydwarf/status/2056369151753461931",
+          "views": 48,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1531193685861441538",
       "name": "Tom Mitchelhill",
       "handle": "ideacasino",
@@ -45114,6 +45242,30 @@
           "url": "https://x.com/steveXmeta/status/2074808209290690845",
           "views": 17,
           "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "2000563838421487617",
+      "name": "Talis",
+      "handle": "talistrade",
+      "followers": 633,
+      "avatar": "https://pbs.twimg.com/profile_images/2019433441574678530/C6Oeq2eU_normal.jpg",
+      "views": 455,
+      "likes": 5,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 14:38:19 +0000 2026",
+      "lastPost": "Mon Aug 17 14:38:19 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @hyperlink_xyz @tread_fi Excited for this one! Hyperliquid",
+          "id": "2089361185716195769",
+          "url": "https://x.com/talistrade/status/2089361185716195769",
+          "views": 455,
+          "likes": 5
         }
       ]
     },
@@ -47593,58 +47745,6 @@
       ]
     },
     {
-      "id": "1491402793911033856",
-      "name": "Thedwarf.hl",
-      "handle": "Thenoisydwarf",
-      "followers": 486,
-      "avatar": "https://pbs.twimg.com/profile_images/1491403163479515136/je8Il3Hs_normal.jpg",
-      "views": 424,
-      "likes": 8,
-      "posts": 13,
-      "mentions": 13,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Sun Dec 07 01:15:11 +0000 2025",
-      "lastPost": "Thu Aug 13 22:15:17 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@sportytechworld @tread_fi @HyperliquidX @OndoPerps @extendedapp @risextrade @nadoHQ Already on?",
-          "id": "2063569233028452588",
-          "url": "https://x.com/Thenoisydwarf/status/2063569233028452588",
-          "views": 86,
-          "likes": 2
-        },
-        {
-          "text": "@OG_Branxi @tread_fi @davidyjeong Best moderator in the game",
-          "id": "2074442034895540502",
-          "url": "https://x.com/Thenoisydwarf/status/2074442034895540502",
-          "views": 73,
-          "likes": 3
-        },
-        {
-          "text": "@tread_fi Omg",
-          "id": "2056504836711993402",
-          "url": "https://x.com/Thenoisydwarf/status/2056504836711993402",
-          "views": 70,
-          "likes": 1
-        },
-        {
-          "text": "@sportytechworld @tread_fi @tradexyz PUSSHHHHHh you are a giant https://t.co/KDiIcgrAdn",
-          "id": "2056369151753461931",
-          "url": "https://x.com/Thenoisydwarf/status/2056369151753461931",
-          "views": 48,
-          "likes": 1
-        },
-        {
-          "text": "@tread_fi boooooommm",
-          "id": "2074257989855223992",
-          "url": "https://x.com/Thenoisydwarf/status/2074257989855223992",
-          "views": 42,
-          "likes": 0
-        }
-      ]
-    },
-    {
       "id": "1255596847172911111",
       "name": "BlkDandelion",
       "handle": "BlkDandelion",
@@ -50063,6 +50163,58 @@
           "url": "https://x.com/alphadrops09/status/1991833890122850594",
           "views": 109,
           "likes": 1
+        }
+      ]
+    },
+    {
+      "id": "786877294912700416",
+      "name": "SG",
+      "handle": "swtkg23",
+      "followers": 680,
+      "avatar": "https://pbs.twimg.com/profile_images/1578072545827651584/_QTodkpK_normal.png",
+      "views": 389,
+      "likes": 0,
+      "posts": 5,
+      "mentions": 5,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Tue Jun 03 14:45:25 +0000 2025",
+      "lastPost": "Mon Aug 17 17:14:43 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi @paradex gg",
+          "id": "1986435488199438484",
+          "url": "https://x.com/swtkg23/status/1986435488199438484",
+          "views": 126,
+          "likes": 0
+        },
+        {
+          "text": "@tread_fi its not working, i tried.",
+          "id": "1929912308865605643",
+          "url": "https://x.com/swtkg23/status/1929912308865605643",
+          "views": 102,
+          "likes": 0
+        },
+        {
+          "text": "@davidyjeong @pacifica_fi @tread_fi finally",
+          "id": "1982128691875291423",
+          "url": "https://x.com/swtkg23/status/1982128691875291423",
+          "views": 66,
+          "likes": 0
+        },
+        {
+          "text": "@hypurr_co @InsilicoTrading @HyperliquidPC @HypeStrat @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi lets go",
+          "id": "2089400542682546187",
+          "url": "https://x.com/swtkg23/status/2089400542682546187",
+          "views": 48,
+          "likes": 0
+        },
+        {
+          "text": "@davidyjeong @tread_fi hey! your DMs off",
+          "id": "1929943004434911320",
+          "url": "https://x.com/swtkg23/status/1929943004434911320",
+          "views": 47,
+          "likes": 0
         }
       ]
     },
@@ -54563,6 +54715,44 @@
       ]
     },
     {
+      "id": "1454055254572650505",
+      "name": "Maxime",
+      "handle": "MixemaCrypto",
+      "followers": 1457,
+      "avatar": "https://pbs.twimg.com/profile_images/1974394046077456384/XSIyPBy4_normal.jpg",
+      "views": 342,
+      "likes": 4,
+      "posts": 3,
+      "mentions": 3,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Thu Nov 20 22:06:39 +0000 2025",
+      "lastPost": "Mon Aug 17 16:10:24 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@0xasrequired @tread_fi @paradex Very nice thread and useful informations 👏🤝",
+          "id": "1991629286760198319",
+          "url": "https://x.com/MixemaCrypto/status/1991629286760198319",
+          "views": 175,
+          "likes": 1
+        },
+        {
+          "text": "@hypurr_co @HyperliquidFR @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi Love the banner 😎😜 !!!",
+          "id": "2089384359069393404",
+          "url": "https://x.com/MixemaCrypto/status/2089384359069393404",
+          "views": 147,
+          "likes": 1
+        },
+        {
+          "text": "@yieldyumi @HyperliquidX @tread_fi @chameleon_jeff @iliensinc Welcome to the club 😎🤝",
+          "id": "2029294297661505640",
+          "url": "https://x.com/MixemaCrypto/status/2029294297661505640",
+          "views": 20,
+          "likes": 2
+        }
+      ]
+    },
+    {
       "id": "1895022764559605760",
       "name": "Sniper ₿",
       "handle": "sniiperrB",
@@ -54770,47 +54960,26 @@
       ]
     },
     {
-      "id": "786877294912700416",
-      "name": "SG",
-      "handle": "swtkg23",
-      "followers": 663,
-      "avatar": "https://pbs.twimg.com/profile_images/1578072545827651584/_QTodkpK_normal.png",
+      "id": "1958158708220854272",
+      "name": "Hypernova",
+      "handle": "HypernovaX",
+      "followers": 4563,
+      "avatar": "https://pbs.twimg.com/profile_images/2039310285308133377/ihEIvuoX_normal.png",
       "views": 341,
-      "likes": 0,
-      "posts": 4,
-      "mentions": 4,
+      "likes": 4,
+      "posts": 1,
+      "mentions": 1,
       "cashtag": 0,
       "keyword": 0,
-      "firstPost": "Tue Jun 03 14:45:25 +0000 2025",
-      "lastPost": "Thu Nov 06 14:08:21 +0000 2025",
+      "firstPost": "Mon Aug 17 15:10:25 +0000 2026",
+      "lastPost": "Mon Aug 17 15:10:25 +0000 2026",
       "topPosts": [
         {
-          "text": "@tread_fi @paradex gg",
-          "id": "1986435488199438484",
-          "url": "https://x.com/swtkg23/status/1986435488199438484",
-          "views": 126,
-          "likes": 0
-        },
-        {
-          "text": "@tread_fi its not working, i tried.",
-          "id": "1929912308865605643",
-          "url": "https://x.com/swtkg23/status/1929912308865605643",
-          "views": 102,
-          "likes": 0
-        },
-        {
-          "text": "@davidyjeong @pacifica_fi @tread_fi finally",
-          "id": "1982128691875291423",
-          "url": "https://x.com/swtkg23/status/1982128691875291423",
-          "views": 66,
-          "likes": 0
-        },
-        {
-          "text": "@davidyjeong @tread_fi hey! your DMs off",
-          "id": "1929943004434911320",
-          "url": "https://x.com/swtkg23/status/1929943004434911320",
-          "views": 47,
-          "likes": 0
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi We're looking forward to this one! 🙌",
+          "id": "2089369261575749743",
+          "url": "https://x.com/HypernovaX/status/2089369261575749743",
+          "views": 341,
+          "likes": 4
         }
       ]
     },
@@ -57946,6 +58115,44 @@
       ]
     },
     {
+      "id": "1672832185672388615",
+      "name": "hanabil (perpscan.app)",
+      "handle": "hanabilio",
+      "followers": 470,
+      "avatar": "https://pbs.twimg.com/profile_images/2011764747746906112/oQ3m9ihb_normal.jpg",
+      "views": 311,
+      "likes": 2,
+      "posts": 3,
+      "mentions": 3,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Fri Nov 21 06:26:12 +0000 2025",
+      "lastPost": "Mon Aug 17 17:12:16 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@zacxbt @tradexyz @tread_fi seems expensive \nwith 5bps fees, you will pay only 79$ for 158k\n\nand rn, the fees are 10x cheaper right?",
+          "id": "1991755002390679646",
+          "url": "https://x.com/hanabilio/status/1991755002390679646",
+          "views": 218,
+          "likes": 1
+        },
+        {
+          "text": "@PlanemoTrading @ositoninja1 @tread_fi @davidyjeong is that taker 100%?",
+          "id": "1999201613966406047",
+          "url": "https://x.com/hanabilio/status/1999201613966406047",
+          "views": 68,
+          "likes": 0
+        },
+        {
+          "text": "@Azeem7236 @arcus_xyz @tread_fi there must be more opportunities for me, so a winwin i guess",
+          "id": "2089399926698750280",
+          "url": "https://x.com/hanabilio/status/2089399926698750280",
+          "views": 25,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1461062931907547142",
       "name": "Tiber",
       "handle": "Tiber19855",
@@ -61049,6 +61256,44 @@
       ]
     },
     {
+      "id": "2050184829346471936",
+      "name": "Reroll.gg",
+      "handle": "rerollgg",
+      "followers": 1736,
+      "avatar": "https://pbs.twimg.com/profile_images/2064773859606192130/D8gRxr6o_normal.jpg",
+      "views": 288,
+      "likes": 2,
+      "posts": 3,
+      "mentions": 3,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Fri Jul 17 06:15:18 +0000 2026",
+      "lastPost": "Mon Aug 17 16:48:08 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi HYPEPurrrrrr",
+          "id": "2089393854742954166",
+          "url": "https://x.com/rerollgg/status/2089393854742954166",
+          "views": 104,
+          "likes": 0
+        },
+        {
+          "text": "@HypeDojo @phantom @BasedOneX @pvp_dot_trade @MetaMask @InsilicoTrading @infinex @AxiomExchange @tread_fi @Dreamcash @liquidtrading Yuppp! :l",
+          "id": "2078020209114255360",
+          "url": "https://x.com/rerollgg/status/2078020209114255360",
+          "views": 99,
+          "likes": 1
+        },
+        {
+          "text": "@HypeDojo @phantom @BasedOneX @pvp_dot_trade @MetaMask @InsilicoTrading @infinex @AxiomExchange @tread_fi @Dreamcash @liquidtrading Solid mentions https://t.co/UhBLWnbh4q",
+          "id": "2078000571974377750",
+          "url": "https://x.com/rerollgg/status/2078000571974377750",
+          "views": 85,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1277420163823009793",
       "name": "krlosimc",
       "handle": "krlosimc94",
@@ -61263,37 +61508,6 @@
           "url": "https://x.com/19bernie/status/1984218619459653829",
           "views": 29,
           "likes": 2
-        }
-      ]
-    },
-    {
-      "id": "1672832185672388615",
-      "name": "hanabilio",
-      "handle": "hanabilio",
-      "followers": 330,
-      "avatar": "https://pbs.twimg.com/profile_images/2011764747746906112/oQ3m9ihb_normal.jpg",
-      "views": 286,
-      "likes": 1,
-      "posts": 2,
-      "mentions": 2,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Fri Nov 21 06:26:12 +0000 2025",
-      "lastPost": "Thu Dec 11 19:36:22 +0000 2025",
-      "topPosts": [
-        {
-          "text": "@zacxbt @tradexyz @tread_fi seems expensive \nwith 5bps fees, you will pay only 79$ for 158k\n\nand rn, the fees are 10x cheaper right?",
-          "id": "1991755002390679646",
-          "url": "https://x.com/hanabilio/status/1991755002390679646",
-          "views": 218,
-          "likes": 1
-        },
-        {
-          "text": "@PlanemoTrading @ositoninja1 @tread_fi @davidyjeong is that taker 100%?",
-          "id": "1999201613966406047",
-          "url": "https://x.com/hanabilio/status/1999201613966406047",
-          "views": 68,
-          "likes": 0
         }
       ]
     },
@@ -68095,6 +68309,30 @@
       ]
     },
     {
+      "id": "2027576396634329090",
+      "name": "Elios Pay",
+      "handle": "eliospay",
+      "followers": 1544,
+      "avatar": "https://pbs.twimg.com/profile_images/2087969902649065473/AUH8AUpO_normal.jpg",
+      "views": 244,
+      "likes": 7,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 17:50:18 +0000 2026",
+      "lastPost": "Mon Aug 17 17:50:18 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi gMeow. See you in SG 🫡",
+          "id": "2089409497718820880",
+          "url": "https://x.com/eliospay/status/2089409497718820880",
+          "views": 244,
+          "likes": 7
+        }
+      ]
+    },
+    {
       "id": "1446006329273839621",
       "name": "KG 💧",
       "handle": "KGKG1019",
@@ -69858,6 +70096,58 @@
       ]
     },
     {
+      "id": "1833967556081635328",
+      "name": "SΛGΞWHΛLΞ.HL✦",
+      "handle": "SageWhale",
+      "followers": 2826,
+      "avatar": "https://pbs.twimg.com/profile_images/2022794635127439360/BUWGBDMM_normal.jpg",
+      "views": 234,
+      "likes": 6,
+      "posts": 7,
+      "mentions": 7,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Wed Jan 14 12:11:55 +0000 2026",
+      "lastPost": "Mon Aug 17 18:12:41 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@Saram_ath @tread_fi Niceeee",
+          "id": "2031328431951040886",
+          "url": "https://x.com/SageWhale/status/2031328431951040886",
+          "views": 68,
+          "likes": 1
+        },
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi singapurrrrr",
+          "id": "2089415130387804366",
+          "url": "https://x.com/SageWhale/status/2089415130387804366",
+          "views": 62,
+          "likes": 1
+        },
+        {
+          "text": "@im_insulting @tread_fi 🤝",
+          "id": "2017199367803805843",
+          "url": "https://x.com/SageWhale/status/2017199367803805843",
+          "views": 53,
+          "likes": 1
+        },
+        {
+          "text": "@im_insulting @tread_fi That's the fun part",
+          "id": "2017200918530281692",
+          "url": "https://x.com/SageWhale/status/2017200918530281692",
+          "views": 19,
+          "likes": 1
+        },
+        {
+          "text": "@im_insulting @tread_fi Gud tek😂",
+          "id": "2017201610024218696",
+          "url": "https://x.com/SageWhale/status/2017201610024218696",
+          "views": 16,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1430766657606078478",
       "name": "un_cailei",
       "handle": "un_cailei",
@@ -71175,6 +71465,58 @@
           "url": "https://x.com/whoistribe/status/1990341336407683266",
           "views": 18,
           "likes": 1
+        }
+      ]
+    },
+    {
+      "id": "1940417357907898368",
+      "name": "MD_OK",
+      "handle": "onebit1406",
+      "followers": 4261,
+      "avatar": "https://pbs.twimg.com/profile_images/2039823898477535232/ZMoa5WyL_normal.jpg",
+      "views": 225,
+      "likes": 13,
+      "posts": 8,
+      "mentions": 8,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sun Apr 05 08:41:36 +0000 2026",
+      "lastPost": "Mon Aug 17 04:55:52 +0000 2026",
+      "topPosts": [
+        {
+          "text": "Đến 15/8/2026 là kết thúc S1 của @tread_fi . Còn 2 tuần nữa để fram.\nAnh em được bao điểm rồi.\nCùng đếm cua với app check này nhé\n\nhttps://t.co/ZzT5ptajii\nKhả năng cao là được trong vùng khoanh đỏ.\nAnh em nghĩ sao về quả TGE này của @tread_fi . https://t.co/RwLB8ec5hP",
+          "id": "2052350214133133414",
+          "url": "https://x.com/onebit1406/status/2052350214133133414",
+          "views": 87,
+          "likes": 7
+        },
+        {
+          "text": "Ngày xưa farm @Lighter_xyz mỗi ngày mất 1-2h ngồi canh.\n\nBây giờ có @tread_fi có mấy con AI đúng là tiện bà con à. \n\nFarm @risextrade mà thấy nhàn tênh à. \n\nSắp tới mà không dùng được AI thì chắc lại tối cổ rồi. https://t.co/X3w6siZ5Uy",
+          "id": "2089212912489640417",
+          "url": "https://x.com/onebit1406/status/2089212912489640417",
+          "views": 57,
+          "likes": 3
+        },
+        {
+          "text": "Tranh thủ buổi tối chạy mấy lệnh @tread_fi . Hi vọng hết ss1 có thêm tí rau, tí bún.\nCó anh em nào cũng đang cày Air con này như mình không https://t.co/bnT9er33dZ",
+          "id": "2051308973278875815",
+          "url": "https://x.com/onebit1406/status/2051308973278875815",
+          "views": 41,
+          "likes": 2
+        },
+        {
+          "text": "Cuối tuần người ta đi chơi, em vẫn ngồi cày @tread_fi và  DN các cặp trên #Hip_3 của @HyperliquidX .\nNgoài ra thì mình cũng đang farm @nadoHQ nữa nhé.\nAnh em đang cày air mảng nào? Hay có farm sàn nào gợi ý nhé. https://t.co/BBR2N3Ncj9",
+          "id": "2040711438319407562",
+          "url": "https://x.com/onebit1406/status/2040711438319407562",
+          "views": 21,
+          "likes": 1
+        },
+        {
+          "text": "@mobilecrypto1 @tread_fi Cái này biết trước đã giàu",
+          "id": "2052369507788943755",
+          "url": "https://x.com/onebit1406/status/2052369507788943755",
+          "views": 6,
+          "likes": 0
         }
       ]
     },
@@ -75707,6 +76049,37 @@
       ]
     },
     {
+      "id": "1725047674380947456",
+      "name": "intake.hl 🫟",
+      "handle": "intake0x",
+      "followers": 1003,
+      "avatar": "https://pbs.twimg.com/profile_images/1980248900251389953/Wd9sfx-3_normal.jpg",
+      "views": 203,
+      "likes": 2,
+      "posts": 2,
+      "mentions": 2,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 14:20:33 +0000 2026",
+      "lastPost": "Mon Aug 17 14:26:14 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi When do you usually send out approvals?(luma)",
+          "id": "2089358143021301825",
+          "url": "https://x.com/intake0x/status/2089358143021301825",
+          "views": 105,
+          "likes": 1
+        },
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi It's crazy how this community keeps getting better every year 🇸🇬",
+          "id": "2089356712574955963",
+          "url": "https://x.com/intake0x/status/2089356712574955963",
+          "views": 98,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "29163813",
       "name": "玩web3的年哥",
       "handle": "wylrn0",
@@ -77034,37 +77407,6 @@
           "url": "https://x.com/F_VSPM/status/2051959469618208932",
           "views": 195,
           "likes": 1
-        }
-      ]
-    },
-    {
-      "id": "1454055254572650505",
-      "name": "Maxime",
-      "handle": "MixemaCrypto",
-      "followers": 1351,
-      "avatar": "https://pbs.twimg.com/profile_images/1974394046077456384/XSIyPBy4_normal.jpg",
-      "views": 195,
-      "likes": 3,
-      "posts": 2,
-      "mentions": 2,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Thu Nov 20 22:06:39 +0000 2025",
-      "lastPost": "Wed Mar 04 20:33:57 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@0xasrequired @tread_fi @paradex Very nice thread and useful informations 👏🤝",
-          "id": "1991629286760198319",
-          "url": "https://x.com/MixemaCrypto/status/1991629286760198319",
-          "views": 175,
-          "likes": 1
-        },
-        {
-          "text": "@yieldyumi @HyperliquidX @tread_fi @chameleon_jeff @iliensinc Welcome to the club 😎🤝",
-          "id": "2029294297661505640",
-          "url": "https://x.com/MixemaCrypto/status/2029294297661505640",
-          "views": 20,
-          "likes": 2
         }
       ]
     },
@@ -79813,37 +80155,6 @@
           "url": "https://x.com/FridayPer43217/status/1992160428055761141",
           "views": 184,
           "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "2050184829346471936",
-      "name": "Reroll.gg",
-      "handle": "rerollgg",
-      "followers": 138,
-      "avatar": "https://pbs.twimg.com/profile_images/2064773859606192130/D8gRxr6o_normal.jpg",
-      "views": 184,
-      "likes": 2,
-      "posts": 2,
-      "mentions": 2,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Fri Jul 17 06:15:18 +0000 2026",
-      "lastPost": "Fri Jul 17 07:33:20 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@HypeDojo @phantom @BasedOneX @pvp_dot_trade @MetaMask @InsilicoTrading @infinex @AxiomExchange @tread_fi @Dreamcash @liquidtrading Yuppp! :l",
-          "id": "2078020209114255360",
-          "url": "https://x.com/rerollgg/status/2078020209114255360",
-          "views": 99,
-          "likes": 1
-        },
-        {
-          "text": "@HypeDojo @phantom @BasedOneX @pvp_dot_trade @MetaMask @InsilicoTrading @infinex @AxiomExchange @tread_fi @Dreamcash @liquidtrading Solid mentions https://t.co/UhBLWnbh4q",
-          "id": "2078000571974377750",
-          "url": "https://x.com/rerollgg/status/2078000571974377750",
-          "views": 85,
-          "likes": 1
         }
       ]
     },
@@ -83121,58 +83432,6 @@
       ]
     },
     {
-      "id": "1833967556081635328",
-      "name": "SΛGΞWHΛLΞ.HL✦",
-      "handle": "SageWhale",
-      "followers": 2464,
-      "avatar": "https://pbs.twimg.com/profile_images/2022794635127439360/BUWGBDMM_normal.jpg",
-      "views": 172,
-      "likes": 5,
-      "posts": 6,
-      "mentions": 6,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Wed Jan 14 12:11:55 +0000 2026",
-      "lastPost": "Tue Mar 10 11:16:53 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@Saram_ath @tread_fi Niceeee",
-          "id": "2031328431951040886",
-          "url": "https://x.com/SageWhale/status/2031328431951040886",
-          "views": 68,
-          "likes": 1
-        },
-        {
-          "text": "@im_insulting @tread_fi 🤝",
-          "id": "2017199367803805843",
-          "url": "https://x.com/SageWhale/status/2017199367803805843",
-          "views": 53,
-          "likes": 1
-        },
-        {
-          "text": "@im_insulting @tread_fi That's the fun part",
-          "id": "2017200918530281692",
-          "url": "https://x.com/SageWhale/status/2017200918530281692",
-          "views": 19,
-          "likes": 1
-        },
-        {
-          "text": "@im_insulting @tread_fi Gud tek😂",
-          "id": "2017201610024218696",
-          "url": "https://x.com/SageWhale/status/2017201610024218696",
-          "views": 16,
-          "likes": 1
-        },
-        {
-          "text": "@im_insulting @tread_fi Coded 🤝",
-          "id": "2014821934718919038",
-          "url": "https://x.com/SageWhale/status/2014821934718919038",
-          "views": 11,
-          "likes": 1
-        }
-      ]
-    },
-    {
       "id": "1794005832201392129",
       "name": "Bitcoin Hustler",
       "handle": "Bitc0inHustler",
@@ -85203,6 +85462,30 @@
       ]
     },
     {
+      "id": "909879532273979392",
+      "name": "fbslo",
+      "handle": "fbsloXBT",
+      "followers": 2515,
+      "avatar": "https://pbs.twimg.com/profile_images/1821678222456545280/U_T8RJdC_normal.jpg",
+      "views": 165,
+      "likes": 2,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 14:59:38 +0000 2026",
+      "lastPost": "Mon Aug 17 14:59:38 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi See you there 🇸🇬",
+          "id": "2089366548968251652",
+          "url": "https://x.com/fbsloXBT/status/2089366548968251652",
+          "views": 165,
+          "likes": 2
+        }
+      ]
+    },
+    {
       "id": "1826863804598419459",
       "name": "Current",
       "handle": "CurrentSUI",
@@ -85739,58 +86022,6 @@
           "id": "1994744870435787121",
           "url": "https://x.com/GamerzDao/status/1994744870435787121",
           "views": 162,
-          "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "1940417357907898368",
-      "name": "MD_OK",
-      "handle": "onebit1406",
-      "followers": 2942,
-      "avatar": "https://pbs.twimg.com/profile_images/2039823898477535232/ZMoa5WyL_normal.jpg",
-      "views": 162,
-      "likes": 10,
-      "posts": 6,
-      "mentions": 6,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Sun Apr 05 08:41:36 +0000 2026",
-      "lastPost": "Thu May 07 12:48:08 +0000 2026",
-      "topPosts": [
-        {
-          "text": "Đến 15/8/2026 là kết thúc S1 của @tread_fi . Còn 2 tuần nữa để fram.\nAnh em được bao điểm rồi.\nCùng đếm cua với app check này nhé\n\nhttps://t.co/ZzT5ptajii\nKhả năng cao là được trong vùng khoanh đỏ.\nAnh em nghĩ sao về quả TGE này của @tread_fi . https://t.co/RwLB8ec5hP",
-          "id": "2052350214133133414",
-          "url": "https://x.com/onebit1406/status/2052350214133133414",
-          "views": 87,
-          "likes": 7
-        },
-        {
-          "text": "Tranh thủ buổi tối chạy mấy lệnh @tread_fi . Hi vọng hết ss1 có thêm tí rau, tí bún.\nCó anh em nào cũng đang cày Air con này như mình không https://t.co/bnT9er33dZ",
-          "id": "2051308973278875815",
-          "url": "https://x.com/onebit1406/status/2051308973278875815",
-          "views": 41,
-          "likes": 2
-        },
-        {
-          "text": "Cuối tuần người ta đi chơi, em vẫn ngồi cày @tread_fi và  DN các cặp trên #Hip_3 của @HyperliquidX .\nNgoài ra thì mình cũng đang farm @nadoHQ nữa nhé.\nAnh em đang cày air mảng nào? Hay có farm sàn nào gợi ý nhé. https://t.co/BBR2N3Ncj9",
-          "id": "2040711438319407562",
-          "url": "https://x.com/onebit1406/status/2040711438319407562",
-          "views": 21,
-          "likes": 1
-        },
-        {
-          "text": "@mobilecrypto1 @tread_fi Cái này biết trước đã giàu",
-          "id": "2052369507788943755",
-          "url": "https://x.com/onebit1406/status/2052369507788943755",
-          "views": 6,
-          "likes": 0
-        },
-        {
-          "text": "@1Kaiweb3 @tread_fi Thời gian như chó chạy ngoài đồng anh ơi",
-          "id": "2052369893933375649",
-          "url": "https://x.com/onebit1406/status/2052369893933375649",
-          "views": 4,
           "likes": 0
         }
       ]
@@ -86398,6 +86629,44 @@
           "id": "2009697891968037336",
           "url": "https://x.com/darthfictus/status/2009697891968037336",
           "views": 160,
+          "likes": 1
+        }
+      ]
+    },
+    {
+      "id": "1269256445930778626",
+      "name": "mojojojoppg",
+      "handle": "mojoppg",
+      "followers": 29146,
+      "avatar": "https://pbs.twimg.com/profile_images/2072530229806174210/8i_KXTeH_normal.jpg",
+      "views": 160,
+      "likes": 2,
+      "posts": 3,
+      "mentions": 3,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Wed Dec 10 11:09:24 +0000 2025",
+      "lastPost": "Mon Aug 17 23:40:43 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@0xasrequired @MondayTrade_ @Lighter_xyz @tread_fi Consortium coded.",
+          "id": "2016338557598855278",
+          "url": "https://x.com/mojoppg/status/2016338557598855278",
+          "views": 66,
+          "likes": 1
+        },
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi Hypurrliquid",
+          "id": "2089497684109627810",
+          "url": "https://x.com/mojoppg/status/2089497684109627810",
+          "views": 64,
+          "likes": 0
+        },
+        {
+          "text": "@0xasrequired @tread_fi 😂 thanks for the Alfa",
+          "id": "1998711643384299752",
+          "url": "https://x.com/mojoppg/status/1998711643384299752",
+          "views": 30,
           "likes": 1
         }
       ]
@@ -88035,6 +88304,30 @@
           "url": "https://x.com/enricoermeti_/status/2078059986651873350",
           "views": 155,
           "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "52342231",
+      "name": "Auph",
+      "handle": "Auph",
+      "followers": 1626,
+      "avatar": "https://pbs.twimg.com/profile_images/2031014540507566080/DUw3HuXp_normal.jpg",
+      "views": 155,
+      "likes": 2,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 14:13:11 +0000 2026",
+      "lastPost": "Mon Aug 17 14:13:11 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi Can’t wait ❤️",
+          "id": "2089354860072497474",
+          "url": "https://x.com/Auph/status/2089354860072497474",
+          "views": 155,
+          "likes": 2
         }
       ]
     },
@@ -90618,6 +90911,30 @@
           "url": "https://x.com/HuevaToi/status/2009694393620689289",
           "views": 6,
           "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "2059541818732384256",
+      "name": "Hypurr World",
+      "handle": "hypurrworld",
+      "followers": 312,
+      "avatar": "https://pbs.twimg.com/profile_images/2061367980920053760/oXdyz6H0_normal.jpg",
+      "views": 147,
+      "likes": 5,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 16:18:45 +0000 2026",
+      "lastPost": "Mon Aug 17 16:18:45 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi the gathering of the purrs is upon us🐈",
+          "id": "2089386460390764690",
+          "url": "https://x.com/hypurrworld/status/2089386460390764690",
+          "views": 147,
+          "likes": 5
         }
       ]
     },
@@ -111815,37 +112132,6 @@
       ]
     },
     {
-      "id": "1269256445930778626",
-      "name": "mojojojoppg",
-      "handle": "mojoppg",
-      "followers": 29891,
-      "avatar": "https://pbs.twimg.com/profile_images/2025049804137783296/3XYYgsz7_normal.png",
-      "views": 96,
-      "likes": 2,
-      "posts": 2,
-      "mentions": 2,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Wed Dec 10 11:09:24 +0000 2025",
-      "lastPost": "Wed Jan 28 02:32:28 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@0xasrequired @MondayTrade_ @Lighter_xyz @tread_fi Consortium coded.",
-          "id": "2016338557598855278",
-          "url": "https://x.com/mojoppg/status/2016338557598855278",
-          "views": 66,
-          "likes": 1
-        },
-        {
-          "text": "@0xasrequired @tread_fi 😂 thanks for the Alfa",
-          "id": "1998711643384299752",
-          "url": "https://x.com/mojoppg/status/1998711643384299752",
-          "views": 30,
-          "likes": 1
-        }
-      ]
-    },
-    {
       "id": "1783460982460997632",
       "name": "Milkitaa",
       "handle": "Milkita664",
@@ -114878,6 +115164,30 @@
       ]
     },
     {
+      "id": "1160938015746875393",
+      "name": "Hyperliquid France",
+      "handle": "HyperliquidFR",
+      "followers": 2393,
+      "avatar": "https://pbs.twimg.com/profile_images/1913418606144286720/LHtp0Rcd_normal.jpg",
+      "views": 92,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 16:11:28 +0000 2026",
+      "lastPost": "Mon Aug 17 16:11:28 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi Hyped !",
+          "id": "2089384627781640522",
+          "url": "https://x.com/HyperliquidFR/status/2089384627781640522",
+          "views": 92,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1501537422940811271",
       "name": "Alex Machado",
       "handle": "AlexMac70818405",
@@ -117234,6 +117544,51 @@
       ]
     },
     {
+      "id": "1941049982553149445",
+      "name": "HABIB",
+      "handle": "Habib_XYZ8",
+      "followers": 20344,
+      "avatar": "https://pbs.twimg.com/profile_images/2057147197150617600/NjKwxkzT_normal.jpg",
+      "views": 88,
+      "likes": 1,
+      "posts": 4,
+      "mentions": 4,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Wed May 20 12:02:01 +0000 2026",
+      "lastPost": "Mon Aug 17 16:20:50 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@capy_onchain @variational_io @extendedapp @nadoHQ @pacifica_fi @StandX_Official @etherealdex @tread_fi @hibachi_xyz @Ostium @grvt_io What about @bulktrade ?",
+          "id": "2063545533013385715",
+          "url": "https://x.com/Habib_XYZ8/status/2063545533013385715",
+          "views": 69,
+          "likes": 1
+        },
+        {
+          "text": "@tread_fi @SEABWofficial Check DM please",
+          "id": "2057254181707428033",
+          "url": "https://x.com/Habib_XYZ8/status/2057254181707428033",
+          "views": 11,
+          "likes": 0
+        },
+        {
+          "text": "@tread_fi Check DM",
+          "id": "2057069330681250142",
+          "url": "https://x.com/Habib_XYZ8/status/2057069330681250142",
+          "views": 5,
+          "likes": 0
+        },
+        {
+          "text": "@tread_fi @OpenRouter Check DM please",
+          "id": "2089386985400271322",
+          "url": "https://x.com/Habib_XYZ8/status/2089386985400271322",
+          "views": 3,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1370291207029555201",
       "name": "Zoloto Karpat 🍳",
       "handle": "KarpatZoloto",
@@ -118590,44 +118945,6 @@
           "id": "2062810774116937908",
           "url": "https://x.com/Danielskarkaa/status/2062810774116937908",
           "views": 85,
-          "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "1941049982553149445",
-      "name": "HABIB",
-      "handle": "Habib_XYZ8",
-      "followers": 14948,
-      "avatar": "https://pbs.twimg.com/profile_images/2057147197150617600/NjKwxkzT_normal.jpg",
-      "views": 85,
-      "likes": 1,
-      "posts": 3,
-      "mentions": 3,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Wed May 20 12:02:01 +0000 2026",
-      "lastPost": "Sun Jun 07 08:56:08 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@capy_onchain @variational_io @extendedapp @nadoHQ @pacifica_fi @StandX_Official @etherealdex @tread_fi @hibachi_xyz @Ostium @grvt_io What about @bulktrade ?",
-          "id": "2063545533013385715",
-          "url": "https://x.com/Habib_XYZ8/status/2063545533013385715",
-          "views": 69,
-          "likes": 1
-        },
-        {
-          "text": "@tread_fi @SEABWofficial Check DM please",
-          "id": "2057254181707428033",
-          "url": "https://x.com/Habib_XYZ8/status/2057254181707428033",
-          "views": 11,
-          "likes": 0
-        },
-        {
-          "text": "@tread_fi Check DM",
-          "id": "2057069330681250142",
-          "url": "https://x.com/Habib_XYZ8/status/2057069330681250142",
-          "views": 5,
           "likes": 0
         }
       ]
@@ -131799,6 +132116,30 @@
       ]
     },
     {
+      "id": "794361029090123776",
+      "name": "Robert Sun",
+      "handle": "roberrtsun",
+      "followers": 2065,
+      "avatar": "https://pbs.twimg.com/profile_images/1817123331679846400/0c_hQMlc_normal.jpg",
+      "views": 67,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 17:15:13 +0000 2026",
+      "lastPost": "Mon Aug 17 17:15:13 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@hypurr_co @namn_grg @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi Hyperliquid",
+          "id": "2089400669795238083",
+          "url": "https://x.com/roberrtsun/status/2089400669795238083",
+          "views": 67,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1823161395778617344",
       "name": "Godzilla_26 | ⛽",
       "handle": "AlanCri83146180",
@@ -140194,6 +140535,30 @@
       ]
     },
     {
+      "id": "847066670",
+      "name": "Kenken",
+      "handle": "KensheexX",
+      "followers": 1591,
+      "avatar": "https://pbs.twimg.com/profile_images/2001194992333938690/ZssAQT15_normal.jpg",
+      "views": 58,
+      "likes": 1,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 15:05:26 +0000 2026",
+      "lastPost": "Mon Aug 17 15:05:26 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi Lovely",
+          "id": "2089368007466487939",
+          "url": "https://x.com/KensheexX/status/2089368007466487939",
+          "views": 58,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1760214968186949632",
       "name": "0xGoku ($/acc)",
       "handle": "Goku_Seiyan",
@@ -144867,6 +145232,30 @@
       ]
     },
     {
+      "id": "1144878242953752578",
+      "name": "ツSQUISHY",
+      "handle": "Squishy_Chris_D",
+      "followers": 1583,
+      "avatar": "https://pbs.twimg.com/profile_images/1994560524391256069/bX4Md1So_normal.jpg",
+      "views": 53,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 23:19:55 +0000 2026",
+      "lastPost": "Mon Aug 17 23:19:55 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @eliospay @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi Dayumnnn what a lineup!",
+          "id": "2089492448917717045",
+          "url": "https://x.com/Squishy_Chris_D/status/2089492448917717045",
+          "views": 53,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1590328906548416517",
       "name": "KaalipzoV2💙",
       "handle": "BKaalipzo",
@@ -145936,6 +146325,30 @@
           "text": "@zacxbt @tread_fi @davidyjeong @young_peem Wow this is nice\n\n Glad you’re having a great time Zac",
           "id": "2087790875858333746",
           "url": "https://x.com/wiredwisely/status/2087790875858333746",
+          "views": 52,
+          "likes": 1
+        }
+      ]
+    },
+    {
+      "id": "2078973074204975104",
+      "name": "Vesper",
+      "handle": "vesper_mm",
+      "followers": 303,
+      "avatar": "https://pbs.twimg.com/profile_images/2079052579787407361/X-3Xbp_g_normal.jpg",
+      "views": 52,
+      "likes": 1,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 07:52:23 +0000 2026",
+      "lastPost": "Mon Aug 17 07:52:23 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@Azeem7236 @arcus_xyz @tread_fi next goal 10 million",
+          "id": "2089259026609475727",
+          "url": "https://x.com/vesper_mm/status/2089259026609475727",
           "views": 52,
           "likes": 1
         }
@@ -161758,6 +162171,30 @@
           "url": "https://x.com/saera84/status/2085020265453621422",
           "views": 38,
           "likes": 1
+        }
+      ]
+    },
+    {
+      "id": "1782760643487264768",
+      "name": "Mamoosy",
+      "handle": "mamooosy",
+      "followers": 362,
+      "avatar": "https://pbs.twimg.com/profile_images/1993878693169836032/BrlJkTgX_normal.jpg",
+      "views": 38,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 09:29:40 +0000 2026",
+      "lastPost": "Mon Aug 17 09:29:40 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@variational_io @Ostium @reya_xyz @perpltrade @TurboFlow_xyz @bulktrade @N1Chain 9/ Vest (@VestExchange)\n\n$5M funding + Points.\n\n10/ Hibachi (@hibachi_xyz)\n\nBacked by Dragonfly, Electric, Circle &amp; others.\n$5M funding + Points.\n\n11/ https://t.co/XUlWhZ0uUI (@tread_fi)\n\n$3.5M funding + Points.",
+          "id": "2089283509773045795",
+          "url": "https://x.com/mamooosy/status/2089283509773045795",
+          "views": 38,
+          "likes": 0
         }
       ]
     },
@@ -183953,6 +184390,44 @@
       ]
     },
     {
+      "id": "1900129507442585600",
+      "name": "Evan Jawad",
+      "handle": "evanjawadx",
+      "followers": 16715,
+      "avatar": "https://pbs.twimg.com/profile_images/2087907373386235904/oACNTtF4_normal.jpg",
+      "views": 23,
+      "likes": 2,
+      "posts": 3,
+      "mentions": 3,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Fri Mar 27 13:35:47 +0000 2026",
+      "lastPost": "Mon Aug 17 10:03:12 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@0xvinhpham @tread_fi Risk management still matters",
+          "id": "2037523981914571204",
+          "url": "https://x.com/evanjawadx/status/2037523981914571204",
+          "views": 15,
+          "likes": 1
+        },
+        {
+          "text": "@0xvinhpham @tread_fi volumes can be tricky",
+          "id": "2078463743395348710",
+          "url": "https://x.com/evanjawadx/status/2078463743395348710",
+          "views": 7,
+          "likes": 1
+        },
+        {
+          "text": "@0xvinhpham @tread_fi smart is definitely important",
+          "id": "2089291949929083340",
+          "url": "https://x.com/evanjawadx/status/2089291949929083340",
+          "views": 1,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "405746877",
       "name": "Silas",
       "handle": "0xAthena_Z",
@@ -185568,37 +186043,6 @@
           "id": "2074779797431947305",
           "url": "https://x.com/0xR3asoN/status/2074779797431947305",
           "views": 22,
-          "likes": 1
-        }
-      ]
-    },
-    {
-      "id": "1900129507442585600",
-      "name": "Evan Jawad",
-      "handle": "evanjawadx",
-      "followers": 18234,
-      "avatar": "https://pbs.twimg.com/profile_images/2051553988353703936/B_gcSGxT_normal.jpg",
-      "views": 22,
-      "likes": 2,
-      "posts": 2,
-      "mentions": 2,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Fri Mar 27 13:35:47 +0000 2026",
-      "lastPost": "Sat Jul 18 12:55:47 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@0xvinhpham @tread_fi Risk management still matters",
-          "id": "2037523981914571204",
-          "url": "https://x.com/evanjawadx/status/2037523981914571204",
-          "views": 15,
-          "likes": 1
-        },
-        {
-          "text": "@0xvinhpham @tread_fi volumes can be tricky",
-          "id": "2078463743395348710",
-          "url": "https://x.com/evanjawadx/status/2078463743395348710",
-          "views": 7,
           "likes": 1
         }
       ]
@@ -194720,6 +195164,54 @@
           "text": "@tread_fi Ship it 😎",
           "id": "2083239421227200983",
           "url": "https://x.com/lens_sats/status/2083239421227200983",
+          "views": 17,
+          "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "1535027197987246097",
+      "name": "𝘽𝙞𝙜 𝘽𝙚𝙣 😈💫",
+      "handle": "BigBen_0x",
+      "followers": 406,
+      "avatar": "https://pbs.twimg.com/profile_images/2029700209706442752/gOusYDTz_normal.jpg",
+      "views": 17,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 20:21:27 +0000 2026",
+      "lastPost": "Mon Aug 17 20:21:27 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@eliospay @hypurr_co @HyperliquidPC @HypeStrat @InsilicoTrading @nansen_ai @chainlink @hyperbeat @wintermute_t @hyperlendx @talistrade @hyperlink_xyz @tread_fi Can't wait 👊",
+          "id": "2089447536788390389",
+          "url": "https://x.com/BigBen_0x/status/2089447536788390389",
+          "views": 17,
+          "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "4193541312",
+      "name": "Cuong Nguyen",
+      "handle": "cuonggiau2",
+      "followers": 9249,
+      "avatar": "https://pbs.twimg.com/profile_images/2075071852033298432/lvCVuL6H_normal.jpg",
+      "views": 17,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 04:54:47 +0000 2026",
+      "lastPost": "Mon Aug 17 04:54:47 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@onebit1406 @Lighter_xyz @tread_fi @risextrade Nhìn biểu đồ AI phân tích sướng hẳn",
+          "id": "2089214331611451726",
+          "url": "https://x.com/cuonggiau2/status/2089214331611451726",
           "views": 17,
           "likes": 0
         }
@@ -210034,6 +210526,30 @@
       ]
     },
     {
+      "id": "960582516112547846",
+      "name": "ShadowBob",
+      "handle": "raminaol9ykas",
+      "followers": 2758,
+      "avatar": "https://pbs.twimg.com/profile_images/2006229451227430912/fhYVePrC_normal.jpg",
+      "views": 9,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 06:30:13 +0000 2026",
+      "lastPost": "Mon Aug 17 06:30:13 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@0xvinhpham @tread_fi bots turn airdrop farming into a fee budget competition rather than a trading skill competition",
+          "id": "2089238349257052380",
+          "url": "https://x.com/raminaol9ykas/status/2089238349257052380",
+          "views": 9,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1877351757942247424",
       "name": "OrwellXBT",
       "handle": "Dystopian812",
@@ -222960,6 +223476,30 @@
           "text": "@zacxbt @tread_fi @davidyjeong @young_peem GM Enjoy your Sunday and recharge for the week",
           "id": "2088983532475429214",
           "url": "https://x.com/Face_Less33/status/2088983532475429214",
+          "views": 1,
+          "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "1762343179175747584",
+      "name": "Eugene Smarts",
+      "handle": "EugeneSmarts",
+      "followers": 3253,
+      "avatar": "https://pbs.twimg.com/profile_images/1990736577257996288/cs9Lb26A_normal.jpg",
+      "views": 1,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Aug 17 13:10:30 +0000 2026",
+      "lastPost": "Mon Aug 17 13:10:30 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@0xvinhpham @tread_fi volume based rewards turn tiny margin into a contest for whoever can automate churn best",
+          "id": "2089339083256475891",
+          "url": "https://x.com/EugeneSmarts/status/2089339083256475891",
           "views": 1,
           "likes": 0
         }
