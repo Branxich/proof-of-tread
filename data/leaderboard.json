@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-09-02T10:55:24.057Z",
+  "updatedAt": "2026-09-03T10:54:16.016Z",
   "totals": {
-    "views": 10846278,
-    "likes": 112875,
-    "posts": 33385,
+    "views": 10847156,
+    "likes": 112876,
+    "posts": 33388,
     "users": 7435
   },
   "users": [
@@ -881,16 +881,16 @@
       "id": "1674568302625009666",
       "name": "katexbt.hl",
       "handle": "katexbt",
-      "followers": 30631,
+      "followers": 30668,
       "avatar": "https://pbs.twimg.com/profile_images/2017119031720103938/woV2UKBQ_normal.jpg",
-      "views": 88190,
+      "views": 88880,
       "likes": 685,
-      "posts": 82,
-      "mentions": 81,
+      "posts": 83,
+      "mentions": 82,
       "cashtag": 1,
       "keyword": 12,
       "firstPost": "Sat Nov 15 18:37:27 +0000 2025",
-      "lastPost": "Sun Aug 30 14:10:26 +0000 2026",
+      "lastPost": "Wed Sep 02 09:08:40 +0000 2026",
       "topPosts": [
         {
           "text": "There's SERIOUS alpha to be had in using the (free!!!) agents on @tread_fi to do your MMing on various perpdex venues and minimize losses.\n\nYou can even ask it to tell you what other traders are doing in realtime so you don't end up being their exit liq, here's some examples👇 https://t.co/kbX4awGJgp",
@@ -26103,6 +26103,58 @@
       ]
     },
     {
+      "id": "1714643745382027264",
+      "name": "248.HL",
+      "handle": "cavickeyjain",
+      "followers": 108,
+      "avatar": "https://pbs.twimg.com/profile_images/2084220766271467520/SJTL8vEP_normal.jpg",
+      "views": 1005,
+      "likes": 6,
+      "posts": 7,
+      "mentions": 7,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Fri Jul 31 07:38:32 +0000 2026",
+      "lastPost": "Wed Sep 02 18:06:29 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@CryptoTeluguO @tread_fi https://t.co/rqOSE7fBQG",
+          "id": "2094119538182992173",
+          "url": "https://x.com/cavickeyjain/status/2094119538182992173",
+          "views": 483,
+          "likes": 2
+        },
+        {
+          "text": "@tread_fi @Kalshi Thats 🔥",
+          "id": "2085040242529341685",
+          "url": "https://x.com/cavickeyjain/status/2085040242529341685",
+          "views": 163,
+          "likes": 1
+        },
+        {
+          "text": "@tokyouxbt Only @variational_io and @tread_fi",
+          "id": "2095211777319682164",
+          "url": "https://x.com/cavickeyjain/status/2095211777319682164",
+          "views": 144,
+          "likes": 1
+        },
+        {
+          "text": "@tread_fi Is it coming ?",
+          "id": "2083094948497559815",
+          "url": "https://x.com/cavickeyjain/status/2083094948497559815",
+          "views": 99,
+          "likes": 0
+        },
+        {
+          "text": "@hikarypool7 @tread_fi @treadfoundation waiting for it",
+          "id": "2094053983312830675",
+          "url": "https://x.com/cavickeyjain/status/2094053983312830675",
+          "views": 58,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "319980816",
       "name": "xulian.hl",
       "handle": "xulian_hl",
@@ -29635,58 +29687,6 @@
           "id": "2022826826444226891",
           "url": "https://x.com/austiinxbt/status/2022826826444226891",
           "views": 70,
-          "likes": 1
-        }
-      ]
-    },
-    {
-      "id": "1714643745382027264",
-      "name": "248.HL",
-      "handle": "cavickeyjain",
-      "followers": 107,
-      "avatar": "https://pbs.twimg.com/profile_images/2084220766271467520/SJTL8vEP_normal.jpg",
-      "views": 861,
-      "likes": 5,
-      "posts": 6,
-      "mentions": 6,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Fri Jul 31 07:38:32 +0000 2026",
-      "lastPost": "Mon Aug 31 02:04:06 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@CryptoTeluguO @tread_fi https://t.co/rqOSE7fBQG",
-          "id": "2094119538182992173",
-          "url": "https://x.com/cavickeyjain/status/2094119538182992173",
-          "views": 483,
-          "likes": 2
-        },
-        {
-          "text": "@tread_fi @Kalshi Thats 🔥",
-          "id": "2085040242529341685",
-          "url": "https://x.com/cavickeyjain/status/2085040242529341685",
-          "views": 163,
-          "likes": 1
-        },
-        {
-          "text": "@tread_fi Is it coming ?",
-          "id": "2083094948497559815",
-          "url": "https://x.com/cavickeyjain/status/2083094948497559815",
-          "views": 99,
-          "likes": 0
-        },
-        {
-          "text": "@hikarypool7 @tread_fi @treadfoundation waiting for it",
-          "id": "2094053983312830675",
-          "url": "https://x.com/cavickeyjain/status/2094053983312830675",
-          "views": 58,
-          "likes": 1
-        },
-        {
-          "text": "Coming soon @tread_fi",
-          "id": "2085040314851725727",
-          "url": "https://x.com/cavickeyjain/status/2085040314851725727",
-          "views": 35,
           "likes": 1
         }
       ]
@@ -53475,6 +53475,58 @@
       ]
     },
     {
+      "id": "1219035146999017474",
+      "name": "jota𝟕𝟕𝟕.XTND(✧,✧)",
+      "handle": "jota7ar",
+      "followers": 1631,
+      "avatar": "https://pbs.twimg.com/profile_images/2053633059946172416/Tcj216FH_normal.jpg",
+      "views": 367,
+      "likes": 7,
+      "posts": 12,
+      "mentions": 12,
+      "cashtag": 0,
+      "keyword": 1,
+      "firstPost": "Tue Nov 11 12:26:06 +0000 2025",
+      "lastPost": "Wed Sep 02 18:54:40 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@0xbeiu @tread_fi True.\ngot 300 points with only 2k on extended on my first week; now i only make around 10-20 with 5 times more capital and txs. \n(compounding both is around 30x harder now than 5 months ago)\n\nlooking for standX , @bulktrade bulk or hibachi for similar r:r ( just imho ) https://t.co/XTFV1gPQ6q",
+          "id": "2013979717263675595",
+          "url": "https://x.com/jota7ar/status/2013979717263675595",
+          "views": 79,
+          "likes": 4
+        },
+        {
+          "text": "@OG_Branxi @01Exchange @nadoHQ @tread_fi Any code for RiseXD (? ^^",
+          "id": "2021272914301960376",
+          "url": "https://x.com/jota7ar/status/2021272914301960376",
+          "views": 58,
+          "likes": 1
+        },
+        {
+          "text": "@lodelascripto se puede usar @tread_fi  para hacer vol",
+          "id": "2095223902108823735",
+          "url": "https://x.com/jota7ar/status/2095223902108823735",
+          "views": 44,
+          "likes": 0
+        },
+        {
+          "text": "@sportytechworld @tread_fi is it mainnet or what ? (? sry for the ignorance",
+          "id": "2052039962053218595",
+          "url": "https://x.com/jota7ar/status/2052039962053218595",
+          "views": 38,
+          "likes": 0
+        },
+        {
+          "text": "@CriptocosasF la cuestión no es el airdrop en si, sino como aprovechar la plataforma para generar más allá del airdrop; sigue siendo de las mejores alternativas para hacer DN y está integrado en @tread_fi",
+          "id": "2029573891450949822",
+          "url": "https://x.com/jota7ar/status/2029573891450949822",
+          "views": 25,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1660314701077594114",
       "name": "Drex",
       "handle": "DrexTo100x",
@@ -57755,58 +57807,6 @@
           "url": "https://x.com/ElFarmor/status/1991490480190984292",
           "views": 41,
           "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "1219035146999017474",
-      "name": "jota𝟕𝟕𝟕.XTND(✧,✧)",
-      "handle": "jota7ar",
-      "followers": 1651,
-      "avatar": "https://pbs.twimg.com/profile_images/2053633059946172416/Tcj216FH_normal.jpg",
-      "views": 323,
-      "likes": 7,
-      "posts": 11,
-      "mentions": 11,
-      "cashtag": 0,
-      "keyword": 1,
-      "firstPost": "Tue Nov 11 12:26:06 +0000 2025",
-      "lastPost": "Tue Jun 30 19:36:05 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@0xbeiu @tread_fi True.\ngot 300 points with only 2k on extended on my first week; now i only make around 10-20 with 5 times more capital and txs. \n(compounding both is around 30x harder now than 5 months ago)\n\nlooking for standX , @bulktrade bulk or hibachi for similar r:r ( just imho ) https://t.co/XTFV1gPQ6q",
-          "id": "2013979717263675595",
-          "url": "https://x.com/jota7ar/status/2013979717263675595",
-          "views": 79,
-          "likes": 4
-        },
-        {
-          "text": "@OG_Branxi @01Exchange @nadoHQ @tread_fi Any code for RiseXD (? ^^",
-          "id": "2021272914301960376",
-          "url": "https://x.com/jota7ar/status/2021272914301960376",
-          "views": 58,
-          "likes": 1
-        },
-        {
-          "text": "@sportytechworld @tread_fi is it mainnet or what ? (? sry for the ignorance",
-          "id": "2052039962053218595",
-          "url": "https://x.com/jota7ar/status/2052039962053218595",
-          "views": 38,
-          "likes": 0
-        },
-        {
-          "text": "@CriptocosasF la cuestión no es el airdrop en si, sino como aprovechar la plataforma para generar más allá del airdrop; sigue siendo de las mejores alternativas para hacer DN y está integrado en @tread_fi",
-          "id": "2029573891450949822",
-          "url": "https://x.com/jota7ar/status/2029573891450949822",
-          "views": 25,
-          "likes": 0
-        },
-        {
-          "text": "@criptomaniac_ @tread_fi @risextrade de lo mejorcito en los últimos tiempos ;p",
-          "id": "2052364273632866691",
-          "url": "https://x.com/jota7ar/status/2052364273632866691",
-          "views": 24,
-          "likes": 1
         }
       ]
     },
