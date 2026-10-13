@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-12T14:50:54.833Z",
+  "updatedAt": "2026-10-13T13:50:22.062Z",
   "totals": {
-    "views": 11725089,
-    "likes": 124950,
-    "posts": 36579,
-    "users": 8025
+    "views": 11725462,
+    "likes": 124954,
+    "posts": 36584,
+    "users": 8026
   },
   "users": [
     {
@@ -1299,14 +1299,14 @@
       "handle": "Dhruv_Sniper",
       "followers": 1600,
       "avatar": "https://pbs.twimg.com/profile_images/2099287137342599168/V6Y09GkK_normal.jpg",
-      "views": 75786,
-      "likes": 1413,
-      "posts": 279,
-      "mentions": 279,
+      "views": 75821,
+      "likes": 1415,
+      "posts": 280,
+      "mentions": 280,
       "cashtag": 21,
       "keyword": 78,
       "firstPost": "Sat Nov 29 03:25:38 +0000 2025",
-      "lastPost": "Sun Oct 11 16:53:50 +0000 2026",
+      "lastPost": "Mon Oct 12 14:48:14 +0000 2026",
       "topPosts": [
         {
           "text": "New announcement is now live on the Points Page of @tread_fi\n\n\"@treadfoundation has already announced $TREAD token. Points recognise genuine participation in the TreadFi ecosystem. Token details will be shared soon\"\n\nWe are getting very close to the much awaited $TREAD TGE announcement.\n\nSeason 1.5 Tread Points are also likely to be distributed soon, which should finalise the total points distributed to users.",
@@ -1349,16 +1349,16 @@
       "id": "1667914690683629568",
       "name": "DeFi Voyager",
       "handle": "DeFiVoyager_X",
-      "followers": 5018,
+      "followers": 4936,
       "avatar": "https://pbs.twimg.com/profile_images/1699964285005529088/7y61V53T_normal.jpg",
-      "views": 74004,
-      "likes": 759,
-      "posts": 111,
-      "mentions": 111,
+      "views": 74048,
+      "likes": 760,
+      "posts": 112,
+      "mentions": 112,
       "cashtag": 0,
       "keyword": 14,
       "firstPost": "Thu Nov 20 10:55:03 +0000 2025",
-      "lastPost": "Thu Oct 08 00:04:29 +0000 2026",
+      "lastPost": "Mon Oct 12 11:56:00 +0000 2026",
       "topPosts": [
         {
           "text": "Is this even legal @tread_fi ?\n\nhttps://t.co/4vDWEpJP6N https://t.co/kNeMkhmIy3",
@@ -6927,6 +6927,58 @@
       ]
     },
     {
+      "id": "1767112638222516224",
+      "name": "Fat Bear Walking",
+      "handle": "fatbearwalking",
+      "followers": 84,
+      "avatar": "https://pbs.twimg.com/profile_images/2097609574748688385/ReSnrK9f_normal.jpg",
+      "views": 8142,
+      "likes": 114,
+      "posts": 27,
+      "mentions": 27,
+      "cashtag": 3,
+      "keyword": 0,
+      "firstPost": "Fri Sep 11 05:44:03 +0000 2026",
+      "lastPost": "Mon Oct 12 05:20:46 +0000 2026",
+      "topPosts": [
+        {
+          "text": "I was quite late to seriously farming $TREAD.\n\nI saw people mentioned the project on X earlier this year, but I was preoccupied with my baby so I didn't think to join in.\n\nIt's not until I started coming back to crypto and tested @tread_fi out that I realized the project's potential.\n\nAnd my expectation became conviction when I saw the team shipped trading agents that are actually legit.\n\nI didn't get much from the airdrop, but there's no way I'm going to let an obvious opportunity pass by.\n\nSo I just went and started my TWAP when the orderbook was populated with people selling their airdrops.\n\nWe're currently in a market consolidation. I believe prices won't stay around this range for long once we resolve to the upside.",
+          "id": "2100263849194922280",
+          "url": "https://x.com/fatbearwalking/status/2100263849194922280",
+          "views": 3442,
+          "likes": 32
+        },
+        {
+          "text": "One of my favorite projects is about to TGE soon.\n\nWith every milestone that the team has achieved, I'm more convinced than ever of $TREAD going on a generational run this bull market.\n\nOnce traders understand the power of a full AI trading desk that @tread_fi offers, the repricing is inevitable.",
+          "id": "2098286428526698663",
+          "url": "https://x.com/fatbearwalking/status/2098286428526698663",
+          "views": 1388,
+          "likes": 18
+        },
+        {
+          "text": "Detailed summary of TIP-2 from @sportytechworld.\n\nThe gist of it is that you can be eligible for perps airdrop redistribution by how much fee savings you earned using @tread_fi.\n\nBasically, hold enough $TREAD in your wallet to get fees discount and generate a ton of volume.",
+          "id": "2104461303183974755",
+          "url": "https://x.com/fatbearwalking/status/2104461303183974755",
+          "views": 370,
+          "likes": 6
+        },
+        {
+          "text": "@sportytechworld @tread_fi Great work. I know you could've got even more if you worked exclusively on farming. But the content you created was extremely valuable to me early on when I was just getting started.\n\nThank you and congrats.",
+          "id": "2100268456801382413",
+          "url": "https://x.com/fatbearwalking/status/2100268456801382413",
+          "views": 293,
+          "likes": 1
+        },
+        {
+          "text": "@tread_fi For TIP-3, what benefits do I get as Creator to use the limited slot? I'd be sharing fees and rewards with the Sponsor, but I can just build my own agent without having to share.",
+          "id": "2100771502207709490",
+          "url": "https://x.com/fatbearwalking/status/2100771502207709490",
+          "views": 289,
+          "likes": 3
+        }
+      ]
+    },
+    {
       "id": "1442702481394262016",
       "name": "VietnamPenguin",
       "handle": "VietnamPenguin",
@@ -7273,58 +7325,6 @@
           "url": "https://x.com/ZhugeLyang/status/2100538482955317494",
           "views": 238,
           "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "1767112638222516224",
-      "name": "Fat Bear Walking",
-      "handle": "fatbearwalking",
-      "followers": 86,
-      "avatar": "https://pbs.twimg.com/profile_images/2097609574748688385/ReSnrK9f_normal.jpg",
-      "views": 7911,
-      "likes": 113,
-      "posts": 26,
-      "mentions": 26,
-      "cashtag": 3,
-      "keyword": 0,
-      "firstPost": "Fri Sep 11 05:44:03 +0000 2026",
-      "lastPost": "Sun Oct 04 02:31:16 +0000 2026",
-      "topPosts": [
-        {
-          "text": "I was quite late to seriously farming $TREAD.\n\nI saw people mentioned the project on X earlier this year, but I was preoccupied with my baby so I didn't think to join in.\n\nIt's not until I started coming back to crypto and tested @tread_fi out that I realized the project's potential.\n\nAnd my expectation became conviction when I saw the team shipped trading agents that are actually legit.\n\nI didn't get much from the airdrop, but there's no way I'm going to let an obvious opportunity pass by.\n\nSo I just went and started my TWAP when the orderbook was populated with people selling their airdrops.\n\nWe're currently in a market consolidation. I believe prices won't stay around this range for long once we resolve to the upside.",
-          "id": "2100263849194922280",
-          "url": "https://x.com/fatbearwalking/status/2100263849194922280",
-          "views": 3442,
-          "likes": 32
-        },
-        {
-          "text": "One of my favorite projects is about to TGE soon.\n\nWith every milestone that the team has achieved, I'm more convinced than ever of $TREAD going on a generational run this bull market.\n\nOnce traders understand the power of a full AI trading desk that @tread_fi offers, the repricing is inevitable.",
-          "id": "2098286428526698663",
-          "url": "https://x.com/fatbearwalking/status/2098286428526698663",
-          "views": 1388,
-          "likes": 18
-        },
-        {
-          "text": "Detailed summary of TIP-2 from @sportytechworld.\n\nThe gist of it is that you can be eligible for perps airdrop redistribution by how much fee savings you earned using @tread_fi.\n\nBasically, hold enough $TREAD in your wallet to get fees discount and generate a ton of volume.",
-          "id": "2104461303183974755",
-          "url": "https://x.com/fatbearwalking/status/2104461303183974755",
-          "views": 370,
-          "likes": 6
-        },
-        {
-          "text": "@sportytechworld @tread_fi Great work. I know you could've got even more if you worked exclusively on farming. But the content you created was extremely valuable to me early on when I was just getting started.\n\nThank you and congrats.",
-          "id": "2100268456801382413",
-          "url": "https://x.com/fatbearwalking/status/2100268456801382413",
-          "views": 293,
-          "likes": 1
-        },
-        {
-          "text": "@tread_fi For TIP-3, what benefits do I get as Creator to use the limited slot? I'd be sharing fees and rewards with the Sponsor, but I can just build my own agent without having to share.",
-          "id": "2100771502207709490",
-          "url": "https://x.com/fatbearwalking/status/2100771502207709490",
-          "views": 289,
-          "likes": 3
         }
       ]
     },
@@ -134827,6 +134827,37 @@
       ]
     },
     {
+      "id": "2003067192099885056",
+      "name": "Maxi.hl",
+      "handle": "Im0x4593",
+      "followers": 43,
+      "avatar": "https://pbs.twimg.com/profile_images/2012005502419615746/_EIf1kr3_normal.jpg",
+      "views": 80,
+      "likes": 1,
+      "posts": 2,
+      "mentions": 2,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Wed Oct 07 12:53:52 +0000 2026",
+      "lastPost": "Mon Oct 12 12:22:26 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@LeRoyaliste9 @senpi_ai @get_truenorth &amp; I saw someone building on @tread_fi related to propfirm",
+          "id": "2109620708787552363",
+          "url": "https://x.com/Im0x4593/status/2109620708787552363",
+          "views": 60,
+          "likes": 0
+        },
+        {
+          "text": "@felixdoteth @Muse @senpi_ai @get_truenorth\nand @tread_fi I saw someone building propr agent earlier.",
+          "id": "2107816679346704427",
+          "url": "https://x.com/Im0x4593/status/2107816679346704427",
+          "views": 20,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1376895459919327233",
       "name": "Durian",
       "handle": "durianbets",
@@ -208984,30 +209015,6 @@
       ]
     },
     {
-      "id": "2003067192099885056",
-      "name": "Maxi.hl",
-      "handle": "Im0x4593",
-      "followers": 43,
-      "avatar": "https://pbs.twimg.com/profile_images/2012005502419615746/_EIf1kr3_normal.jpg",
-      "views": 20,
-      "likes": 1,
-      "posts": 1,
-      "mentions": 1,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Wed Oct 07 12:53:52 +0000 2026",
-      "lastPost": "Wed Oct 07 12:53:52 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@felixdoteth @Muse @senpi_ai @get_truenorth\nand @tread_fi I saw someone building propr agent earlier.",
-          "id": "2107816679346704427",
-          "url": "https://x.com/Im0x4593/status/2107816679346704427",
-          "views": 20,
-          "likes": 1
-        }
-      ]
-    },
-    {
       "id": "1664923713723039748",
       "name": "danbir.base.eth 🐐",
       "handle": "danbir0815",
@@ -243011,6 +243018,30 @@
           "text": "@0xSlyth @tread_fi TGE 후에도 상승하면 제일 좋죠",
           "id": "2100961480237830414",
           "url": "https://x.com/Aurora_5100/status/2100961480237830414",
+          "views": 3,
+          "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "553044123",
+      "name": "Quantico",
+      "handle": "web3_FBI",
+      "followers": 139,
+      "avatar": "https://pbs.twimg.com/profile_images/2069820062194688000/6oL2p-s0_normal.jpg",
+      "views": 3,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Oct 12 18:30:12 +0000 2026",
+      "lastPost": "Mon Oct 12 18:30:12 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi wow https://t.co/SXTkEkzCak",
+          "id": "2109713261096804516",
+          "url": "https://x.com/web3_FBI/status/2109713261096804516",
           "views": 3,
           "likes": 0
         }
