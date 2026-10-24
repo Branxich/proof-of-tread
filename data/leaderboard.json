@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-23T11:14:59.987Z",
+  "updatedAt": "2026-10-24T10:34:06.332Z",
   "totals": {
-    "views": 11814830,
-    "likes": 125910,
-    "posts": 36815,
+    "views": 11817584,
+    "likes": 125955,
+    "posts": 36822,
     "users": 8061
   },
   "users": [
@@ -63,16 +63,16 @@
       "id": "1303818183116292099",
       "name": "as required.",
       "handle": "0xasrequired",
-      "followers": 6071,
+      "followers": 6083,
       "avatar": "https://pbs.twimg.com/profile_images/2008919984106262528/H98QoUHQ_normal.jpg",
-      "views": 950353,
-      "likes": 5707,
-      "posts": 675,
-      "mentions": 675,
+      "views": 952828,
+      "likes": 5750,
+      "posts": 676,
+      "mentions": 676,
       "cashtag": 5,
       "keyword": 0,
       "firstPost": "Thu Oct 16 23:59:03 +0000 2025",
-      "lastPost": "Thu Oct 22 11:59:15 +0000 2026",
+      "lastPost": "Fri Oct 23 16:32:46 +0000 2026",
       "topPosts": [
         {
           "text": ".@tread_fi just dropped a delta neutral MM bot and changed the face of perp DEX farming again\n\nyou can go dn across 2 DEXs or use 2 wallets on the same DEX, all while filling with maker orders for 3x less fees and also farming tread points\n\nbest of all, you just set and forget it, rather than manually doing each trade\n\nthis will be the easiest way to farm @ventuals maker points across multiple wallets (you can stick to the regular MM volume bot if you're farming on one wallet) and is already the easiest way to farm unit HIP-3 markets\n\nit currently supports HL, @pacifica_fi, disAster and CEXs, with @paradex coming this week and @extendedapp soon after\n\nif you are farming perp DEXs and not using tread, you're ngmi\n\nref required.",
@@ -881,16 +881,16 @@
       "id": "1438316504253091848",
       "name": "AlphaWolf",
       "handle": "AlphaWolfPRMR",
-      "followers": 6507,
+      "followers": 6511,
       "avatar": "https://pbs.twimg.com/profile_images/1977697903775744000/BkyRpblG_normal.jpg",
-      "views": 91245,
+      "views": 91369,
       "likes": 1632,
-      "posts": 544,
-      "mentions": 544,
+      "posts": 545,
+      "mentions": 545,
       "cashtag": 4,
       "keyword": 27,
       "firstPost": "Mon Dec 01 16:55:23 +0000 2025",
-      "lastPost": "Thu Oct 22 14:19:46 +0000 2026",
+      "lastPost": "Fri Oct 23 08:24:47 +0000 2026",
       "topPosts": [
         {
           "text": "everybody wants to say we're getting a $HYPE S3 airdrop announcement next week\n\nhere's the two most Hyperliquid aligned projects you can farm imo:\n\n1) @tread_fi \n\n> farm HIP-3 market volume very easily/cheap\n> qualify for Kinetiq + tradexyz/Unit airdrops\n> farm TreadFi points + airdrop (CONFIRMED)\n> earn free money from The Consortium for bribes\n\n2) @prjx_hl \n\n> top app on HyperEVM\n> Bobby and Lambo are chads\n> not sure if an airdrop is confirmed, but points have been going for a while\n> farm Project X + Kinetiq Points with kHYPE\n\nif I was just starting out on Hyperliquid or HyperEVM, THIS is where I would start.\n\nscroll down and start from the links below 🤝",
@@ -11783,6 +11783,58 @@
       ]
     },
     {
+      "id": "1792592294941720576",
+      "name": "Leo XBT",
+      "handle": "LeoXBT67",
+      "followers": 1299,
+      "avatar": "https://pbs.twimg.com/profile_images/2104871193476206592/q0RxROTW_normal.jpg",
+      "views": 3677,
+      "likes": 45,
+      "posts": 50,
+      "mentions": 50,
+      "cashtag": 4,
+      "keyword": 5,
+      "firstPost": "Sat Apr 04 12:42:24 +0000 2026",
+      "lastPost": "Fri Oct 23 16:33:09 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi 👀 $TREAD is near",
+          "id": "2099523591364809083",
+          "url": "https://x.com/LeoXBT67/status/2099523591364809083",
+          "views": 377,
+          "likes": 2
+        },
+        {
+          "text": "@tread_fi @arcus_xyz Wow, gArcus 💚 https://t.co/DRO4M61CKV",
+          "id": "2110749281183547445",
+          "url": "https://x.com/LeoXBT67/status/2110749281183547445",
+          "views": 264,
+          "likes": 0
+        },
+        {
+          "text": "@sportytechworld @tread_fi fcking hell bro\n\nwell deserved, go get yourself a lambo",
+          "id": "2100259504441208987",
+          "url": "https://x.com/LeoXBT67/status/2100259504441208987",
+          "views": 255,
+          "likes": 1
+        },
+        {
+          "text": "@onchainmonk @tread_fi Jesus fcking Christ Monk congrats",
+          "id": "2100237718475432321",
+          "url": "https://x.com/LeoXBT67/status/2100237718475432321",
+          "views": 187,
+          "likes": 1
+        },
+        {
+          "text": "@tread_fi gTread 👀",
+          "id": "2100763408698343599",
+          "url": "https://x.com/LeoXBT67/status/2100763408698343599",
+          "views": 181,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1091354242345062405",
       "name": "LTP",
       "handle": "LykkeTrading",
@@ -11913,58 +11965,6 @@
           "id": "2027399225701491037",
           "url": "https://x.com/meritcirclorr/status/2027399225701491037",
           "views": 172,
-          "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "1792592294941720576",
-      "name": "Leo XBT",
-      "handle": "LeoXBT67",
-      "followers": 1286,
-      "avatar": "https://pbs.twimg.com/profile_images/2104871193476206592/q0RxROTW_normal.jpg",
-      "views": 3601,
-      "likes": 44,
-      "posts": 49,
-      "mentions": 49,
-      "cashtag": 4,
-      "keyword": 5,
-      "firstPost": "Sat Apr 04 12:42:24 +0000 2026",
-      "lastPost": "Wed Oct 21 03:31:49 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@tread_fi 👀 $TREAD is near",
-          "id": "2099523591364809083",
-          "url": "https://x.com/LeoXBT67/status/2099523591364809083",
-          "views": 377,
-          "likes": 2
-        },
-        {
-          "text": "@tread_fi @arcus_xyz Wow, gArcus 💚 https://t.co/DRO4M61CKV",
-          "id": "2110749281183547445",
-          "url": "https://x.com/LeoXBT67/status/2110749281183547445",
-          "views": 264,
-          "likes": 0
-        },
-        {
-          "text": "@sportytechworld @tread_fi fcking hell bro\n\nwell deserved, go get yourself a lambo",
-          "id": "2100259504441208987",
-          "url": "https://x.com/LeoXBT67/status/2100259504441208987",
-          "views": 255,
-          "likes": 1
-        },
-        {
-          "text": "@onchainmonk @tread_fi Jesus fcking Christ Monk congrats",
-          "id": "2100237718475432321",
-          "url": "https://x.com/LeoXBT67/status/2100237718475432321",
-          "views": 187,
-          "likes": 1
-        },
-        {
-          "text": "@tread_fi gTread 👀",
-          "id": "2100763408698343599",
-          "url": "https://x.com/LeoXBT67/status/2100763408698343599",
-          "views": 181,
           "likes": 0
         }
       ]
@@ -43147,6 +43147,58 @@
       ]
     },
     {
+      "id": "1895180476983205888",
+      "name": "Zeno",
+      "handle": "zeno_0x1",
+      "followers": 45,
+      "avatar": "https://pbs.twimg.com/profile_images/2030043949738676224/jxNAdKrv_normal.jpg",
+      "views": 580,
+      "likes": 10,
+      "posts": 10,
+      "mentions": 10,
+      "cashtag": 1,
+      "keyword": 0,
+      "firstPost": "Thu Jan 22 06:05:30 +0000 2026",
+      "lastPost": "Fri Oct 23 16:17:27 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi gTread",
+          "id": "2100243637044904168",
+          "url": "https://x.com/zeno_0x1/status/2100243637044904168",
+          "views": 254,
+          "likes": 1
+        },
+        {
+          "text": "Looks like @treadfoundation @tread_fi are preparing something $TREAD",
+          "id": "2094052386528440791",
+          "url": "https://x.com/zeno_0x1/status/2094052386528440791",
+          "views": 100,
+          "likes": 3
+        },
+        {
+          "text": "@Farmrick @tread_fi Great feedback! Adding @markets_xyz / @kinetiq_xyz to this strategy could be interesting too",
+          "id": "2022569209583087733",
+          "url": "https://x.com/zeno_0x1/status/2022569209583087733",
+          "views": 55,
+          "likes": 1
+        },
+        {
+          "text": "GTREAD @tread_fi family! \nDon't forget to review and accept; check the link below: https://t.co/VcJ04hWTOs\n@treadfoundation",
+          "id": "2094082071559860575",
+          "url": "https://x.com/zeno_0x1/status/2094082071559860575",
+          "views": 50,
+          "likes": 3
+        },
+        {
+          "text": "@tread_fi @__GOOPY__ Crazy!",
+          "id": "2056607961099731179",
+          "url": "https://x.com/zeno_0x1/status/2056607961099731179",
+          "views": 35,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1760683894117195776",
       "name": "Skype",
       "handle": "skypeonx",
@@ -43655,58 +43707,6 @@
           "url": "https://x.com/Curdineth/status/2085043754269135240",
           "views": 35,
           "likes": 2
-        }
-      ]
-    },
-    {
-      "id": "1895180476983205888",
-      "name": "Zeno",
-      "handle": "zeno_0x1",
-      "followers": 44,
-      "avatar": "https://pbs.twimg.com/profile_images/2030043949738676224/jxNAdKrv_normal.jpg",
-      "views": 568,
-      "likes": 9,
-      "posts": 9,
-      "mentions": 9,
-      "cashtag": 1,
-      "keyword": 0,
-      "firstPost": "Thu Jan 22 06:05:30 +0000 2026",
-      "lastPost": "Wed Sep 16 15:21:18 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@tread_fi gTread",
-          "id": "2100243637044904168",
-          "url": "https://x.com/zeno_0x1/status/2100243637044904168",
-          "views": 254,
-          "likes": 1
-        },
-        {
-          "text": "Looks like @treadfoundation @tread_fi are preparing something $TREAD",
-          "id": "2094052386528440791",
-          "url": "https://x.com/zeno_0x1/status/2094052386528440791",
-          "views": 100,
-          "likes": 3
-        },
-        {
-          "text": "@Farmrick @tread_fi Great feedback! Adding @markets_xyz / @kinetiq_xyz to this strategy could be interesting too",
-          "id": "2022569209583087733",
-          "url": "https://x.com/zeno_0x1/status/2022569209583087733",
-          "views": 55,
-          "likes": 1
-        },
-        {
-          "text": "GTREAD @tread_fi family! \nDon't forget to review and accept; check the link below: https://t.co/VcJ04hWTOs\n@treadfoundation",
-          "id": "2094082071559860575",
-          "url": "https://x.com/zeno_0x1/status/2094082071559860575",
-          "views": 50,
-          "likes": 3
-        },
-        {
-          "text": "@tread_fi @__GOOPY__ Crazy!",
-          "id": "2056607961099731179",
-          "url": "https://x.com/zeno_0x1/status/2056607961099731179",
-          "views": 35,
-          "likes": 0
         }
       ]
     },
@@ -69016,6 +69016,44 @@
       ]
     },
     {
+      "id": "1527707714465710080",
+      "name": "Peet b",
+      "handle": "Jayjay1234577",
+      "followers": 40,
+      "avatar": "https://pbs.twimg.com/profile_images/1527707924172513282/OTBVp0i3_normal.png",
+      "views": 282,
+      "likes": 1,
+      "posts": 3,
+      "mentions": 3,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Thu Oct 08 04:16:55 +0000 2026",
+      "lastPost": "Fri Oct 23 18:18:08 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi Curious!",
+          "id": "2112012549726020001",
+          "url": "https://x.com/Jayjay1234577/status/2112012549726020001",
+          "views": 191,
+          "likes": 1
+        },
+        {
+          "text": "@tread_fi Yeahh",
+          "id": "2108048973856489620",
+          "url": "https://x.com/Jayjay1234577/status/2108048973856489620",
+          "views": 69,
+          "likes": 0
+        },
+        {
+          "text": "@0xhypebae @tread_fi I am also long here. I  think we got this.",
+          "id": "2113696488538730704",
+          "url": "https://x.com/Jayjay1234577/status/2113696488538730704",
+          "views": 22,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1367446670410211329",
       "name": "VENUS",
       "handle": "venus_w3b3",
@@ -72866,37 +72904,6 @@
           "url": "https://x.com/Artistkatty_/status/2084188734476689666",
           "views": 260,
           "likes": 2
-        }
-      ]
-    },
-    {
-      "id": "1527707714465710080",
-      "name": "Peet b",
-      "handle": "Jayjay1234577",
-      "followers": 39,
-      "avatar": "https://pbs.twimg.com/profile_images/1527707924172513282/OTBVp0i3_normal.png",
-      "views": 260,
-      "likes": 1,
-      "posts": 2,
-      "mentions": 2,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Thu Oct 08 04:16:55 +0000 2026",
-      "lastPost": "Mon Oct 19 02:46:45 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@tread_fi Curious!",
-          "id": "2112012549726020001",
-          "url": "https://x.com/Jayjay1234577/status/2112012549726020001",
-          "views": 191,
-          "likes": 1
-        },
-        {
-          "text": "@tread_fi Yeahh",
-          "id": "2108048973856489620",
-          "url": "https://x.com/Jayjay1234577/status/2108048973856489620",
-          "views": 69,
-          "likes": 0
         }
       ]
     },
@@ -113385,6 +113392,37 @@
       ]
     },
     {
+      "id": "1466945877071777793",
+      "name": "Hamza Khalifeh",
+      "handle": "Khalifeh12Hamza",
+      "followers": 8,
+      "avatar": "https://pbs.twimg.com/profile_images/2097297983431954432/ugjpXZ3E_normal.jpg",
+      "views": 117,
+      "likes": 0,
+      "posts": 2,
+      "mentions": 2,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sat Oct 17 14:38:48 +0000 2026",
+      "lastPost": "Fri Oct 23 14:40:20 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@sportytechworld @tread_fi When is s2 coming?",
+          "id": "2111466963935584566",
+          "url": "https://x.com/Khalifeh12Hamza/status/2111466963935584566",
+          "views": 96,
+          "likes": 0
+        },
+        {
+          "text": "@tread_fi Do you have an app I can download on my iPhone?",
+          "id": "2113641677873086608",
+          "url": "https://x.com/Khalifeh12Hamza/status/2113641677873086608",
+          "views": 21,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1741846003748069377",
       "name": "Athos",
       "handle": "Athosonsol",
@@ -124881,30 +124919,6 @@
           "url": "https://x.com/BlindPigDublin/status/2106201646279664112",
           "views": 96,
           "likes": 2
-        }
-      ]
-    },
-    {
-      "id": "1466945877071777793",
-      "name": "Hamza Khalifeh",
-      "handle": "Khalifeh12Hamza",
-      "followers": 8,
-      "avatar": "https://pbs.twimg.com/profile_images/2097297983431954432/ugjpXZ3E_normal.jpg",
-      "views": 96,
-      "likes": 0,
-      "posts": 1,
-      "mentions": 1,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Sat Oct 17 14:38:48 +0000 2026",
-      "lastPost": "Sat Oct 17 14:38:48 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@sportytechworld @tread_fi When is s2 coming?",
-          "id": "2111466963935584566",
-          "url": "https://x.com/Khalifeh12Hamza/status/2111466963935584566",
-          "views": 96,
-          "likes": 0
         }
       ]
     },
@@ -171496,6 +171510,37 @@
       ]
     },
     {
+      "id": "882643054460510209",
+      "name": "Toffees",
+      "handle": "Kimtoffees",
+      "followers": 3346,
+      "avatar": "https://pbs.twimg.com/profile_images/2006693431868010499/yt6acAtg_normal.jpg",
+      "views": 44,
+      "likes": 0,
+      "posts": 2,
+      "mentions": 2,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sun Oct 18 04:33:39 +0000 2026",
+      "lastPost": "Fri Oct 23 22:56:36 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@0xasrequired @TxFlow_L1 @tread_fi bell still hasn't rung but 29% apy with a 4 day lockup is an easy deposit",
+          "id": "2113766569713324361",
+          "url": "https://x.com/Kimtoffees/status/2113766569713324361",
+          "views": 24,
+          "likes": 0
+        },
+        {
+          "text": "@0xasrequired @tread_fi 811m volume and still no bell??",
+          "id": "2111677064336330772",
+          "url": "https://x.com/Kimtoffees/status/2111677064336330772",
+          "views": 20,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1823407223164358656",
       "name": "Miles",
       "handle": "_Mileswalk",
@@ -209955,30 +210000,6 @@
           "text": "@padracrypto @Polymarket ایجنت ترید @tread_fi",
           "id": "2107485956546625603",
           "url": "https://x.com/hisamooo2/status/2107485956546625603",
-          "views": 20,
-          "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "882643054460510209",
-      "name": "Toffees",
-      "handle": "Kimtoffees",
-      "followers": 3127,
-      "avatar": "https://pbs.twimg.com/profile_images/2006693431868010499/yt6acAtg_normal.jpg",
-      "views": 20,
-      "likes": 0,
-      "posts": 1,
-      "mentions": 1,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Sun Oct 18 04:33:39 +0000 2026",
-      "lastPost": "Sun Oct 18 04:33:39 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@0xasrequired @tread_fi 811m volume and still no bell??",
-          "id": "2111677064336330772",
-          "url": "https://x.com/Kimtoffees/status/2111677064336330772",
           "views": 20,
           "likes": 0
         }
