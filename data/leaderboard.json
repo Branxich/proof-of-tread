@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-26T12:31:15.612Z",
+  "updatedAt": "2026-10-27T11:49:16.380Z",
   "totals": {
-    "views": 11837865,
-    "likes": 126310,
-    "posts": 36921,
-    "users": 8070
+    "views": 11838855,
+    "likes": 126345,
+    "posts": 36929,
+    "users": 8073
   },
   "users": [
     {
@@ -115,16 +115,16 @@
       "id": "345918982",
       "name": "noorucn",
       "handle": "sportytechworld",
-      "followers": 1375,
+      "followers": 1377,
       "avatar": "https://pbs.twimg.com/profile_images/1944017942913630208/jdnYG3xs_normal.jpg",
-      "views": 626066,
-      "likes": 8939,
-      "posts": 1073,
-      "mentions": 1073,
+      "views": 626616,
+      "likes": 8959,
+      "posts": 1074,
+      "mentions": 1074,
       "cashtag": 19,
       "keyword": 85,
       "firstPost": "Thu Oct 09 09:51:27 +0000 2025",
-      "lastPost": "Sun Oct 25 12:51:37 +0000 2026",
+      "lastPost": "Mon Oct 26 09:57:35 +0000 2026",
       "topPosts": [
         {
           "text": "Everyone asks me if you can MM profitably on @tread_fi. This guy did $70-80M in volume over 2 weeks—profitably. Team of 5, he's a quant and one of the top market makers on @HyperliquidX. I've been picking his brain for days and been constantly talking  with him about how we can educate people to tread profitably.\n\nHere's how he does it.",
@@ -2624,16 +2624,16 @@
       "id": "1590434193976221697",
       "name": "Hugo.hl",
       "handle": "hugocrza",
-      "followers": 225,
+      "followers": 229,
       "avatar": "https://pbs.twimg.com/profile_images/1906010449440591872/2PZsDhFv_normal.jpg",
-      "views": 29726,
-      "likes": 553,
-      "posts": 289,
-      "mentions": 289,
+      "views": 30000,
+      "likes": 566,
+      "posts": 290,
+      "mentions": 290,
       "cashtag": 2,
       "keyword": 17,
       "firstPost": "Sat Jan 10 20:18:47 +0000 2026",
-      "lastPost": "Sun Oct 25 14:32:59 +0000 2026",
+      "lastPost": "Mon Oct 26 19:43:06 +0000 2026",
       "topPosts": [
         {
           "text": "@CryptoMage_YT Alors ça c’est un superbe article merci à toi 👏🏼\n\nD’ailleurs tu as vu le projet  @tread_fi ? C’est pas mal pour farmer les dex comme XYZ de HL ou autre en plus de récolter des points toutes les semaines. Du 2 en 1 vraiment intéressant",
@@ -14005,6 +14005,58 @@
       ]
     },
     {
+      "id": "964088126648938496",
+      "name": "Rakesh100",
+      "handle": "Rakeshshawaskme",
+      "followers": 1720,
+      "avatar": "https://pbs.twimg.com/profile_images/2107782652153810944/uvILYaeA_normal.jpg",
+      "views": 2876,
+      "likes": 58,
+      "posts": 41,
+      "mentions": 41,
+      "cashtag": 0,
+      "keyword": 2,
+      "firstPost": "Mon Apr 13 18:06:09 +0000 2026",
+      "lastPost": "Mon Oct 26 04:56:12 +0000 2026",
+      "topPosts": [
+        {
+          "text": "TreadFi x RISEx 10x Boost campaign has officially ended! 🚀\n\nJust received my points on @tread_fi from the trading campaign with the 10x boost while trading on @risextrade 🔥\n\nEven though the campaign is over, I’ll still keep trading on @risextrade using the MM bot from @tread_fi since the 2x boost is still active 👀\n\nJoin TradeFi: https://t.co/9QvIEgHYGh\n\nJoin RISEx: DM me if you need a code 🤝",
+          "id": "2054622457420792001",
+          "url": "https://x.com/Rakeshshawaskme/status/2054622457420792001",
+          "views": 654,
+          "likes": 14
+        },
+        {
+          "text": "The super ultra pro max strategy is finally come for @tread_fi now with 10X bonuse points, it's time to make 10$ to 1 million on @risextrade , Big shoutout to my homie @MoJJo_V love you man 🥰 https://t.co/NR0wBSko04",
+          "id": "2052785531201986609",
+          "url": "https://x.com/Rakeshshawaskme/status/2052785531201986609",
+          "views": 356,
+          "likes": 12
+        },
+        {
+          "text": "@tread_fi @risextrade Huge opportunity we have, make sure join treadfi  for extra bonus https://t.co/UM2a7uuiIO",
+          "id": "2051953247246864692",
+          "url": "https://x.com/Rakeshshawaskme/status/2051953247246864692",
+          "views": 204,
+          "likes": 0
+        },
+        {
+          "text": "@tread_fi Let's make 🤝",
+          "id": "2049319149021851876",
+          "url": "https://x.com/Rakeshshawaskme/status/2049319149021851876",
+          "views": 172,
+          "likes": 0
+        },
+        {
+          "text": "@tread_fi @risextrade Huge 🤝",
+          "id": "2047333782840324467",
+          "url": "https://x.com/Rakeshshawaskme/status/2047333782840324467",
+          "views": 130,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1321585610654687241",
       "name": "DefiLlama.com",
       "handle": "DefiLlama",
@@ -14153,58 +14205,6 @@
           "url": "https://x.com/mlmabc/status/2043705968144306344",
           "views": 2850,
           "likes": 23
-        }
-      ]
-    },
-    {
-      "id": "964088126648938496",
-      "name": "Rakesh100",
-      "handle": "Rakeshshawaskme",
-      "followers": 1712,
-      "avatar": "https://pbs.twimg.com/profile_images/2107782652153810944/uvILYaeA_normal.jpg",
-      "views": 2848,
-      "likes": 58,
-      "posts": 40,
-      "mentions": 40,
-      "cashtag": 0,
-      "keyword": 2,
-      "firstPost": "Mon Apr 13 18:06:09 +0000 2026",
-      "lastPost": "Sat Oct 24 14:23:40 +0000 2026",
-      "topPosts": [
-        {
-          "text": "TreadFi x RISEx 10x Boost campaign has officially ended! 🚀\n\nJust received my points on @tread_fi from the trading campaign with the 10x boost while trading on @risextrade 🔥\n\nEven though the campaign is over, I’ll still keep trading on @risextrade using the MM bot from @tread_fi since the 2x boost is still active 👀\n\nJoin TradeFi: https://t.co/9QvIEgHYGh\n\nJoin RISEx: DM me if you need a code 🤝",
-          "id": "2054622457420792001",
-          "url": "https://x.com/Rakeshshawaskme/status/2054622457420792001",
-          "views": 654,
-          "likes": 14
-        },
-        {
-          "text": "The super ultra pro max strategy is finally come for @tread_fi now with 10X bonuse points, it's time to make 10$ to 1 million on @risextrade , Big shoutout to my homie @MoJJo_V love you man 🥰 https://t.co/NR0wBSko04",
-          "id": "2052785531201986609",
-          "url": "https://x.com/Rakeshshawaskme/status/2052785531201986609",
-          "views": 356,
-          "likes": 12
-        },
-        {
-          "text": "@tread_fi @risextrade Huge opportunity we have, make sure join treadfi  for extra bonus https://t.co/UM2a7uuiIO",
-          "id": "2051953247246864692",
-          "url": "https://x.com/Rakeshshawaskme/status/2051953247246864692",
-          "views": 204,
-          "likes": 0
-        },
-        {
-          "text": "@tread_fi Let's make 🤝",
-          "id": "2049319149021851876",
-          "url": "https://x.com/Rakeshshawaskme/status/2049319149021851876",
-          "views": 172,
-          "likes": 0
-        },
-        {
-          "text": "@tread_fi @risextrade Huge 🤝",
-          "id": "2047333782840324467",
-          "url": "https://x.com/Rakeshshawaskme/status/2047333782840324467",
-          "views": 130,
-          "likes": 1
         }
       ]
     },
@@ -39778,6 +39778,58 @@
       ]
     },
     {
+      "id": "1361342551",
+      "name": "jotatotal🦋",
+      "handle": "jotatotalisback",
+      "followers": 1304,
+      "avatar": "https://pbs.twimg.com/profile_images/1892204700977467392/Ml6uJcQc_normal.jpg",
+      "views": 666,
+      "likes": 8,
+      "posts": 10,
+      "mentions": 10,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Tue Jan 13 13:20:08 +0000 2026",
+      "lastPost": "Mon Oct 26 10:41:19 +0000 2026",
+      "topPosts": [
+        {
+          "text": "Guía Retail Market Maker: \n\nCómo elegir el par perfecto y evitar el PnL Negativo\n\nSi quieren generar volumen con el bot de @tread_fi  y están cansados de ver números rojos, les cuento el secreto: La historia no está solo en la configuración, sino en elegir el mercado correcto.\n\nPara no ir a ciegas, utilizaremos esta herramienta esencial: \n🔗 Scanner: https://t.co/Ydcf5tHlND\n🔗 Bot MM: https://t.co/3sG5BVriIy\n\n¿Qué debemos buscar? La Lógica del OI/BBO 🧠\n\nMuchos miran solo el volumen, pero eso es un error. Para encontrar actividad real y segura, debemos calcular el ratio entre dos factores:\n\nOpen Interest (OI): Es el interés abierto. Cuanto más alto, más dinero y posiciones hay involucradas en ese mercado. Significa liquidez real.\n\nBest Bid/Offer (BBO): La calidad de la mejor oferta en el libro de órdenes.\n\n💡 La Estrategia:Busquen en la tabla el par que tenga el Mayor Ratio OI/BBO combinado con un volumen alto. Esto nos indica un mercado sano donde nuestro bot puede operar fluidamente sin ser \"atropellado\".\n\nEjemplos según las capturas:\n\n🟢 Para https://t.co/lhF73rKDcU: La mejor opción es BNB. Tiene un Score de 71 y un ratio OI/BBO masivo de 10,959, superando por mucho a otros pares.\n\n🟢 Para https://t.co/MRjKCgYWdW: Los datos apuntan a EUR como la opción más estable y sólida para operar hoy.\n\n⚠️ Importante: Estos datos cambian minuto a minuto. Refresquen siempre la página antes de encender sus bots.\n\nEsta es, en definitiva, la mejor manera de proteger su capital seleccionando pares con actividad orgánica.\n\nLuego ya depende de la configuración que pongamos al bot, pero esta base es importante. ¡A farmear! 🚜💰",
+          "id": "2011065728116433044",
+          "url": "https://x.com/jotatotalisback/status/2011065728116433044",
+          "views": 279,
+          "likes": 5
+        },
+        {
+          "text": "@sportytechworld @tread_fi I’m experimenting with the agent with ladder orders to gain Exposition to HYPE",
+          "id": "2072016363313397920",
+          "url": "https://x.com/jotatotalisback/status/2072016363313397920",
+          "views": 72,
+          "likes": 1
+        },
+        {
+          "text": "@sportytechworld @tread_fi Can I be that fortunate sponsor?",
+          "id": "2114265563300262388",
+          "url": "https://x.com/jotatotalisback/status/2114265563300262388",
+          "views": 70,
+          "likes": 0
+        },
+        {
+          "text": "@sportytechworld @tread_fi Awesome. Every post you make is a lesson !!!",
+          "id": "2068989737390485710",
+          "url": "https://x.com/jotatotalisback/status/2068989737390485710",
+          "views": 67,
+          "likes": 1
+        },
+        {
+          "text": "@tread_fi Higher",
+          "id": "2100844496351007022",
+          "url": "https://x.com/jotatotalisback/status/2100844496351007022",
+          "views": 58,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1278676261221646337",
       "name": "Casanova",
       "handle": "CasanovaWeb3",
@@ -42343,58 +42395,6 @@
           "id": "1991025266609828296",
           "url": "https://x.com/felchou_eth/status/1991025266609828296",
           "views": 607,
-          "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "1361342551",
-      "name": "jotatotal🦋",
-      "handle": "jotatotalisback",
-      "followers": 1304,
-      "avatar": "https://pbs.twimg.com/profile_images/1892204700977467392/Ml6uJcQc_normal.jpg",
-      "views": 607,
-      "likes": 7,
-      "posts": 8,
-      "mentions": 8,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Tue Jan 13 13:20:08 +0000 2026",
-      "lastPost": "Sun Oct 25 07:59:26 +0000 2026",
-      "topPosts": [
-        {
-          "text": "Guía Retail Market Maker: \n\nCómo elegir el par perfecto y evitar el PnL Negativo\n\nSi quieren generar volumen con el bot de @tread_fi  y están cansados de ver números rojos, les cuento el secreto: La historia no está solo en la configuración, sino en elegir el mercado correcto.\n\nPara no ir a ciegas, utilizaremos esta herramienta esencial: \n🔗 Scanner: https://t.co/Ydcf5tHlND\n🔗 Bot MM: https://t.co/3sG5BVriIy\n\n¿Qué debemos buscar? La Lógica del OI/BBO 🧠\n\nMuchos miran solo el volumen, pero eso es un error. Para encontrar actividad real y segura, debemos calcular el ratio entre dos factores:\n\nOpen Interest (OI): Es el interés abierto. Cuanto más alto, más dinero y posiciones hay involucradas en ese mercado. Significa liquidez real.\n\nBest Bid/Offer (BBO): La calidad de la mejor oferta en el libro de órdenes.\n\n💡 La Estrategia:Busquen en la tabla el par que tenga el Mayor Ratio OI/BBO combinado con un volumen alto. Esto nos indica un mercado sano donde nuestro bot puede operar fluidamente sin ser \"atropellado\".\n\nEjemplos según las capturas:\n\n🟢 Para https://t.co/lhF73rKDcU: La mejor opción es BNB. Tiene un Score de 71 y un ratio OI/BBO masivo de 10,959, superando por mucho a otros pares.\n\n🟢 Para https://t.co/MRjKCgYWdW: Los datos apuntan a EUR como la opción más estable y sólida para operar hoy.\n\n⚠️ Importante: Estos datos cambian minuto a minuto. Refresquen siempre la página antes de encender sus bots.\n\nEsta es, en definitiva, la mejor manera de proteger su capital seleccionando pares con actividad orgánica.\n\nLuego ya depende de la configuración que pongamos al bot, pero esta base es importante. ¡A farmear! 🚜💰",
-          "id": "2011065728116433044",
-          "url": "https://x.com/jotatotalisback/status/2011065728116433044",
-          "views": 279,
-          "likes": 5
-        },
-        {
-          "text": "@sportytechworld @tread_fi I’m experimenting with the agent with ladder orders to gain Exposition to HYPE",
-          "id": "2072016363313397920",
-          "url": "https://x.com/jotatotalisback/status/2072016363313397920",
-          "views": 72,
-          "likes": 1
-        },
-        {
-          "text": "@sportytechworld @tread_fi Can I be that fortunate sponsor?",
-          "id": "2114265563300262388",
-          "url": "https://x.com/jotatotalisback/status/2114265563300262388",
-          "views": 70,
-          "likes": 0
-        },
-        {
-          "text": "@sportytechworld @tread_fi Awesome. Every post you make is a lesson !!!",
-          "id": "2068989737390485710",
-          "url": "https://x.com/jotatotalisback/status/2068989737390485710",
-          "views": 67,
-          "likes": 1
-        },
-        {
-          "text": "@tread_fi Higher",
-          "id": "2100844496351007022",
-          "url": "https://x.com/jotatotalisback/status/2100844496351007022",
-          "views": 58,
           "likes": 0
         }
       ]
@@ -161140,6 +161140,30 @@
       ]
     },
     {
+      "id": "1351156159810568193",
+      "name": "jamaine",
+      "handle": "hamburgerkiddo",
+      "followers": 42,
+      "avatar": "https://pbs.twimg.com/profile_images/2093739700724891648/CYo3qmJD_normal.jpg",
+      "views": 53,
+      "likes": 1,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 1,
+      "firstPost": "Mon Oct 26 16:57:01 +0000 2026",
+      "lastPost": "Mon Oct 26 16:57:01 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@eth_elian my 2c after further exploration:\n\n1. remove charts as a 'default'\nfocus UI for paper farmers esp with the engine and pair options\ngo look at treadfi (@tread_fi)'s UI page\n\n2. build in the pstr trade modal from landing page\n\n3. leaderboard &amp; house - showcase the unique ones more",
+          "id": "2114763241402564724",
+          "url": "https://x.com/hamburgerkiddo/status/2114763241402564724",
+          "views": 53,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1590328906548416517",
       "name": "KaalipzoV2💙",
       "handle": "BKaalipzo",
@@ -216497,6 +216521,30 @@
       ]
     },
     {
+      "id": "1722365068053000193",
+      "name": "wagmi moon",
+      "handle": "wagmi2moon",
+      "followers": 2,
+      "avatar": "https://pbs.twimg.com/profile_images/1919187806590500864/oNDXMaeK_normal.jpg",
+      "views": 17,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Oct 26 18:35:39 +0000 2026",
+      "lastPost": "Mon Oct 26 18:35:39 +0000 2026",
+      "topPosts": [
+        {
+          "text": "Quick drop — perp DEX refs\n\n@bulktrade - WAGMI2MOON\n@tread_fi - 36ZCWK73\n@OndoPerps - TLY0DW\n@risextrade - https://t.co/9VZsW5BsCT\n@xStocksFi - https://t.co/oNtakBLszp\n@Titan_Exchange -  https://t.co/6GjytXdTPz\n@jumperapp -  https://t.co/rutbgb0KxW\n \nThanks in advance. DYOR",
+          "id": "2114788060537684012",
+          "url": "https://x.com/wagmi2moon/status/2114788060537684012",
+          "views": 17,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1856904798001664000",
       "name": "Kappy",
       "handle": "kappybruh",
@@ -233836,6 +233884,30 @@
           "text": "@0xasrequired @tread_fi What is the current cost per point?",
           "id": "2113320320727761065",
           "url": "https://x.com/xilux23/status/2113320320727761065",
+          "views": 9,
+          "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "1626981098164224003",
+      "name": "Sophie z,",
+      "handle": "impretty200_k",
+      "followers": 13,
+      "avatar": "https://pbs.twimg.com/profile_images/2087206054278926336/aRBpsRZQ_normal.jpg",
+      "views": 9,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Oct 26 01:36:04 +0000 2026",
+      "lastPost": "Mon Oct 26 01:36:04 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@deTEfabulaNar_ @TxFlow_L1 @tread_fi Totally agree with this",
+          "id": "2114531473856274633",
+          "url": "https://x.com/impretty200_k/status/2114531473856274633",
           "views": 9,
           "likes": 0
         }
