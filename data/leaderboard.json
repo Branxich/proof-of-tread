@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-27T11:49:16.380Z",
+  "updatedAt": "2026-10-28T12:23:19.441Z",
   "totals": {
-    "views": 11838855,
-    "likes": 126345,
-    "posts": 36929,
-    "users": 8073
+    "views": 11839569,
+    "likes": 126375,
+    "posts": 36933,
+    "users": 8074
   },
   "users": [
     {
@@ -6750,16 +6750,16 @@
       "id": "1767112638222516224",
       "name": "Fat Bear Walking",
       "handle": "fatbearwalking",
-      "followers": 79,
+      "followers": 77,
       "avatar": "https://pbs.twimg.com/profile_images/2097609574748688385/ReSnrK9f_normal.jpg",
-      "views": 8502,
-      "likes": 125,
-      "posts": 34,
-      "mentions": 34,
+      "views": 8547,
+      "likes": 126,
+      "posts": 35,
+      "mentions": 35,
       "cashtag": 3,
       "keyword": 0,
       "firstPost": "Fri Sep 11 05:44:03 +0000 2026",
-      "lastPost": "Sun Oct 25 16:42:23 +0000 2026",
+      "lastPost": "Tue Oct 27 17:06:13 +0000 2026",
       "topPosts": [
         {
           "text": "I was quite late to seriously farming $TREAD.\n\nI saw people mentioned the project on X earlier this year, but I was preoccupied with my baby so I didn't think to join in.\n\nIt's not until I started coming back to crypto and tested @tread_fi out that I realized the project's potential.\n\nAnd my expectation became conviction when I saw the team shipped trading agents that are actually legit.\n\nI didn't get much from the airdrop, but there's no way I'm going to let an obvious opportunity pass by.\n\nSo I just went and started my TWAP when the orderbook was populated with people selling their airdrops.\n\nWe're currently in a market consolidation. I believe prices won't stay around this range for long once we resolve to the upside.",
@@ -12462,6 +12462,58 @@
       ]
     },
     {
+      "id": "370365968",
+      "name": "mtc.moca",
+      "handle": "0xmeto_",
+      "followers": 3021,
+      "avatar": "https://pbs.twimg.com/profile_images/1902122163320090624/LhmGNFRi_normal.jpg",
+      "views": 3263,
+      "likes": 93,
+      "posts": 19,
+      "mentions": 19,
+      "cashtag": 1,
+      "keyword": 0,
+      "firstPost": "Sat Feb 28 04:42:23 +0000 2026",
+      "lastPost": "Tue Oct 27 13:25:32 +0000 2026",
+      "topPosts": [
+        {
+          "text": "Thank you @tread_fi for the $TREAD airdrop.\n\nTbh it's a good airdrop, I wish I had accumulated more points.\n\nI only used it during the 10x RiseX points campaign with zero builder fee btw. https://t.co/s5OfGy5pKc",
+          "id": "2100252868225724729",
+          "url": "https://x.com/0xmeto_/status/2100252868225724729",
+          "views": 1658,
+          "likes": 48
+        },
+        {
+          "text": "I totally agree with this. @liquidtrading is a good opportunity to hit two birds with one stone\n\nI did the same play in @tread_fi’s 10x boosted @risextrade campaign. The ethereum:0x31eea0edeb85b0cb65c1400bd2f4e487fd61b537 airdrop paid back all my fees with profit, and all the RiseX points I stacked during the campaign stayed as pure profit\n\nI’ve been trading on @liquidtrading for over a year. You are indirectly using Hyperliquid by trading on Liquid\n\nThe Liquid team works so hard and the metrics grow every day. Perps, prediction markets, social trading, news calendar, yield, and you can trade all of it through AI with Co-Invest or from the mobile/desktop app\n\nI truly believe one day all of this comes back to us as both a Hyperliquid and a Liquid airdrop",
+          "id": "2115072404938502483",
+          "url": "https://x.com/0xmeto_/status/2115072404938502483",
+          "views": 589,
+          "likes": 28
+        },
+        {
+          "text": "@torontoErdem @tread_fi @TxFlow_L1 @vesper_mm @arcus_xyz @Lighter_xyz @variational_io @risextrade @SkewTrade @Vanta_exchange @miracletrade @entropyIO lighter'da standart mı premium mu kullanıyorsun hocam ? \n\nstandartlar puan almıyo diye okudum ben bir yerde doğru mu o",
+          "id": "2101657193737003226",
+          "url": "https://x.com/0xmeto_/status/2101657193737003226",
+          "views": 146,
+          "likes": 1
+        },
+        {
+          "text": "@nuraymetinoz @tread_fi abi bence güzel airdrop atmışlar ya. ben tge'nin bugün oldugunu bile bilmiyodum :D X'de gezinirken gördüm",
+          "id": "2100255404244549859",
+          "url": "https://x.com/0xmeto_/status/2100255404244549859",
+          "views": 139,
+          "likes": 1
+        },
+        {
+          "text": "@snoop_sol @tread_fi Abi geçmiş olsun ya, çok sessiz duyurdular sign kısmını. Ben de son anda denk geldim açıkçası",
+          "id": "2100254312370757893",
+          "url": "https://x.com/0xmeto_/status/2100254312370757893",
+          "views": 134,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1861697685163835392",
       "name": "Orderly 華語",
       "handle": "OrderlyCN_",
@@ -14848,58 +14900,6 @@
           "id": "2014350352607220015",
           "url": "https://x.com/BeraRodman/status/2014350352607220015",
           "views": 17,
-          "likes": 1
-        }
-      ]
-    },
-    {
-      "id": "370365968",
-      "name": "mtc.moca",
-      "handle": "0xmeto_",
-      "followers": 3072,
-      "avatar": "https://pbs.twimg.com/profile_images/1902122163320090624/LhmGNFRi_normal.jpg",
-      "views": 2674,
-      "likes": 65,
-      "posts": 18,
-      "mentions": 18,
-      "cashtag": 1,
-      "keyword": 0,
-      "firstPost": "Sat Feb 28 04:42:23 +0000 2026",
-      "lastPost": "Sun Sep 20 12:58:16 +0000 2026",
-      "topPosts": [
-        {
-          "text": "Thank you @tread_fi for the $TREAD airdrop.\n\nTbh it's a good airdrop, I wish I had accumulated more points.\n\nI only used it during the 10x RiseX points campaign with zero builder fee btw. https://t.co/s5OfGy5pKc",
-          "id": "2100252868225724729",
-          "url": "https://x.com/0xmeto_/status/2100252868225724729",
-          "views": 1658,
-          "likes": 48
-        },
-        {
-          "text": "@torontoErdem @tread_fi @TxFlow_L1 @vesper_mm @arcus_xyz @Lighter_xyz @variational_io @risextrade @SkewTrade @Vanta_exchange @miracletrade @entropyIO lighter'da standart mı premium mu kullanıyorsun hocam ? \n\nstandartlar puan almıyo diye okudum ben bir yerde doğru mu o",
-          "id": "2101657193737003226",
-          "url": "https://x.com/0xmeto_/status/2101657193737003226",
-          "views": 146,
-          "likes": 1
-        },
-        {
-          "text": "@nuraymetinoz @tread_fi abi bence güzel airdrop atmışlar ya. ben tge'nin bugün oldugunu bile bilmiyodum :D X'de gezinirken gördüm",
-          "id": "2100255404244549859",
-          "url": "https://x.com/0xmeto_/status/2100255404244549859",
-          "views": 139,
-          "likes": 1
-        },
-        {
-          "text": "@snoop_sol @tread_fi Abi geçmiş olsun ya, çok sessiz duyurdular sign kısmını. Ben de son anda denk geldim açıkçası",
-          "id": "2100254312370757893",
-          "url": "https://x.com/0xmeto_/status/2100254312370757893",
-          "views": 134,
-          "likes": 1
-        },
-        {
-          "text": "@H100Trader @risextrade @tread_fi broski what do you think about @DecibelTrade ? any idea",
-          "id": "2052419705890033865",
-          "url": "https://x.com/0xmeto_/status/2052419705890033865",
-          "views": 84,
           "likes": 1
         }
       ]
@@ -98718,6 +98718,37 @@
       ]
     },
     {
+      "id": "1315376977965125640",
+      "name": "0xNemesis",
+      "handle": "nemesisbasileus",
+      "followers": 585,
+      "avatar": "https://pbs.twimg.com/profile_images/2095981714749435904/yX1hjp8Z_normal.jpg",
+      "views": 152,
+      "likes": 1,
+      "posts": 2,
+      "mentions": 2,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Thu May 07 18:51:04 +0000 2026",
+      "lastPost": "Tue Oct 27 13:35:56 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@AirdropDuyuru @tread_fi @risextrade Bende işlemler hep stop oluyor siz hangi ayarda açıyorsunuz botu paylasabilirmisiniz ?",
+          "id": "2052461228740518045",
+          "url": "https://x.com/nemesisbasileus/status/2052461228740518045",
+          "views": 101,
+          "likes": 0
+        },
+        {
+          "text": "@0xmeto_ @liquidtrading @tread_fi @risextrade gliquid 🔥 @liquidtrading",
+          "id": "2115075024281370728",
+          "url": "https://x.com/nemesisbasileus/status/2115075024281370728",
+          "views": 51,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1836432032538214401",
       "name": "Oxygen💭💦",
       "handle": "CryptoOxygen01",
@@ -121609,30 +121640,6 @@
           "url": "https://x.com/russiangcr/status/2016855667596828841",
           "views": 101,
           "likes": 1
-        }
-      ]
-    },
-    {
-      "id": "1315376977965125640",
-      "name": "0xNemesis",
-      "handle": "nemesisbasileus",
-      "followers": 584,
-      "avatar": "https://pbs.twimg.com/profile_images/1963900125983436800/pNEWa5QM_normal.jpg",
-      "views": 101,
-      "likes": 0,
-      "posts": 1,
-      "mentions": 1,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Thu May 07 18:51:04 +0000 2026",
-      "lastPost": "Thu May 07 18:51:04 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@AirdropDuyuru @tread_fi @risextrade Bende işlemler hep stop oluyor siz hangi ayarda açıyorsunuz botu paylasabilirmisiniz ?",
-          "id": "2052461228740518045",
-          "url": "https://x.com/nemesisbasileus/status/2052461228740518045",
-          "views": 101,
-          "likes": 0
         }
       ]
     },
@@ -193940,6 +193947,30 @@
           "url": "https://x.com/tobiqxbt/status/2111166260021260786",
           "views": 29,
           "likes": 1
+        }
+      ]
+    },
+    {
+      "id": "2604357875",
+      "name": "Kira",
+      "handle": "Kira_degenn",
+      "followers": 2295,
+      "avatar": "https://pbs.twimg.com/profile_images/2110235724528386048/sSMNrMSz_normal.jpg",
+      "views": 29,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Tue Oct 27 14:26:05 +0000 2026",
+      "lastPost": "Tue Oct 27 14:26:05 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@0xmeto_ @liquidtrading @tread_fi @risextrade İnteresting I should try that",
+          "id": "2115087646292869462",
+          "url": "https://x.com/Kira_degenn/status/2115087646292869462",
+          "views": 29,
+          "likes": 0
         }
       ]
     },
