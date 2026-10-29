@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-28T12:23:19.441Z",
+  "updatedAt": "2026-10-29T12:33:01.692Z",
   "totals": {
-    "views": 11839569,
-    "likes": 126375,
-    "posts": 36933,
+    "views": 11841432,
+    "likes": 126406,
+    "posts": 36938,
     "users": 8074
   },
   "users": [
@@ -63,16 +63,16 @@
       "id": "1303818183116292099",
       "name": "as required.",
       "handle": "0xasrequired",
-      "followers": 6083,
+      "followers": 6120,
       "avatar": "https://pbs.twimg.com/profile_images/2008919984106262528/H98QoUHQ_normal.jpg",
-      "views": 952828,
-      "likes": 5750,
-      "posts": 676,
-      "mentions": 676,
+      "views": 954120,
+      "likes": 5766,
+      "posts": 677,
+      "mentions": 677,
       "cashtag": 5,
       "keyword": 0,
       "firstPost": "Thu Oct 16 23:59:03 +0000 2025",
-      "lastPost": "Fri Oct 23 16:32:46 +0000 2026",
+      "lastPost": "Wed Oct 28 12:02:05 +0000 2026",
       "topPosts": [
         {
           "text": ".@tread_fi just dropped a delta neutral MM bot and changed the face of perp DEX farming again\n\nyou can go dn across 2 DEXs or use 2 wallets on the same DEX, all while filling with maker orders for 3x less fees and also farming tread points\n\nbest of all, you just set and forget it, rather than manually doing each trade\n\nthis will be the easiest way to farm @ventuals maker points across multiple wallets (you can stick to the regular MM volume bot if you're farming on one wallet) and is already the easiest way to farm unit HIP-3 markets\n\nit currently supports HL, @pacifica_fi, disAster and CEXs, with @paradex coming this week and @extendedapp soon after\n\nif you are farming perp DEXs and not using tread, you're ngmi\n\nref required.",
@@ -115,16 +115,16 @@
       "id": "345918982",
       "name": "noorucn",
       "handle": "sportytechworld",
-      "followers": 1377,
+      "followers": 1388,
       "avatar": "https://pbs.twimg.com/profile_images/1944017942913630208/jdnYG3xs_normal.jpg",
-      "views": 626616,
-      "likes": 8959,
-      "posts": 1074,
-      "mentions": 1074,
+      "views": 627104,
+      "likes": 8971,
+      "posts": 1075,
+      "mentions": 1075,
       "cashtag": 19,
       "keyword": 85,
       "firstPost": "Thu Oct 09 09:51:27 +0000 2025",
-      "lastPost": "Mon Oct 26 09:57:35 +0000 2026",
+      "lastPost": "Wed Oct 28 17:51:34 +0000 2026",
       "topPosts": [
         {
           "text": "Everyone asks me if you can MM profitably on @tread_fi. This guy did $70-80M in volume over 2 weeks—profitably. Team of 5, he's a quant and one of the top market makers on @HyperliquidX. I've been picking his brain for days and been constantly talking  with him about how we can educate people to tread profitably.\n\nHere's how he does it.",
@@ -11253,6 +11253,58 @@
       ]
     },
     {
+      "id": "1792592294941720576",
+      "name": "Leo XBT",
+      "handle": "LeoXBT67",
+      "followers": 1374,
+      "avatar": "https://pbs.twimg.com/profile_images/2104871193476206592/q0RxROTW_normal.jpg",
+      "views": 3924,
+      "likes": 47,
+      "posts": 54,
+      "mentions": 54,
+      "cashtag": 4,
+      "keyword": 6,
+      "firstPost": "Sat Apr 04 12:42:24 +0000 2026",
+      "lastPost": "Wed Oct 28 12:02:44 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi 👀 $TREAD is near",
+          "id": "2099523591364809083",
+          "url": "https://x.com/LeoXBT67/status/2099523591364809083",
+          "views": 377,
+          "likes": 2
+        },
+        {
+          "text": "@tread_fi @arcus_xyz Wow, gArcus 💚 https://t.co/DRO4M61CKV",
+          "id": "2110749281183547445",
+          "url": "https://x.com/LeoXBT67/status/2110749281183547445",
+          "views": 264,
+          "likes": 0
+        },
+        {
+          "text": "@sportytechworld @tread_fi fcking hell bro\n\nwell deserved, go get yourself a lambo",
+          "id": "2100259504441208987",
+          "url": "https://x.com/LeoXBT67/status/2100259504441208987",
+          "views": 255,
+          "likes": 1
+        },
+        {
+          "text": "@onchainmonk @tread_fi Jesus fcking Christ Monk congrats",
+          "id": "2100237718475432321",
+          "url": "https://x.com/LeoXBT67/status/2100237718475432321",
+          "views": 187,
+          "likes": 1
+        },
+        {
+          "text": "@tread_fi gTread 👀",
+          "id": "2100763408698343599",
+          "url": "https://x.com/LeoXBT67/status/2100763408698343599",
+          "views": 181,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1457394316054204416",
       "name": "Aman",
       "handle": "mfardecrouz",
@@ -11509,58 +11561,6 @@
           "url": "https://x.com/0xfarmed/status/2052285759521231270",
           "views": 305,
           "likes": 12
-        }
-      ]
-    },
-    {
-      "id": "1792592294941720576",
-      "name": "Leo XBT",
-      "handle": "LeoXBT67",
-      "followers": 1325,
-      "avatar": "https://pbs.twimg.com/profile_images/2104871193476206592/q0RxROTW_normal.jpg",
-      "views": 3872,
-      "likes": 46,
-      "posts": 53,
-      "mentions": 53,
-      "cashtag": 4,
-      "keyword": 6,
-      "firstPost": "Sat Apr 04 12:42:24 +0000 2026",
-      "lastPost": "Sun Oct 25 15:47:52 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@tread_fi 👀 $TREAD is near",
-          "id": "2099523591364809083",
-          "url": "https://x.com/LeoXBT67/status/2099523591364809083",
-          "views": 377,
-          "likes": 2
-        },
-        {
-          "text": "@tread_fi @arcus_xyz Wow, gArcus 💚 https://t.co/DRO4M61CKV",
-          "id": "2110749281183547445",
-          "url": "https://x.com/LeoXBT67/status/2110749281183547445",
-          "views": 264,
-          "likes": 0
-        },
-        {
-          "text": "@sportytechworld @tread_fi fcking hell bro\n\nwell deserved, go get yourself a lambo",
-          "id": "2100259504441208987",
-          "url": "https://x.com/LeoXBT67/status/2100259504441208987",
-          "views": 255,
-          "likes": 1
-        },
-        {
-          "text": "@onchainmonk @tread_fi Jesus fcking Christ Monk congrats",
-          "id": "2100237718475432321",
-          "url": "https://x.com/LeoXBT67/status/2100237718475432321",
-          "views": 187,
-          "likes": 1
-        },
-        {
-          "text": "@tread_fi gTread 👀",
-          "id": "2100763408698343599",
-          "url": "https://x.com/LeoXBT67/status/2100763408698343599",
-          "views": 181,
-          "likes": 0
         }
       ]
     },
@@ -76119,6 +76119,44 @@
       ]
     },
     {
+      "id": "826957493624565761",
+      "name": "Arti4 🤍💙🤍",
+      "handle": "arti4_cryp",
+      "followers": 109,
+      "avatar": "https://pbs.twimg.com/profile_images/1440516694040924162/2K-tj3ki_normal.jpg",
+      "views": 244,
+      "likes": 3,
+      "posts": 3,
+      "mentions": 3,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Jul 06 17:30:27 +0000 2026",
+      "lastPost": "Wed Oct 28 13:42:30 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi @arcus_xyz Late, as always",
+          "id": "2110750244069576762",
+          "url": "https://x.com/arti4_cryp/status/2110750244069576762",
+          "views": 212,
+          "likes": 1
+        },
+        {
+          "text": "For MM/algo bots you either go full proprietary and compete for best cpm like @vesper_mm , or  try to be fully customisable and let users build their own strats. There is no in between (why @tread_fi suffers)\nSince @SigmaEngineIO is dead who's building the second option?",
+          "id": "2115439065587658803",
+          "url": "https://x.com/arti4_cryp/status/2115439065587658803",
+          "views": 24,
+          "likes": 2
+        },
+        {
+          "text": "@EthEgrr @AlphaWolfPRMR @tread_fi *rightfully",
+          "id": "2074184213889229293",
+          "url": "https://x.com/arti4_cryp/status/2074184213889229293",
+          "views": 8,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1446006329273839621",
       "name": "KG 💧",
       "handle": "KGKG1019",
@@ -80626,37 +80664,6 @@
           "id": "2024489727697498256",
           "url": "https://x.com/Crypto_Kaladin/status/2024489727697498256",
           "views": 31,
-          "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "826957493624565761",
-      "name": "Arti4 🤍💙🤍",
-      "handle": "arti4_cryp",
-      "followers": 109,
-      "avatar": "https://pbs.twimg.com/profile_images/1440516694040924162/2K-tj3ki_normal.jpg",
-      "views": 220,
-      "likes": 1,
-      "posts": 2,
-      "mentions": 2,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Mon Jul 06 17:30:27 +0000 2026",
-      "lastPost": "Thu Oct 15 15:10:48 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@tread_fi @arcus_xyz Late, as always",
-          "id": "2110750244069576762",
-          "url": "https://x.com/arti4_cryp/status/2110750244069576762",
-          "views": 212,
-          "likes": 1
-        },
-        {
-          "text": "@EthEgrr @AlphaWolfPRMR @tread_fi *rightfully",
-          "id": "2074184213889229293",
-          "url": "https://x.com/arti4_cryp/status/2074184213889229293",
-          "views": 8,
           "likes": 0
         }
       ]
@@ -110108,6 +110115,44 @@
       ]
     },
     {
+      "id": "1466945877071777793",
+      "name": "Hamza Khalifeh",
+      "handle": "Khalifeh12Hamza",
+      "followers": 6,
+      "avatar": "https://pbs.twimg.com/profile_images/2097297983431954432/ugjpXZ3E_normal.jpg",
+      "views": 124,
+      "likes": 0,
+      "posts": 3,
+      "mentions": 3,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sat Oct 17 14:38:48 +0000 2026",
+      "lastPost": "Wed Oct 28 15:29:58 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@sportytechworld @tread_fi When is s2 coming?",
+          "id": "2111466963935584566",
+          "url": "https://x.com/Khalifeh12Hamza/status/2111466963935584566",
+          "views": 96,
+          "likes": 0
+        },
+        {
+          "text": "@tread_fi Do you have an app I can download on my iPhone?",
+          "id": "2113641677873086608",
+          "url": "https://x.com/Khalifeh12Hamza/status/2113641677873086608",
+          "views": 21,
+          "likes": 0
+        },
+        {
+          "text": "@tread_fi Update?",
+          "id": "2115466108895363111",
+          "url": "https://x.com/Khalifeh12Hamza/status/2115466108895363111",
+          "views": 7,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1838346967459753984",
       "name": "sb",
       "handle": "sunboud0",
@@ -113537,37 +113582,6 @@
           "url": "https://x.com/vegeta_perp/status/2099629634887495957",
           "views": 16,
           "likes": 2
-        }
-      ]
-    },
-    {
-      "id": "1466945877071777793",
-      "name": "Hamza Khalifeh",
-      "handle": "Khalifeh12Hamza",
-      "followers": 8,
-      "avatar": "https://pbs.twimg.com/profile_images/2097297983431954432/ugjpXZ3E_normal.jpg",
-      "views": 117,
-      "likes": 0,
-      "posts": 2,
-      "mentions": 2,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Sat Oct 17 14:38:48 +0000 2026",
-      "lastPost": "Fri Oct 23 14:40:20 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@sportytechworld @tread_fi When is s2 coming?",
-          "id": "2111466963935584566",
-          "url": "https://x.com/Khalifeh12Hamza/status/2111466963935584566",
-          "views": 96,
-          "likes": 0
-        },
-        {
-          "text": "@tread_fi Do you have an app I can download on my iPhone?",
-          "id": "2113641677873086608",
-          "url": "https://x.com/Khalifeh12Hamza/status/2113641677873086608",
-          "views": 21,
-          "likes": 0
         }
       ]
     },
