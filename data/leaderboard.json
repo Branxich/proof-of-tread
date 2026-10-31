@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-30T12:24:23.496Z",
+  "updatedAt": "2026-10-31T11:54:26.519Z",
   "totals": {
-    "views": 11848755,
-    "likes": 126563,
-    "posts": 36982,
-    "users": 8080
+    "views": 11849945,
+    "likes": 126583,
+    "posts": 36990,
+    "users": 8082
   },
   "users": [
     {
@@ -479,16 +479,16 @@
       "id": "1430544027959574530",
       "name": "Beiu",
       "handle": "0xbeiu",
-      "followers": 3060,
+      "followers": 3116,
       "avatar": "https://pbs.twimg.com/profile_images/1947388542960713728/ZcpNQojT_normal.jpg",
-      "views": 243849,
-      "likes": 3639,
-      "posts": 403,
-      "mentions": 403,
+      "views": 244800,
+      "likes": 3657,
+      "posts": 405,
+      "mentions": 405,
       "cashtag": 7,
       "keyword": 13,
       "firstPost": "Tue Nov 11 20:13:02 +0000 2025",
-      "lastPost": "Thu Oct 22 08:47:53 +0000 2026",
+      "lastPost": "Fri Oct 30 13:18:01 +0000 2026",
       "topPosts": [
         {
           "text": "My strategy for the $200K/month campaign by @Outcomexyz is to use @tread_fi \n\nYou don't even need to get filled to be eligible for rewards, just to quote\n\nEach market has one fixed reward split:\n40% quotes / 30% maker fills / 30% taker fills\n\nHow to do it?\n1) Connect your HL to Tread\n2) Go to Trade - Predict - Hyperliquid\n3) Select a market that has Outcome rewards (check on Outcome FE first)\n4) Select either YES/NO\n5) Input margin(min. 40$) - have at least 100$ available in your HL account\n6) Use wide spreads: Mid or Grid +20/30/40/50 to not get filled\nUse tight spreads to get more fills, this is on you\n7) Start MM\n\nYou should now see your bot quotting on HL Frontend\n\nThe key here is to decide if you want to get filled to get that part of the rewards, or just quote a lot and avoid dealing with PNLs\n\nVideo on How to do it below.",
@@ -935,14 +935,14 @@
       "handle": "AlphaWolfPRMR",
       "followers": 6502,
       "avatar": "https://pbs.twimg.com/profile_images/1977697903775744000/BkyRpblG_normal.jpg",
-      "views": 91744,
-      "likes": 1635,
-      "posts": 550,
-      "mentions": 550,
+      "views": 91781,
+      "likes": 1636,
+      "posts": 551,
+      "mentions": 551,
       "cashtag": 4,
       "keyword": 27,
       "firstPost": "Mon Dec 01 16:55:23 +0000 2025",
-      "lastPost": "Thu Oct 29 18:24:08 +0000 2026",
+      "lastPost": "Fri Oct 30 14:38:55 +0000 2026",
       "topPosts": [
         {
           "text": "everybody wants to say we're getting a $HYPE S3 airdrop announcement next week\n\nhere's the two most Hyperliquid aligned projects you can farm imo:\n\n1) @tread_fi \n\n> farm HIP-3 market volume very easily/cheap\n> qualify for Kinetiq + tradexyz/Unit airdrops\n> farm TreadFi points + airdrop (CONFIRMED)\n> earn free money from The Consortium for bribes\n\n2) @prjx_hl \n\n> top app on HyperEVM\n> Bobby and Lambo are chads\n> not sure if an airdrop is confirmed, but points have been going for a while\n> farm Project X + Kinetiq Points with kHYPE\n\nif I was just starting out on Hyperliquid or HyperEVM, THIS is where I would start.\n\nscroll down and start from the links below 🤝",
@@ -14905,6 +14905,58 @@
       ]
     },
     {
+      "id": "772490873271713792",
+      "name": "𝘇𝘂𝗯𝗯𝘆",
+      "handle": "0xgodzubby",
+      "followers": 2028,
+      "avatar": "https://pbs.twimg.com/profile_images/2099147213314375680/yVZZxLay_normal.jpg",
+      "views": 2668,
+      "likes": 33,
+      "posts": 46,
+      "mentions": 46,
+      "cashtag": 4,
+      "keyword": 0,
+      "firstPost": "Fri Feb 27 00:20:13 +0000 2026",
+      "lastPost": "Fri Oct 30 13:18:48 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@onchainmonk @tread_fi congrats monk 🎉\n\nquite decent of an airdrop.\n\nsend $TREAD hayarr",
+          "id": "2100236941144822078",
+          "url": "https://x.com/0xgodzubby/status/2100236941144822078",
+          "views": 533,
+          "likes": 4
+        },
+        {
+          "text": "@muarmemuar @tread_fi congrats in advance muar 👏",
+          "id": "2097357644746887420",
+          "url": "https://x.com/0xgodzubby/status/2097357644746887420",
+          "views": 155,
+          "likes": 0
+        },
+        {
+          "text": "@0xNang @risextrade @tread_fi @tradexyz @Kinetiq_xyz @pacifica_fi @nadoHQ how are you fading variational?",
+          "id": "2074790022130061539",
+          "url": "https://x.com/0xgodzubby/status/2074790022130061539",
+          "views": 139,
+          "likes": 2
+        },
+        {
+          "text": "@0xRiim @mystcapital @davidyjeong founder of @tread_fi \n\n$TREAD launched yesterday.",
+          "id": "2100643483015135315",
+          "url": "https://x.com/0xgodzubby/status/2100643483015135315",
+          "views": 129,
+          "likes": 3
+        },
+        {
+          "text": "@capy_onchain @variational_io @extendedapp @pacifica_fi @tradexyz @nadoHQ @risextrade @Ostium @grvt_io @01Exchange @StandX_Official @hibachi_xyz @tread_fi @hyenatrade @Dreamcash bulk is still in their paper mainnet.\n\nmaybe it's best we talk about this in june when we go mainnet...",
+          "id": "2053785113134072210",
+          "url": "https://x.com/0xgodzubby/status/2053785113134072210",
+          "views": 122,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1248044632635666432",
       "name": "Ponyo",
       "handle": "ponyo_fp",
@@ -15417,58 +15469,6 @@
           "url": "https://x.com/Eth3Z/status/2029430109372072234",
           "views": 2563,
           "likes": 5
-        }
-      ]
-    },
-    {
-      "id": "772490873271713792",
-      "name": "𝘇𝘂𝗯𝗯𝘆 (𝗽𝗲𝗿𝗽𝘀 𝗮𝗿𝗰)",
-      "handle": "0xgodzubby",
-      "followers": 1942,
-      "avatar": "https://pbs.twimg.com/profile_images/2099147213314375680/yVZZxLay_normal.jpg",
-      "views": 2560,
-      "likes": 32,
-      "posts": 44,
-      "mentions": 44,
-      "cashtag": 3,
-      "keyword": 0,
-      "firstPost": "Fri Feb 27 00:20:13 +0000 2026",
-      "lastPost": "Thu Oct 15 17:51:01 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@onchainmonk @tread_fi congrats monk 🎉\n\nquite decent of an airdrop.\n\nsend $TREAD hayarr",
-          "id": "2100236941144822078",
-          "url": "https://x.com/0xgodzubby/status/2100236941144822078",
-          "views": 533,
-          "likes": 4
-        },
-        {
-          "text": "@muarmemuar @tread_fi congrats in advance muar 👏",
-          "id": "2097357644746887420",
-          "url": "https://x.com/0xgodzubby/status/2097357644746887420",
-          "views": 155,
-          "likes": 0
-        },
-        {
-          "text": "@0xNang @risextrade @tread_fi @tradexyz @Kinetiq_xyz @pacifica_fi @nadoHQ how are you fading variational?",
-          "id": "2074790022130061539",
-          "url": "https://x.com/0xgodzubby/status/2074790022130061539",
-          "views": 139,
-          "likes": 2
-        },
-        {
-          "text": "@0xRiim @mystcapital @davidyjeong founder of @tread_fi \n\n$TREAD launched yesterday.",
-          "id": "2100643483015135315",
-          "url": "https://x.com/0xgodzubby/status/2100643483015135315",
-          "views": 129,
-          "likes": 3
-        },
-        {
-          "text": "@capy_onchain @variational_io @extendedapp @pacifica_fi @tradexyz @nadoHQ @risextrade @Ostium @grvt_io @01Exchange @StandX_Official @hibachi_xyz @tread_fi @hyenatrade @Dreamcash bulk is still in their paper mainnet.\n\nmaybe it's best we talk about this in june when we go mainnet...",
-          "id": "2053785113134072210",
-          "url": "https://x.com/0xgodzubby/status/2053785113134072210",
-          "views": 122,
-          "likes": 1
         }
       ]
     },
@@ -138460,6 +138460,37 @@
       ]
     },
     {
+      "id": "1657813193530507265",
+      "name": "Spider.hl",
+      "handle": "spider26hl",
+      "followers": 17,
+      "avatar": "https://pbs.twimg.com/profile_images/1981736986407755776/WzYPOyBm_normal.jpg",
+      "views": 77,
+      "likes": 1,
+      "posts": 2,
+      "mentions": 2,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Thu Sep 10 15:03:25 +0000 2026",
+      "lastPost": "Fri Oct 30 01:53:08 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@HyperliquidEco @tread_fi Mid + (?) !",
+          "id": "2115985322488320032",
+          "url": "https://x.com/spider26hl/status/2115985322488320032",
+          "views": 42,
+          "likes": 0
+        },
+        {
+          "text": "@sportytechworld @tread_fi I love the idea of ​​reverse engineering; simply copying strategies—such as those used in thin order books—often makes them impossible to replicate, but applying the underlying execution logic could make it feasible to execute similar or identical trades. gTread",
+          "id": "2098064810743050560",
+          "url": "https://x.com/spider26hl/status/2098064810743050560",
+          "views": 35,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "62268611",
       "name": "云淡风轻",
       "handle": "2298",
@@ -181426,6 +181457,30 @@
       ]
     },
     {
+      "id": "1313044646663053312",
+      "name": "lens | spreadsheet degen",
+      "handle": "RiskAssetLens",
+      "followers": 395,
+      "avatar": "https://pbs.twimg.com/profile_images/2069318161623580672/XIgO71gS_normal.jpg",
+      "views": 37,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Fri Oct 30 14:09:02 +0000 2026",
+      "lastPost": "Fri Oct 30 14:09:02 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@0xbeiu @tread_fi i just punt the daily $BTC markets on hip-4, mm'ing it sounds way calmer",
+          "id": "2116170516746625165",
+          "url": "https://x.com/RiskAssetLens/status/2116170516746625165",
+          "views": 37,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "592022371",
       "name": "Vlad DEVE ⌘🛠️",
       "handle": "vladlem1",
@@ -184245,30 +184300,6 @@
           "url": "https://x.com/Afitapmax/status/2095817407465992434",
           "views": 35,
           "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "1657813193530507265",
-      "name": "Spider.hl",
-      "handle": "spider26hl",
-      "followers": 16,
-      "avatar": "https://pbs.twimg.com/profile_images/1981736986407755776/WzYPOyBm_normal.jpg",
-      "views": 35,
-      "likes": 1,
-      "posts": 1,
-      "mentions": 1,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Thu Sep 10 15:03:25 +0000 2026",
-      "lastPost": "Thu Sep 10 15:03:25 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@sportytechworld @tread_fi I love the idea of ​​reverse engineering; simply copying strategies—such as those used in thin order books—often makes them impossible to replicate, but applying the underlying execution logic could make it feasible to execute similar or identical trades. gTread",
-          "id": "2098064810743050560",
-          "url": "https://x.com/spider26hl/status/2098064810743050560",
-          "views": 35,
-          "likes": 1
         }
       ]
     },
@@ -221221,6 +221252,30 @@
           "text": "@tread_fi @arcus_xyz Keep shipping\nhttps://t.co/HZxyaM0vAV",
           "id": "2111153922014646463",
           "url": "https://x.com/nenutputter/status/2111153922014646463",
+          "views": 15,
+          "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "1666203290575462478",
+      "name": "Wenlambogems",
+      "handle": "Kvkv436177",
+      "followers": 56,
+      "avatar": "https://pbs.twimg.com/profile_images/2104911282717511680/GIoMvm_P_normal.jpg",
+      "views": 15,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Fri Oct 30 17:47:10 +0000 2026",
+      "lastPost": "Fri Oct 30 17:47:10 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@0xgodzubby @0xbeiu @tread_fi Seriously without a doubt possible. Its going to be epic. Bought a bag.",
+          "id": "2116225412367786176",
+          "url": "https://x.com/Kvkv436177/status/2116225412367786176",
           "views": 15,
           "likes": 0
         }
