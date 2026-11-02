@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-01T12:53:40.504Z",
+  "updatedAt": "2026-11-02T15:08:11.725Z",
   "totals": {
-    "views": 11854873,
-    "likes": 126640,
-    "posts": 37025,
+    "views": 11855402,
+    "likes": 126655,
+    "posts": 37040,
     "users": 8085
   },
   "users": [
@@ -1190,6 +1190,58 @@
       ]
     },
     {
+      "id": "1143775294379061248",
+      "name": "Alpha by Dhruv",
+      "handle": "Dhruv_Sniper",
+      "followers": 1659,
+      "avatar": "https://pbs.twimg.com/profile_images/2099287137342599168/V6Y09GkK_normal.jpg",
+      "views": 80593,
+      "likes": 1485,
+      "posts": 298,
+      "mentions": 298,
+      "cashtag": 21,
+      "keyword": 78,
+      "firstPost": "Sat Nov 29 03:25:38 +0000 2025",
+      "lastPost": "Sun Nov 01 17:08:06 +0000 2026",
+      "topPosts": [
+        {
+          "text": "Good news for all @TxFlow_L1 users.\nTxFlow is likely to come on @tread_fi very soon.\n\nJoin TxFlow: https://t.co/LUjjMEh9sh\n\nIt just appeared on the Tread Vault section on Points Page. https://t.co/5Z6oWoiIyq",
+          "id": "2114185108894986379",
+          "url": "https://x.com/Dhruv_Sniper/status/2114185108894986379",
+          "views": 3728,
+          "likes": 38
+        },
+        {
+          "text": "New announcement is now live on the Points Page of @tread_fi\n\n\"@treadfoundation has already announced $TREAD token. Points recognise genuine participation in the TreadFi ecosystem. Token details will be shared soon\"\n\nWe are getting very close to the much awaited $TREAD TGE announcement.\n\nSeason 1.5 Tread Points are also likely to be distributed soon, which should finalise the total points distributed to users.",
+          "id": "2093979677362962721",
+          "url": "https://x.com/Dhruv_Sniper/status/2093979677362962721",
+          "views": 3324,
+          "likes": 27
+        },
+        {
+          "text": "The $TREAD Genesis Event will take place on September 16, 2026 at 1:00 PM UTC.\n\nGenesis Distribution:\nTotal supply: 100M TREAD tokens\nCommunity & Ecosystem: 35.5%\n@tread_fi Labs Treasury: 23.8%\nTeam: 18.0%\nGenesis Distribution: 15.2%\nFoundation Treasury: 7.5%\n\nSo, 15.2M tokens will be distributed as airdrop to S0 + S1 + S1.5 users combined.\n\nTokens will be sent directly to HyperCore on the address which was submitted during T&C signing.\n\nTeam and Tread Labs Treasury tokens are locked for one year, and vest linearly over three years.\n\nThere was no private VC round or token sale. Only circulating supply will be Genesis Distrbution only.\n\nTrading Routes:\nAvailable on @HyperliquidX's HIP-1 for Spot listing & on @tradeparagon for Perps (which can be tradeable from HL Frontend)\n\nSpecial mention for @davidyjeong who have been very supportive during issues and wishing him all the very best for the TGE.\n\nBelieve in David\nBelieve in TREAD\nBelieve in @treadfoundation",
+          "id": "2099881177641562224",
+          "url": "https://x.com/Dhruv_Sniper/status/2099881177641562224",
+          "views": 2485,
+          "likes": 31
+        },
+        {
+          "text": "Just created my 1st custom agent on @tread_fi, which tracks the CCI(20) indicator results across all pairs of Hyperliquid\n\nPreparing a Delta Neutral Funding Arbitrage agent as well between Hyperliquid and RiseX.\n\nMaking personalised agents is the flex now 😎💯",
+          "id": "2094094955933552976",
+          "url": "https://x.com/Dhruv_Sniper/status/2094094955933552976",
+          "views": 2344,
+          "likes": 19
+        },
+        {
+          "text": "New day --> New update.\n$TREAD (@tread_fi) has been sold to @tradeparagon for $639.33 HYPE ($54,473).\n\nTop bid for the day 💥\n\nLooks like a lot of HIP-3 developers have bidded for this ticker bringing the price to the Top.\n\nLooks like we are very very very close to the much awaited event.\n\nMy boys & girls at The Consortium are going to cook hard.",
+          "id": "2097536830287794432",
+          "url": "https://x.com/Dhruv_Sniper/status/2097536830287794432",
+          "views": 1677,
+          "likes": 39
+        }
+      ]
+    },
+    {
       "id": "1667914690683629568",
       "name": "DeFi Voyager",
       "handle": "DeFiVoyager_X",
@@ -1238,58 +1290,6 @@
           "url": "https://x.com/DeFiVoyager_X/status/2059485463451500946",
           "views": 2490,
           "likes": 17
-        }
-      ]
-    },
-    {
-      "id": "1143775294379061248",
-      "name": "Alpha by Dhruv",
-      "handle": "Dhruv_Sniper",
-      "followers": 1659,
-      "avatar": "https://pbs.twimg.com/profile_images/2099287137342599168/V6Y09GkK_normal.jpg",
-      "views": 80527,
-      "likes": 1481,
-      "posts": 296,
-      "mentions": 296,
-      "cashtag": 21,
-      "keyword": 78,
-      "firstPost": "Sat Nov 29 03:25:38 +0000 2025",
-      "lastPost": "Sat Oct 31 04:24:07 +0000 2026",
-      "topPosts": [
-        {
-          "text": "Good news for all @TxFlow_L1 users.\nTxFlow is likely to come on @tread_fi very soon.\n\nJoin TxFlow: https://t.co/LUjjMEh9sh\n\nIt just appeared on the Tread Vault section on Points Page. https://t.co/5Z6oWoiIyq",
-          "id": "2114185108894986379",
-          "url": "https://x.com/Dhruv_Sniper/status/2114185108894986379",
-          "views": 3728,
-          "likes": 38
-        },
-        {
-          "text": "New announcement is now live on the Points Page of @tread_fi\n\n\"@treadfoundation has already announced $TREAD token. Points recognise genuine participation in the TreadFi ecosystem. Token details will be shared soon\"\n\nWe are getting very close to the much awaited $TREAD TGE announcement.\n\nSeason 1.5 Tread Points are also likely to be distributed soon, which should finalise the total points distributed to users.",
-          "id": "2093979677362962721",
-          "url": "https://x.com/Dhruv_Sniper/status/2093979677362962721",
-          "views": 3324,
-          "likes": 27
-        },
-        {
-          "text": "The $TREAD Genesis Event will take place on September 16, 2026 at 1:00 PM UTC.\n\nGenesis Distribution:\nTotal supply: 100M TREAD tokens\nCommunity & Ecosystem: 35.5%\n@tread_fi Labs Treasury: 23.8%\nTeam: 18.0%\nGenesis Distribution: 15.2%\nFoundation Treasury: 7.5%\n\nSo, 15.2M tokens will be distributed as airdrop to S0 + S1 + S1.5 users combined.\n\nTokens will be sent directly to HyperCore on the address which was submitted during T&C signing.\n\nTeam and Tread Labs Treasury tokens are locked for one year, and vest linearly over three years.\n\nThere was no private VC round or token sale. Only circulating supply will be Genesis Distrbution only.\n\nTrading Routes:\nAvailable on @HyperliquidX's HIP-1 for Spot listing & on @tradeparagon for Perps (which can be tradeable from HL Frontend)\n\nSpecial mention for @davidyjeong who have been very supportive during issues and wishing him all the very best for the TGE.\n\nBelieve in David\nBelieve in TREAD\nBelieve in @treadfoundation",
-          "id": "2099881177641562224",
-          "url": "https://x.com/Dhruv_Sniper/status/2099881177641562224",
-          "views": 2485,
-          "likes": 31
-        },
-        {
-          "text": "Just created my 1st custom agent on @tread_fi, which tracks the CCI(20) indicator results across all pairs of Hyperliquid\n\nPreparing a Delta Neutral Funding Arbitrage agent as well between Hyperliquid and RiseX.\n\nMaking personalised agents is the flex now 😎💯",
-          "id": "2094094955933552976",
-          "url": "https://x.com/Dhruv_Sniper/status/2094094955933552976",
-          "views": 2344,
-          "likes": 19
-        },
-        {
-          "text": "New day --> New update.\n$TREAD (@tread_fi) has been sold to @tradeparagon for $639.33 HYPE ($54,473).\n\nTop bid for the day 💥\n\nLooks like a lot of HIP-3 developers have bidded for this ticker bringing the price to the Top.\n\nLooks like we are very very very close to the much awaited event.\n\nMy boys & girls at The Consortium are going to cook hard.",
-          "id": "2097536830287794432",
-          "url": "https://x.com/Dhruv_Sniper/status/2097536830287794432",
-          "views": 1677,
-          "likes": 39
         }
       ]
     },
@@ -2624,16 +2624,16 @@
       "id": "1590434193976221697",
       "name": "Hugo.hl",
       "handle": "hugocrza",
-      "followers": 242,
+      "followers": 253,
       "avatar": "https://pbs.twimg.com/profile_images/1906010449440591872/2PZsDhFv_normal.jpg",
-      "views": 30964,
-      "likes": 589,
-      "posts": 295,
-      "mentions": 295,
+      "views": 31095,
+      "likes": 592,
+      "posts": 298,
+      "mentions": 298,
       "cashtag": 3,
       "keyword": 17,
       "firstPost": "Sat Jan 10 20:18:47 +0000 2026",
-      "lastPost": "Sat Oct 31 13:34:08 +0000 2026",
+      "lastPost": "Sun Nov 01 17:39:08 +0000 2026",
       "topPosts": [
         {
           "text": "@CryptoMage_YT Alors ça c’est un superbe article merci à toi 👏🏼\n\nD’ailleurs tu as vu le projet  @tread_fi ? C’est pas mal pour farmer les dex comme XYZ de HL ou autre en plus de récolter des points toutes les semaines. Du 2 en 1 vraiment intéressant",
@@ -6799,43 +6799,19 @@
       ]
     },
     {
-      "id": "1882261465245364224",
-      "name": "The White Whale",
-      "handle": "WhiteWhaleLabs",
-      "followers": 97686,
-      "avatar": "https://pbs.twimg.com/profile_images/1966542384956641280/p3W-NDXk_normal.jpg",
-      "views": 8463,
-      "likes": 57,
-      "posts": 1,
-      "mentions": 1,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Sat Nov 22 05:13:18 +0000 2025",
-      "lastPost": "Sat Nov 22 05:13:18 +0000 2025",
-      "topPosts": [
-        {
-          "text": "@onchainmonk @pacifica_fi @tread_fi Wait…bro…you literally walked away from our friendship because I left HL to trade on a Solana perp DEX only a few days ago 😂",
-          "id": "1992099044374855924",
-          "url": "https://x.com/WhiteWhaleLabs/status/1992099044374855924",
-          "views": 8463,
-          "likes": 57
-        }
-      ]
-    },
-    {
       "id": "935948665407049729",
       "name": "RobSVR PerpsMania",
       "handle": "Robsvr",
-      "followers": 5458,
+      "followers": 5460,
       "avatar": "https://pbs.twimg.com/profile_images/2011158948896706560/vCsDj8Vi_normal.jpg",
-      "views": 8447,
+      "views": 8469,
       "likes": 131,
-      "posts": 100,
-      "mentions": 100,
+      "posts": 101,
+      "mentions": 101,
       "cashtag": 2,
       "keyword": 3,
       "firstPost": "Wed Mar 04 07:14:39 +0000 2026",
-      "lastPost": "Sat Oct 31 09:20:52 +0000 2026",
+      "lastPost": "Sun Nov 01 17:47:30 +0000 2026",
       "topPosts": [
         {
           "text": "TGE and airdrop is coming to Tread Fi\n\nCongrats who farmed and has points in @tread_fi \n\nI personally did not farm much; I love to build my own bots.\n\nAs usual, a reminder -&gt; TGE price is only based on how much the project invests in liquidity. \n\nThankfully $TREAD has money.",
@@ -6871,6 +6847,30 @@
           "url": "https://x.com/Robsvr/status/2064262443174408700",
           "views": 215,
           "likes": 1
+        }
+      ]
+    },
+    {
+      "id": "1882261465245364224",
+      "name": "The White Whale",
+      "handle": "WhiteWhaleLabs",
+      "followers": 97686,
+      "avatar": "https://pbs.twimg.com/profile_images/1966542384956641280/p3W-NDXk_normal.jpg",
+      "views": 8463,
+      "likes": 57,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sat Nov 22 05:13:18 +0000 2025",
+      "lastPost": "Sat Nov 22 05:13:18 +0000 2025",
+      "topPosts": [
+        {
+          "text": "@onchainmonk @pacifica_fi @tread_fi Wait…bro…you literally walked away from our friendship because I left HL to trade on a Solana perp DEX only a few days ago 😂",
+          "id": "1992099044374855924",
+          "url": "https://x.com/WhiteWhaleLabs/status/1992099044374855924",
+          "views": 8463,
+          "likes": 57
         }
       ]
     },
@@ -7928,16 +7928,16 @@
       "id": "3434141775",
       "name": "You&Me.HL.Ink",
       "handle": "Bl0ckchain",
-      "followers": 2901,
-      "avatar": "https://pbs.twimg.com/profile_images/2100979946789212160/9y1X3ytW_normal.jpg",
-      "views": 7111,
-      "likes": 67,
-      "posts": 98,
-      "mentions": 98,
+      "followers": 2905,
+      "avatar": "https://pbs.twimg.com/profile_images/2115483882220888064/R59YZjTe_normal.jpg",
+      "views": 7166,
+      "likes": 69,
+      "posts": 100,
+      "mentions": 100,
       "cashtag": 0,
       "keyword": 3,
       "firstPost": "Thu Dec 04 05:49:17 +0000 2025",
-      "lastPost": "Sat Oct 24 07:47:17 +0000 2026",
+      "lastPost": "Sun Nov 01 08:56:35 +0000 2026",
       "topPosts": [
         {
           "text": "@sportytechworld @tread_fi how much fees to be #8 ?",
@@ -11004,6 +11004,58 @@
       ]
     },
     {
+      "id": "1792592294941720576",
+      "name": "Leo XBT",
+      "handle": "LeoXBT67",
+      "followers": 1379,
+      "avatar": "https://pbs.twimg.com/profile_images/2104871193476206592/q0RxROTW_normal.jpg",
+      "views": 4043,
+      "likes": 49,
+      "posts": 56,
+      "mentions": 56,
+      "cashtag": 4,
+      "keyword": 6,
+      "firstPost": "Sat Apr 04 12:42:24 +0000 2026",
+      "lastPost": "Sun Nov 01 17:04:05 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi 👀 $TREAD is near",
+          "id": "2099523591364809083",
+          "url": "https://x.com/LeoXBT67/status/2099523591364809083",
+          "views": 377,
+          "likes": 2
+        },
+        {
+          "text": "@tread_fi @arcus_xyz Wow, gArcus 💚 https://t.co/DRO4M61CKV",
+          "id": "2110749281183547445",
+          "url": "https://x.com/LeoXBT67/status/2110749281183547445",
+          "views": 264,
+          "likes": 0
+        },
+        {
+          "text": "@sportytechworld @tread_fi fcking hell bro\n\nwell deserved, go get yourself a lambo",
+          "id": "2100259504441208987",
+          "url": "https://x.com/LeoXBT67/status/2100259504441208987",
+          "views": 255,
+          "likes": 1
+        },
+        {
+          "text": "@onchainmonk @tread_fi Jesus fcking Christ Monk congrats",
+          "id": "2100237718475432321",
+          "url": "https://x.com/LeoXBT67/status/2100237718475432321",
+          "views": 187,
+          "likes": 1
+        },
+        {
+          "text": "@tread_fi gTread 👀",
+          "id": "2100763408698343599",
+          "url": "https://x.com/LeoXBT67/status/2100763408698343599",
+          "views": 181,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1601358281368391681",
       "name": "Cronadz",
       "handle": "Cronadz",
@@ -11052,58 +11104,6 @@
           "url": "https://x.com/Cronadz/status/2061824666373697942",
           "views": 197,
           "likes": 3
-        }
-      ]
-    },
-    {
-      "id": "1792592294941720576",
-      "name": "Leo XBT",
-      "handle": "LeoXBT67",
-      "followers": 1379,
-      "avatar": "https://pbs.twimg.com/profile_images/2104871193476206592/q0RxROTW_normal.jpg",
-      "views": 4002,
-      "likes": 47,
-      "posts": 55,
-      "mentions": 55,
-      "cashtag": 4,
-      "keyword": 6,
-      "firstPost": "Sat Apr 04 12:42:24 +0000 2026",
-      "lastPost": "Sat Oct 31 04:56:22 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@tread_fi 👀 $TREAD is near",
-          "id": "2099523591364809083",
-          "url": "https://x.com/LeoXBT67/status/2099523591364809083",
-          "views": 377,
-          "likes": 2
-        },
-        {
-          "text": "@tread_fi @arcus_xyz Wow, gArcus 💚 https://t.co/DRO4M61CKV",
-          "id": "2110749281183547445",
-          "url": "https://x.com/LeoXBT67/status/2110749281183547445",
-          "views": 264,
-          "likes": 0
-        },
-        {
-          "text": "@sportytechworld @tread_fi fcking hell bro\n\nwell deserved, go get yourself a lambo",
-          "id": "2100259504441208987",
-          "url": "https://x.com/LeoXBT67/status/2100259504441208987",
-          "views": 255,
-          "likes": 1
-        },
-        {
-          "text": "@onchainmonk @tread_fi Jesus fcking Christ Monk congrats",
-          "id": "2100237718475432321",
-          "url": "https://x.com/LeoXBT67/status/2100237718475432321",
-          "views": 187,
-          "likes": 1
-        },
-        {
-          "text": "@tread_fi gTread 👀",
-          "id": "2100763408698343599",
-          "url": "https://x.com/LeoXBT67/status/2100763408698343599",
-          "views": 181,
-          "likes": 0
         }
       ]
     },
@@ -17145,6 +17145,58 @@
       ]
     },
     {
+      "id": "1491402793911033856",
+      "name": "Thedwarf.hl",
+      "handle": "Thenoisydwarf",
+      "followers": 494,
+      "avatar": "https://pbs.twimg.com/profile_images/1491403163479515136/je8Il3Hs_normal.jpg",
+      "views": 2157,
+      "likes": 35,
+      "posts": 43,
+      "mentions": 43,
+      "cashtag": 2,
+      "keyword": 0,
+      "firstPost": "Sun Dec 07 01:15:11 +0000 2025",
+      "lastPost": "Sun Nov 01 00:45:13 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi Só vai de cabeça $Tread",
+          "id": "2099063518997725627",
+          "url": "https://x.com/Thenoisydwarf/status/2099063518997725627",
+          "views": 175,
+          "likes": 1
+        },
+        {
+          "text": "@sportytechworld @tread_fi Thanks for the Info!",
+          "id": "2097648311222075817",
+          "url": "https://x.com/Thenoisydwarf/status/2097648311222075817",
+          "views": 164,
+          "likes": 1
+        },
+        {
+          "text": "@sportytechworld @tread_fi Keep buying to the moon",
+          "id": "2102079984705638587",
+          "url": "https://x.com/Thenoisydwarf/status/2102079984705638587",
+          "views": 123,
+          "likes": 1
+        },
+        {
+          "text": "@tread_fi @davidyjeong A gambler um the predictions market…. Thats the dopaminic one \n\nCongrats e thanks for the oportunity",
+          "id": "2095796270312874341",
+          "url": "https://x.com/Thenoisydwarf/status/2095796270312874341",
+          "views": 110,
+          "likes": 2
+        },
+        {
+          "text": "@tread_fi My bags Tread life",
+          "id": "2103218610697294121",
+          "url": "https://x.com/Thenoisydwarf/status/2103218610697294121",
+          "views": 105,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1056015925667942400",
       "name": "ChartFu猴子",
       "handle": "ChartFu",
@@ -17297,58 +17349,6 @@
           "url": "https://x.com/Samtolad/status/1988142213730365604",
           "views": 114,
           "likes": 3
-        }
-      ]
-    },
-    {
-      "id": "1491402793911033856",
-      "name": "Thedwarf.hl",
-      "handle": "Thenoisydwarf",
-      "followers": 494,
-      "avatar": "https://pbs.twimg.com/profile_images/1491403163479515136/je8Il3Hs_normal.jpg",
-      "views": 2118,
-      "likes": 35,
-      "posts": 42,
-      "mentions": 42,
-      "cashtag": 2,
-      "keyword": 0,
-      "firstPost": "Sun Dec 07 01:15:11 +0000 2025",
-      "lastPost": "Tue Oct 13 11:52:28 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@tread_fi Só vai de cabeça $Tread",
-          "id": "2099063518997725627",
-          "url": "https://x.com/Thenoisydwarf/status/2099063518997725627",
-          "views": 175,
-          "likes": 1
-        },
-        {
-          "text": "@sportytechworld @tread_fi Thanks for the Info!",
-          "id": "2097648311222075817",
-          "url": "https://x.com/Thenoisydwarf/status/2097648311222075817",
-          "views": 164,
-          "likes": 1
-        },
-        {
-          "text": "@sportytechworld @tread_fi Keep buying to the moon",
-          "id": "2102079984705638587",
-          "url": "https://x.com/Thenoisydwarf/status/2102079984705638587",
-          "views": 123,
-          "likes": 1
-        },
-        {
-          "text": "@tread_fi @davidyjeong A gambler um the predictions market…. Thats the dopaminic one \n\nCongrats e thanks for the oportunity",
-          "id": "2095796270312874341",
-          "url": "https://x.com/Thenoisydwarf/status/2095796270312874341",
-          "views": 110,
-          "likes": 2
-        },
-        {
-          "text": "@tread_fi My bags Tread life",
-          "id": "2103218610697294121",
-          "url": "https://x.com/Thenoisydwarf/status/2103218610697294121",
-          "views": 105,
-          "likes": 1
         }
       ]
     },
@@ -26126,6 +26126,58 @@
       ]
     },
     {
+      "id": "1729573415432888320",
+      "name": "vandyck",
+      "handle": "Lesley_vDijk",
+      "followers": 196,
+      "avatar": "https://pbs.twimg.com/profile_images/2111542969572503552/UQ1spkMO_normal.jpg",
+      "views": 1192,
+      "likes": 19,
+      "posts": 23,
+      "mentions": 23,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sun Sep 20 10:25:29 +0000 2026",
+      "lastPost": "Sun Nov 01 17:16:06 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi @X How can I get tha badge?",
+          "id": "2105977927037034692",
+          "url": "https://x.com/Lesley_vDijk/status/2105977927037034692",
+          "views": 140,
+          "likes": 1
+        },
+        {
+          "text": "@sportytechworld @tread_fi Crazy",
+          "id": "2113893228092997990",
+          "url": "https://x.com/Lesley_vDijk/status/2113893228092997990",
+          "views": 136,
+          "likes": 1
+        },
+        {
+          "text": "@tread_fi gTread",
+          "id": "2103214521561055394",
+          "url": "https://x.com/Lesley_vDijk/status/2103214521561055394",
+          "views": 93,
+          "likes": 2
+        },
+        {
+          "text": "@tread_fi It’s Tread season",
+          "id": "2103214570655601110",
+          "url": "https://x.com/Lesley_vDijk/status/2103214570655601110",
+          "views": 89,
+          "likes": 2
+        },
+        {
+          "text": "@tread_fi gTread",
+          "id": "2116415065566130458",
+          "url": "https://x.com/Lesley_vDijk/status/2116415065566130458",
+          "views": 87,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "822420391318548480",
       "name": "teeboo.hl",
       "handle": "_tieubochet",
@@ -26256,58 +26308,6 @@
           "id": "1988198424152580175",
           "url": "https://x.com/Panachequant/status/1988198424152580175",
           "views": 70,
-          "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "1729573415432888320",
-      "name": "vandyck",
-      "handle": "Lesley_vDijk",
-      "followers": 197,
-      "avatar": "https://pbs.twimg.com/profile_images/2111542969572503552/UQ1spkMO_normal.jpg",
-      "views": 1182,
-      "likes": 18,
-      "posts": 22,
-      "mentions": 22,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Sun Sep 20 10:25:29 +0000 2026",
-      "lastPost": "Sat Oct 31 06:20:57 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@tread_fi @X How can I get tha badge?",
-          "id": "2105977927037034692",
-          "url": "https://x.com/Lesley_vDijk/status/2105977927037034692",
-          "views": 140,
-          "likes": 1
-        },
-        {
-          "text": "@sportytechworld @tread_fi Crazy",
-          "id": "2113893228092997990",
-          "url": "https://x.com/Lesley_vDijk/status/2113893228092997990",
-          "views": 136,
-          "likes": 1
-        },
-        {
-          "text": "@tread_fi gTread",
-          "id": "2103214521561055394",
-          "url": "https://x.com/Lesley_vDijk/status/2103214521561055394",
-          "views": 93,
-          "likes": 2
-        },
-        {
-          "text": "@tread_fi It’s Tread season",
-          "id": "2103214570655601110",
-          "url": "https://x.com/Lesley_vDijk/status/2103214570655601110",
-          "views": 89,
-          "likes": 2
-        },
-        {
-          "text": "@tread_fi gTread",
-          "id": "2116415065566130458",
-          "url": "https://x.com/Lesley_vDijk/status/2116415065566130458",
-          "views": 87,
           "likes": 0
         }
       ]
@@ -90828,6 +90828,51 @@
       ]
     },
     {
+      "id": "1666203290575462478",
+      "name": "Wenlambogems",
+      "handle": "Kvkv436177",
+      "followers": 55,
+      "avatar": "https://pbs.twimg.com/profile_images/2104911282717511680/GIoMvm_P_normal.jpg",
+      "views": 177,
+      "likes": 2,
+      "posts": 4,
+      "mentions": 4,
+      "cashtag": 2,
+      "keyword": 0,
+      "firstPost": "Fri Oct 30 17:47:10 +0000 2026",
+      "lastPost": "Sun Nov 01 16:39:48 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@hugocrza @Bl0ckchain @ICE_Markets @tradexyz @HyperliquidX @tread_fi $TREAD season✍🏻",
+          "id": "2116818564250284333",
+          "url": "https://x.com/Kvkv436177/status/2116818564250284333",
+          "views": 65,
+          "likes": 2
+        },
+        {
+          "text": "@tread_fi 👀👀👀👀👀👀👀👀",
+          "id": "2116403073962713151",
+          "url": "https://x.com/Kvkv436177/status/2116403073962713151",
+          "views": 55,
+          "likes": 0
+        },
+        {
+          "text": "@Lesley_vDijk @tread_fi 10 dollars is extremely easy for $TREAD",
+          "id": "2116933235594743857",
+          "url": "https://x.com/Kvkv436177/status/2116933235594743857",
+          "views": 42,
+          "likes": 0
+        },
+        {
+          "text": "@0xgodzubby @0xbeiu @tread_fi Seriously without a doubt possible. Its going to be epic. Bought a bag.",
+          "id": "2116225412367786176",
+          "url": "https://x.com/Kvkv436177/status/2116225412367786176",
+          "views": 15,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1993401824842539008",
       "name": "Ansh Jaiswal",
       "handle": "_The_Impaler",
@@ -139568,6 +139613,37 @@
       ]
     },
     {
+      "id": "2047694155678208000",
+      "name": "Farao | social trading",
+      "handle": "faraotrading",
+      "followers": 448,
+      "avatar": "https://pbs.twimg.com/profile_images/2057393511196999680/ByFxfVJK_normal.jpg",
+      "views": 76,
+      "likes": 1,
+      "posts": 2,
+      "mentions": 2,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sun Sep 27 11:02:46 +0000 2026",
+      "lastPost": "Sun Nov 01 19:44:26 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@Havochl_ @tread_fi whole eco printing on a sunday love to see it",
+          "id": "2104164840226873751",
+          "url": "https://x.com/faraotrading/status/2104164840226873751",
+          "views": 57,
+          "likes": 1
+        },
+        {
+          "text": "@Dhruv_Sniper @tread_fi @treadfoundation the sell marker is my favourite part of this chart",
+          "id": "2116979698597052844",
+          "url": "https://x.com/faraotrading/status/2116979698597052844",
+          "views": 19,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1430808288908750850",
       "name": "Metaverseanon",
       "handle": "Metaverseanon",
@@ -143467,6 +143543,37 @@
       ]
     },
     {
+      "id": "1576642891341971456",
+      "name": "CA Meet Shah",
+      "handle": "CA_Meet6163",
+      "followers": 76,
+      "avatar": "https://pbs.twimg.com/profile_images/1945164685835128832/hwr5jZr__normal.jpg",
+      "views": 71,
+      "likes": 2,
+      "posts": 2,
+      "mentions": 2,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Wed Sep 16 10:58:39 +0000 2026",
+      "lastPost": "Sun Nov 01 16:56:14 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@Dhruv_Sniper @tread_fi @treadfoundation Generational 🧘🏻🔥",
+          "id": "2116937371426115750",
+          "url": "https://x.com/CA_Meet6163/status/2116937371426115750",
+          "views": 39,
+          "likes": 1
+        },
+        {
+          "text": "@Dhruv_Sniper @davidyjeong @treadfoundation @tread_fi Let’s go 🔥",
+          "id": "2100177539868356715",
+          "url": "https://x.com/CA_Meet6163/status/2100177539868356715",
+          "views": 32,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "22327772",
       "name": "kingtan",
       "handle": "kingtan",
@@ -144099,37 +144206,6 @@
           "url": "https://x.com/PrismstratHL/status/2101591667132285289",
           "views": 70,
           "likes": 2
-        }
-      ]
-    },
-    {
-      "id": "1666203290575462478",
-      "name": "Wenlambogems",
-      "handle": "Kvkv436177",
-      "followers": 56,
-      "avatar": "https://pbs.twimg.com/profile_images/2104911282717511680/GIoMvm_P_normal.jpg",
-      "views": 70,
-      "likes": 0,
-      "posts": 2,
-      "mentions": 2,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Fri Oct 30 17:47:10 +0000 2026",
-      "lastPost": "Sat Oct 31 05:33:08 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@tread_fi 👀👀👀👀👀👀👀👀",
-          "id": "2116403073962713151",
-          "url": "https://x.com/Kvkv436177/status/2116403073962713151",
-          "views": 55,
-          "likes": 0
-        },
-        {
-          "text": "@0xgodzubby @0xbeiu @tread_fi Seriously without a doubt possible. Its going to be epic. Bought a bag.",
-          "id": "2116225412367786176",
-          "url": "https://x.com/Kvkv436177/status/2116225412367786176",
-          "views": 15,
-          "likes": 0
         }
       ]
     },
@@ -157320,30 +157396,6 @@
           "url": "https://x.com/MR_ICE355/status/2009729593406624024",
           "views": 9,
           "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "2047694155678208000",
-      "name": "farao | social trading",
-      "handle": "faraotrading",
-      "followers": 484,
-      "avatar": "https://pbs.twimg.com/profile_images/2057393511196999680/ByFxfVJK_normal.jpg",
-      "views": 57,
-      "likes": 1,
-      "posts": 1,
-      "mentions": 1,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Sun Sep 27 11:02:46 +0000 2026",
-      "lastPost": "Sun Sep 27 11:02:46 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@Havochl_ @tread_fi whole eco printing on a sunday love to see it",
-          "id": "2104164840226873751",
-          "url": "https://x.com/faraotrading/status/2104164840226873751",
-          "views": 57,
-          "likes": 1
         }
       ]
     },
@@ -189484,30 +189536,6 @@
           "url": "https://x.com/DREAM_CERTIFIED/status/2100260664396615715",
           "views": 32,
           "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "1576642891341971456",
-      "name": "CA Meet Shah",
-      "handle": "CA_Meet6163",
-      "followers": 85,
-      "avatar": "https://pbs.twimg.com/profile_images/1945164685835128832/hwr5jZr__normal.jpg",
-      "views": 32,
-      "likes": 1,
-      "posts": 1,
-      "mentions": 1,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Wed Sep 16 10:58:39 +0000 2026",
-      "lastPost": "Wed Sep 16 10:58:39 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@Dhruv_Sniper @davidyjeong @treadfoundation @tread_fi Let’s go 🔥",
-          "id": "2100177539868356715",
-          "url": "https://x.com/CA_Meet6163/status/2100177539868356715",
-          "views": 32,
-          "likes": 1
         }
       ]
     },
