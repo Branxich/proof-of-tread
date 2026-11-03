@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-02T15:08:11.725Z",
+  "updatedAt": "2026-11-03T13:51:59.628Z",
   "totals": {
-    "views": 11855402,
-    "likes": 126655,
-    "posts": 37040,
-    "users": 8085
+    "views": 11858484,
+    "likes": 126709,
+    "posts": 37055,
+    "users": 8086
   },
   "users": [
     {
@@ -115,16 +115,16 @@
       "id": "345918982",
       "name": "noorucn",
       "handle": "sportytechworld",
-      "followers": 1392,
+      "followers": 1396,
       "avatar": "https://pbs.twimg.com/profile_images/1944017942913630208/jdnYG3xs_normal.jpg",
-      "views": 628450,
-      "likes": 9000,
-      "posts": 1078,
-      "mentions": 1078,
+      "views": 629320,
+      "likes": 9019,
+      "posts": 1079,
+      "mentions": 1079,
       "cashtag": 19,
       "keyword": 85,
       "firstPost": "Thu Oct 09 09:51:27 +0000 2025",
-      "lastPost": "Sat Oct 31 18:27:48 +0000 2026",
+      "lastPost": "Mon Nov 02 10:12:54 +0000 2026",
       "topPosts": [
         {
           "text": "Everyone asks me if you can MM profitably on @tread_fi. This guy did $70-80M in volume over 2 weeks—profitably. Team of 5, he's a quant and one of the top market makers on @HyperliquidX. I've been picking his brain for days and been constantly talking  with him about how we can educate people to tread profitably.\n\nHere's how he does it.",
@@ -1190,71 +1190,19 @@
       ]
     },
     {
-      "id": "1143775294379061248",
-      "name": "Alpha by Dhruv",
-      "handle": "Dhruv_Sniper",
-      "followers": 1659,
-      "avatar": "https://pbs.twimg.com/profile_images/2099287137342599168/V6Y09GkK_normal.jpg",
-      "views": 80593,
-      "likes": 1485,
-      "posts": 298,
-      "mentions": 298,
-      "cashtag": 21,
-      "keyword": 78,
-      "firstPost": "Sat Nov 29 03:25:38 +0000 2025",
-      "lastPost": "Sun Nov 01 17:08:06 +0000 2026",
-      "topPosts": [
-        {
-          "text": "Good news for all @TxFlow_L1 users.\nTxFlow is likely to come on @tread_fi very soon.\n\nJoin TxFlow: https://t.co/LUjjMEh9sh\n\nIt just appeared on the Tread Vault section on Points Page. https://t.co/5Z6oWoiIyq",
-          "id": "2114185108894986379",
-          "url": "https://x.com/Dhruv_Sniper/status/2114185108894986379",
-          "views": 3728,
-          "likes": 38
-        },
-        {
-          "text": "New announcement is now live on the Points Page of @tread_fi\n\n\"@treadfoundation has already announced $TREAD token. Points recognise genuine participation in the TreadFi ecosystem. Token details will be shared soon\"\n\nWe are getting very close to the much awaited $TREAD TGE announcement.\n\nSeason 1.5 Tread Points are also likely to be distributed soon, which should finalise the total points distributed to users.",
-          "id": "2093979677362962721",
-          "url": "https://x.com/Dhruv_Sniper/status/2093979677362962721",
-          "views": 3324,
-          "likes": 27
-        },
-        {
-          "text": "The $TREAD Genesis Event will take place on September 16, 2026 at 1:00 PM UTC.\n\nGenesis Distribution:\nTotal supply: 100M TREAD tokens\nCommunity & Ecosystem: 35.5%\n@tread_fi Labs Treasury: 23.8%\nTeam: 18.0%\nGenesis Distribution: 15.2%\nFoundation Treasury: 7.5%\n\nSo, 15.2M tokens will be distributed as airdrop to S0 + S1 + S1.5 users combined.\n\nTokens will be sent directly to HyperCore on the address which was submitted during T&C signing.\n\nTeam and Tread Labs Treasury tokens are locked for one year, and vest linearly over three years.\n\nThere was no private VC round or token sale. Only circulating supply will be Genesis Distrbution only.\n\nTrading Routes:\nAvailable on @HyperliquidX's HIP-1 for Spot listing & on @tradeparagon for Perps (which can be tradeable from HL Frontend)\n\nSpecial mention for @davidyjeong who have been very supportive during issues and wishing him all the very best for the TGE.\n\nBelieve in David\nBelieve in TREAD\nBelieve in @treadfoundation",
-          "id": "2099881177641562224",
-          "url": "https://x.com/Dhruv_Sniper/status/2099881177641562224",
-          "views": 2485,
-          "likes": 31
-        },
-        {
-          "text": "Just created my 1st custom agent on @tread_fi, which tracks the CCI(20) indicator results across all pairs of Hyperliquid\n\nPreparing a Delta Neutral Funding Arbitrage agent as well between Hyperliquid and RiseX.\n\nMaking personalised agents is the flex now 😎💯",
-          "id": "2094094955933552976",
-          "url": "https://x.com/Dhruv_Sniper/status/2094094955933552976",
-          "views": 2344,
-          "likes": 19
-        },
-        {
-          "text": "New day --> New update.\n$TREAD (@tread_fi) has been sold to @tradeparagon for $639.33 HYPE ($54,473).\n\nTop bid for the day 💥\n\nLooks like a lot of HIP-3 developers have bidded for this ticker bringing the price to the Top.\n\nLooks like we are very very very close to the much awaited event.\n\nMy boys & girls at The Consortium are going to cook hard.",
-          "id": "2097536830287794432",
-          "url": "https://x.com/Dhruv_Sniper/status/2097536830287794432",
-          "views": 1677,
-          "likes": 39
-        }
-      ]
-    },
-    {
       "id": "1667914690683629568",
       "name": "DeFi Voyager",
       "handle": "DeFiVoyager_X",
-      "followers": 4897,
+      "followers": 4556,
       "avatar": "https://pbs.twimg.com/profile_images/1699964285005529088/7y61V53T_normal.jpg",
-      "views": 80566,
-      "likes": 817,
-      "posts": 115,
-      "mentions": 115,
+      "views": 82012,
+      "likes": 839,
+      "posts": 117,
+      "mentions": 117,
       "cashtag": 0,
       "keyword": 14,
       "firstPost": "Thu Nov 20 10:55:03 +0000 2025",
-      "lastPost": "Tue Oct 20 14:10:07 +0000 2026",
+      "lastPost": "Mon Nov 02 23:56:31 +0000 2026",
       "topPosts": [
         {
           "text": "Is this even legal @tread_fi ?\n\nhttps://t.co/4vDWEpJP6N https://t.co/kNeMkhmIy3",
@@ -1290,6 +1238,58 @@
           "url": "https://x.com/DeFiVoyager_X/status/2059485463451500946",
           "views": 2490,
           "likes": 17
+        }
+      ]
+    },
+    {
+      "id": "1143775294379061248",
+      "name": "Alpha by Dhruv",
+      "handle": "Dhruv_Sniper",
+      "followers": 1666,
+      "avatar": "https://pbs.twimg.com/profile_images/2099287137342599168/V6Y09GkK_normal.jpg",
+      "views": 80646,
+      "likes": 1489,
+      "posts": 301,
+      "mentions": 301,
+      "cashtag": 21,
+      "keyword": 78,
+      "firstPost": "Sat Nov 29 03:25:38 +0000 2025",
+      "lastPost": "Mon Nov 02 13:31:10 +0000 2026",
+      "topPosts": [
+        {
+          "text": "Good news for all @TxFlow_L1 users.\nTxFlow is likely to come on @tread_fi very soon.\n\nJoin TxFlow: https://t.co/LUjjMEh9sh\n\nIt just appeared on the Tread Vault section on Points Page. https://t.co/5Z6oWoiIyq",
+          "id": "2114185108894986379",
+          "url": "https://x.com/Dhruv_Sniper/status/2114185108894986379",
+          "views": 3728,
+          "likes": 38
+        },
+        {
+          "text": "New announcement is now live on the Points Page of @tread_fi\n\n\"@treadfoundation has already announced $TREAD token. Points recognise genuine participation in the TreadFi ecosystem. Token details will be shared soon\"\n\nWe are getting very close to the much awaited $TREAD TGE announcement.\n\nSeason 1.5 Tread Points are also likely to be distributed soon, which should finalise the total points distributed to users.",
+          "id": "2093979677362962721",
+          "url": "https://x.com/Dhruv_Sniper/status/2093979677362962721",
+          "views": 3324,
+          "likes": 27
+        },
+        {
+          "text": "The $TREAD Genesis Event will take place on September 16, 2026 at 1:00 PM UTC.\n\nGenesis Distribution:\nTotal supply: 100M TREAD tokens\nCommunity & Ecosystem: 35.5%\n@tread_fi Labs Treasury: 23.8%\nTeam: 18.0%\nGenesis Distribution: 15.2%\nFoundation Treasury: 7.5%\n\nSo, 15.2M tokens will be distributed as airdrop to S0 + S1 + S1.5 users combined.\n\nTokens will be sent directly to HyperCore on the address which was submitted during T&C signing.\n\nTeam and Tread Labs Treasury tokens are locked for one year, and vest linearly over three years.\n\nThere was no private VC round or token sale. Only circulating supply will be Genesis Distrbution only.\n\nTrading Routes:\nAvailable on @HyperliquidX's HIP-1 for Spot listing & on @tradeparagon for Perps (which can be tradeable from HL Frontend)\n\nSpecial mention for @davidyjeong who have been very supportive during issues and wishing him all the very best for the TGE.\n\nBelieve in David\nBelieve in TREAD\nBelieve in @treadfoundation",
+          "id": "2099881177641562224",
+          "url": "https://x.com/Dhruv_Sniper/status/2099881177641562224",
+          "views": 2485,
+          "likes": 31
+        },
+        {
+          "text": "Just created my 1st custom agent on @tread_fi, which tracks the CCI(20) indicator results across all pairs of Hyperliquid\n\nPreparing a Delta Neutral Funding Arbitrage agent as well between Hyperliquid and RiseX.\n\nMaking personalised agents is the flex now 😎💯",
+          "id": "2094094955933552976",
+          "url": "https://x.com/Dhruv_Sniper/status/2094094955933552976",
+          "views": 2344,
+          "likes": 19
+        },
+        {
+          "text": "New day --> New update.\n$TREAD (@tread_fi) has been sold to @tradeparagon for $639.33 HYPE ($54,473).\n\nTop bid for the day 💥\n\nLooks like a lot of HIP-3 developers have bidded for this ticker bringing the price to the Top.\n\nLooks like we are very very very close to the much awaited event.\n\nMy boys & girls at The Consortium are going to cook hard.",
+          "id": "2097536830287794432",
+          "url": "https://x.com/Dhruv_Sniper/status/2097536830287794432",
+          "views": 1677,
+          "likes": 39
         }
       ]
     },
@@ -2170,16 +2170,16 @@
       "id": "2040391464761413633",
       "name": "Louis.hl",
       "handle": "louisdives",
-      "followers": 2128,
-      "avatar": "https://pbs.twimg.com/profile_images/2065819410896769024/WflrXlsr_normal.jpg",
-      "views": 38097,
+      "followers": 3661,
+      "avatar": "https://pbs.twimg.com/profile_images/2091176461235568640/FCRejCuD_normal.jpg",
+      "views": 38138,
       "likes": 462,
-      "posts": 110,
-      "mentions": 110,
+      "posts": 111,
+      "mentions": 111,
       "cashtag": 0,
-      "keyword": 1,
+      "keyword": 2,
       "firstPost": "Sat Apr 18 15:42:18 +0000 2026",
-      "lastPost": "Thu Jul 30 02:04:07 +0000 2026",
+      "lastPost": "Mon Nov 02 09:56:00 +0000 2026",
       "topPosts": [
         {
           "text": "if we enter bull market, we will see:\n\n@nadoHQ : $5 per point\n@StandX_Official : $0.001 per point\n@tread_fi : $7 per point\n@variational_io : $40 per point \n@DecibelTrade : $0.8 per point\n@hibachi_xyz : $0.7 per point\n@pacifica_fi : $0.3 per point\n@grvt_io : $25 per point\n@01Exchange : $5 per point\n@extendedapp : $4 per point\n@miracletrade : $0.8 per point\n@ostium : $0.7 per point\n@CarbonTerminal : $0.7 per point\n@etherealdex : $0.01 per point\n@ProprXYZ : $1 per point \n@dango : $0.6 per point\n@tradehotstuff : $0.9 per point\n\nbull market gives a new higher fdv potential for all perp dex.\n\nwhat do you think about it?",
@@ -7277,6 +7277,58 @@
       ]
     },
     {
+      "id": "1747906803428417536",
+      "name": "AirDropHunt",
+      "handle": "GrochevIva22174",
+      "followers": 334,
+      "avatar": "https://pbs.twimg.com/profile_images/2016129810221666306/KubFLXju_normal.jpg",
+      "views": 8052,
+      "likes": 160,
+      "posts": 66,
+      "mentions": 66,
+      "cashtag": 0,
+      "keyword": 5,
+      "firstPost": "Thu Nov 20 20:43:04 +0000 2025",
+      "lastPost": "Mon Nov 02 07:06:50 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi  RSI +8 looks good today , using it from 3 days and results are pretty good , just avoid MM bots on USA open https://t.co/PlwQZni0s8",
+          "id": "2039657678058766365",
+          "url": "https://x.com/GrochevIva22174/status/2039657678058766365",
+          "views": 1534,
+          "likes": 13
+        },
+        {
+          "text": "Almost free volume from MM tread bot for XYZ and Ondo.\nGrid +7 setup works best at calm/range markets , harder part is to choose when to run it (avoid NY session)\nMonitor position and close manually when on good PNL\n@OndoPerps @tread_fi \nhttps://t.co/4OOCngcGY8 https://t.co/GWl6MvKYz3",
+          "id": "2069756191098421518",
+          "url": "https://x.com/GrochevIva22174/status/2069756191098421518",
+          "views": 456,
+          "likes": 11
+        },
+        {
+          "text": "Done over 2M volume in @arbital_xyz comp for @OndoPerps finishing 7th , CPM around 2.2-2.5 (mainly XAU traded) and few trades in @tread_fi so overall around -600$ , waiting tmrw rewards and points from Ondo + rewards from arbital https://t.co/Esa9Q1gpnh",
+          "id": "2117151429282373960",
+          "url": "https://x.com/GrochevIva22174/status/2117151429282373960",
+          "views": 441,
+          "likes": 7
+        },
+        {
+          "text": "My third integration fee passed to powerusers.Anyone still fade consortium?\nJust use @tread_fi , become top 50 and enter consortium for additional wins.Thanks me later! https://t.co/vltpmYTXkw",
+          "id": "2043733567339934159",
+          "url": "https://x.com/GrochevIva22174/status/2043733567339934159",
+          "views": 358,
+          "likes": 9
+        },
+        {
+          "text": "@muarmemuar @grvt_io @variational_io @extendedapp @StandX_Official @pacifica_fi @nadoHQ @hibachi_xyz @ostium @CarbonTerminal I ran some calculation for @ProprXYZ and got 1-2$ if 100 mil FDV\nFor @tread_fi 3-9$ , for the rest sounds about right",
+          "id": "2048826374622773340",
+          "url": "https://x.com/GrochevIva22174/status/2048826374622773340",
+          "views": 254,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1275249432",
       "name": "Tobias Reisner",
       "handle": "reisnertobias",
@@ -7537,58 +7589,6 @@
       ]
     },
     {
-      "id": "1747906803428417536",
-      "name": "AirDropHunt",
-      "handle": "GrochevIva22174",
-      "followers": 328,
-      "avatar": "https://pbs.twimg.com/profile_images/2016129810221666306/KubFLXju_normal.jpg",
-      "views": 7611,
-      "likes": 153,
-      "posts": 65,
-      "mentions": 65,
-      "cashtag": 0,
-      "keyword": 5,
-      "firstPost": "Thu Nov 20 20:43:04 +0000 2025",
-      "lastPost": "Thu Oct 29 15:16:21 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@tread_fi  RSI +8 looks good today , using it from 3 days and results are pretty good , just avoid MM bots on USA open https://t.co/PlwQZni0s8",
-          "id": "2039657678058766365",
-          "url": "https://x.com/GrochevIva22174/status/2039657678058766365",
-          "views": 1534,
-          "likes": 13
-        },
-        {
-          "text": "Almost free volume from MM tread bot for XYZ and Ondo.\nGrid +7 setup works best at calm/range markets , harder part is to choose when to run it (avoid NY session)\nMonitor position and close manually when on good PNL\n@OndoPerps @tread_fi \nhttps://t.co/4OOCngcGY8 https://t.co/GWl6MvKYz3",
-          "id": "2069756191098421518",
-          "url": "https://x.com/GrochevIva22174/status/2069756191098421518",
-          "views": 456,
-          "likes": 11
-        },
-        {
-          "text": "My third integration fee passed to powerusers.Anyone still fade consortium?\nJust use @tread_fi , become top 50 and enter consortium for additional wins.Thanks me later! https://t.co/vltpmYTXkw",
-          "id": "2043733567339934159",
-          "url": "https://x.com/GrochevIva22174/status/2043733567339934159",
-          "views": 358,
-          "likes": 9
-        },
-        {
-          "text": "@muarmemuar @grvt_io @variational_io @extendedapp @StandX_Official @pacifica_fi @nadoHQ @hibachi_xyz @ostium @CarbonTerminal I ran some calculation for @ProprXYZ and got 1-2$ if 100 mil FDV\nFor @tread_fi 3-9$ , for the rest sounds about right",
-          "id": "2048826374622773340",
-          "url": "https://x.com/GrochevIva22174/status/2048826374622773340",
-          "views": 254,
-          "likes": 1
-        },
-        {
-          "text": "Looks like its 3.5x harder to farm points on @tread_fi than 3-4 weeks ago.Still super bulish for the project , it will airdrop more than some of the perps we are farming thru them ;) https://t.co/hXEzl5ub0N",
-          "id": "2011385012151587200",
-          "url": "https://x.com/GrochevIva22174/status/2011385012151587200",
-          "views": 231,
-          "likes": 2
-        }
-      ]
-    },
-    {
       "id": "1321502344660439040",
       "name": "ryandcrypto",
       "handle": "ryandcrypto",
@@ -7821,6 +7821,58 @@
       ]
     },
     {
+      "id": "3434141775",
+      "name": "You&Me.HL.Ink",
+      "handle": "Bl0ckchain",
+      "followers": 2904,
+      "avatar": "https://pbs.twimg.com/profile_images/2115483882220888064/R59YZjTe_normal.jpg",
+      "views": 7254,
+      "likes": 71,
+      "posts": 102,
+      "mentions": 102,
+      "cashtag": 0,
+      "keyword": 3,
+      "firstPost": "Thu Dec 04 05:49:17 +0000 2025",
+      "lastPost": "Mon Nov 02 10:06:34 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@sportytechworld @tread_fi how much fees to be #8 ?",
+          "id": "2100247312169615674",
+          "url": "https://x.com/Bl0ckchain/status/2100247312169615674",
+          "views": 567,
+          "likes": 4
+        },
+        {
+          "text": "@tread_fi @ostium Campaign 👁️",
+          "id": "2016793409718047034",
+          "url": "https://x.com/Bl0ckchain/status/2016793409718047034",
+          "views": 416,
+          "likes": 3
+        },
+        {
+          "text": "@tread_fi Perfect TIP's",
+          "id": "2099018539663282378",
+          "url": "https://x.com/Bl0ckchain/status/2099018539663282378",
+          "views": 344,
+          "likes": 0
+        },
+        {
+          "text": "@OG_Branxi @nadoHQ @tread_fi what's your volume on nado for 5k points?",
+          "id": "2038211478273003958",
+          "url": "https://x.com/Bl0ckchain/status/2038211478273003958",
+          "views": 251,
+          "likes": 0
+        },
+        {
+          "text": "@DeFiVoyager_X @variational_io @etherealdex @hibachi_xyz @grvt_io @pacifica_fi @reya_xyz @Backpack @paradex @edgeX_exchange @BasedOneX @hyenatrade what about @tread_fi ?",
+          "id": "2021949465733788126",
+          "url": "https://x.com/Bl0ckchain/status/2021949465733788126",
+          "views": 245,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1692909961540718592",
       "name": "Gua",
       "handle": "gua_xyz",
@@ -7921,58 +7973,6 @@
           "url": "https://x.com/degen_doldrums/status/2025321717460078625",
           "views": 188,
           "likes": 1
-        }
-      ]
-    },
-    {
-      "id": "3434141775",
-      "name": "You&Me.HL.Ink",
-      "handle": "Bl0ckchain",
-      "followers": 2905,
-      "avatar": "https://pbs.twimg.com/profile_images/2115483882220888064/R59YZjTe_normal.jpg",
-      "views": 7166,
-      "likes": 69,
-      "posts": 100,
-      "mentions": 100,
-      "cashtag": 0,
-      "keyword": 3,
-      "firstPost": "Thu Dec 04 05:49:17 +0000 2025",
-      "lastPost": "Sun Nov 01 08:56:35 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@sportytechworld @tread_fi how much fees to be #8 ?",
-          "id": "2100247312169615674",
-          "url": "https://x.com/Bl0ckchain/status/2100247312169615674",
-          "views": 567,
-          "likes": 4
-        },
-        {
-          "text": "@tread_fi @ostium Campaign 👁️",
-          "id": "2016793409718047034",
-          "url": "https://x.com/Bl0ckchain/status/2016793409718047034",
-          "views": 416,
-          "likes": 3
-        },
-        {
-          "text": "@tread_fi Perfect TIP's",
-          "id": "2099018539663282378",
-          "url": "https://x.com/Bl0ckchain/status/2099018539663282378",
-          "views": 344,
-          "likes": 0
-        },
-        {
-          "text": "@OG_Branxi @nadoHQ @tread_fi what's your volume on nado for 5k points?",
-          "id": "2038211478273003958",
-          "url": "https://x.com/Bl0ckchain/status/2038211478273003958",
-          "views": 251,
-          "likes": 0
-        },
-        {
-          "text": "@DeFiVoyager_X @variational_io @etherealdex @hibachi_xyz @grvt_io @pacifica_fi @reya_xyz @Backpack @paradex @edgeX_exchange @BasedOneX @hyenatrade what about @tread_fi ?",
-          "id": "2021949465733788126",
-          "url": "https://x.com/Bl0ckchain/status/2021949465733788126",
-          "views": 245,
-          "likes": 0
         }
       ]
     },
@@ -46682,6 +46682,58 @@
       ]
     },
     {
+      "id": "1866220523220320256",
+      "name": "demon666 /bulk coded.",
+      "handle": "0xUnemployment",
+      "followers": 892,
+      "avatar": "https://pbs.twimg.com/profile_images/2110675478721744896/blhgurSF_normal.jpg",
+      "views": 510,
+      "likes": 4,
+      "posts": 14,
+      "mentions": 14,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sun Nov 30 19:41:54 +0000 2025",
+      "lastPost": "Mon Nov 02 23:36:39 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi @arcus_xyz curious whether trading through tread changes execution quality at all",
+          "id": "2110757049110004067",
+          "url": "https://x.com/0xUnemployment/status/2110757049110004067",
+          "views": 230,
+          "likes": 0
+        },
+        {
+          "text": "@OG_Branxi @tread_fi thanks for strategy",
+          "id": "1995216739429417287",
+          "url": "https://x.com/0xUnemployment/status/1995216739429417287",
+          "views": 104,
+          "likes": 1
+        },
+        {
+          "text": "@DeFiVoyager_X @arcus_xyz @tread_fi zero maker fees plus positive pnl changes farming economics",
+          "id": "2117397791698014310",
+          "url": "https://x.com/0xUnemployment/status/2117397791698014310",
+          "views": 42,
+          "likes": 0
+        },
+        {
+          "text": "@Lady_Farming @tread_fi @vesper_mm @OndoPerps @arcus_xyz @PhoenixTrade @risextrade @Lighter_xyz @entropyIO @bulktrade @QFEX @variational_io market making sounds cheaper until inventory risk enters the equation",
+          "id": "2111555911739220371",
+          "url": "https://x.com/0xUnemployment/status/2111555911739220371",
+          "views": 34,
+          "likes": 1
+        },
+        {
+          "text": "@0xbeiu @arcus_xyz @tread_fi @QFEX combining market making with hedging sounds like serious optimization",
+          "id": "2110851391103328593",
+          "url": "https://x.com/0xUnemployment/status/2110851391103328593",
+          "views": 29,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1177890924854161408",
       "name": "freelanceser",
       "handle": "freelanceser",
@@ -50264,58 +50316,6 @@
           "id": "2027408371964416430",
           "url": "https://x.com/Marco_Beam/status/2027408371964416430",
           "views": 44,
-          "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "1866220523220320256",
-      "name": "demon666 /bulk coded.",
-      "handle": "0xUnemployment",
-      "followers": 2364,
-      "avatar": "https://pbs.twimg.com/profile_images/2110675478721744896/blhgurSF_normal.jpg",
-      "views": 454,
-      "likes": 4,
-      "posts": 11,
-      "mentions": 11,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Sun Nov 30 19:41:54 +0000 2025",
-      "lastPost": "Sat Oct 24 15:48:24 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@tread_fi @arcus_xyz curious whether trading through tread changes execution quality at all",
-          "id": "2110757049110004067",
-          "url": "https://x.com/0xUnemployment/status/2110757049110004067",
-          "views": 230,
-          "likes": 0
-        },
-        {
-          "text": "@OG_Branxi @tread_fi thanks for strategy",
-          "id": "1995216739429417287",
-          "url": "https://x.com/0xUnemployment/status/1995216739429417287",
-          "views": 104,
-          "likes": 1
-        },
-        {
-          "text": "@Lady_Farming @tread_fi @vesper_mm @OndoPerps @arcus_xyz @PhoenixTrade @risextrade @Lighter_xyz @entropyIO @bulktrade @QFEX @variational_io market making sounds cheaper until inventory risk enters the equation",
-          "id": "2111555911739220371",
-          "url": "https://x.com/0xUnemployment/status/2111555911739220371",
-          "views": 34,
-          "likes": 1
-        },
-        {
-          "text": "@0xbeiu @arcus_xyz @tread_fi @QFEX combining market making with hedging sounds like serious optimization",
-          "id": "2110851391103328593",
-          "url": "https://x.com/0xUnemployment/status/2110851391103328593",
-          "views": 29,
-          "likes": 0
-        },
-        {
-          "text": "@hikarypool7 @perpltrade @tread_fi rank 60 with 121 points is quite a position",
-          "id": "2111125075424317471",
-          "url": "https://x.com/0xUnemployment/status/2111125075424317471",
-          "views": 14,
           "likes": 0
         }
       ]
@@ -77830,6 +77830,58 @@
       ]
     },
     {
+      "id": "1203299386295537664",
+      "name": "EC | DNT | 🥂",
+      "handle": "ObasiPreciousE1",
+      "followers": 644,
+      "avatar": "https://pbs.twimg.com/profile_images/1960330003108823040/eugdaN1s_normal.jpg",
+      "views": 236,
+      "likes": 3,
+      "posts": 6,
+      "mentions": 6,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Fri Jun 12 01:44:30 +0000 2026",
+      "lastPost": "Mon Nov 02 21:05:41 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@0xasrequired @tread_fi @perpltrade When do we get the MON payout?",
+          "id": "2075185939735793993",
+          "url": "https://x.com/ObasiPreciousE1/status/2075185939735793993",
+          "views": 88,
+          "likes": 1
+        },
+        {
+          "text": "@DeFiVoyager_X @arcus_xyz @tread_fi Wow, how did you stay profitable with this much volume \n\nVery interested",
+          "id": "2117362534076371181",
+          "url": "https://x.com/ObasiPreciousE1/status/2117362534076371181",
+          "views": 69,
+          "likes": 0
+        },
+        {
+          "text": "@sam6170 @tread_fi Can't wait \nI'd love a guide",
+          "id": "2065248847111000128",
+          "url": "https://x.com/ObasiPreciousE1/status/2065248847111000128",
+          "views": 46,
+          "likes": 1
+        },
+        {
+          "text": "@sam6170 @tread_fi Finally, thanks boss",
+          "id": "2069879928351268964",
+          "url": "https://x.com/ObasiPreciousE1/status/2069879928351268964",
+          "views": 25,
+          "likes": 1
+        },
+        {
+          "text": "@sam6170 @tread_fi Still here chief\nI loved the MCP guide",
+          "id": "2065944631758524554",
+          "url": "https://x.com/ObasiPreciousE1/status/2065944631758524554",
+          "views": 5,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1767156119187734528",
       "name": "nolan.snr 〽️",
       "handle": "nolansnr_098",
@@ -94168,58 +94220,6 @@
           "id": "2074201126065627149",
           "url": "https://x.com/trail_fdn/status/2074201126065627149",
           "views": 24,
-          "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "1203299386295537664",
-      "name": "EC | DNT | 🥂",
-      "handle": "ObasiPreciousE1",
-      "followers": 668,
-      "avatar": "https://pbs.twimg.com/profile_images/1960330003108823040/eugdaN1s_normal.jpg",
-      "views": 167,
-      "likes": 3,
-      "posts": 5,
-      "mentions": 5,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Fri Jun 12 01:44:30 +0000 2026",
-      "lastPost": "Thu Jul 09 11:50:57 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@0xasrequired @tread_fi @perpltrade When do we get the MON payout?",
-          "id": "2075185939735793993",
-          "url": "https://x.com/ObasiPreciousE1/status/2075185939735793993",
-          "views": 88,
-          "likes": 1
-        },
-        {
-          "text": "@sam6170 @tread_fi Can't wait \nI'd love a guide",
-          "id": "2065248847111000128",
-          "url": "https://x.com/ObasiPreciousE1/status/2065248847111000128",
-          "views": 46,
-          "likes": 1
-        },
-        {
-          "text": "@sam6170 @tread_fi Finally, thanks boss",
-          "id": "2069879928351268964",
-          "url": "https://x.com/ObasiPreciousE1/status/2069879928351268964",
-          "views": 25,
-          "likes": 1
-        },
-        {
-          "text": "@sam6170 @tread_fi Still here chief\nI loved the MCP guide",
-          "id": "2065944631758524554",
-          "url": "https://x.com/ObasiPreciousE1/status/2065944631758524554",
-          "views": 5,
-          "likes": 0
-        },
-        {
-          "text": "@sam6170 @OndoPerps @tread_fi Still waiting for a guide sirrrrr 🙏🏾",
-          "id": "2067249709253574771",
-          "url": "https://x.com/ObasiPreciousE1/status/2067249709253574771",
-          "views": 3,
           "likes": 0
         }
       ]
@@ -214468,6 +214468,30 @@
           "url": "https://x.com/WayMuchCoffee/status/2111095132258996716",
           "views": 18,
           "likes": 2
+        }
+      ]
+    },
+    {
+      "id": "1437544680519081987",
+      "name": "horizen",
+      "handle": "0xhorizen",
+      "followers": 268,
+      "avatar": "https://pbs.twimg.com/profile_images/2085447197705838592/gGkFLRcP_normal.jpg",
+      "views": 18,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Mon Nov 02 11:26:37 +0000 2026",
+      "lastPost": "Mon Nov 02 11:26:37 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@Dhruv_Sniper @tread_fi @treadfoundation am i have to buy it rn?",
+          "id": "2117216805504610757",
+          "url": "https://x.com/0xhorizen/status/2117216805504610757",
+          "views": 18,
+          "likes": 0
         }
       ]
     },
