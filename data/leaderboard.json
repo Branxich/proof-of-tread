@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-11T13:48:46.268Z",
+  "updatedAt": "2026-11-12T14:51:27.853Z",
   "totals": {
-    "views": 11936709,
-    "likes": 128143,
-    "posts": 37498,
-    "users": 8188
+    "views": 11936823,
+    "likes": 128147,
+    "posts": 37501,
+    "users": 8189
   },
   "users": [
     {
@@ -1245,16 +1245,16 @@
       "id": "1143775294379061248",
       "name": "Alpha by Dhruv",
       "handle": "Dhruv_Sniper",
-      "followers": 1716,
+      "followers": 1718,
       "avatar": "https://pbs.twimg.com/profile_images/2099287137342599168/V6Y09GkK_normal.jpg",
-      "views": 82419,
-      "likes": 1538,
-      "posts": 309,
-      "mentions": 309,
+      "views": 82484,
+      "likes": 1541,
+      "posts": 310,
+      "mentions": 310,
       "cashtag": 21,
       "keyword": 79,
       "firstPost": "Sat Nov 29 03:25:38 +0000 2025",
-      "lastPost": "Tue Nov 10 04:25:53 +0000 2026",
+      "lastPost": "Wed Nov 11 02:26:28 +0000 2026",
       "topPosts": [
         {
           "text": "Good news for all @TxFlow_L1 users.\nTxFlow is likely to come on @tread_fi very soon.\n\nJoin TxFlow: https://t.co/LUjjMEh9sh\n\nIt just appeared on the Tread Vault section on Points Page. https://t.co/5Z6oWoiIyq",
@@ -6608,16 +6608,16 @@
       "id": "1767112638222516224",
       "name": "Fat Bear Walking",
       "handle": "fatbearwalking",
-      "followers": 80,
+      "followers": 82,
       "avatar": "https://pbs.twimg.com/profile_images/2097609574748688385/ReSnrK9f_normal.jpg",
-      "views": 8931,
-      "likes": 133,
-      "posts": 38,
-      "mentions": 38,
+      "views": 8977,
+      "likes": 134,
+      "posts": 39,
+      "mentions": 39,
       "cashtag": 3,
       "keyword": 0,
       "firstPost": "Fri Sep 11 05:44:03 +0000 2026",
-      "lastPost": "Tue Nov 10 18:19:52 +0000 2026",
+      "lastPost": "Wed Nov 11 02:41:41 +0000 2026",
       "topPosts": [
         {
           "text": "I was quite late to seriously farming $TREAD.\n\nI saw people mentioned the project on X earlier this year, but I was preoccupied with my baby so I didn't think to join in.\n\nIt's not until I started coming back to crypto and tested @tread_fi out that I realized the project's potential.\n\nAnd my expectation became conviction when I saw the team shipped trading agents that are actually legit.\n\nI didn't get much from the airdrop, but there's no way I'm going to let an obvious opportunity pass by.\n\nSo I just went and started my TWAP when the orderbook was populated with people selling their airdrops.\n\nWe're currently in a market consolidation. I believe prices won't stay around this range for long once we resolve to the upside.",
@@ -248143,6 +248143,30 @@
           "text": "@0xSlyth @tread_fi motion design really helps crypto products click faster",
           "id": "2119804720135204879",
           "url": "https://x.com/buzhang923/status/2119804720135204879",
+          "views": 3,
+          "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "415996252",
+      "name": "Nghĩa Phan",
+      "handle": "_nghiaphan1019",
+      "followers": 3038,
+      "avatar": "https://pbs.twimg.com/profile_images/2115754413793185792/fWAw6Os0_normal.jpg",
+      "views": 3,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Wed Nov 11 03:27:10 +0000 2026",
+      "lastPost": "Wed Nov 11 03:27:10 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@bizyugo @tread_fi Drop the code pls",
+          "id": "2120357639150534853",
+          "url": "https://x.com/_nghiaphan1019/status/2120357639150534853",
           "views": 3,
           "likes": 0
         }
