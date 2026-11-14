@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-13T14:14:04.344Z",
+  "updatedAt": "2026-11-14T13:12:46.695Z",
   "totals": {
-    "views": 11937475,
-    "likes": 128157,
-    "posts": 37513,
-    "users": 8192
+    "views": 11937851,
+    "likes": 128171,
+    "posts": 37522,
+    "users": 8193
   },
   "users": [
     {
@@ -635,16 +635,16 @@
       "id": "83237760",
       "name": "dTfN",
       "handle": "deTEfabulaNar_",
-      "followers": 14854,
+      "followers": 14852,
       "avatar": "https://pbs.twimg.com/profile_images/1986431891147243520/9EwlD0PU_normal.jpg",
-      "views": 174036,
-      "likes": 1840,
-      "posts": 262,
-      "mentions": 262,
+      "views": 174223,
+      "likes": 1845,
+      "posts": 266,
+      "mentions": 266,
       "cashtag": 0,
       "keyword": 9,
       "firstPost": "Sun Nov 16 14:32:08 +0000 2025",
-      "lastPost": "Tue Nov 10 13:39:48 +0000 2026",
+      "lastPost": "Fri Nov 13 15:49:44 +0000 2026",
       "topPosts": [
         {
           "text": "1200 points - @variational_io\n104k points - @miracletrade\n15k RPC - @reya_xyz\n109k points- @hibachi_xyz\n90k points - @pacifica_fi\n500 points - @grvt_io\n250k trader points - @StandX_Official\n800 points - @tread_fi\n10k points - @VestExchange \n1k points - @nadoHQ \n10M volume - @risextrade (before point program)\n1M volume - @OndoPerps (early access)\n+\n-----------------------------------------",
@@ -6574,50 +6574,19 @@
       ]
     },
     {
-      "id": "3387572619",
-      "name": "cato 😾",
-      "handle": "chowtato",
-      "followers": 7798,
-      "avatar": "https://pbs.twimg.com/profile_images/1985864227320713216/VyVKAj5V_normal.jpg",
-      "views": 9057,
-      "likes": 114,
-      "posts": 2,
-      "mentions": 2,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Thu Mar 19 06:48:15 +0000 2026",
-      "lastPost": "Thu Mar 19 08:48:13 +0000 2026",
-      "topPosts": [
-        {
-          "text": "news on sui rah:\n\n🏁@OpenZeppelin releases their first smart contracts - move defi maths library\n \n🏁@tread_fi integrated @AftermathFi and @DeepBookonSui into their institutional grade trading terminal\n\n🏁@_StudioMirai teases the Coda music platform launch in spring and is looking for beta testers\n\n🏁@7k_ag_ launches onlyfence - ai wallet guardrails \n\n🏁@PhoenixTrade makes Sui markets live on their platform \n\n🏁@SuiNetwork kicks off new VM bounties\n\n🏁@CurrentSUI announced their completed fundraise round",
-          "id": "2034522318886912421",
-          "url": "https://x.com/chowtato/status/2034522318886912421",
-          "views": 8946,
-          "likes": 112
-        },
-        {
-          "text": "@NathanDegen_ @OpenZeppelin @tread_fi @AftermathFi @DeepBookonSui @_StudioMirai @0xbeepit yall need to work harder to get beep content into my feed 🤷🏻‍♀️",
-          "id": "2034552511919771790",
-          "url": "https://x.com/chowtato/status/2034552511919771790",
-          "views": 111,
-          "likes": 2
-        }
-      ]
-    },
-    {
       "id": "1767112638222516224",
       "name": "Fat Bear Walking",
       "handle": "fatbearwalking",
-      "followers": 82,
+      "followers": 81,
       "avatar": "https://pbs.twimg.com/profile_images/2097609574748688385/ReSnrK9f_normal.jpg",
-      "views": 8977,
-      "likes": 134,
-      "posts": 39,
-      "mentions": 39,
+      "views": 9089,
+      "likes": 140,
+      "posts": 41,
+      "mentions": 41,
       "cashtag": 3,
       "keyword": 0,
       "firstPost": "Fri Sep 11 05:44:03 +0000 2026",
-      "lastPost": "Wed Nov 11 02:41:41 +0000 2026",
+      "lastPost": "Fri Nov 13 09:14:26 +0000 2026",
       "topPosts": [
         {
           "text": "I was quite late to seriously farming $TREAD.\n\nI saw people mentioned the project on X earlier this year, but I was preoccupied with my baby so I didn't think to join in.\n\nIt's not until I started coming back to crypto and tested @tread_fi out that I realized the project's potential.\n\nAnd my expectation became conviction when I saw the team shipped trading agents that are actually legit.\n\nI didn't get much from the airdrop, but there's no way I'm going to let an obvious opportunity pass by.\n\nSo I just went and started my TWAP when the orderbook was populated with people selling their airdrops.\n\nWe're currently in a market consolidation. I believe prices won't stay around this range for long once we resolve to the upside.",
@@ -6653,6 +6622,37 @@
           "url": "https://x.com/fatbearwalking/status/2100268456801382413",
           "views": 293,
           "likes": 1
+        }
+      ]
+    },
+    {
+      "id": "3387572619",
+      "name": "cato 😾",
+      "handle": "chowtato",
+      "followers": 7798,
+      "avatar": "https://pbs.twimg.com/profile_images/1985864227320713216/VyVKAj5V_normal.jpg",
+      "views": 9057,
+      "likes": 114,
+      "posts": 2,
+      "mentions": 2,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Thu Mar 19 06:48:15 +0000 2026",
+      "lastPost": "Thu Mar 19 08:48:13 +0000 2026",
+      "topPosts": [
+        {
+          "text": "news on sui rah:\n\n🏁@OpenZeppelin releases their first smart contracts - move defi maths library\n \n🏁@tread_fi integrated @AftermathFi and @DeepBookonSui into their institutional grade trading terminal\n\n🏁@_StudioMirai teases the Coda music platform launch in spring and is looking for beta testers\n\n🏁@7k_ag_ launches onlyfence - ai wallet guardrails \n\n🏁@PhoenixTrade makes Sui markets live on their platform \n\n🏁@SuiNetwork kicks off new VM bounties\n\n🏁@CurrentSUI announced their completed fundraise round",
+          "id": "2034522318886912421",
+          "url": "https://x.com/chowtato/status/2034522318886912421",
+          "views": 8946,
+          "likes": 112
+        },
+        {
+          "text": "@NathanDegen_ @OpenZeppelin @tread_fi @AftermathFi @DeepBookonSui @_StudioMirai @0xbeepit yall need to work harder to get beep content into my feed 🤷🏻‍♀️",
+          "id": "2034552511919771790",
+          "url": "https://x.com/chowtato/status/2034552511919771790",
+          "views": 111,
+          "likes": 2
         }
       ]
     },
@@ -112046,6 +112046,44 @@
       ]
     },
     {
+      "id": "2734856300",
+      "name": "CriptoTemplo",
+      "handle": "criptotemplo",
+      "followers": 28948,
+      "avatar": "https://pbs.twimg.com/profile_images/1490341934224838661/T01fFp-__normal.jpg",
+      "views": 123,
+      "likes": 2,
+      "posts": 3,
+      "mentions": 3,
+      "cashtag": 0,
+      "keyword": 1,
+      "firstPost": "Tue Nov 10 13:08:26 +0000 2026",
+      "lastPost": "Fri Nov 13 14:40:39 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@deTEfabulaNar_ @TxFlow_L1 @tread_fi Try FundingDesk this week and you'll see the results, check out mine!\n\nIt's much better than Treadfi, since the controls feel natural and it's easier to use.\n\nI hope you take my advice and get lots of them, they're a great gift right now.",
+          "id": "2120141531164131754",
+          "url": "https://x.com/criptotemplo/status/2120141531164131754",
+          "views": 81,
+          "likes": 1
+        },
+        {
+          "text": "@deTEfabulaNar_ @TxFlow_L1 @tread_fi Subí una guía paso a paso con video en YouTube: https://t.co/lMy8n6tgLG",
+          "id": "2121229618254647550",
+          "url": "https://x.com/criptotemplo/status/2121229618254647550",
+          "views": 25,
+          "likes": 1
+        },
+        {
+          "text": "@deTEfabulaNar_ @TxFlow_L1 @tread_fi Yeah! If you need help, let's chat on Telegram and I'll tell you more.",
+          "id": "2121251905502384471",
+          "url": "https://x.com/criptotemplo/status/2121251905502384471",
+          "views": 17,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1945850910481293312",
       "name": "Lieum 🌎",
       "handle": "Lieum141",
@@ -136603,30 +136641,6 @@
           "id": "2072764110035419496",
           "url": "https://x.com/OutcomeAK/status/2072764110035419496",
           "views": 23,
-          "likes": 1
-        }
-      ]
-    },
-    {
-      "id": "2734856300",
-      "name": "CriptoTemplo",
-      "handle": "criptotemplo",
-      "followers": 28946,
-      "avatar": "https://pbs.twimg.com/profile_images/1490341934224838661/T01fFp-__normal.jpg",
-      "views": 81,
-      "likes": 1,
-      "posts": 1,
-      "mentions": 1,
-      "cashtag": 0,
-      "keyword": 1,
-      "firstPost": "Tue Nov 10 13:08:26 +0000 2026",
-      "lastPost": "Tue Nov 10 13:08:26 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@deTEfabulaNar_ @TxFlow_L1 @tread_fi Try FundingDesk this week and you'll see the results, check out mine!\n\nIt's much better than Treadfi, since the controls feel natural and it's easier to use.\n\nI hope you take my advice and get lots of them, they're a great gift right now.",
-          "id": "2120141531164131754",
-          "url": "https://x.com/criptotemplo/status/2120141531164131754",
-          "views": 81,
           "likes": 1
         }
       ]
@@ -186430,6 +186444,30 @@
           "url": "https://x.com/love_doge123/status/2119756544502095960",
           "views": 35,
           "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "1646819101866700800",
+      "name": "CarreNFT",
+      "handle": "CarreNFT",
+      "followers": 8283,
+      "avatar": "https://pbs.twimg.com/profile_images/2033525791976247296/nalCl_p2_normal.jpg",
+      "views": 35,
+      "likes": 2,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Fri Nov 13 15:40:16 +0000 2026",
+      "lastPost": "Fri Nov 13 15:40:16 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@deTEfabulaNar_ @criptotemplo @TxFlow_L1 @tread_fi I’ll text You asap!",
+          "id": "2121266908066664920",
+          "url": "https://x.com/CarreNFT/status/2121266908066664920",
+          "views": 35,
+          "likes": 2
         }
       ]
     },
