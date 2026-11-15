@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-14T13:12:46.695Z",
+  "updatedAt": "2026-11-15T13:40:44.052Z",
   "totals": {
-    "views": 11937851,
-    "likes": 128171,
-    "posts": 37522,
-    "users": 8193
+    "views": 11938927,
+    "likes": 128182,
+    "posts": 37527,
+    "users": 8195
   },
   "users": [
     {
@@ -115,16 +115,16 @@
       "id": "345918982",
       "name": "noorucn",
       "handle": "sportytechworld",
-      "followers": 1408,
+      "followers": 1403,
       "avatar": "https://pbs.twimg.com/profile_images/1944017942913630208/jdnYG3xs_normal.jpg",
-      "views": 636758,
-      "likes": 9152,
-      "posts": 1091,
-      "mentions": 1091,
-      "cashtag": 20,
+      "views": 637705,
+      "likes": 9163,
+      "posts": 1092,
+      "mentions": 1092,
+      "cashtag": 21,
       "keyword": 86,
       "firstPost": "Thu Oct 09 09:51:27 +0000 2025",
-      "lastPost": "Tue Nov 10 11:27:06 +0000 2026",
+      "lastPost": "Sat Nov 14 16:06:46 +0000 2026",
       "topPosts": [
         {
           "text": "Everyone asks me if you can MM profitably on @tread_fi. This guy did $70-80M in volume over 2 weeks—profitably. Team of 5, he's a quant and one of the top market makers on @HyperliquidX. I've been picking his brain for days and been constantly talking  with him about how we can educate people to tread profitably.\n\nHere's how he does it.",
@@ -29909,6 +29909,58 @@
       ]
     },
     {
+      "id": "2038275142200049664",
+      "name": "Ales Cadez",
+      "handle": "ales_cadez",
+      "followers": 48,
+      "avatar": "https://pbs.twimg.com/profile_images/2038275892594491393/G86gG6Z0_normal.jpg",
+      "views": 996,
+      "likes": 15,
+      "posts": 10,
+      "mentions": 10,
+      "cashtag": 8,
+      "keyword": 0,
+      "firstPost": "Thu Oct 01 21:57:14 +0000 2026",
+      "lastPost": "Sat Nov 14 17:31:47 +0000 2026",
+      "topPosts": [
+        {
+          "text": "$Tread is catching up to $XRP just a few months after entering the market. According to all the statistics, this shouldn't be possible. What have I been saying all this time? You need to choose good projects with a low token supply. @tread_fi https://t.co/Y0cbJK9WpQ",
+          "id": "2118662837073559681",
+          "url": "https://x.com/ales_cadez/status/2118662837073559681",
+          "views": 212,
+          "likes": 1
+        },
+        {
+          "text": "When a token holds its price during a crisis, you know it’s a good investment! $TREAD @tread_fi #CryptoTrading #Crypto #blockchain #trade #investment #agents #cryptomarket #bearmarket",
+          "id": "2120812023378264178",
+          "url": "https://x.com/ales_cadez/status/2120812023378264178",
+          "views": 171,
+          "likes": 5
+        },
+        {
+          "text": "Everything you need to know about $TREAD @tread_fi #crypto #blockchain #trade #agents #traders #platform #cryptoproject #cryptomarket",
+          "id": "2119334895042392213",
+          "url": "https://x.com/ales_cadez/status/2119334895042392213",
+          "views": 110,
+          "likes": 0
+        },
+        {
+          "text": "👍 $TREAD #crypto #cryptomarket #trade #investment #kraken #treadtoken #blockchain @tread_fi https://t.co/8vo8qfkpwo",
+          "id": "2117694594427076953",
+          "url": "https://x.com/ales_cadez/status/2117694594427076953",
+          "views": 109,
+          "likes": 4
+        },
+        {
+          "text": "Low supply, low market cap, few holders. Yet the token price is rising and it has even caught up with #XRP in price. No one is whining or waiting years for promises to materialize. $TREAD #treadtoken @tread_fi #cryptoproject #crypto #blockchain #goodproject #trade  #cryptomarket. https://t.co/14OuUB0rSm",
+          "id": "2119330898894004427",
+          "url": "https://x.com/ales_cadez/status/2119330898894004427",
+          "views": 101,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "909929047626354688",
       "name": "Arcus",
       "handle": "arcus_xyz",
@@ -31534,58 +31586,6 @@
           "id": "2065146861229646217",
           "url": "https://x.com/0xserjamad/status/2065146861229646217",
           "views": 106,
-          "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "2038275142200049664",
-      "name": "Ales Cadez",
-      "handle": "ales_cadez",
-      "followers": 48,
-      "avatar": "https://pbs.twimg.com/profile_images/2038275892594491393/G86gG6Z0_normal.jpg",
-      "views": 932,
-      "likes": 15,
-      "posts": 9,
-      "mentions": 9,
-      "cashtag": 7,
-      "keyword": 0,
-      "firstPost": "Thu Oct 01 21:57:14 +0000 2026",
-      "lastPost": "Thu Nov 12 09:32:43 +0000 2026",
-      "topPosts": [
-        {
-          "text": "$Tread is catching up to $XRP just a few months after entering the market. According to all the statistics, this shouldn't be possible. What have I been saying all this time? You need to choose good projects with a low token supply. @tread_fi https://t.co/Y0cbJK9WpQ",
-          "id": "2118662837073559681",
-          "url": "https://x.com/ales_cadez/status/2118662837073559681",
-          "views": 212,
-          "likes": 1
-        },
-        {
-          "text": "When a token holds its price during a crisis, you know it’s a good investment! $TREAD @tread_fi #CryptoTrading #Crypto #blockchain #trade #investment #agents #cryptomarket #bearmarket",
-          "id": "2120812023378264178",
-          "url": "https://x.com/ales_cadez/status/2120812023378264178",
-          "views": 171,
-          "likes": 5
-        },
-        {
-          "text": "Everything you need to know about $TREAD @tread_fi #crypto #blockchain #trade #agents #traders #platform #cryptoproject #cryptomarket",
-          "id": "2119334895042392213",
-          "url": "https://x.com/ales_cadez/status/2119334895042392213",
-          "views": 110,
-          "likes": 0
-        },
-        {
-          "text": "👍 $TREAD #crypto #cryptomarket #trade #investment #kraken #treadtoken #blockchain @tread_fi https://t.co/8vo8qfkpwo",
-          "id": "2117694594427076953",
-          "url": "https://x.com/ales_cadez/status/2117694594427076953",
-          "views": 109,
-          "likes": 4
-        },
-        {
-          "text": "Low supply, low market cap, few holders. Yet the token price is rising and it has even caught up with #XRP in price. No one is whining or waiting years for promises to materialize. $TREAD #treadtoken @tread_fi #cryptoproject #crypto #blockchain #goodproject #trade  #cryptomarket. https://t.co/14OuUB0rSm",
-          "id": "2119330898894004427",
-          "url": "https://x.com/ales_cadez/status/2119330898894004427",
-          "views": 101,
           "likes": 0
         }
       ]
@@ -51203,6 +51203,58 @@
       ]
     },
     {
+      "id": "2026603065617559552",
+      "name": "kelvin",
+      "handle": "kaveforyou",
+      "followers": 81,
+      "avatar": "https://pbs.twimg.com/profile_images/2103529341636288512/7pRtY6R8_normal.jpg",
+      "views": 453,
+      "likes": 6,
+      "posts": 10,
+      "mentions": 10,
+      "cashtag": 1,
+      "keyword": 0,
+      "firstPost": "Mon Sep 21 14:04:03 +0000 2026",
+      "lastPost": "Sat Nov 14 16:48:51 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi Magnificent 👏",
+          "id": "2119115185335963726",
+          "url": "https://x.com/kaveforyou/status/2119115185335963726",
+          "views": 132,
+          "likes": 0
+        },
+        {
+          "text": "@0xasrequired @davidyjeong @tread_fi I have the token on mexc is it safe because I be hearing news about the issue of mexc",
+          "id": "2119089399212433586",
+          "url": "https://x.com/kaveforyou/status/2119089399212433586",
+          "views": 74,
+          "likes": 1
+        },
+        {
+          "text": "@hugocrza @tread_fi Keep failing wtf 🤬",
+          "id": "2107862042560340082",
+          "url": "https://x.com/kaveforyou/status/2107862042560340082",
+          "views": 49,
+          "likes": 1
+        },
+        {
+          "text": "@hugocrza @im_insulting @tread_fi I will keep holding all the way up 10x",
+          "id": "2104841898632552458",
+          "url": "https://x.com/kaveforyou/status/2104841898632552458",
+          "views": 42,
+          "likes": 2
+        },
+        {
+          "text": "@sportytechworld @tread_fi All coin are now  🤓",
+          "id": "2121646553689464951",
+          "url": "https://x.com/kaveforyou/status/2121646553689464951",
+          "views": 40,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1469590336657838080",
       "name": "Simon M. Rose",
       "handle": "simon_m_rose",
@@ -54657,58 +54709,6 @@
           "url": "https://x.com/0xNftLegend/status/2066148634102841711",
           "views": 36,
           "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "2026603065617559552",
-      "name": "kelvin",
-      "handle": "kaveforyou",
-      "followers": 80,
-      "avatar": "https://pbs.twimg.com/profile_images/2103529341636288512/7pRtY6R8_normal.jpg",
-      "views": 413,
-      "likes": 6,
-      "posts": 9,
-      "mentions": 9,
-      "cashtag": 1,
-      "keyword": 0,
-      "firstPost": "Mon Sep 21 14:04:03 +0000 2026",
-      "lastPost": "Sat Nov 07 17:10:06 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@tread_fi Magnificent 👏",
-          "id": "2119115185335963726",
-          "url": "https://x.com/kaveforyou/status/2119115185335963726",
-          "views": 132,
-          "likes": 0
-        },
-        {
-          "text": "@0xasrequired @davidyjeong @tread_fi I have the token on mexc is it safe because I be hearing news about the issue of mexc",
-          "id": "2119089399212433586",
-          "url": "https://x.com/kaveforyou/status/2119089399212433586",
-          "views": 74,
-          "likes": 1
-        },
-        {
-          "text": "@hugocrza @tread_fi Keep failing wtf 🤬",
-          "id": "2107862042560340082",
-          "url": "https://x.com/kaveforyou/status/2107862042560340082",
-          "views": 49,
-          "likes": 1
-        },
-        {
-          "text": "@hugocrza @im_insulting @tread_fi I will keep holding all the way up 10x",
-          "id": "2104841898632552458",
-          "url": "https://x.com/kaveforyou/status/2104841898632552458",
-          "views": 42,
-          "likes": 2
-        },
-        {
-          "text": "@hugocrza @tradexyz @tread_fi $tread will be massive if it got this kind of partnership.",
-          "id": "2115833033907704026",
-          "url": "https://x.com/kaveforyou/status/2115833033907704026",
-          "views": 34,
-          "likes": 1
         }
       ]
     },
@@ -219453,6 +219453,30 @@
       ]
     },
     {
+      "id": "1459121987176050690",
+      "name": "Gerics",
+      "handle": "Gerics8",
+      "followers": 397,
+      "avatar": "https://pbs.twimg.com/profile_images/1911735511447703554/Y_Hyblmd_normal.jpg",
+      "views": 17,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 1,
+      "firstPost": "Sat Nov 14 19:46:42 +0000 2026",
+      "lastPost": "Sat Nov 14 19:46:42 +0000 2026",
+      "topPosts": [
+        {
+          "text": "5/ \n🟢Route A: I open positions through @tread_fi . That makes it a 3-in-1: Ondo, Arcus, TreadFi. If TreadFi launches a token or rewards, activity there could count too.",
+          "id": "2121691312881856941",
+          "url": "https://x.com/Gerics8/status/2121691312881856941",
+          "views": 17,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "1856904798001664000",
       "name": "Kappy",
       "handle": "kappybruh",
@@ -239330,6 +239354,30 @@
           "text": "@0xSlyth @tread_fi Clean animations make understanding new chains actually enjoyable",
           "id": "2119719020773654718",
           "url": "https://x.com/Bitninjao/status/2119719020773654718",
+          "views": 8,
+          "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "1992444867147128832",
+      "name": "Crypto Gems 100X",
+      "handle": "Billi976764",
+      "followers": 37004,
+      "avatar": "https://pbs.twimg.com/profile_images/2048380631525244929/ZT__Cz7F_normal.jpg",
+      "views": 8,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Sat Nov 14 20:56:44 +0000 2026",
+      "lastPost": "Sat Nov 14 20:56:44 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@radiant_gator @TxFlow_L1 @tread_fi Check your inbox 📥",
+          "id": "2121708934532903095",
+          "url": "https://x.com/Billi976764/status/2121708934532903095",
           "views": 8,
           "likes": 0
         }
