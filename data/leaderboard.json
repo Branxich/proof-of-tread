@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-25T16:57:21.085Z",
+  "updatedAt": "2026-11-26T16:36:49.285Z",
   "totals": {
-    "views": 11981280,
-    "likes": 128940,
-    "posts": 37764,
-    "users": 8247
+    "views": 11982190,
+    "likes": 128959,
+    "posts": 37768,
+    "users": 8249
   },
   "users": [
     {
@@ -30099,6 +30099,58 @@
           "url": "https://x.com/zkTuring/status/1990348370586812767",
           "views": 84,
           "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "1270982022794805249",
+      "name": "Stepaks",
+      "handle": "stepaks576",
+      "followers": 2886,
+      "avatar": "https://pbs.twimg.com/profile_images/1973004477222297600/7Uq4nLYM_normal.jpg",
+      "views": 998,
+      "likes": 23,
+      "posts": 5,
+      "mentions": 5,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Tue Jan 06 09:50:44 +0000 2026",
+      "lastPost": "Wed Nov 25 20:38:10 +0000 2026",
+      "topPosts": [
+        {
+          "text": "not a big bull on arcus\n\njust casually tried with @tread_fi MM bot\n\n&gt; costs ~$150\n\nwont be farming much there\njust in case it moons etc https://t.co/q4pM1V5MKf",
+          "id": "2125690531959517648",
+          "url": "https://x.com/stepaks576/status/2125690531959517648",
+          "views": 699,
+          "likes": 18
+        },
+        {
+          "text": "@0xvinhpham @tread_fi bro is making generational money outta tradefi post\n\ncook",
+          "id": "2008476316782219656",
+          "url": "https://x.com/stepaks576/status/2008476316782219656",
+          "views": 119,
+          "likes": 1
+        },
+        {
+          "text": "@0xasrequired @tread_fi wait XVS is 90% for trading?",
+          "id": "2008868197592932854",
+          "url": "https://x.com/stepaks576/status/2008868197592932854",
+          "views": 88,
+          "likes": 2
+        },
+        {
+          "text": "@RaizeThatQ @tread_fi @davidyjeong ayo this is cool",
+          "id": "2009250727542087818",
+          "url": "https://x.com/stepaks576/status/2009250727542087818",
+          "views": 48,
+          "likes": 0
+        },
+        {
+          "text": "@AlphaWolfPRMR @0xasrequired @tread_fi but there is no Nado there",
+          "id": "2008479956498546818",
+          "url": "https://x.com/stepaks576/status/2008479956498546818",
+          "views": 44,
+          "likes": 2
         }
       ]
     },
@@ -66927,51 +66979,6 @@
       ]
     },
     {
-      "id": "1270982022794805249",
-      "name": "Stepaks",
-      "handle": "stepaks576",
-      "followers": 3187,
-      "avatar": "https://pbs.twimg.com/profile_images/1973004477222297600/7Uq4nLYM_normal.jpg",
-      "views": 299,
-      "likes": 5,
-      "posts": 4,
-      "mentions": 4,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Tue Jan 06 09:50:44 +0000 2026",
-      "lastPost": "Thu Jan 08 13:07:58 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@0xvinhpham @tread_fi bro is making generational money outta tradefi post\n\ncook",
-          "id": "2008476316782219656",
-          "url": "https://x.com/stepaks576/status/2008476316782219656",
-          "views": 119,
-          "likes": 1
-        },
-        {
-          "text": "@0xasrequired @tread_fi wait XVS is 90% for trading?",
-          "id": "2008868197592932854",
-          "url": "https://x.com/stepaks576/status/2008868197592932854",
-          "views": 88,
-          "likes": 2
-        },
-        {
-          "text": "@RaizeThatQ @tread_fi @davidyjeong ayo this is cool",
-          "id": "2009250727542087818",
-          "url": "https://x.com/stepaks576/status/2009250727542087818",
-          "views": 48,
-          "likes": 0
-        },
-        {
-          "text": "@AlphaWolfPRMR @0xasrequired @tread_fi but there is no Nado there",
-          "id": "2008479956498546818",
-          "url": "https://x.com/stepaks576/status/2008479956498546818",
-          "views": 44,
-          "likes": 2
-        }
-      ]
-    },
-    {
       "id": "1424428266597666817",
       "name": "Sammm",
       "handle": "SammmXBT",
@@ -84921,6 +84928,37 @@
       ]
     },
     {
+      "id": "1000253388880273408",
+      "name": "xZand",
+      "handle": "xzamd1",
+      "followers": 443,
+      "avatar": "https://pbs.twimg.com/profile_images/2080727554449633281/_BBK_YPN_normal.jpg",
+      "views": 209,
+      "likes": 1,
+      "posts": 2,
+      "mentions": 2,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Thu Oct 15 16:14:41 +0000 2026",
+      "lastPost": "Wed Nov 25 12:25:25 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi @arcus_xyz Still says $4 builder fees on a DN position (15K notional)",
+          "id": "2110766320576848356",
+          "url": "https://x.com/xzamd1/status/2110766320576848356",
+          "views": 157,
+          "likes": 0
+        },
+        {
+          "text": "I do hope you guys kept trading on @tread_fi . There will be a season 2. We don't know when, but when it happens everyone who traded in between isn't gonna be left behind (what we saw with season 1.5)\n\n''Season 2 will follow once additional token-based utility has been build'' https://t.co/hfj3xMuVJE",
+          "id": "2125566525654675806",
+          "url": "https://x.com/xzamd1/status/2125566525654675806",
+          "views": 52,
+          "likes": 1
+        }
+      ]
+    },
+    {
       "id": "1795779353642516480",
       "name": "Burak_Ew",
       "handle": "Burak_Ew",
@@ -98988,30 +99026,6 @@
       ]
     },
     {
-      "id": "1000253388880273408",
-      "name": "xZand",
-      "handle": "xzamd1",
-      "followers": 448,
-      "avatar": "https://pbs.twimg.com/profile_images/2080727554449633281/_BBK_YPN_normal.jpg",
-      "views": 157,
-      "likes": 0,
-      "posts": 1,
-      "mentions": 1,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Thu Oct 15 16:14:41 +0000 2026",
-      "lastPost": "Thu Oct 15 16:14:41 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@tread_fi @arcus_xyz Still says $4 builder fees on a DN position (15K notional)",
-          "id": "2110766320576848356",
-          "url": "https://x.com/xzamd1/status/2110766320576848356",
-          "views": 157,
-          "likes": 0
-        }
-      ]
-    },
-    {
       "id": "1360048112887336960",
       "name": "Gabcoin",
       "handle": "gabcoin_",
@@ -102519,6 +102533,30 @@
           "url": "https://x.com/DonDegenDefi/status/2103186109589057562",
           "views": 31,
           "likes": 2
+        }
+      ]
+    },
+    {
+      "id": "1495765028452159492",
+      "name": "shaunda devens",
+      "handle": "shaundadevens",
+      "followers": 14115,
+      "avatar": "https://pbs.twimg.com/profile_images/2103541240964710400/NyADJ70k_normal.jpg",
+      "views": 147,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Wed Nov 25 17:59:53 +0000 2026",
+      "lastPost": "Wed Nov 25 17:59:53 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi 🔥🔥🔥",
+          "id": "2125650697697845252",
+          "url": "https://x.com/shaundadevens/status/2125650697697845252",
+          "views": 147,
+          "likes": 0
         }
       ]
     },
@@ -231840,6 +231878,30 @@
           "text": "@AlphaWolfPRMR @tread_fi Get in those hill workouts!",
           "id": "2124897938132365513",
           "url": "https://x.com/blonde4thewin/status/2124897938132365513",
+          "views": 12,
+          "likes": 0
+        }
+      ]
+    },
+    {
+      "id": "1229565078065893376",
+      "name": "sureman334",
+      "handle": "sureman334",
+      "followers": 7,
+      "avatar": "https://pbs.twimg.com/profile_images/1965935147745689600/aZoDjv0__normal.jpg",
+      "views": 12,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Wed Nov 25 23:13:41 +0000 2026",
+      "lastPost": "Wed Nov 25 23:13:41 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@tread_fi very suspicious token. looks like the numbers aren’t real. small moves with big shifts. looks shady.",
+          "id": "2125729665709187293",
+          "url": "https://x.com/sureman334/status/2125729665709187293",
           "views": 12,
           "likes": 0
         }
