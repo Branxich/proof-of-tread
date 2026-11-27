@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-26T16:36:49.285Z",
+  "updatedAt": "2026-11-27T16:22:09.708Z",
   "totals": {
-    "views": 11982190,
-    "likes": 128959,
-    "posts": 37768,
-    "users": 8249
+    "views": 11982435,
+    "likes": 128963,
+    "posts": 37774,
+    "users": 8251
   },
   "users": [
     {
@@ -5905,6 +5905,58 @@
       ]
     },
     {
+      "id": "468373926",
+      "name": "Sarcastinator.hl",
+      "handle": "Not_A_De_Gen",
+      "followers": 834,
+      "avatar": "https://pbs.twimg.com/profile_images/2011082802025152512/MOzD-68e_normal.jpg",
+      "views": 10912,
+      "likes": 150,
+      "posts": 113,
+      "mentions": 113,
+      "cashtag": 5,
+      "keyword": 1,
+      "firstPost": "Sat Nov 01 15:58:21 +0000 2025",
+      "lastPost": "Thu Nov 26 08:32:03 +0000 2026",
+      "topPosts": [
+        {
+          "text": "we got a @tread_fi @Dune dashboard before $TREAD TGE...\n\ni mean, it had to be right...\n\non september 12, i published a post explaining why i thought $TREAD could clear a $100m fdv at launch...\n\nhttps://t.co/U8tKWcIDFT \n\ni had spent a fair amount of time on it. i went through the token structure, the fixed supply, the lack of a private sale, the future TIPs and the amount of trading activity tread had already handled before a token existed...\n\nfor the revenue part, i used the public defillama adapter because it was the only clean number i could find...\n\nit showed roughly $74.3k in builder fees over 30 days, so i annualised it to around $891k and used that as the current revenue run rate...\n\nthe post did well, but I got the revenue part completely wrong...\n\n@sportytechworld replied that tread was probably making much more once enterprise plans and institutional clients were included...\n\n@dhruv_sniper pointed out that my number also missed activity from ondo, risex, nado and other integrated venues...\n\nwhat bothered me was not the correction. it was that the number looked precise enough to be trusted, even though it described only one visible slice of the business...\n\ni had spent the post being very careful about fdv and circulating supply, then used one public adapter as a proxy for a business that has several products, private institutional contracts and routing across exchanges that expose completely different amounts of data...\n\ni was trying to value tread as if it were a dex with one fee switch and one set of contracts, which it is not...\n\ntread is an execution layer sitting across cexs, perp dexes, spot venues and now prediction markets...\n\nthat is partly why the business is interesting, but it also makes the business very difficult to measure from the outside...\n\nafter that, folks started sending me the tools they had build...\n\n@og_branxi shared tread’s own public mmbot dashboard at https://t.co/bKvC6t9o0C \n\n@dhruv_sniper sent me the treadfi stats app built by @sportytechworld at https://t.co/61hGn4vNLP\n\nboth were extremely and much better data-points that i should have incorporated in my post, my being dumb me, i missed them...\n\nthe tread page had detailed mmbot execution data. sporty’s app put exchange volume in one place and applied fee assumptions to some of the venues. defillama had another view of volume and builder revenue...\n\ntread itself said it had processed more than $100b since inception...\n\ni spent the next few days opening all of them beside each other and trying to make the numbers reconcile...\n\nthey could not, because they were not measuring the same thing...\n\nthe mmbot data was not the same as total orders routed through tread...\n\nthe public revenue adapter was not the same as total company revenue...\n\nthe $100b lifetime number included a period and parts of the business that the newer public feeds did not cover...\n\neven the word “volume” changed meaning depending on whether i was looking at submitted orders, completed pairs, individual fills or notional reported by a venue...\n\nthat is what prompted me to build an extensive covered dune-dashboard for tread...\n\ni did not want another page with a large number at the top. i wanted one place where i could see what tread was doing, which source produced each number and how much of it could actually be checked independently...\n\nthe first version is now live on dune...\n\nthe public oms feed starts on october 1, 2025 and currently contains around $29.4b of routed volume across 24 venues through september 15...\n\njust under $1b was routed over the latest 30 days and the 7 day average is around $52m per day...\n\nthis is only the reproducible public series...\n\nit does not disprove tread’s $100b lifetime figure and it should not be presented as the same figure...\n\nhyperliquid is still the largest part of the visible flow...\n\nthe dashboard also separates oms routing from mmbot execution...\n\nthe oms section answers where orders are being routed. it shows daily volume, the 7 day average, venue share and how that share changes over time...\n\nthe mmbot section answers a different question...\n\nit shows how the public bot strategies have performed by strategy, venue and asset type, including fees, gross and net pnl, win rate, order outcomes and net cost per $1m...\n\ni could have added the two volumes together and made tread look larger...\n\ni did not because the endpoints use different order and completion conventions and the resulting number would have no honest meaning...\n\nprediction markets are treated separately for the same reason...\n\nthe dashboard shows the flow that tread’s public telemetry attributes to @Polymarket  and @Kalshi \n\nit does not call that total protocol volume and it does not mix binary contracts with perp notional to create a bigger headline...\n\nthe next layer is independent venue data...\n\nhyperliquid includes the builder address in every fill, which means tread volume and builder fees can be rebuilt trade by trade without trusting tread’s aggregate...\n\nthat audit is written, but it is not live on the dashboard yet...\n\nthis becomes much harder everywhere else...\n\n@extendedapp keeps its builder dashboard behind authentication...\n\n@pacifica_fi publicly identifies tread as treadfi, but the historical endpoint is not returning attributable trades...\n\n@nadoHQ carries a builder id inside its order data, but i have not found a definitive public id for tread...\n\ncex routing cannot be attributed publicly because the orders move through private exchange accounts...\n\nthe revenue view is still missing too...\n\nthis is intentional for now...\n\ni can calculate builder fees where the fee and builder identifier are public...\n\ni cannot see enterprise subscriptions, private commercial terms, rebates, referral payouts, costs or net company revenue...\n\nmultiplying every venue’s reported volume by an assumed 2 bps would give me a clean chart and another wrong answer...\n\ni have already done that once. i am not putting it on dune until the methodology is better...\n\nthe dashboard also needs automatic refreshes. the public feed is through september 15 while the current dune upload stops on september 11...\n\nthe hyperliquid audit needs to be added. venue identifiers need to be found and every fee change needs a date, because some venues launched without builder fees and added them later...\n\nso this is still a lot unfinished...\n\ni am sharing it anyway because this is the dashboard i wish i had before writing the first post...\n\n$TREAD genesis is scheduled for 1pm utc today...\n\nin a few hours the timeline will be full of screenshots of the first candle and people will use the price to decide whether the business is good...\n\ni wanted this out before that happened...\n\nif you have spent more time inside tread than i have, check the dashboard and tell me where it is wrong...\n\ni am especially looking for public builder ids, historical fee schedules, missing venues and better ways to reconcile the oms feed with venue data...\n\nplease send the source with the correction...\n\ni want to make the number defensible, not merely bullish...\n\nthe dashboard's here: \nhttps://t.co/edjMvwwqDh",
+          "id": "2100158335047655586",
+          "url": "https://x.com/Not_A_De_Gen/status/2100158335047655586",
+          "views": 1508,
+          "likes": 15
+        },
+        {
+          "text": "ok so after the massive success of @tread_fi i think the space is gonna blow-out and gonna grow out in parallel with perp-dexes...\n\nwith only a handful of high-value perp-dexes currently being farmed by the ct, all mm-terminals are gonna fight and build on the same, which is only gonna be good for us farmers...\n\ni've been testing out this new terminal @vesper_mm cause they got all the key perp-dexes that i am farming right now...\n\ni was particularly drawn to their new strategy called Flux for @risextrade alongside a two-week trading competition. Flux can run XAU, QQQ and SPY together, though i started with XAU first because i wanted to see the execution before adding more moving parts...\n\nmy initial session returned this:\n> roughly $2.4k routed\n> 35 round trips\n> 70+ fills\n> $0.18 session fees\n> $0.36 all-time fees\n> +$5.8k CPM shown by vesper\n\nthe CPM figure is an execution metric from the session ledger, not my realised RISEx account PnL. i am keeping actual return claims out until the run is done and the venue balance has fully settled...\n\nstill, the early read is pretty good...\n\nflux is built around a very particular kind of market making. entries and ordinary exits are post-only. it does not try to force a fill whenever the market moves. if one side of the book becomes thin or volatility starts becoming stupid, it pauses that side rather than continuing to stack inventory into bad conditions...\n\na forced taker close only comes into play at the stop i set...\n\nthat is pretty much what i want from a strategy running in these RWA books. it should be making the spread when conditions allow it, and be comfortable doing nothing when the book starts looking like it wants to donate your margin to someone else...\n\nthe other part i liked is that they have made the ugly operational bits visible. RISEx has a toxic-hours guard around 13:00–16:00 UTC; their recorded fills showed roughly +98 CPM more cost in that period, so Flux stops building fresh exposure there while working any existing position down...\n\nthe strategy is not pretending that every hour produces the same fills, or that more volume automatically means better market making...\n\nRISEx fees are 50% lower through september 25, which helps the current run and should be stated plainly. that is also why i will keep this running through the Flux Cup rather than turn a few thousand dollars of flow into a victory lap...\n\ni want to see how the CPM behaves once:\n> fee conditions normalize\n> XAU gets a proper volatility session\n> the strategy has more routed volume behind it\n> the guardrails actually have to intervene\n> and i add the QQQ/SPY legs instead of relying on one market\n\nbut so far, vesper is giving me what most market-making terminals avoid showing: the fills, fee drag, round trips and execution output in the same place...\n\nthat is enough for me to keep routing the RISEx and Arcus accounts through it for now...\n\nPS: the points are live as well...",
+          "id": "2102301643165639119",
+          "url": "https://x.com/Not_A_De_Gen/status/2102301643165639119",
+          "views": 894,
+          "likes": 3
+        },
+        {
+          "text": "i think at this point @tread_fi agent marketplace will be the end of all agentic protocols...\n\nadmittedly getting ahead of myself, but i tested @0xasrequired’s agent on tread with a fairly specific job: read my Ondo execution history and find which configurations were costing me too much per million traded...\n\nit reviewed 37 completed runs. my historical blended cost was roughly $419/M. it selected a CRCL reverse-grid configuration that had previously managed around $58/M, against my requested $100/M ceiling...\n\ni’ve spent enough time changing bot settings and then paying to find out they were worse, so I asked it to fix my previous runs and a deploy a very specific targeted run to hit my ceiling for notional volume and cpm, which honestly i have tried doing earlier and is a pain in the ass...\n\nit's been only a few hours into testing, but it looks promising already...\n\nrealized-only cost currently sits around $567/M. include the open inventory’s unrealized gain and it moves to roughly −$453/M. negative here means the marked trading gains exceed the reported fees...\n\nquite a difference, and it depends on a long position that is still open. closing costs and the next price move can change that number, so i’m waiting for the inventory to flatten before claiming it cleared the budget...\n\nit has also executed 85% beyond the requested volume target and remains active. i want to understand exactly how the target is implemented, when it stops opening exposure and whether the cost ceiling actually triggers an exit...\n\nthe larger follow-on run hasn’t launched. that decision is waiting on the final realized result...\n\nbut i am impressed with what i see already...\n\nthis is already my third or fourth agent test on tread, i think i'm lining this rabbit hole and now that i so deep down, a proper marketplace suggestions shortlist should come out, picking my favs...\n\ni’ll share the ones i’d actually keep using across different markets, protocols, setup requirements and trading styles. along with the interventions they needed and the constraints they failed to respect, where that happened...\n\ni’m increasingly interested in this marketplace because these are workflows we can actually test against our own execution records. a historical $58/M looks good enough to investigate. whether it survives live trading is what earns it a place on that list...",
+          "id": "2096877896766013562",
+          "url": "https://x.com/Not_A_De_Gen/status/2096877896766013562",
+          "views": 872,
+          "likes": 16
+        },
+        {
+          "text": "@tread_fi much needed mechanism to create a supply-demand for $TREAD",
+          "id": "2098991583811268739",
+          "url": "https://x.com/Not_A_De_Gen/status/2098991583811268739",
+          "views": 579,
+          "likes": 2
+        },
+        {
+          "text": "guess, we are farming the next mm-terminal after @tread_fi \n\nlooks like they are going hard to better the strategies for the next best perp-dexes like @arcus_xyz and @risextrade \n\ntesting em out only for now, will share thoughts soon...\n\nfolks, it is mm-terminal szn... https://t.co/cqg80OxHhG",
+          "id": "2101600862355505493",
+          "url": "https://x.com/Not_A_De_Gen/status/2101600862355505493",
+          "views": 446,
+          "likes": 9
+        }
+      ]
+    },
+    {
       "id": "1376843192843182080",
       "name": "Exsa",
       "handle": "Exsa_mui",
@@ -5953,58 +6005,6 @@
           "url": "https://x.com/Exsa_mui/status/2064307296856146042",
           "views": 365,
           "likes": 1
-        }
-      ]
-    },
-    {
-      "id": "468373926",
-      "name": "Sarcastinator.hl",
-      "handle": "Not_A_De_Gen",
-      "followers": 833,
-      "avatar": "https://pbs.twimg.com/profile_images/2011082802025152512/MOzD-68e_normal.jpg",
-      "views": 10880,
-      "likes": 148,
-      "posts": 112,
-      "mentions": 112,
-      "cashtag": 5,
-      "keyword": 1,
-      "firstPost": "Sat Nov 01 15:58:21 +0000 2025",
-      "lastPost": "Sun Nov 22 17:34:57 +0000 2026",
-      "topPosts": [
-        {
-          "text": "we got a @tread_fi @Dune dashboard before $TREAD TGE...\n\ni mean, it had to be right...\n\non september 12, i published a post explaining why i thought $TREAD could clear a $100m fdv at launch...\n\nhttps://t.co/U8tKWcIDFT \n\ni had spent a fair amount of time on it. i went through the token structure, the fixed supply, the lack of a private sale, the future TIPs and the amount of trading activity tread had already handled before a token existed...\n\nfor the revenue part, i used the public defillama adapter because it was the only clean number i could find...\n\nit showed roughly $74.3k in builder fees over 30 days, so i annualised it to around $891k and used that as the current revenue run rate...\n\nthe post did well, but I got the revenue part completely wrong...\n\n@sportytechworld replied that tread was probably making much more once enterprise plans and institutional clients were included...\n\n@dhruv_sniper pointed out that my number also missed activity from ondo, risex, nado and other integrated venues...\n\nwhat bothered me was not the correction. it was that the number looked precise enough to be trusted, even though it described only one visible slice of the business...\n\ni had spent the post being very careful about fdv and circulating supply, then used one public adapter as a proxy for a business that has several products, private institutional contracts and routing across exchanges that expose completely different amounts of data...\n\ni was trying to value tread as if it were a dex with one fee switch and one set of contracts, which it is not...\n\ntread is an execution layer sitting across cexs, perp dexes, spot venues and now prediction markets...\n\nthat is partly why the business is interesting, but it also makes the business very difficult to measure from the outside...\n\nafter that, folks started sending me the tools they had build...\n\n@og_branxi shared tread’s own public mmbot dashboard at https://t.co/bKvC6t9o0C \n\n@dhruv_sniper sent me the treadfi stats app built by @sportytechworld at https://t.co/61hGn4vNLP\n\nboth were extremely and much better data-points that i should have incorporated in my post, my being dumb me, i missed them...\n\nthe tread page had detailed mmbot execution data. sporty’s app put exchange volume in one place and applied fee assumptions to some of the venues. defillama had another view of volume and builder revenue...\n\ntread itself said it had processed more than $100b since inception...\n\ni spent the next few days opening all of them beside each other and trying to make the numbers reconcile...\n\nthey could not, because they were not measuring the same thing...\n\nthe mmbot data was not the same as total orders routed through tread...\n\nthe public revenue adapter was not the same as total company revenue...\n\nthe $100b lifetime number included a period and parts of the business that the newer public feeds did not cover...\n\neven the word “volume” changed meaning depending on whether i was looking at submitted orders, completed pairs, individual fills or notional reported by a venue...\n\nthat is what prompted me to build an extensive covered dune-dashboard for tread...\n\ni did not want another page with a large number at the top. i wanted one place where i could see what tread was doing, which source produced each number and how much of it could actually be checked independently...\n\nthe first version is now live on dune...\n\nthe public oms feed starts on october 1, 2025 and currently contains around $29.4b of routed volume across 24 venues through september 15...\n\njust under $1b was routed over the latest 30 days and the 7 day average is around $52m per day...\n\nthis is only the reproducible public series...\n\nit does not disprove tread’s $100b lifetime figure and it should not be presented as the same figure...\n\nhyperliquid is still the largest part of the visible flow...\n\nthe dashboard also separates oms routing from mmbot execution...\n\nthe oms section answers where orders are being routed. it shows daily volume, the 7 day average, venue share and how that share changes over time...\n\nthe mmbot section answers a different question...\n\nit shows how the public bot strategies have performed by strategy, venue and asset type, including fees, gross and net pnl, win rate, order outcomes and net cost per $1m...\n\ni could have added the two volumes together and made tread look larger...\n\ni did not because the endpoints use different order and completion conventions and the resulting number would have no honest meaning...\n\nprediction markets are treated separately for the same reason...\n\nthe dashboard shows the flow that tread’s public telemetry attributes to @Polymarket  and @Kalshi \n\nit does not call that total protocol volume and it does not mix binary contracts with perp notional to create a bigger headline...\n\nthe next layer is independent venue data...\n\nhyperliquid includes the builder address in every fill, which means tread volume and builder fees can be rebuilt trade by trade without trusting tread’s aggregate...\n\nthat audit is written, but it is not live on the dashboard yet...\n\nthis becomes much harder everywhere else...\n\n@extendedapp keeps its builder dashboard behind authentication...\n\n@pacifica_fi publicly identifies tread as treadfi, but the historical endpoint is not returning attributable trades...\n\n@nadoHQ carries a builder id inside its order data, but i have not found a definitive public id for tread...\n\ncex routing cannot be attributed publicly because the orders move through private exchange accounts...\n\nthe revenue view is still missing too...\n\nthis is intentional for now...\n\ni can calculate builder fees where the fee and builder identifier are public...\n\ni cannot see enterprise subscriptions, private commercial terms, rebates, referral payouts, costs or net company revenue...\n\nmultiplying every venue’s reported volume by an assumed 2 bps would give me a clean chart and another wrong answer...\n\ni have already done that once. i am not putting it on dune until the methodology is better...\n\nthe dashboard also needs automatic refreshes. the public feed is through september 15 while the current dune upload stops on september 11...\n\nthe hyperliquid audit needs to be added. venue identifiers need to be found and every fee change needs a date, because some venues launched without builder fees and added them later...\n\nso this is still a lot unfinished...\n\ni am sharing it anyway because this is the dashboard i wish i had before writing the first post...\n\n$TREAD genesis is scheduled for 1pm utc today...\n\nin a few hours the timeline will be full of screenshots of the first candle and people will use the price to decide whether the business is good...\n\ni wanted this out before that happened...\n\nif you have spent more time inside tread than i have, check the dashboard and tell me where it is wrong...\n\ni am especially looking for public builder ids, historical fee schedules, missing venues and better ways to reconcile the oms feed with venue data...\n\nplease send the source with the correction...\n\ni want to make the number defensible, not merely bullish...\n\nthe dashboard's here: \nhttps://t.co/edjMvwwqDh",
-          "id": "2100158335047655586",
-          "url": "https://x.com/Not_A_De_Gen/status/2100158335047655586",
-          "views": 1508,
-          "likes": 15
-        },
-        {
-          "text": "ok so after the massive success of @tread_fi i think the space is gonna blow-out and gonna grow out in parallel with perp-dexes...\n\nwith only a handful of high-value perp-dexes currently being farmed by the ct, all mm-terminals are gonna fight and build on the same, which is only gonna be good for us farmers...\n\ni've been testing out this new terminal @vesper_mm cause they got all the key perp-dexes that i am farming right now...\n\ni was particularly drawn to their new strategy called Flux for @risextrade alongside a two-week trading competition. Flux can run XAU, QQQ and SPY together, though i started with XAU first because i wanted to see the execution before adding more moving parts...\n\nmy initial session returned this:\n> roughly $2.4k routed\n> 35 round trips\n> 70+ fills\n> $0.18 session fees\n> $0.36 all-time fees\n> +$5.8k CPM shown by vesper\n\nthe CPM figure is an execution metric from the session ledger, not my realised RISEx account PnL. i am keeping actual return claims out until the run is done and the venue balance has fully settled...\n\nstill, the early read is pretty good...\n\nflux is built around a very particular kind of market making. entries and ordinary exits are post-only. it does not try to force a fill whenever the market moves. if one side of the book becomes thin or volatility starts becoming stupid, it pauses that side rather than continuing to stack inventory into bad conditions...\n\na forced taker close only comes into play at the stop i set...\n\nthat is pretty much what i want from a strategy running in these RWA books. it should be making the spread when conditions allow it, and be comfortable doing nothing when the book starts looking like it wants to donate your margin to someone else...\n\nthe other part i liked is that they have made the ugly operational bits visible. RISEx has a toxic-hours guard around 13:00–16:00 UTC; their recorded fills showed roughly +98 CPM more cost in that period, so Flux stops building fresh exposure there while working any existing position down...\n\nthe strategy is not pretending that every hour produces the same fills, or that more volume automatically means better market making...\n\nRISEx fees are 50% lower through september 25, which helps the current run and should be stated plainly. that is also why i will keep this running through the Flux Cup rather than turn a few thousand dollars of flow into a victory lap...\n\ni want to see how the CPM behaves once:\n> fee conditions normalize\n> XAU gets a proper volatility session\n> the strategy has more routed volume behind it\n> the guardrails actually have to intervene\n> and i add the QQQ/SPY legs instead of relying on one market\n\nbut so far, vesper is giving me what most market-making terminals avoid showing: the fills, fee drag, round trips and execution output in the same place...\n\nthat is enough for me to keep routing the RISEx and Arcus accounts through it for now...\n\nPS: the points are live as well...",
-          "id": "2102301643165639119",
-          "url": "https://x.com/Not_A_De_Gen/status/2102301643165639119",
-          "views": 894,
-          "likes": 3
-        },
-        {
-          "text": "i think at this point @tread_fi agent marketplace will be the end of all agentic protocols...\n\nadmittedly getting ahead of myself, but i tested @0xasrequired’s agent on tread with a fairly specific job: read my Ondo execution history and find which configurations were costing me too much per million traded...\n\nit reviewed 37 completed runs. my historical blended cost was roughly $419/M. it selected a CRCL reverse-grid configuration that had previously managed around $58/M, against my requested $100/M ceiling...\n\ni’ve spent enough time changing bot settings and then paying to find out they were worse, so I asked it to fix my previous runs and a deploy a very specific targeted run to hit my ceiling for notional volume and cpm, which honestly i have tried doing earlier and is a pain in the ass...\n\nit's been only a few hours into testing, but it looks promising already...\n\nrealized-only cost currently sits around $567/M. include the open inventory’s unrealized gain and it moves to roughly −$453/M. negative here means the marked trading gains exceed the reported fees...\n\nquite a difference, and it depends on a long position that is still open. closing costs and the next price move can change that number, so i’m waiting for the inventory to flatten before claiming it cleared the budget...\n\nit has also executed 85% beyond the requested volume target and remains active. i want to understand exactly how the target is implemented, when it stops opening exposure and whether the cost ceiling actually triggers an exit...\n\nthe larger follow-on run hasn’t launched. that decision is waiting on the final realized result...\n\nbut i am impressed with what i see already...\n\nthis is already my third or fourth agent test on tread, i think i'm lining this rabbit hole and now that i so deep down, a proper marketplace suggestions shortlist should come out, picking my favs...\n\ni’ll share the ones i’d actually keep using across different markets, protocols, setup requirements and trading styles. along with the interventions they needed and the constraints they failed to respect, where that happened...\n\ni’m increasingly interested in this marketplace because these are workflows we can actually test against our own execution records. a historical $58/M looks good enough to investigate. whether it survives live trading is what earns it a place on that list...",
-          "id": "2096877896766013562",
-          "url": "https://x.com/Not_A_De_Gen/status/2096877896766013562",
-          "views": 872,
-          "likes": 16
-        },
-        {
-          "text": "@tread_fi much needed mechanism to create a supply-demand for $TREAD",
-          "id": "2098991583811268739",
-          "url": "https://x.com/Not_A_De_Gen/status/2098991583811268739",
-          "views": 579,
-          "likes": 2
-        },
-        {
-          "text": "guess, we are farming the next mm-terminal after @tread_fi \n\nlooks like they are going hard to better the strategies for the next best perp-dexes like @arcus_xyz and @risextrade \n\ntesting em out only for now, will share thoughts soon...\n\nfolks, it is mm-terminal szn... https://t.co/cqg80OxHhG",
-          "id": "2101600862355505493",
-          "url": "https://x.com/Not_A_De_Gen/status/2101600862355505493",
-          "views": 446,
-          "likes": 9
         }
       ]
     },
@@ -20592,6 +20592,58 @@
       ]
     },
     {
+      "id": "2038275142200049664",
+      "name": "Ales Cadez",
+      "handle": "ales_cadez",
+      "followers": 52,
+      "avatar": "https://pbs.twimg.com/profile_images/2038275892594491393/G86gG6Z0_normal.jpg",
+      "views": 1690,
+      "likes": 23,
+      "posts": 14,
+      "mentions": 14,
+      "cashtag": 12,
+      "keyword": 0,
+      "firstPost": "Thu Oct 01 21:57:14 +0000 2026",
+      "lastPost": "Thu Nov 26 18:02:00 +0000 2026",
+      "topPosts": [
+        {
+          "text": "Hey hunters, now is the right time to make some purchases. $QNT $TAO $LINK $TREAD #Crypto #kraken #CryptoMarket #tokens #altcoin #altcoins #investment #cryptoproject #bearmarket @quantnetwork @chainlink @tread_fi @TheBittensorHub https://t.co/qRjxuVoglK",
+          "id": "2122284022457897079",
+          "url": "https://x.com/ales_cadez/status/2122284022457897079",
+          "views": 241,
+          "likes": 0
+        },
+        {
+          "text": "$Tread is catching up to $XRP just a few months after entering the market. According to all the statistics, this shouldn't be possible. What have I been saying all this time? You need to choose good projects with a low token supply. @tread_fi https://t.co/Y0cbJK9WpQ",
+          "id": "2118662837073559681",
+          "url": "https://x.com/ales_cadez/status/2118662837073559681",
+          "views": 212,
+          "likes": 1
+        },
+        {
+          "text": "When a token holds its price during a crisis, you know it’s a good investment! $TREAD @tread_fi #CryptoTrading #Crypto #blockchain #trade #investment #agents #cryptomarket #bearmarket",
+          "id": "2120812023378264178",
+          "url": "https://x.com/ales_cadez/status/2120812023378264178",
+          "views": 171,
+          "likes": 5
+        },
+        {
+          "text": "The $TREAD (https://t.co/8NTDcDh2jk) token is directly linked to autonomous and artificial intelligence (AI) trading agents, which is the primary reason for its recognition and price movement. #tread @tread_fi #crypto #bearmarket #crypromarket #altcoin #token #trade",
+          "id": "2123461572261450016",
+          "url": "https://x.com/ales_cadez/status/2123461572261450016",
+          "views": 170,
+          "likes": 6
+        },
+        {
+          "text": "Time to buy more $tread. I’ve set a buy order below $0.90! #bearmarket #crypto #CryptoMarket @tread_fi https://t.co/ewyXQpOvfk",
+          "id": "2124828683277902003",
+          "url": "https://x.com/ales_cadez/status/2124828683277902003",
+          "views": 163,
+          "likes": 2
+        }
+      ]
+    },
+    {
       "id": "1456858472654462978",
       "name": "Alex.arb",
       "handle": "Cryptobalp",
@@ -21564,58 +21616,6 @@
           "url": "https://x.com/ranyi1115/status/2020099486815801546",
           "views": 93,
           "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "2038275142200049664",
-      "name": "Ales Cadez",
-      "handle": "ales_cadez",
-      "followers": 50,
-      "avatar": "https://pbs.twimg.com/profile_images/2038275892594491393/G86gG6Z0_normal.jpg",
-      "views": 1570,
-      "likes": 23,
-      "posts": 13,
-      "mentions": 13,
-      "cashtag": 11,
-      "keyword": 0,
-      "firstPost": "Thu Oct 01 21:57:14 +0000 2026",
-      "lastPost": "Mon Nov 23 11:33:30 +0000 2026",
-      "topPosts": [
-        {
-          "text": "Hey hunters, now is the right time to make some purchases. $QNT $TAO $LINK $TREAD #Crypto #kraken #CryptoMarket #tokens #altcoin #altcoins #investment #cryptoproject #bearmarket @quantnetwork @chainlink @tread_fi @TheBittensorHub https://t.co/qRjxuVoglK",
-          "id": "2122284022457897079",
-          "url": "https://x.com/ales_cadez/status/2122284022457897079",
-          "views": 241,
-          "likes": 0
-        },
-        {
-          "text": "$Tread is catching up to $XRP just a few months after entering the market. According to all the statistics, this shouldn't be possible. What have I been saying all this time? You need to choose good projects with a low token supply. @tread_fi https://t.co/Y0cbJK9WpQ",
-          "id": "2118662837073559681",
-          "url": "https://x.com/ales_cadez/status/2118662837073559681",
-          "views": 212,
-          "likes": 1
-        },
-        {
-          "text": "When a token holds its price during a crisis, you know it’s a good investment! $TREAD @tread_fi #CryptoTrading #Crypto #blockchain #trade #investment #agents #cryptomarket #bearmarket",
-          "id": "2120812023378264178",
-          "url": "https://x.com/ales_cadez/status/2120812023378264178",
-          "views": 171,
-          "likes": 5
-        },
-        {
-          "text": "The $TREAD (https://t.co/8NTDcDh2jk) token is directly linked to autonomous and artificial intelligence (AI) trading agents, which is the primary reason for its recognition and price movement. #tread @tread_fi #crypto #bearmarket #crypromarket #altcoin #token #trade",
-          "id": "2123461572261450016",
-          "url": "https://x.com/ales_cadez/status/2123461572261450016",
-          "views": 170,
-          "likes": 6
-        },
-        {
-          "text": "Time to buy more $tread. I’ve set a buy order below $0.90! #bearmarket #crypto #CryptoMarket @tread_fi https://t.co/ewyXQpOvfk",
-          "id": "2124828683277902003",
-          "url": "https://x.com/ales_cadez/status/2124828683277902003",
-          "views": 163,
-          "likes": 2
         }
       ]
     },
@@ -29778,6 +29778,58 @@
       ]
     },
     {
+      "id": "1270982022794805249",
+      "name": "Stepaks",
+      "handle": "stepaks576",
+      "followers": 2885,
+      "avatar": "https://pbs.twimg.com/profile_images/1973004477222297600/7Uq4nLYM_normal.jpg",
+      "views": 1009,
+      "likes": 23,
+      "posts": 6,
+      "mentions": 6,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Tue Jan 06 09:50:44 +0000 2026",
+      "lastPost": "Thu Nov 26 16:01:10 +0000 2026",
+      "topPosts": [
+        {
+          "text": "not a big bull on arcus\n\njust casually tried with @tread_fi MM bot\n\n&gt; costs ~$150\n\nwont be farming much there\njust in case it moons etc https://t.co/q4pM1V5MKf",
+          "id": "2125690531959517648",
+          "url": "https://x.com/stepaks576/status/2125690531959517648",
+          "views": 699,
+          "likes": 18
+        },
+        {
+          "text": "@0xvinhpham @tread_fi bro is making generational money outta tradefi post\n\ncook",
+          "id": "2008476316782219656",
+          "url": "https://x.com/stepaks576/status/2008476316782219656",
+          "views": 119,
+          "likes": 1
+        },
+        {
+          "text": "@0xasrequired @tread_fi wait XVS is 90% for trading?",
+          "id": "2008868197592932854",
+          "url": "https://x.com/stepaks576/status/2008868197592932854",
+          "views": 88,
+          "likes": 2
+        },
+        {
+          "text": "@RaizeThatQ @tread_fi @davidyjeong ayo this is cool",
+          "id": "2009250727542087818",
+          "url": "https://x.com/stepaks576/status/2009250727542087818",
+          "views": 48,
+          "likes": 0
+        },
+        {
+          "text": "@AlphaWolfPRMR @0xasrequired @tread_fi but there is no Nado there",
+          "id": "2008479956498546818",
+          "url": "https://x.com/stepaks576/status/2008479956498546818",
+          "views": 44,
+          "likes": 2
+        }
+      ]
+    },
+    {
       "id": "1522740689460764673",
       "name": "Masil 🇰🇷 .edge🦭",
       "handle": "sikiri0",
@@ -30099,58 +30151,6 @@
           "url": "https://x.com/zkTuring/status/1990348370586812767",
           "views": 84,
           "likes": 0
-        }
-      ]
-    },
-    {
-      "id": "1270982022794805249",
-      "name": "Stepaks",
-      "handle": "stepaks576",
-      "followers": 2886,
-      "avatar": "https://pbs.twimg.com/profile_images/1973004477222297600/7Uq4nLYM_normal.jpg",
-      "views": 998,
-      "likes": 23,
-      "posts": 5,
-      "mentions": 5,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Tue Jan 06 09:50:44 +0000 2026",
-      "lastPost": "Wed Nov 25 20:38:10 +0000 2026",
-      "topPosts": [
-        {
-          "text": "not a big bull on arcus\n\njust casually tried with @tread_fi MM bot\n\n&gt; costs ~$150\n\nwont be farming much there\njust in case it moons etc https://t.co/q4pM1V5MKf",
-          "id": "2125690531959517648",
-          "url": "https://x.com/stepaks576/status/2125690531959517648",
-          "views": 699,
-          "likes": 18
-        },
-        {
-          "text": "@0xvinhpham @tread_fi bro is making generational money outta tradefi post\n\ncook",
-          "id": "2008476316782219656",
-          "url": "https://x.com/stepaks576/status/2008476316782219656",
-          "views": 119,
-          "likes": 1
-        },
-        {
-          "text": "@0xasrequired @tread_fi wait XVS is 90% for trading?",
-          "id": "2008868197592932854",
-          "url": "https://x.com/stepaks576/status/2008868197592932854",
-          "views": 88,
-          "likes": 2
-        },
-        {
-          "text": "@RaizeThatQ @tread_fi @davidyjeong ayo this is cool",
-          "id": "2009250727542087818",
-          "url": "https://x.com/stepaks576/status/2009250727542087818",
-          "views": 48,
-          "likes": 0
-        },
-        {
-          "text": "@AlphaWolfPRMR @0xasrequired @tread_fi but there is no Nado there",
-          "id": "2008479956498546818",
-          "url": "https://x.com/stepaks576/status/2008479956498546818",
-          "views": 44,
-          "likes": 2
         }
       ]
     },
@@ -67925,6 +67925,58 @@
       ]
     },
     {
+      "id": "1586781920653971461",
+      "name": "edo",
+      "handle": "edoweb3",
+      "followers": 13584,
+      "avatar": "https://pbs.twimg.com/profile_images/2087452656994304000/AUug9Gb7_normal.jpg",
+      "views": 295,
+      "likes": 7,
+      "posts": 8,
+      "mentions": 8,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Thu Mar 05 09:12:18 +0000 2026",
+      "lastPost": "Thu Nov 26 09:46:16 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@DeFiVoyager_X @arcus_xyz @tread_fi it’s getting more competitive also",
+          "id": "2123364652927394180",
+          "url": "https://x.com/edoweb3/status/2123364652927394180",
+          "views": 93,
+          "likes": 1
+        },
+        {
+          "text": "@Gyokeres_eth @tread_fi joined dreamcash before the S1, now opening some perps there",
+          "id": "2029861530116739563",
+          "url": "https://x.com/edoweb3/status/2029861530116739563",
+          "views": 51,
+          "likes": 1
+        },
+        {
+          "text": "@Gyokeres_eth @tread_fi wife change airdrop is coming for you Gyo\n\nmake sure to check my tg",
+          "id": "2035300959643980138",
+          "url": "https://x.com/edoweb3/status/2035300959643980138",
+          "views": 37,
+          "likes": 1
+        },
+        {
+          "text": "@0xBellinili @tread_fi let's turn this into a green profit",
+          "id": "2032387008690012574",
+          "url": "https://x.com/edoweb3/status/2032387008690012574",
+          "views": 36,
+          "likes": 1
+        },
+        {
+          "text": "@heiscosmo @tread_fi you are welcome Cosmo!\n\nlet's cook now 😈",
+          "id": "2118992560781701566",
+          "url": "https://x.com/edoweb3/status/2118992560781701566",
+          "views": 24,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "617617958",
       "name": "Ktown | Btc Maxi",
       "handle": "KtownSexyindian",
@@ -72145,58 +72197,6 @@
           "url": "https://x.com/JunoCrypto3/status/2094380067103424754",
           "views": 20,
           "likes": 1
-        }
-      ]
-    },
-    {
-      "id": "1586781920653971461",
-      "name": "edo",
-      "handle": "edoweb3",
-      "followers": 13602,
-      "avatar": "https://pbs.twimg.com/profile_images/2087452656994304000/AUug9Gb7_normal.jpg",
-      "views": 271,
-      "likes": 6,
-      "posts": 7,
-      "mentions": 7,
-      "cashtag": 0,
-      "keyword": 0,
-      "firstPost": "Thu Mar 05 09:12:18 +0000 2026",
-      "lastPost": "Thu Nov 19 10:35:58 +0000 2026",
-      "topPosts": [
-        {
-          "text": "@DeFiVoyager_X @arcus_xyz @tread_fi it’s getting more competitive also",
-          "id": "2123364652927394180",
-          "url": "https://x.com/edoweb3/status/2123364652927394180",
-          "views": 93,
-          "likes": 1
-        },
-        {
-          "text": "@Gyokeres_eth @tread_fi joined dreamcash before the S1, now opening some perps there",
-          "id": "2029861530116739563",
-          "url": "https://x.com/edoweb3/status/2029861530116739563",
-          "views": 51,
-          "likes": 1
-        },
-        {
-          "text": "@Gyokeres_eth @tread_fi wife change airdrop is coming for you Gyo\n\nmake sure to check my tg",
-          "id": "2035300959643980138",
-          "url": "https://x.com/edoweb3/status/2035300959643980138",
-          "views": 37,
-          "likes": 1
-        },
-        {
-          "text": "@0xBellinili @tread_fi let's turn this into a green profit",
-          "id": "2032387008690012574",
-          "url": "https://x.com/edoweb3/status/2032387008690012574",
-          "views": 36,
-          "likes": 1
-        },
-        {
-          "text": "@heiscosmo @tread_fi you are welcome Cosmo!\n\nlet's cook now 😈",
-          "id": "2118992560781701566",
-          "url": "https://x.com/edoweb3/status/2118992560781701566",
-          "views": 24,
-          "likes": 0
         }
       ]
     },
@@ -184491,6 +184491,30 @@
       ]
     },
     {
+      "id": "2039989523157770240",
+      "name": "Reinforce.fi",
+      "handle": "reinforce_fi",
+      "followers": 641,
+      "avatar": "https://pbs.twimg.com/profile_images/2047276586156564480/aPuWW2y2_normal.jpg",
+      "views": 37,
+      "likes": 0,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Thu Nov 26 01:41:33 +0000 2026",
+      "lastPost": "Thu Nov 26 01:41:33 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@stepaks576 @tread_fi me neither",
+          "id": "2125766878081757537",
+          "url": "https://x.com/reinforce_fi/status/2125766878081757537",
+          "views": 37,
+          "likes": 0
+        }
+      ]
+    },
+    {
       "id": "592022371",
       "name": "Vlad DEVE ⌘🛠️",
       "handle": "vladlem1",
@@ -211998,6 +212022,30 @@
           "text": "@dreykon_xyz @variational_io @tread_fi Thanks 🙏",
           "id": "2123028825177264283",
           "url": "https://x.com/bug_d3v/status/2123028825177264283",
+          "views": 21,
+          "likes": 1
+        }
+      ]
+    },
+    {
+      "id": "1488235429530939401",
+      "name": "Dialem",
+      "handle": "Dialem13",
+      "followers": 214,
+      "avatar": "https://pbs.twimg.com/profile_images/2075253111933812736/K7kVhLbX_normal.png",
+      "views": 21,
+      "likes": 1,
+      "posts": 1,
+      "mentions": 1,
+      "cashtag": 0,
+      "keyword": 0,
+      "firstPost": "Thu Nov 26 14:59:43 +0000 2026",
+      "lastPost": "Thu Nov 26 14:59:43 +0000 2026",
+      "topPosts": [
+        {
+          "text": "@stepaks576 @tread_fi Stop running MM bots on Arcus, they reward OI way more.",
+          "id": "2125967742352208272",
+          "url": "https://x.com/Dialem13/status/2125967742352208272",
           "views": 21,
           "likes": 1
         }
